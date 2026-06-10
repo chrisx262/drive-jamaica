@@ -1,0 +1,14 @@
+{
+  "comment": "Event -> possible narrator lines. Lines are picked at random per event. Audio files (assets/voice/) will map by line id later; V1 scaffold shows captions only.",
+  "events": {
+    "game.start": [
+      "Welcome to Jamaica, brethren! Touch di road!"
+    ],
+    "road.enter": [
+      "Yuh deh pon {road} now!"
+    ],
+    "pothole.burst": [
+      "Yuh tyre bust, brethren!"
+    ]
+  }
+}

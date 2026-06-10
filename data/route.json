@@ -1,0 +1,15 @@
+{
+  "name": "placeholder-route",
+  "comment": "Temporary hand-made polyline until the OSM pipeline lands. Units: meters, points are [x, z].",
+  "points": [
+    [0, 0], [0, -80], [2, -160], [8, -240], [20, -320], [40, -395],
+    [68, -465], [104, -530], [148, -588], [200, -638], [258, -680],
+    [320, -715], [385, -745], [452, -772], [520, -796], [590, -816],
+    [660, -832], [732, -844], [804, -852], [876, -856], [948, -856]
+  ],
+  "segments": [
+    { "name": "Norman Manley Highway", "from": 0, "to": 7 },
+    { "name": "Windward Road", "from": 7, "to": 14 },
+    { "name": "Mountain View Avenue", "from": 14, "to": 20 }
+  ]
+}

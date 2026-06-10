@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+    <title>Drive Jamaica</title>
+    <style>
+      html, body { margin: 0; height: 100%; overflow: hidden; background: #87ceeb; }
+      #app { width: 100%; height: 100%; }
+      #hud {
+        position: fixed; top: 12px; left: 12px; color: #fff;
+        font-family: system-ui, sans-serif; font-weight: 700;
+        text-shadow: 0 1px 3px rgba(0,0,0,0.6); user-select: none;
+      }
+      #callout {
+        position: fixed; top: 12px; left: 50%; transform: translateX(-50%);
+        padding: 6px 16px; border-radius: 6px;
+        background: #007749; color: #fed100; border: 2px solid #fed100;
+        font-family: system-ui, sans-serif; font-weight: 800; font-size: 18px;
+        opacity: 0; transition: opacity 0.3s; user-select: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="app"></div>
+    <div id="hud"></div>
+    <div id="callout"></div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
