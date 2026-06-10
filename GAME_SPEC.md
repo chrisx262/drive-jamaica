@@ -60,7 +60,15 @@ The Kingston leg is curated for recognition (it threads past landmarks like Half
 ## Landmarks (V1 candidates)
 Norman Manley Airport, Palisadoes strip, Port Royal (signpost), National Heroes Park, Devon House, Emancipation Park, Half Way Tree clock tower, Bob Marley Museum (exterior), Flat Bridge / Bog Walk gorge, Faith's Pen cookshops, Fern Gully, Ocho Rios bay, Dunn's River Falls, KFC/Burger King locations on route (sponsorship targets — see Monetization Tier 2), Tastee and Juici Patties locations on route (iconic Jamaican patty shops — recognition landmarks and Tier 2 sponsorship targets). Castleton Gardens moves to the future Junction-road route.
 
-**High schools (owner decision, 2026-06-10): V1 places only schools on or visible from the route** — owner to provide the on-route list (candidates: Jamaica College on Old Hope Rd if the Kingston leg passes it). **Calabar High School stays featured (founder's alma mater).** The full prominent-schools roster (Kingston College, Campion, St. George's, etc.) lands in V2 Kingston open city.
+**High schools (owner decision, 2026-06-10): V1 places only schools on or visible from the route.** The full prominent-schools roster lands in V2 Kingston open city.
+
+Owner's V1 school list (placements are owner's lived knowledge — authoritative):
+- **Excelsior High** — opposite the National Stadium (on route)
+- **St. Andrew High** and **Holy Childhood High** — in the Half Way Tree area (on route)
+- **Calabar High (featured — founder's alma mater)** — Red Hills Road
+- **Hydel High** — as you leave the city heading west (on route)
+- **Jamaica College** — Old Hope Rd (include if the final Kingston leg passes it)
+- **Downtown prominence signposts**: Kingston College, St. George's, Kingston Technical, Wolmer's Boys & Wolmer's Girls are not on the route but get highlighted as downtown landmarks because of their prominence (road signs / map callouts pointing downtown, narrator may name-check them)
 
 ## Recognition System (roads, communities, landmarks)
 The core of the recognition pillar — three layers of place identification, all data-driven from `data/` JSON:
