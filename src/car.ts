@@ -46,10 +46,12 @@ export class Car {
     else this.speed -= Math.sign(this.speed) * Math.min(DRAG * dt, Math.abs(this.speed));
     this.speed = THREE.MathUtils.clamp(this.speed, MAX_REVERSE, MAX_SPEED);
 
-    // Steering authority ramps up with speed, capped early so low-speed turns feel snappy.
+    // Steering authority ramps up with speed, then attenuates at high speed —
+    // full-rate steering at 130+ km/h felt twitchy (owner feedback).
     const steerScale = THREE.MathUtils.clamp(Math.abs(this.speed) / 10, 0, 1) * Math.sign(this.speed);
-    if (input.left) this.heading += STEER_RATE * steerScale * dt;
-    if (input.right) this.heading -= STEER_RATE * steerScale * dt;
+    const attenuation = 1 / (1 + Math.abs(this.speed) / 18);
+    if (input.left) this.heading += STEER_RATE * steerScale * attenuation * dt;
+    if (input.right) this.heading -= STEER_RATE * steerScale * attenuation * dt;
 
     this.object.position.x -= Math.sin(this.heading) * this.speed * dt;
     this.object.position.z -= Math.cos(this.heading) * this.speed * dt;

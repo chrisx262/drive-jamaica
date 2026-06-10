@@ -1,0 +1,14 @@
+{
+  "comment": "Scenery zones anchored to named route segments (survives route regeneration). Strips are lateral ribbons: offsets in meters from the road centerline, side as seen driving the route. Owner description: Gun Boat Beach + calm harbour LEFT, rough open sea RIGHT, mountains ahead, then Harbour View roundabout.",
+  "zones": [
+    {
+      "segment": "Norman Manley Highway / Palisadoes Road",
+      "strips": [
+        { "side": "left", "from": 5, "to": 26, "color": "#e3d29f", "y": -0.02, "label": "Gun Boat Beach sand" },
+        { "side": "left", "from": 26, "to": 450, "color": "#2e7fb8", "y": -0.03, "label": "calm harbour water" },
+        { "side": "right", "from": 5, "to": 450, "color": "#1c5a86", "y": -0.03, "label": "rough open sea" }
+      ],
+      "mountains": { "distance": 1600, "spread": 5200, "count": 14, "color": "#3d6b4f" }
+    }
+  ]
+}

@@ -28,7 +28,8 @@ The Kingston leg is curated for recognition (it threads past landmarks like Half
 - Race mode (Kingston → Ochi time trials, head-to-head) layered on existing multiplayer plumbing.
 
 ## Gameplay (V1)
-- **Arcade driving model** — kinematic, forgiving, fun-first. No realistic sim physics.
+- **Arcade driving model** — kinematic, forgiving, fun-first. No realistic sim physics. Steering authority attenuates with speed (owner feedback 2026-06-10: full-rate steering at speed felt too sensitive).
+- **World scale (owner decision, 2026-06-10): compress for fun.** Real OSM geometry scaled to ~30% distance, so the full Airport→Ochi run is ~36 km (~15 min at top speed) instead of a 50-minute literal drive. Road shapes and turn-by-turn names stay real.
 - **Potholes**: scattered on road; hitting one at speed damages a tyre → handling penalty + narrator line. Fixable at roadside "tyre shop" stops.
 - **Dogs**: chase and bark at the car through towns; city dogs in Kingston famously look both ways before crossing.
 - **Goat herds**: cross country roads unattended; hitting one has consequences (score/damage + narrator scolding).
@@ -57,8 +58,11 @@ The Kingston leg is curated for recognition (it threads past landmarks like Half
 
 **Tier 2 — Sponsored Buildings (direct sales, premium):** Real businesses' actual locations modeled as branded voxel landmarks on the route. Anchor targets: KFC and Burger King Jamaica (KFC Jamaica's locations are widely reported among the highest-grossing in the world — verify and source claims before pitching), plus hotels and resorts along the Kingston→Ochi corridor. Pitch: their real store, in the game, where diaspora players drive past it daily. Sponsored buildings can include light interactions (drive-thru honk, narrator shout-out). Direct outreach with a pitch deck; deck research is a pre-launch task.
 
+### Palisadoes leg scenery (owner description, 2026-06-10)
+Leaving the airport: sea on both sides of the road — **Gun Boat Beach and calm harbour water on the LEFT**, **rough open sea on the RIGHT** — with Jamaica's mountainous terrain rising ahead, then the **Harbour View roundabout** into Windward Road.
+
 ## Landmarks (V1 candidates)
-Norman Manley Airport, Palisadoes strip, Port Royal (signpost), National Heroes Park, Devon House, Emancipation Park, Half Way Tree clock tower, Bob Marley Museum (exterior), Flat Bridge / Bog Walk gorge, Faith's Pen cookshops, Fern Gully, Ocho Rios bay, Dunn's River Falls, KFC/Burger King locations on route (sponsorship targets — see Monetization Tier 2), Tastee and Juici Patties locations on route (iconic Jamaican patty shops — recognition landmarks and Tier 2 sponsorship targets), **Usain Bolt's Tracks & Records restaurant on Constant Spring Road** (prominent place — also a natural Tier 2 sponsorship target). Castleton Gardens moves to the future Junction-road route.
+Norman Manley Airport, Palisadoes strip, **Gun Boat Beach**, Harbour View roundabout, Port Royal (signpost), National Heroes Park, Devon House, Emancipation Park, Half Way Tree clock tower, Bob Marley Museum (exterior), Flat Bridge / Bog Walk gorge, Faith's Pen cookshops, Fern Gully, Ocho Rios bay, Dunn's River Falls, KFC/Burger King locations on route (sponsorship targets — see Monetization Tier 2), Tastee and Juici Patties locations on route (iconic Jamaican patty shops — recognition landmarks and Tier 2 sponsorship targets), **Usain Bolt's Tracks & Records restaurant on Constant Spring Road** (prominent place — also a natural Tier 2 sponsorship target). Castleton Gardens moves to the future Junction-road route.
 
 **High schools (owner decision, 2026-06-10): V1 places only schools on or visible from the route.** The full prominent-schools roster lands in V2 Kingston open city.
 

@@ -3,6 +3,7 @@ import { initInput } from './input';
 import { Car } from './car';
 import { Road } from './road';
 import { Recognition } from './recognition';
+import { buildScenery } from './scenery';
 import { initNarrator, narrate } from './narrator';
 
 const app = document.getElementById('app')!;
@@ -15,9 +16,9 @@ app.appendChild(renderer.domElement);
 
 const scene = new THREE.Scene();
 scene.background = new THREE.Color(0x87ceeb);
-scene.fog = new THREE.Fog(0x87ceeb, 200, 700);
+scene.fog = new THREE.Fog(0x87ceeb, 300, 2600);
 
-const camera = new THREE.PerspectiveCamera(65, window.innerWidth / window.innerHeight, 0.1, 1000);
+const camera = new THREE.PerspectiveCamera(65, window.innerWidth / window.innerHeight, 0.1, 6000);
 
 scene.add(new THREE.HemisphereLight(0xffffff, 0x4e8c3a, 0.9));
 const sun = new THREE.DirectionalLight(0xfff4d6, 1.2);
@@ -26,6 +27,7 @@ scene.add(sun);
 
 const road = new Road();
 scene.add(road.object);
+scene.add(buildScenery(road));
 
 const car = new Car();
 // Spawn at the route start, facing along it, in the LEFT lane.

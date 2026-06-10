@@ -51,7 +51,9 @@ console.log(`Raw vertices: ${lonlat.length}, distance: ${(data.routes[0].distanc
 const [lon0, lat0] = lonlat[0];
 const mLat = 110574;
 const mLon = 111320 * Math.cos((lat0 * Math.PI) / 180);
-const pts = lonlat.map(([lon, lat]) => [(lon - lon0) * mLon, -(lat - lat0) * mLat]);
+// World compression (GAME_SPEC owner decision): real shapes, ~30% distances.
+const SCALE = 0.3;
+const pts = lonlat.map(([lon, lat]) => [(lon - lon0) * mLon * SCALE, -(lat - lat0) * mLat * SCALE]);
 
 // Douglas-Peucker simplification, keeping original indices for name lookup.
 function simplify(points, first, last, tol2, keep) {
@@ -72,7 +74,7 @@ function simplify(points, first, last, tol2, keep) {
     simplify(points, idx, last, tol2, keep);
   }
 }
-const TOLERANCE = 6; // meters
+const TOLERANCE = 2; // meters (post-compression, ~6.7 m real-world)
 const keep = new Set([0, pts.length - 1]);
 simplify(pts, 0, pts.length - 1, TOLERANCE * TOLERANCE, keep);
 const kept = [...keep].sort((a, b) => a - b);
@@ -98,6 +100,7 @@ const out = {
   source: 'OpenStreetMap contributors, routed via project-osrm.org',
   generated: new Date().toISOString(),
   distanceKm: +(data.routes[0].distance / 1000).toFixed(1),
+  scale: SCALE,
   origin: { lon: lon0, lat: lat0 },
   points,
   segments,

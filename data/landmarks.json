@@ -1,0 +1,13 @@
+{
+  "comment": "Recognition layer 3: landmark popups. Anchored to a named route segment at fraction t along it. Each gets a stable id from creation (standing rule - future ad system depends on this pattern for billboards).",
+  "landmarks": [
+    {
+      "id": "lmk-gun-boat-beach",
+      "name": "Gun Boat Beach",
+      "segment": "Norman Manley Highway / Palisadoes Road",
+      "t": 0.3,
+      "side": "left",
+      "fact": "Harbour-side bathing spot on the Palisadoes strip"
+    }
+  ]
+}
