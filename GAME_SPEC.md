@@ -54,7 +54,16 @@ Single route: Norman Manley International Airport → Palisadoes → Kingston (W
 **Tier 2 — Sponsored Buildings (direct sales, premium):** Real businesses' actual locations modeled as branded voxel landmarks on the route. Anchor targets: KFC and Burger King Jamaica (KFC Jamaica's locations are widely reported among the highest-grossing in the world — verify and source claims before pitching), plus hotels and resorts along the Kingston→Ochi corridor. Pitch: their real store, in the game, where diaspora players drive past it daily. Sponsored buildings can include light interactions (drive-thru honk, narrator shout-out). Direct outreach with a pitch deck; deck research is a pre-launch task.
 
 ## Landmarks (V1 candidates)
-Norman Manley Airport, Palisadoes strip, Port Royal (signpost), National Heroes Park, Devon House, Emancipation Park, Half Way Tree clock tower, Bob Marley Museum (exterior), **Calabar High School (featured — founder's alma mater)**, other prominent high schools (Kingston College, Campion, St. George's — final list with the team), Castleton Gardens (A3), Fern Gully, Ocho Rios bay, Dunn's River Falls, KFC/Burger King locations on route (sponsorship targets — see Monetization Tier 2).
+Norman Manley Airport, Palisadoes strip, Port Royal (signpost), National Heroes Park, Devon House, Emancipation Park, Half Way Tree clock tower, Bob Marley Museum (exterior), **Calabar High School (featured — founder's alma mater)**, other prominent high schools (Kingston College, Campion, St. George's, Jamaica College — final list with the team), Castleton Gardens (A3), Fern Gully, Ocho Rios bay, Dunn's River Falls, KFC/Burger King locations on route (sponsorship targets — see Monetization Tier 2), Tastee and Juici Patties locations on route (iconic Jamaican patty shops — recognition landmarks and Tier 2 sponsorship targets).
+
+## Recognition System (roads, communities, landmarks)
+The core of the recognition pillar — three layers of place identification, all data-driven from `data/` JSON:
+
+1. **Road callouts**: whenever the player turns onto a road, its name is shown (street-sign-style HUD popup). Examples: Mountain View Avenue, Old Hope Road, Windward Road. Every named road on the route gets this, not a curated subset.
+2. **Community signs**: passing into a community/district shows its name (in-world sign + HUD). Examples: Wareika Hill, Half Way Tree, Stony Hill. Full list per the communities research task below.
+3. **Landmark popups**: prominent places show name + one-line fact as you pass. Examples: Devon House, Jamaica College, Tastee and Juici Patties shops, Bob Marley Museum.
+
+The narrator can comment on any entry in all three layers (data-driven event→line mapping, same as other narrator triggers). This system serves the diaspora ("places I used to frequent") and doubles as a must-see guide for tourists.
 
 **Communities research task:** compile the communities/districts along the full Airport→Kingston→A3→Ochi route (owner knows many; fill gaps with research). Each community gets a name sign in-game; this is core to the recognition pillar.
 
