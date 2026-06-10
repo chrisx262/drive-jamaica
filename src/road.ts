@@ -21,6 +21,15 @@ export class Road {
     this.object.add(this.buildRibbon(), this.buildCenterline(), this.buildGround());
   }
 
+  // Project real-world lat/lon into world space using the same origin,
+  // equirectangular projection, and compression scale as the route pipeline.
+  project(lat: number, lon: number): THREE.Vector3 {
+    const { origin, scale } = routeData;
+    const mLat = 110574;
+    const mLon = 111320 * Math.cos((origin.lat * Math.PI) / 180);
+    return new THREE.Vector3((lon - origin.lon) * mLon * scale, 0, -(lat - origin.lat) * mLat * scale);
+  }
+
   // Triangle-strip ribbon along the polyline, offset by perpendiculars at each point.
   private buildRibbon(): THREE.Mesh {
     const pts = this.points;

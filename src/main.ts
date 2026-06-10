@@ -4,6 +4,7 @@ import { Car } from './car';
 import { Road } from './road';
 import { Recognition } from './recognition';
 import { buildScenery } from './scenery';
+import { Potholes } from './potholes';
 import { initNarrator, narrate } from './narrator';
 
 const app = document.getElementById('app')!;
@@ -28,6 +29,8 @@ scene.add(sun);
 const road = new Road();
 scene.add(road.object);
 scene.add(buildScenery(road));
+const potholes = new Potholes(road);
+scene.add(potholes.object);
 
 const car = new Car();
 // Spawn at the route start, facing along it, in the LEFT lane.
@@ -52,7 +55,7 @@ narrate('game.start');
 
 // Dev-only handle for automated drive tests (stripped from production builds).
 if (import.meta.env.DEV) {
-  (window as unknown as Record<string, unknown>).__dj = { car, road };
+  (window as unknown as Record<string, unknown>).__dj = { car, road, potholes };
 }
 
 const camOffset = new THREE.Vector3();
@@ -64,6 +67,7 @@ renderer.setAnimationLoop(() => {
   last = now;
 
   car.update(dt, input);
+  potholes.update(car);
   recognition.update(car.position);
 
   // Chase camera: behind and above the car, smoothed.
@@ -71,6 +75,6 @@ renderer.setAnimationLoop(() => {
   camera.position.lerp(car.position.clone().add(camOffset), 1 - Math.exp(-5 * dt));
   camera.lookAt(car.position.x, car.position.y + 1.2, car.position.z);
 
-  hud.textContent = `${Math.round(car.speedKmh)} km/h`;
+  hud.textContent = `${Math.round(car.speedKmh)} km/h${car.tyreBurst ? '  \u{1F6DE} TYRE BUST!' : ''}`;
   renderer.render(scene, camera);
 });

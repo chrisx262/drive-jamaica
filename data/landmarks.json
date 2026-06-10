@@ -1,13 +1,61 @@
 {
-  "comment": "Recognition layer 3: landmark popups. Anchored to a named route segment at fraction t along it. Each gets a stable id from creation (standing rule - future ad system depends on this pattern for billboards).",
+  "comment": "Recognition layer 3: landmark popups. Coordinates are real OSM lat/lon, projected into world space via the route origin+scale at load. radius = trigger distance in compressed-world meters. Each landmark has a stable id from creation (standing rule - the future ad system depends on this pattern).",
   "landmarks": [
     {
       "id": "lmk-gun-boat-beach",
       "name": "Gun Boat Beach",
-      "segment": "Norman Manley Highway / Palisadoes Road",
-      "t": 0.3,
-      "side": "left",
+      "lat": 17.9443,
+      "lon": -76.7617,
+      "radius": 160,
       "fact": "Harbour-side bathing spot on the Palisadoes strip"
+    },
+    {
+      "id": "lmk-national-stadium",
+      "name": "National Stadium",
+      "lat": 18.0014,
+      "lon": -76.7726,
+      "radius": 320,
+      "fact": "Home of Jamaican track and football glory — Excelsior High is just across Mountain View Avenue"
+    },
+    {
+      "id": "lmk-devon-house",
+      "name": "Devon House",
+      "lat": 18.0147,
+      "lon": -76.79,
+      "radius": 250,
+      "fact": "1881 mansion of George Stiebel, Jamaica's first black millionaire — and legendary ice cream"
+    },
+    {
+      "id": "lmk-hwt-clock",
+      "name": "Half Way Tree Clock Tower",
+      "lat": 18.0109,
+      "lon": -76.796,
+      "radius": 200,
+      "fact": "The 1813 clock tower at the crossroads of Kingston"
+    },
+    {
+      "id": "lmk-flat-bridge",
+      "name": "Flat Bridge",
+      "lat": 18.0614,
+      "lon": -76.9845,
+      "radius": 160,
+      "fact": "Historic one-lane bridge over the Rio Cobre in Bog Walk gorge"
+    },
+    {
+      "id": "lmk-faiths-pen",
+      "name": "Faith's Pen",
+      "lat": 18.2347,
+      "lon": -77.0951,
+      "radius": 220,
+      "fact": "Legendary roadside stop — jerk chicken, roast yam and festival"
+    },
+    {
+      "id": "lmk-dunns-river",
+      "name": "Dunn's River Falls",
+      "lat": 18.4155,
+      "lon": -77.1377,
+      "radius": 250,
+      "fact": "Jamaica's famous climbable waterfall — journey's end"
     }
   ]
 }

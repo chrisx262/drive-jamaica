@@ -3,7 +3,6 @@ import landmarksData from '../data/landmarks.json';
 import type { Road } from './road';
 import { narrate } from './narrator';
 
-const LANDMARK_RADIUS = 110; // meters (compressed world)
 
 // Recognition system: layer 1 road callouts + layer 3 landmark popups.
 // Community signs (layer 2) extend this module later.
@@ -13,7 +12,7 @@ export class Recognition {
   private popupEl: HTMLElement;
   private hideTimer: ReturnType<typeof setTimeout> | undefined;
   private popupTimer: ReturnType<typeof setTimeout> | undefined;
-  private landmarks: { name: string; fact: string; pos: THREE.Vector3; shown: boolean }[] = [];
+  private landmarks: { name: string; fact: string; pos: THREE.Vector3; radius: number; shown: boolean }[] = [];
 
   constructor(private road: Road) {
     this.calloutEl = document.getElementById('callout')!;
@@ -28,10 +27,7 @@ export class Recognition {
     document.body.appendChild(this.popupEl);
 
     for (const l of landmarksData.landmarks) {
-      const seg = road.segments.find((s) => s.name === l.segment);
-      if (!seg) continue;
-      const idx = Math.min(seg.from + Math.round((seg.to - 1 - seg.from) * l.t), seg.to - 1);
-      this.landmarks.push({ name: l.name, fact: l.fact, pos: road.points[idx], shown: false });
+      this.landmarks.push({ name: l.name, fact: l.fact, pos: road.project(l.lat, l.lon), radius: l.radius, shown: false });
     }
   }
 
@@ -47,7 +43,7 @@ export class Recognition {
     }
 
     for (const l of this.landmarks) {
-      if (l.shown || l.pos.distanceTo(carPos) > LANDMARK_RADIUS) continue;
+      if (l.shown || l.pos.distanceTo(carPos) > l.radius) continue;
       l.shown = true;
       this.popupEl.innerHTML = `\u{1F4CD} <b>${l.name}</b><br>${l.fact}`;
       this.popupEl.style.opacity = '1';

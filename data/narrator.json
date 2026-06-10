@@ -11,7 +11,11 @@
       "See {landmark} deh!"
     ],
     "pothole.burst": [
-      "Yuh tyre bust, brethren!"
+      "Yuh tyre bust, brethren!",
+      "Wheeel! Mind di pothole dem!"
+    ],
+    "tyre.fixed": [
+      "Tyre patch up — gwaan!"
     ]
   }
 }
