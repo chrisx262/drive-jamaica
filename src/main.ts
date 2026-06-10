@@ -28,8 +28,12 @@ const road = new Road();
 scene.add(road.object);
 
 const car = new Car();
-// Spawn on the LEFT lane, facing down the route.
-car.object.position.set(-2, 0, 0);
+// Spawn at the route start, facing along it, in the LEFT lane.
+const p0 = road.points[0];
+const dir = road.points[1].clone().sub(p0).normalize();
+car.heading = Math.atan2(-dir.x, -dir.z);
+car.object.position.copy(p0).addScaledVector(new THREE.Vector3(dir.z, 0, -dir.x), 2);
+car.object.rotation.y = car.heading;
 scene.add(car.object);
 
 const input = initInput();

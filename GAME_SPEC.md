@@ -84,7 +84,7 @@ The narrator can comment on any entry in all three layers (data-driven event→l
 ## Tech Stack
 - **Frontend**: Three.js + TypeScript, Vite build. Single-page, no framework needed (or minimal).
 - **Assets**: MagicaVoxel / Blockbench → GLB. Shared low-poly palette (greens, zinc roofs, Jamaican color accents).
-- **World pipeline**: Overpass API → extract route + key road polylines → simplify → JSON → runtime road-ribbon generator + procedural building/vegetation scatter. Landmarks placed by lat/lon → world coords.
+- **World pipeline**: route polyline + per-stretch road names extracted via OSRM routing over OSM (`scripts/fetch-route.mjs`, waypoint-pinned to the scenic road) → simplified → `data/route.json` → runtime road-ribbon generator. Overpass API still used for surroundings: buildings/vegetation scatter, landmark coordinates, community boundaries. Landmarks placed by lat/lon → world coords.
 - **Multiplayer server**: Node.js + ws (or uWebSockets.js). Stateless rooms, position broadcast.
 - **Audio**: Howler.js or native WebAudio; narrator lines as compressed audio sprites.
 - **Hosting**: static frontend on Cloudflare Pages/Vercel; WS server on Fly.io/Railway. Optimize for low bandwidth (diaspora + Jamaica mobile data): target < 10 MB initial load, lazy-load route chunks.

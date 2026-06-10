@@ -52,16 +52,23 @@ export class Road {
     const geo = new THREE.BufferGeometry().setFromPoints(
       this.points.map((p) => new THREE.Vector3(p.x, 0.02, p.z))
     );
-    return new THREE.Line(geo, new THREE.LineDashedMaterial({ color: 0xfed100, dashSize: 3, gapSize: 3 }));
+    const line = new THREE.Line(geo, new THREE.LineDashedMaterial({ color: 0xfed100, dashSize: 3, gapSize: 3 }));
+    line.computeLineDistances();
+    return line;
   }
 
   private buildGround(): THREE.Mesh {
+    // Sized and centered to cover the whole route's bounding box.
+    const box = new THREE.Box3().setFromPoints(this.points);
+    const size = box.getSize(new THREE.Vector3());
+    const center = box.getCenter(new THREE.Vector3());
+    const extent = Math.max(size.x, size.z) + 4000;
     const ground = new THREE.Mesh(
-      new THREE.PlaneGeometry(4000, 4000),
+      new THREE.PlaneGeometry(extent, extent),
       new THREE.MeshLambertMaterial({ color: 0x4e8c3a })
     );
     ground.rotation.x = -Math.PI / 2;
-    ground.position.y = -0.05;
+    ground.position.set(center.x, -0.05, center.z);
     return ground;
   }
 
