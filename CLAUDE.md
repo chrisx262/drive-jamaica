@@ -19,7 +19,7 @@ A lightweight multiplayer browser driving game set in Jamaica, in the spirit of 
 - Static hosting (Cloudflare Pages/Vercel) + small WS server (Fly.io/Railway)
 
 ## V1 scope guardrails
-One route only: Norman Manley Airport → Kingston → A3 → Ocho Rios. No accounts, no races, no player collisions, no ad backend. If a task drifts beyond this, flag it instead of building it.
+One route only — the scenic road: Norman Manley Airport → Kingston → Bog Walk gorge → Linstead → Moneague → Faith's Pen → Fern Gully → Ocho Rios (ends at Dunn's River Falls, cinematic bath finale). No accounts, no races, no player collisions, no ad backend. If a task drifts beyond this, flag it instead of building it.
 
 ## Conventions
 - TypeScript strict mode; small modules; no framework unless justified.

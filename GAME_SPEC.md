@@ -13,7 +13,9 @@ Reference for feel and scope: fly.pieter.com (instant load, no install, ambient 
 4. **Voice** — Jamaican narrator reacts to everything ("Yuh tyre bust, brethren!").
 
 ## V1 Scope: The Airport Run
-Single route: Norman Manley International Airport → Palisadoes → Kingston (Windward Rd → through town, passing Half Way Tree) → A3 north through Stony Hill / Junction → Ocho Rios (ending at Dunn's River Falls area).
+Single route — the scenic road (owner decision, 2026-06-10): Norman Manley International Airport → Palisadoes → Kingston (Windward Rd → through town, passing Half Way Tree) → Spanish Town Road out of the city → Bog Walk gorge (Flat Bridge) → Linstead → Moneague → **Faith's Pen** → **Fern Gully** → Ocho Rios, ending at Dunn's River Falls with the bath finale (see Gameplay).
+
+The Kingston leg is curated for recognition (it threads past landmarks like Half Way Tree rather than taking the fastest real-world path). The toll highway and the Junction road (A3 via Castleton) are deferred — candidates for a route fork in a later version.
 
 - Real road geometry extracted from OpenStreetMap (simplified polyline → generated road ribbon).
 - Stylized low-poly/voxel surroundings, procedurally scattered along the route.
@@ -31,9 +33,11 @@ Single route: Norman Manley International Airport → Palisadoes → Kingston (W
 - **Dogs**: chase and bark at the car through towns; city dogs in Kingston famously look both ways before crossing.
 - **Goat herds**: cross country roads unattended; hitting one has consequences (score/damage + narrator scolding).
 - **Cow herder event**: man with cows blocking a country road — player must swerve into the bushes and back.
-- **Off-road mountain moment**: a wrong turn option off the A3 that becomes potholes-then-no-road on a mountainside.
+- **Off-road mountain moment**: a wrong turn option in the hill country (Moneague/Mount Rosser stretch) that becomes potholes-then-no-road on a mountainside.
 - **Kingston traffic**: serious NPC gridlock in city sections (Windward Rd, Half Way Tree area). Traffic density is a gameplay feature, not background.
 - **Monster Truck transformation**: being stuck in traffic fills a "frustration meter." When full, the player can transform into a monster truck, crush the cars ahead (cartoon-style flattening, no gore — flattened drivers shake fists), then auto-revert to the Corolla and keep moving. Limited duration; meter only charges in traffic so the mechanic appears exactly where it's needed. Narrator line on transform (e.g., "BIG TRUCK TING!"). V1: crushes NPC traffic only, never real players.
+- **Faith's Pen stop**: optional pull-over at the famous roadside cookshops — jerk chicken, roast yam, festival. Eating repairs tyre damage and gives a short feel-good boost; narrator celebrates the tradition. Skippable, but the game makes it tempting.
+- **Dunn's River bath finale**: the run ends at Dunn's River Falls with a short cinematic — the driver gets out and takes a cool bath under the waterfall, narrator congratulation, then the score screen. No on-foot gameplay in V1.
 - **Landmark popups**: passing a landmark shows its name + one-line fact; narrator may comment.
 - **Scoring**: distance, near-misses, style (swerves), tyres burst, goats spared.
 
@@ -54,18 +58,20 @@ Single route: Norman Manley International Airport → Palisadoes → Kingston (W
 **Tier 2 — Sponsored Buildings (direct sales, premium):** Real businesses' actual locations modeled as branded voxel landmarks on the route. Anchor targets: KFC and Burger King Jamaica (KFC Jamaica's locations are widely reported among the highest-grossing in the world — verify and source claims before pitching), plus hotels and resorts along the Kingston→Ochi corridor. Pitch: their real store, in the game, where diaspora players drive past it daily. Sponsored buildings can include light interactions (drive-thru honk, narrator shout-out). Direct outreach with a pitch deck; deck research is a pre-launch task.
 
 ## Landmarks (V1 candidates)
-Norman Manley Airport, Palisadoes strip, Port Royal (signpost), National Heroes Park, Devon House, Emancipation Park, Half Way Tree clock tower, Bob Marley Museum (exterior), **Calabar High School (featured — founder's alma mater)**, other prominent high schools (Kingston College, Campion, St. George's, Jamaica College — final list with the team), Castleton Gardens (A3), Fern Gully, Ocho Rios bay, Dunn's River Falls, KFC/Burger King locations on route (sponsorship targets — see Monetization Tier 2), Tastee and Juici Patties locations on route (iconic Jamaican patty shops — recognition landmarks and Tier 2 sponsorship targets).
+Norman Manley Airport, Palisadoes strip, Port Royal (signpost), National Heroes Park, Devon House, Emancipation Park, Half Way Tree clock tower, Bob Marley Museum (exterior), Flat Bridge / Bog Walk gorge, Faith's Pen cookshops, Fern Gully, Ocho Rios bay, Dunn's River Falls, KFC/Burger King locations on route (sponsorship targets — see Monetization Tier 2), Tastee and Juici Patties locations on route (iconic Jamaican patty shops — recognition landmarks and Tier 2 sponsorship targets). Castleton Gardens moves to the future Junction-road route.
+
+**High schools (owner decision, 2026-06-10): V1 places only schools on or visible from the route** — owner to provide the on-route list (candidates: Jamaica College on Old Hope Rd if the Kingston leg passes it). **Calabar High School stays featured (founder's alma mater).** The full prominent-schools roster (Kingston College, Campion, St. George's, etc.) lands in V2 Kingston open city.
 
 ## Recognition System (roads, communities, landmarks)
 The core of the recognition pillar — three layers of place identification, all data-driven from `data/` JSON:
 
 1. **Road callouts**: whenever the player turns onto a road, its name is shown (street-sign-style HUD popup). Examples: Mountain View Avenue, Old Hope Road, Windward Road. Every named road on the route gets this, not a curated subset.
-2. **Community signs**: passing into a community/district shows its name (in-world sign + HUD). Examples: Wareika Hill, Half Way Tree, Stony Hill. Full list per the communities research task below.
+2. **Community signs**: passing into a community/district shows its name (in-world sign + HUD). Examples: Wareika Hill, Half Way Tree, Linstead, Moneague. Full list per the communities research task below.
 3. **Landmark popups**: prominent places show name + one-line fact as you pass. Examples: Devon House, Jamaica College, Tastee and Juici Patties shops, Bob Marley Museum.
 
 The narrator can comment on any entry in all three layers (data-driven event→line mapping, same as other narrator triggers). This system serves the diaspora ("places I used to frequent") and doubles as a must-see guide for tourists.
 
-**Communities research task:** compile the communities/districts along the full Airport→Kingston→A3→Ochi route (owner knows many; fill gaps with research). Each community gets a name sign in-game; this is core to the recognition pillar.
+**Communities research task:** compile the communities/districts along the full Airport→Kingston→Bog Walk→Fern Gully→Ochi route (owner knows many; fill gaps with research). Each community gets a name sign in-game; this is core to the recognition pillar.
 
 ## Tech Stack
 - **Frontend**: Three.js + TypeScript, Vite build. Single-page, no framework needed (or minimal).
