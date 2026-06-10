@@ -38,7 +38,7 @@ export class Road {
       positions.push(left.x, 0.01, left.z, right.x, 0.01, right.z);
       if (i > 0) {
         const a = (i - 1) * 2;
-        indices.push(a, a + 1, a + 2, a + 1, a + 3, a + 2);
+        indices.push(a, a + 2, a + 1, a + 1, a + 2, a + 3);
       }
     }
     const geo = new THREE.BufferGeometry();

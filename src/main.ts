@@ -44,6 +44,11 @@ window.addEventListener('resize', () => {
 
 narrate('game.start');
 
+// Dev-only handle for automated drive tests (stripped from production builds).
+if (import.meta.env.DEV) {
+  (window as unknown as Record<string, unknown>).__dj = { car, road };
+}
+
 const camOffset = new THREE.Vector3();
 let last = performance.now();
 
