@@ -20,7 +20,7 @@ Low-poly / voxel stylization (MagicaVoxel/Blockbench per GAME_SPEC), but every c
    **Owner-supplied video reference for legs 2–3:** [Airport to Half Way Tree](https://www.youtube.com/watch?v=rDZTtxHXCRc) — the game's entire opening drive in real footage; also useful to verify the Kingston street-by-street route.
 4. **Hagley Park Rd → Spanish Town Rd** — commercial/industrial grit, market sprawl, busy junctions.
 5. **Mandela Hwy → Spanish Town** — flat plains, cane and scrub, old town square with Georgian edges.
-6. **Bog Walk gorge** — the drama: sheer limestone walls, Rio Cobre alongside the road, overhanging bush, Flat Bridge one-lane moment.
+6. **Bog Walk gorge** — the drama: sheer limestone walls, Rio Cobre alongside the road, overhanging bush, Flat Bridge one-lane moment. **Owner-supplied video reference:** [Driving Through Bogwalk Gorge Jamaica](https://www.youtube.com/watch?v=JPOw9MN4BPQ).
 7. **Linstead → Ewarton** — market-town main streets ("Linstead Market" energy), then the climb.
 8. **Mount Rosser / Faith's Pen** — switchbacks in mist-green hills; Faith's Pen = row of smoking jerk stalls, zinc roofs, hand-painted signs. **Owner-supplied video reference:** [Faith's Pen, Jamaica](https://www.youtube.com/watch?v=F3CCgeHitXU) — the real stalls; also feeds the food-stop mechanic design.
 9. **Moneague → Walkers Wood** — cool-country farmland, pastures, dry stone walls.
@@ -38,5 +38,6 @@ Zinc fence panels, route taxi (white Probox w/ red plate), JUTC yellow bus, hand
   - [Ferngully, Jamaica (short)](https://www.youtube.com/shorts/S9U1_EYk67U) — leg 10: the green tunnel
   - [Fern Gully | Jamaica Famous Gully (short)](https://www.youtube.com/shorts/TJUj3mdc9BY) — leg 10: canopy + winding descent
   - [Airport to Half Way Tree](https://www.youtube.com/watch?v=rDZTtxHXCRc) — legs 2–3: the full Kingston opening drive, also a route-path check
+  - [Driving Through Bogwalk Gorge Jamaica](https://www.youtube.com/watch?v=JPOw9MN4BPQ) — leg 6: limestone walls, Rio Cobre, Flat Bridge
 - fly.pieter.com — scope/feel benchmark, NOT visual style
 - Owner descriptions captured so far: GAME_SPEC "Palisadoes leg scenery", pothole rule, school placements
