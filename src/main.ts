@@ -33,9 +33,17 @@ const potholes = new Potholes(road);
 scene.add(potholes.object);
 
 const car = new Car();
-// Spawn at the route start, facing along it, in the LEFT lane.
-const p0 = road.points[0];
-const dir = road.points[1].clone().sub(p0).normalize();
+// Spawn at the route start — or at ?jump=<road name match> for quick scenery
+// review (e.g. /?jump=gorge, /?jump=milford, /?jump=faith).
+let startIndex = 0;
+const jump = new URLSearchParams(location.search).get('jump');
+if (jump) {
+  const seg = road.segments.find((s) => s.name.toLowerCase().includes(jump.toLowerCase()));
+  if (seg) startIndex = seg.from;
+}
+// Face along the route, in the LEFT lane.
+const p0 = road.points[startIndex];
+const dir = road.points[startIndex + 1].clone().sub(p0).normalize();
 car.heading = Math.atan2(-dir.x, -dir.z);
 car.object.position.copy(p0).addScaledVector(new THREE.Vector3(dir.z, 0, -dir.x), 2);
 car.object.rotation.y = car.heading;
