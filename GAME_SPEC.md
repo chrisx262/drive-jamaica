@@ -30,7 +30,7 @@ The Kingston leg is curated for recognition (it threads past landmarks like Half
 ## Gameplay (V1)
 - **Arcade driving model** — kinematic, forgiving, fun-first. No realistic sim physics. Steering authority attenuates with speed (owner feedback 2026-06-10: full-rate steering at speed felt too sensitive).
 - **World scale (owner decision, 2026-06-10): compress for fun.** Real OSM geometry scaled to ~30% distance, so the full Airport→Ochi run is ~36 km (~15 min at top speed) instead of a 50-minute literal drive. Road shapes and turn-by-turn names stay real.
-- **Potholes**: scattered on road; hitting one at speed damages a tyre → handling penalty + narrator line. Fixable at roadside "tyre shop" stops.
+- **Potholes**: scattered on road; hitting one at speed damages a tyre → handling penalty + narrator line. Fixable at roadside "tyre shop" stops. **Owner rule (2026-06-10): the Palisadoes airport road is pothole-free** — government maintains the showcase road out of the airport — **potholes begin just past the Harbour View roundabout.**
 - **Dogs**: chase and bark at the car through towns; city dogs in Kingston famously look both ways before crossing.
 - **Goat herds**: cross country roads unattended; hitting one has consequences (score/damage + narrator scolding).
 - **Cow herder event**: man with cows blocking a country road — player must swerve into the bushes and back.

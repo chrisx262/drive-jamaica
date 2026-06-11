@@ -8,6 +8,9 @@ const MAX_GAP = 280;
 const HIT_RADIUS = 1.4;
 const BURST_SPEED = 13; // m/s — slower than this rolls through safely
 const PATCH_AFTER = 18_000; // ms; placeholder until tyre-shop stops exist (see GAME_SPEC)
+// Owner rule: government maintains the airport showcase road — no potholes
+// until just past the Harbour View roundabout at the end of the Palisadoes.
+const PRISTINE_UNTIL_SEGMENT = 'Norman Manley Highway / Palisadoes Road';
 
 // Potholes scattered deterministically along the route. Hit one fast: tyre
 // bursts (speed cap + wobble in Car) and the narrator lets you know.
@@ -23,7 +26,14 @@ export class Potholes {
     geo.rotateX(-Math.PI / 2);
     const mat = new THREE.MeshLambertMaterial({ color: 0x131316 });
 
-    let nextAt = 200; // let the player get rolling first
+    // Distance along the route where the pristine stretch ends
+    const pristine = road.segments.find((s) => s.name === PRISTINE_UNTIL_SEGMENT);
+    let pristineEnd = 0;
+    if (pristine) {
+      for (let i = 1; i < pristine.to; i++) pristineEnd += road.points[i - 1].distanceTo(road.points[i]);
+    }
+
+    let nextAt = pristineEnd + 80; // potholes start just past the roundabout
     let travelled = 0;
     for (let i = 1; i < road.points.length; i++) {
       const a = road.points[i - 1];
