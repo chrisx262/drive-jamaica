@@ -23,7 +23,7 @@ Low-poly / voxel stylization (MagicaVoxel/Blockbench per GAME_SPEC), but every c
 7. **Linstead → Ewarton** — market-town main streets ("Linstead Market" energy), then the climb.
 8. **Mount Rosser / Faith's Pen** — switchbacks in mist-green hills; Faith's Pen = row of smoking jerk stalls, zinc roofs, hand-painted signs. **Owner-supplied video reference:** [Faith's Pen, Jamaica](https://www.youtube.com/watch?v=F3CCgeHitXU) — the real stalls; also feeds the food-stop mechanic design.
 9. **Moneague → Walkers Wood** — cool-country farmland, pastures, dry stone walls.
-10. **Fern Gully** — tunnel of giant ferns and tree canopy, road winding down in green shade.
+10. **Fern Gully** — tunnel of giant ferns and tree canopy, road winding down in green shade. **Owner-supplied video references:** [Ferngully, Jamaica](https://www.youtube.com/shorts/S9U1_EYk67U) and [Fern Gully | Jamaica Famous Gully](https://www.youtube.com/shorts/TJUj3mdc9BY).
 11. **Ocho Rios arrival** — turquoise sea bursts into view, resort strip, craft stalls, Dunn's River finale.
 
 ## Recurring props (voxel asset wishlist)
@@ -34,5 +34,7 @@ Zinc fence panels, route taxi (white Probox w/ red plate), JUTC yellow bus, hand
 - **Owner-supplied videos** (drive-through footage of actual route legs):
   - [Gunboat Beach / Harbour View → NMIA, Palisadoes Road](https://www.youtube.com/watch?v=x9ywoOqT-Mk) — leg 1: sea both sides, scrub, the roundabout
   - [Faith's Pen, Jamaica](https://www.youtube.com/watch?v=F3CCgeHitXU) — leg 8: the jerk stalls, for both scenery and the food-stop mechanic
+  - [Ferngully, Jamaica (short)](https://www.youtube.com/shorts/S9U1_EYk67U) — leg 10: the green tunnel
+  - [Fern Gully | Jamaica Famous Gully (short)](https://www.youtube.com/shorts/TJUj3mdc9BY) — leg 10: canopy + winding descent
 - fly.pieter.com — scope/feel benchmark, NOT visual style
 - Owner descriptions captured so far: GAME_SPEC "Palisadoes leg scenery", pothole rule, school placements
