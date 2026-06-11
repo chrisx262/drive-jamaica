@@ -17,6 +17,7 @@ Low-poly / voxel stylization (MagicaVoxel/Blockbench per GAME_SPEC), but every c
 1. **Palisadoes** — bare windswept spit: sea both sides, low scrub, the airport behind, mountains ahead. Pristine asphalt (owner: government maintains the airport road; potholes start after Harbour View roundabout). **Owner-supplied video reference:** [Gunboat Beach / Harbour View to NMIA, Palisadoes Road](https://www.youtube.com/watch?v=x9ywoOqT-Mk) — real footage of this exact leg.
 2. **Windward Rd → Mountain View Ave** — dense Kingston: zinc fences, walled yards, shop fronts with painted ads, route taxis, National Stadium.
 3. **Trafalgar/Hope Rd → Half Way Tree** — uptown: bigger trees, Devon House lawns, plazas, the clock tower, traffic.
+   **Owner-supplied video reference for legs 2–3:** [Airport to Half Way Tree](https://www.youtube.com/watch?v=rDZTtxHXCRc) — the game's entire opening drive in real footage; also useful to verify the Kingston street-by-street route.
 4. **Hagley Park Rd → Spanish Town Rd** — commercial/industrial grit, market sprawl, busy junctions.
 5. **Mandela Hwy → Spanish Town** — flat plains, cane and scrub, old town square with Georgian edges.
 6. **Bog Walk gorge** — the drama: sheer limestone walls, Rio Cobre alongside the road, overhanging bush, Flat Bridge one-lane moment.
@@ -36,5 +37,6 @@ Zinc fence panels, route taxi (white Probox w/ red plate), JUTC yellow bus, hand
   - [Faith's Pen, Jamaica](https://www.youtube.com/watch?v=F3CCgeHitXU) — leg 8: the jerk stalls, for both scenery and the food-stop mechanic
   - [Ferngully, Jamaica (short)](https://www.youtube.com/shorts/S9U1_EYk67U) — leg 10: the green tunnel
   - [Fern Gully | Jamaica Famous Gully (short)](https://www.youtube.com/shorts/TJUj3mdc9BY) — leg 10: canopy + winding descent
+  - [Airport to Half Way Tree](https://www.youtube.com/watch?v=rDZTtxHXCRc) — legs 2–3: the full Kingston opening drive, also a route-path check
 - fly.pieter.com — scope/feel benchmark, NOT visual style
 - Owner descriptions captured so far: GAME_SPEC "Palisadoes leg scenery", pothole rule, school placements
