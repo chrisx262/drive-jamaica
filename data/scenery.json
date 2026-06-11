@@ -9,6 +9,44 @@
         { "side": "right", "from": 5, "to": 450, "color": "#1c5a86", "y": -0.03, "label": "rough open sea" }
       ],
       "mountains": { "distance": 1600, "spread": 5200, "count": 14, "color": "#3d6b4f" }
+    },
+    {
+      "segment": "Bog Walk Gorge",
+      "walls": [
+        { "side": "left", "offset": 12, "height": 48, "color": "#c9bfa8" },
+        { "side": "right", "offset": 26, "height": 32, "color": "#bdb29a" }
+      ],
+      "strips": [
+        { "side": "right", "from": 5, "to": 22, "color": "#3f7d63", "y": -0.02, "label": "Rio Cobre" }
+      ]
+    },
+    {
+      "segment": "Bogwalk Gorge Road",
+      "walls": [
+        { "side": "left", "offset": 12, "height": 44, "color": "#c9bfa8" },
+        { "side": "right", "offset": 26, "height": 30, "color": "#bdb29a" }
+      ],
+      "strips": [
+        { "side": "right", "from": 5, "to": 22, "color": "#3f7d63", "y": -0.02, "label": "Rio Cobre" }
+      ]
+    },
+    {
+      "segment": "River Road",
+      "walls": [
+        { "side": "left", "offset": 13, "height": 38, "color": "#c9bfa8" },
+        { "side": "right", "offset": 28, "height": 24, "color": "#bdb29a" }
+      ],
+      "strips": [
+        { "side": "right", "from": 5, "to": 24, "color": "#3f7d63", "y": -0.02, "label": "Rio Cobre" }
+      ]
+    },
+    {
+      "segment": "Milford Road",
+      "walls": [
+        { "side": "left", "offset": 7, "height": 15, "color": "#2d5d23" },
+        { "side": "right", "offset": 7, "height": 15, "color": "#2d5d23" }
+      ],
+      "canopy": { "halfWidth": 14, "height": 13, "color": "#234a1c", "opacity": 0.96 }
     }
   ]
 }
