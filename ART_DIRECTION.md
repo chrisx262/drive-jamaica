@@ -25,7 +25,7 @@ Low-poly / voxel stylization (MagicaVoxel/Blockbench per GAME_SPEC), but every c
 8. **Mount Rosser / Faith's Pen** — switchbacks in mist-green hills; Faith's Pen = row of smoking jerk stalls, zinc roofs, hand-painted signs. **Owner-supplied video reference:** [Faith's Pen, Jamaica](https://www.youtube.com/watch?v=F3CCgeHitXU) — the real stalls; also feeds the food-stop mechanic design.
 9. **Moneague → Walkers Wood** — cool-country farmland, pastures, dry stone walls.
 10. **Fern Gully** — tunnel of giant ferns and tree canopy, road winding down in green shade. **Owner-supplied video references:** [Ferngully, Jamaica](https://www.youtube.com/shorts/S9U1_EYk67U) and [Fern Gully | Jamaica Famous Gully](https://www.youtube.com/shorts/TJUj3mdc9BY).
-11. **Ocho Rios arrival** — turquoise sea bursts into view, resort strip, craft stalls, Dunn's River finale. **Owner-supplied video reference:** [Driving into Dunns River Falls](https://www.youtube.com/watch?v=dhOhaHXR6SI) — the arrival drive + entrance; reference for the cinematic bath finale setting.
+11. **Ocho Rios arrival** — turquoise sea bursts into view, resort strip, craft stalls, Dunn's River finale. **Owner-supplied video references:** [Driving into Dunns River Falls](https://www.youtube.com/watch?v=dhOhaHXR6SI) — the arrival drive + entrance; [Dunn's River Falls: Everything You Need to Know](https://www.youtube.com/watch?v=4a_rP5NRa_I) — the falls themselves, primary reference for the cinematic bath finale scene (terraced cascades, climbers, the pools).
 
 ## Recurring props (voxel asset wishlist)
 Zinc fence panels, route taxi (white Probox w/ red plate), JUTC yellow bus, hand-cart vendor, jerk drum smoker, bamboo clumps, coconut + royal palm, mango/breadfruit/poinciana trees, goats (essential), brown dogs, cane fields, fruit stalls, painted shop bars, community name signs (green/gold), JA road signs, yam hills, egrets.
@@ -40,5 +40,6 @@ Zinc fence panels, route taxi (white Probox w/ red plate), JUTC yellow bus, hand
   - [Airport to Half Way Tree](https://www.youtube.com/watch?v=rDZTtxHXCRc) — legs 2–3: the full Kingston opening drive, also a route-path check
   - [Driving Through Bogwalk Gorge Jamaica](https://www.youtube.com/watch?v=JPOw9MN4BPQ) — leg 6: limestone walls, Rio Cobre, Flat Bridge
   - [Driving into Dunns River Falls](https://www.youtube.com/watch?v=dhOhaHXR6SI) — leg 11: the arrival + finale setting
+  - [Dunn's River Falls: Everything You Need to Know](https://www.youtube.com/watch?v=4a_rP5NRa_I) — the falls up close: bath finale scene reference
 - fly.pieter.com — scope/feel benchmark, NOT visual style
 - Owner descriptions captured so far: GAME_SPEC "Palisadoes leg scenery", pothole rule, school placements
