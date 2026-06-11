@@ -14,7 +14,7 @@ Low-poly / voxel stylization (MagicaVoxel/Blockbench per GAME_SPEC), but every c
 - **Earth** — red dirt cuttings `#a0522d`, limestone gorge rock `#c9bfa8`, sand `#e3d29f`
 
 ## Look of each leg (V1 route)
-1. **Palisadoes** — bare windswept spit: sea both sides, low scrub, the airport behind, mountains ahead. Pristine asphalt (owner: government maintains the airport road; potholes start after Harbour View roundabout).
+1. **Palisadoes** — bare windswept spit: sea both sides, low scrub, the airport behind, mountains ahead. Pristine asphalt (owner: government maintains the airport road; potholes start after Harbour View roundabout). **Owner-supplied video reference:** [Gunboat Beach / Harbour View to NMIA, Palisadoes Road](https://www.youtube.com/watch?v=x9ywoOqT-Mk) — real footage of this exact leg.
 2. **Windward Rd → Mountain View Ave** — dense Kingston: zinc fences, walled yards, shop fronts with painted ads, route taxis, National Stadium.
 3. **Trafalgar/Hope Rd → Half Way Tree** — uptown: bigger trees, Devon House lawns, plazas, the clock tower, traffic.
 4. **Hagley Park Rd → Spanish Town Rd** — commercial/industrial grit, market sprawl, busy junctions.
@@ -31,5 +31,7 @@ Zinc fence panels, route taxi (white Probox w/ red plate), JUTC yellow bus, hand
 
 ## Reference material
 - `assets/reference/` — owner photos (authoritative, none yet)
+- **Owner-supplied videos** (drive-through footage of actual route legs):
+  - [Gunboat Beach / Harbour View → NMIA, Palisadoes Road](https://www.youtube.com/watch?v=x9ywoOqT-Mk) — leg 1: sea both sides, scrub, the roundabout
 - fly.pieter.com — scope/feel benchmark, NOT visual style
 - Owner descriptions captured so far: GAME_SPEC "Palisadoes leg scenery", pothole rule, school placements
