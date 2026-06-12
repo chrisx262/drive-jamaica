@@ -2,10 +2,13 @@ import * as THREE from 'three';
 import { initInput } from './input';
 import { Car } from './car';
 import { Road } from './road';
+import type { RoadLike } from './road';
 import { Recognition } from './recognition';
 import { buildScenery } from './scenery';
 import { Potholes } from './potholes';
 import { initNarrator, narrate } from './narrator';
+import { TestTrack } from './testtrack';
+import { Debug } from './debug';
 
 const app = document.getElementById('app')!;
 const hud = document.getElementById('hud')!;
@@ -26,21 +29,43 @@ const sun = new THREE.DirectionalLight(0xfff4d6, 1.2);
 sun.position.set(50, 120, 40);
 scene.add(sun);
 
-const road = new Road();
-scene.add(road.object);
-scene.add(buildScenery(road));
+const params = new URLSearchParams(location.search);
+const isTestTrack = params.has('testtrack');
+const isDebug = isTestTrack || params.has('debug');
+
+let road: RoadLike;
+let recognition: Recognition | null = null;
+
+if (isTestTrack) {
+  const tt = new TestTrack();
+  road = tt;
+  scene.add(tt.object);
+  // Test track supplies its own geometry; no route scenery zones apply.
+} else {
+  const r = new Road();
+  road = r;
+  scene.add(r.object);
+  scene.add(buildScenery(r));
+  recognition = new Recognition(r);
+}
+
 const potholes = new Potholes(road);
 scene.add(potholes.object);
 
 const car = new Car();
+
 // Spawn at the route start — or at ?jump=<road name match> for quick scenery
 // review (e.g. /?jump=gorge, /?jump=milford, /?jump=faith).
+// In test track mode jump is ignored and the car starts at the track beginning.
 let startIndex = 0;
-const jump = new URLSearchParams(location.search).get('jump');
-if (jump) {
-  const seg = road.segments.find((s) => s.name.toLowerCase().includes(jump.toLowerCase()));
-  if (seg) startIndex = seg.from;
+if (!isTestTrack) {
+  const jump = params.get('jump');
+  if (jump) {
+    const seg = road.segments.find((s) => s.name.toLowerCase().includes(jump.toLowerCase()));
+    if (seg) startIndex = seg.from;
+  }
 }
+
 // Face along the route, in the LEFT lane.
 const p0 = road.points[startIndex];
 const dir = road.points[startIndex + 1].clone().sub(p0).normalize();
@@ -51,7 +76,11 @@ scene.add(car.object);
 
 const input = initInput();
 initNarrator();
-const recognition = new Recognition(road);
+
+let debug: Debug | null = null;
+if (isDebug) {
+  debug = new Debug(scene, car, road.points, potholes, isTestTrack);
+}
 
 window.addEventListener('resize', () => {
   camera.aspect = window.innerWidth / window.innerHeight;
@@ -76,7 +105,8 @@ renderer.setAnimationLoop(() => {
 
   car.update(dt, input);
   potholes.update(car);
-  recognition.update(car.position);
+  recognition?.update(car.position);
+  debug?.update(dt);
 
   // Chase camera: behind and above the car, smoothed.
   camOffset.set(Math.sin(car.heading) * 9, 5, Math.cos(car.heading) * 9);

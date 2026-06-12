@@ -74,6 +74,10 @@ export class Car {
     return this.object.position;
   }
 
+  get steerPos(): number {
+    return this.steer;
+  }
+
   get speedKmh(): number {
     return Math.abs(this.speed) * 3.6;
   }
