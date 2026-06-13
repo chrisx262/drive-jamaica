@@ -4,6 +4,7 @@ import { Car } from './car';
 import { Road } from './road';
 import { Recognition } from './recognition';
 import { buildScenery } from './scenery';
+import { buildTrees } from './trees';
 import { Potholes } from './potholes';
 import { initNarrator, narrate } from './narrator';
 
@@ -29,6 +30,7 @@ scene.add(sun);
 const road = new Road();
 scene.add(road.object);
 scene.add(buildScenery(road));
+scene.add(buildTrees(road));
 const potholes = new Potholes(road);
 scene.add(potholes.object);
 
