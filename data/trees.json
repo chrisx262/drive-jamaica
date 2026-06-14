@@ -3,7 +3,7 @@
   "globalSeed": 314159,
   "minLateralOffset": 5,
   "maxLateralOffset": 42,
-  "palmFraction": 0.40,
+  "coconutFraction": 0.40,
   "defaultDensity": 0.008,
   "segments": {
     "Norman Manley Highway / Palisadoes Road": 0.003,
