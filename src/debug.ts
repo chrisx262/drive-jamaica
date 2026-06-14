@@ -101,7 +101,7 @@ export class Debug {
 
     this.infoEl.textContent =
       (this.testTrackMode ? '[TEST TRACK]\n' : '') +
-      `spd  ${speed.toFixed(1)} m/s\n` +
+      `spd  ${(Math.abs(speed) * 3.6).toFixed(0)} km/h\n` +
       `hdg  ${((heading * 180) / Math.PI).toFixed(1)}°\n` +
       `str  ${steer.toFixed(2)}`;
 
