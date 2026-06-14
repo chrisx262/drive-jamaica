@@ -7,7 +7,7 @@ const MAX_REVERSE = -8;
 const ACCEL = 14;
 const BRAKE = 30;
 const DRAG = 4;
-const STEER_RATE = 2.2; // rad/s at full steer, scaled by speed factor
+const STEER_RATE = 1.6; // rad/s at full steer, scaled by speed factor
 const STEER_ATTACK = 5; // how fast the wheel turns in (1/s)
 const STEER_RELEASE = 8; // how fast it re-centers (1/s)
 
@@ -72,6 +72,10 @@ export class Car {
 
   get position(): THREE.Vector3 {
     return this.object.position;
+  }
+
+  get steerPos(): number {
+    return this.steer;
   }
 
   get speedKmh(): number {

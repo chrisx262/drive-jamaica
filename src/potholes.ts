@@ -1,11 +1,11 @@
 import * as THREE from 'three';
-import type { Road } from './road';
+import type { RoadLike } from './road';
 import type { Car } from './car';
 import { narrate } from './narrator';
 
+export const HIT_RADIUS = 1.4; // exported for debug overlay
 const MIN_GAP = 90; // meters between potholes (compressed world)
 const MAX_GAP = 280;
-const HIT_RADIUS = 1.4;
 const BURST_SPEED = 13; // m/s — slower than this rolls through safely
 const PATCH_AFTER = 18_000; // ms; placeholder until tyre-shop stops exist (see GAME_SPEC)
 // Owner rule: government maintains the airport showcase road — no potholes
@@ -16,10 +16,10 @@ const PRISTINE_UNTIL_SEGMENT = 'Norman Manley Highway / Palisadoes Road';
 // bursts (speed cap + wobble in Car) and the narrator lets you know.
 export class Potholes {
   readonly object: THREE.Group;
-  private positions: THREE.Vector3[] = [];
+  readonly positions: THREE.Vector3[] = [];
   private patchTimer: ReturnType<typeof setTimeout> | undefined;
 
-  constructor(road: Road) {
+  constructor(road: RoadLike) {
     this.object = new THREE.Group();
     const rng = mulberry32(2026);
     const geo = new THREE.CircleGeometry(1, 10);

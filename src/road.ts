@@ -7,7 +7,14 @@ export interface RouteSegment {
   to: number;
 }
 
-const ROAD_WIDTH = 8; // two lanes; drive on the LEFT
+export const ROAD_WIDTH = 8; // two lanes; drive on the LEFT
+
+// Minimal interface consumed by Potholes and the debug overlay.
+// Road and TestTrack both satisfy this via structural typing.
+export interface RoadLike {
+  readonly points: THREE.Vector3[];
+  readonly segments: RouteSegment[];
+}
 
 export class Road {
   readonly object: THREE.Group;
