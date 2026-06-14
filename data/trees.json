@@ -6,7 +6,7 @@
   "coconutFraction": 0.40,
   "defaultDensity": 0.008,
   "segments": {
-    "Norman Manley Highway / Palisadoes Road": 0.003,
+    "Norman Manley Highway / Palisadoes Road": { "density": 0.003, "coconutFraction": 1.0 },
     "Sir Florizel Glaspole Boulevard": 0.005,
     "Windward Road": 0.005,
     "Mountain View Avenue": 0.005,

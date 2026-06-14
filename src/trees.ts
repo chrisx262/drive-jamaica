@@ -25,10 +25,17 @@ interface TreePlacement {
   canopyScale: number; // broad canopy radius multiplier
 }
 
+type SegmentConfig = number | { density: number; coconutFraction?: number };
+
+function resolveSegment(cfg: SegmentConfig, globalCoconutFraction: number): { density: number; coconutFraction: number } {
+  if (typeof cfg === 'number') return { density: cfg, coconutFraction: globalCoconutFraction };
+  return { density: cfg.density, coconutFraction: cfg.coconutFraction ?? globalCoconutFraction };
+}
+
 function collectPlacements(road: Road, rng: () => number): TreePlacement[] {
   const out: TreePlacement[] = [];
-  const densityMap = treesData.segments as Record<string, number>;
-  const { minLateralOffset: minOff, maxLateralOffset: maxOff, coconutFraction, defaultDensity } = treesData as typeof treesData & { coconutFraction: number };
+  const segmentMap = treesData.segments as Record<string, SegmentConfig>;
+  const { minLateralOffset: minOff, maxLateralOffset: maxOff, coconutFraction: globalCoconutFraction, defaultDensity } = treesData as typeof treesData & { coconutFraction: number };
 
   let accumL = 0;
   let accumR = 0;
@@ -39,7 +46,9 @@ function collectPlacements(road: Road, rng: () => number): TreePlacement[] {
     const segLen = a.distanceTo(b);
 
     const seg = road.segmentAt(i - 1);
-    const density = seg ? (densityMap[seg.name] ?? defaultDensity) : defaultDensity;
+    const { density, coconutFraction } = seg
+      ? resolveSegment(segmentMap[seg.name] ?? defaultDensity, globalCoconutFraction)
+      : { density: defaultDensity, coconutFraction: globalCoconutFraction };
 
     const dir = b.clone().sub(a).normalize();
     // Driver's left = (dir.z, 0, -dir.x), right is its negation.
