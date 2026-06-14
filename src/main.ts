@@ -5,6 +5,7 @@ import { Road } from './road';
 import type { RoadLike } from './road';
 import { Recognition } from './recognition';
 import { buildScenery } from './scenery';
+import { buildTrees } from './trees';
 import { Potholes } from './potholes';
 import { initNarrator, narrate } from './narrator';
 import { TestTrack } from './testtrack';
@@ -46,6 +47,7 @@ if (isTestTrack) {
   road = r;
   scene.add(r.object);
   scene.add(buildScenery(r));
+  scene.add(buildTrees(r));
   recognition = new Recognition(r);
 }
 
