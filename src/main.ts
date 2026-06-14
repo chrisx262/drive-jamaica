@@ -6,6 +6,7 @@ import type { RoadLike } from './road';
 import { Recognition } from './recognition';
 import { buildScenery } from './scenery';
 import { buildTrees } from './trees';
+import { buildOverpassScatter } from './overpass';
 import { Potholes } from './potholes';
 import { initNarrator, narrate } from './narrator';
 import { TestTrack } from './testtrack';
@@ -48,6 +49,7 @@ if (isTestTrack) {
   scene.add(r.object);
   scene.add(buildScenery(r));
   scene.add(buildTrees(r));
+  scene.add(buildOverpassScatter());
   recognition = new Recognition(r);
 }
 
