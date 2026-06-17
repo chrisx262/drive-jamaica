@@ -1,0 +1,17 @@
+{
+  "comment": "Goat herd crossing config. Herds spawn only on country roads (Linstead–Moneague stretch). Tune minHerdGap/maxHerdGap in world units without touching code.",
+  "minHerdGap": 200,
+  "maxHerdGap": 450,
+  "herdSizeMin": 3,
+  "herdSizeMax": 5,
+  "goatWalkSpeed": 2.2,
+  "hitRadius": 2.0,
+  "wakeRadius": 60,
+  "segments": [
+    { "name": "Linstead - Moneague Road" },
+    { "name": "Pleasant Farm Road" },
+    { "name": "McGrath Road" },
+    { "name": "Moneague - Golden Grove Road" },
+    { "name": "Moneague - Ocho Rios Road" }
+  ]
+}

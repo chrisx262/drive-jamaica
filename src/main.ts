@@ -7,6 +7,7 @@ import { Recognition } from './recognition';
 import { buildScenery } from './scenery';
 import { buildTrees } from './trees';
 import { Potholes } from './potholes';
+import { Goats } from './goats';
 import { initNarrator, narrate } from './narrator';
 import { TestTrack } from './testtrack';
 import { Debug } from './debug';
@@ -54,6 +55,9 @@ if (isTestTrack) {
 const potholes = new Potholes(road);
 scene.add(potholes.object);
 
+const goats = new Goats(road);
+scene.add(goats.object);
+
 const car = new Car();
 
 // Spawn at the route start — or at ?jump=<road name match> for quick scenery
@@ -94,7 +98,7 @@ narrate('game.start');
 
 // Dev-only handle for automated drive tests (stripped from production builds).
 if (import.meta.env.DEV) {
-  (window as unknown as Record<string, unknown>).__dj = { car, road, potholes };
+  (window as unknown as Record<string, unknown>).__dj = { car, road, potholes, goats };
 }
 
 const camOffset = new THREE.Vector3();
@@ -107,6 +111,7 @@ renderer.setAnimationLoop(() => {
 
   car.update(dt, input);
   potholes.update(car);
+  goats.update(car, dt);
   recognition?.update(car.position);
   debug?.update(dt);
 
@@ -115,6 +120,7 @@ renderer.setAnimationLoop(() => {
   camera.position.lerp(car.position.clone().add(camOffset), 1 - Math.exp(-5 * dt));
   camera.lookAt(car.position.x, car.position.y + 1.2, car.position.z);
 
-  hud.textContent = `${Math.round(car.speedKmh)} km/h${car.tyreBurst ? '  \u{1F6DE} TYRE BUST!' : ''}`;
+  const goatPenalty = goats.penaltyCount > 0 ? `  \u{1F410} -${goats.penaltyCount}` : '';
+  hud.textContent = `${Math.round(car.speedKmh)} km/h${car.tyreBurst ? '  \u{1F6DE} TYRE BUST!' : ''}${goatPenalty}`;
   renderer.render(scene, camera);
 });
