@@ -8,7 +8,42 @@
       "Yuh deh pon {road} now!"
     ],
     "landmark.enter": [
-      "See {landmark} deh!"
+      "See {landmark} deh!",
+      "Yuh pass {landmark}!",
+      "{landmark} — real ting dat!",
+      "Look deh — {landmark}!",
+      "Big up {landmark}!"
+    ],
+    "landmark.airport": [
+      "Airport done — di real drive begin now, star!",
+      "Leff Norman Manley — Kingston a wait, nuh dally!"
+    ],
+    "landmark.cultural": [
+      "See {landmark} deh — piece a Jamaica history!",
+      "{landmark} — Jamaica pride right dere!",
+      "Give thanks fi {landmark}!"
+    ],
+    "landmark.school": [
+      "Big up {landmark} — champions grow dere!",
+      "Respect to {landmark}!",
+      "See {landmark} deh — nuff great minds come from dere!"
+    ],
+    "landmark.calabar": [
+      "CALABAR! Di great school — mi school dat, hold it down!",
+      "Big up Calabar! Nuh school bad like dis one — RESPECT!"
+    ],
+    "landmark.food": [
+      "Yow — {landmark} right dere! Hungry?",
+      "{landmark} — di food dem calling yuh, star!",
+      "Pull over nuh? {landmark} right dere!"
+    ],
+    "landmark.faiths-pen": [
+      "FAITH'S PEN! Jerk chicken calling yuh — pull over nuh!",
+      "Best jerk chicken inna Jamaica right ya so — Faith's Pen, star!"
+    ],
+    "landmark.fern-gully": [
+      "Fern Gully! Di most beautiful road inna Jamaica — drive through slow!",
+      "Welcome to Fern Gully — green tunnel, pure magic, brethren!"
     ],
     "pothole.burst": [
       "Yuh tyre bust, brethren!",
