@@ -16,6 +16,15 @@
     ],
     "tyre.fixed": [
       "Tyre patch up — gwaan!"
+    ],
+    "traffic.near_miss": [
+      "Yuh nearly bus' him up, bredren!",
+      "Lawd have mercy — watch where yuh deh go!",
+      "Dem drive like dem mad, sah!"
+    ],
+    "traffic.kingston": [
+      "Kingston traffic BAD today, sah!",
+      "Ah so it set inna di city — everybody a rush!"
     ]
   }
 }
