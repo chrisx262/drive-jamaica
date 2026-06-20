@@ -10,6 +10,7 @@ import { Potholes } from './potholes';
 import { initNarrator, narrate } from './narrator';
 import { TestTrack } from './testtrack';
 import { Debug } from './debug';
+import { Score } from './score';
 
 const app = document.getElementById('app')!;
 const hud = document.getElementById('hud')!;
@@ -36,6 +37,7 @@ const isDebug = isTestTrack || params.has('debug');
 
 let road: RoadLike;
 let recognition: Recognition | null = null;
+let score: Score | null = null;
 
 if (isTestTrack) {
   const tt = new TestTrack();
@@ -49,6 +51,7 @@ if (isTestTrack) {
   scene.add(buildScenery(r));
   scene.add(buildTrees(r));
   recognition = new Recognition(r);
+  score = new Score(r);
 }
 
 const potholes = new Potholes(road);
@@ -94,7 +97,7 @@ narrate('game.start');
 
 // Dev-only handle for automated drive tests (stripped from production builds).
 if (import.meta.env.DEV) {
-  (window as unknown as Record<string, unknown>).__dj = { car, road, potholes };
+  (window as unknown as Record<string, unknown>).__dj = { car, road, potholes, score };
 }
 
 const camOffset = new THREE.Vector3();
@@ -108,6 +111,7 @@ renderer.setAnimationLoop(() => {
   car.update(dt, input);
   potholes.update(car);
   recognition?.update(car.position);
+  score?.update(car, dt);
   debug?.update(dt);
 
   // Chase camera: behind and above the car, smoothed.

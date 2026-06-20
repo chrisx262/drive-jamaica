@@ -16,6 +16,19 @@
     ],
     "tyre.fixed": [
       "Tyre patch up — gwaan!"
+    ],
+    "score.style": [
+      "Yuh bad! Pure style, star!",
+      "Swerve like a champion!",
+      "Look pon di moves — bredren know di road!"
+    ],
+    "score.halfway": [
+      "Halfway to Ochi already! Yuh a di real ting!",
+      "Pass di halfway mark — keep di wheels dem turning, star!"
+    ],
+    "score.finish": [
+      "Dunn's River Falls! Yuh reach, champion! Time fi cool off!",
+      "Mi cyaan believe seh yuh actually mek it — legend ting!"
     ]
   }
 }
