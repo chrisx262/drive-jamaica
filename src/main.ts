@@ -7,6 +7,7 @@ import { Recognition } from './recognition';
 import { buildScenery } from './scenery';
 import { buildTrees } from './trees';
 import { Potholes } from './potholes';
+import { FaithsPen } from './faithspen';
 import { initNarrator, narrate } from './narrator';
 import { TestTrack } from './testtrack';
 import { Debug } from './debug';
@@ -36,6 +37,7 @@ const isDebug = isTestTrack || params.has('debug');
 
 let road: RoadLike;
 let recognition: Recognition | null = null;
+let faithsPen: FaithsPen | null = null;
 
 if (isTestTrack) {
   const tt = new TestTrack();
@@ -49,6 +51,8 @@ if (isTestTrack) {
   scene.add(buildScenery(r));
   scene.add(buildTrees(r));
   recognition = new Recognition(r);
+  faithsPen = new FaithsPen(r);
+  scene.add(faithsPen.object);
 }
 
 const potholes = new Potholes(road);
@@ -94,7 +98,7 @@ narrate('game.start');
 
 // Dev-only handle for automated drive tests (stripped from production builds).
 if (import.meta.env.DEV) {
-  (window as unknown as Record<string, unknown>).__dj = { car, road, potholes };
+  (window as unknown as Record<string, unknown>).__dj = { car, road, potholes, faithsPen };
 }
 
 const camOffset = new THREE.Vector3();
@@ -107,6 +111,7 @@ renderer.setAnimationLoop(() => {
 
   car.update(dt, input);
   potholes.update(car);
+  faithsPen?.update(car, dt);
   recognition?.update(car.position);
   debug?.update(dt);
 
