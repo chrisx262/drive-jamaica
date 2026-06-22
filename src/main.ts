@@ -7,6 +7,7 @@ import { Recognition } from './recognition';
 import { buildScenery } from './scenery';
 import { buildTrees } from './trees';
 import { Potholes } from './potholes';
+import { Billboards } from './billboards';
 import { initNarrator, narrate } from './narrator';
 import { TestTrack } from './testtrack';
 import { Debug } from './debug';
@@ -48,6 +49,8 @@ if (isTestTrack) {
   scene.add(r.object);
   scene.add(buildScenery(r));
   scene.add(buildTrees(r));
+  const billboards = new Billboards(r);
+  scene.add(billboards.object);
   recognition = new Recognition(r);
 }
 
