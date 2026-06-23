@@ -16,6 +16,16 @@
     ],
     "tyre.fixed": [
       "Tyre patch up — gwaan!"
+    ],
+    "cowherder.approach": [
+      "Lawd have mercy — cows dem block di road!",
+      "Slow down nuh! Man a walk 'im cows!",
+      "Watch out, brethren — cows pon di road!"
+    ],
+    "cowherder.hit": [
+      "Bwoy, yuh lick di man cow! Him gwaan vex!",
+      "Wha di rhatid! Dat a somebody livelihood!",
+      "Yuh mash up di farmer cow — dat nuh right, star!"
     ]
   }
 }
