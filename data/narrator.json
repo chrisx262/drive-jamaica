@@ -16,6 +16,19 @@
     ],
     "tyre.fixed": [
       "Tyre patch up — gwaan!"
+    ],
+    "monster.ready": [
+      "Frustration MAX! Press H fi di big truck ting!",
+      "Yuh cyaan tek it no more — press H, transform!"
+    ],
+    "monster.transform": [
+      "BIG TRUCK TING! Move outta di way!",
+      "MONSTER TRUCK TING! Clear di road, clear di road!",
+      "Yuh reach di limit — BIG TRUCK TING, move nuh!"
+    ],
+    "monster.revert": [
+      "Back to di Corolla. Easy now, brethren.",
+      "Truck time done — likkle car, big heart."
     ]
   }
 }

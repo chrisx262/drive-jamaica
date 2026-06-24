@@ -10,9 +10,13 @@ import { Potholes } from './potholes';
 import { initNarrator, narrate } from './narrator';
 import { TestTrack } from './testtrack';
 import { Debug } from './debug';
+import { MonsterTruck } from './monstertruck';
 
 const app = document.getElementById('app')!;
 const hud = document.getElementById('hud')!;
+const frustrationWrap = document.getElementById('frustration-wrap') as HTMLDivElement;
+const frustrationFill = document.getElementById('frustration-fill') as HTMLDivElement;
+const frustrationLabel = document.getElementById('frustration-label') as HTMLDivElement;
 
 const renderer = new THREE.WebGLRenderer({ antialias: true });
 renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
@@ -55,6 +59,9 @@ const potholes = new Potholes(road);
 scene.add(potholes.object);
 
 const car = new Car();
+const monsterTruck = new MonsterTruck(car);
+// ?monster=1 pre-fills the meter so the transform can be tested immediately
+if (params.has('monster')) monsterTruck.frustration = 1;
 
 // Spawn at the route start — or at ?jump=<road name match> for quick scenery
 // review (e.g. /?jump=gorge, /?jump=milford, /?jump=faith).
@@ -94,27 +101,55 @@ narrate('game.start');
 
 // Dev-only handle for automated drive tests (stripped from production builds).
 if (import.meta.env.DEV) {
-  (window as unknown as Record<string, unknown>).__dj = { car, road, potholes };
+  (window as unknown as Record<string, unknown>).__dj = { car, road, potholes, monsterTruck };
 }
 
 const camOffset = new THREE.Vector3();
 let last = performance.now();
+// Track honk key for edge-triggered (press, not hold) detection
+let prevHonk = false;
 
 renderer.setAnimationLoop(() => {
   const now = performance.now();
   const dt = Math.min((now - last) / 1000, 0.05);
   last = now;
 
+  const honkJustPressed = input.honk && !prevHonk;
+  prevHonk = input.honk;
+
   car.update(dt, input);
   potholes.update(car);
+  monsterTruck.update(dt, honkJustPressed);
   recognition?.update(car.position);
   debug?.update(dt);
 
   // Chase camera: behind and above the car, smoothed.
-  camOffset.set(Math.sin(car.heading) * 9, 5, Math.cos(car.heading) * 9);
+  // Scale the offset by car scale so the camera backs off during monster mode.
+  const scaleZ = car.object.scale.z;
+  camOffset.set(Math.sin(car.heading) * 9 * scaleZ, 5 * scaleZ, Math.cos(car.heading) * 9 * scaleZ);
   camera.position.lerp(car.position.clone().add(camOffset), 1 - Math.exp(-5 * dt));
-  camera.lookAt(car.position.x, car.position.y + 1.2, car.position.z);
+  camera.lookAt(car.position.x, car.position.y + 1.2 * scaleZ, car.position.z);
 
-  hud.textContent = `${Math.round(car.speedKmh)} km/h${car.tyreBurst ? '  \u{1F6DE} TYRE BUST!' : ''}`;
+  // Main HUD: speed + tyre status
+  const truckBadge = monsterTruck.active ? '  🚛 BIG TRUCK!' : '';
+  hud.textContent = `${Math.round(car.speedKmh)} km/h${car.tyreBurst ? '  \u{1F6DE} TYRE BUST!' : ''}${truckBadge}`;
+
+  // Frustration meter HUD
+  const pct = monsterTruck.hudPct;
+  const visible = pct > 1 || monsterTruck.active;
+  frustrationWrap.style.opacity = visible ? '1' : '0';
+  frustrationFill.style.width = `${pct}%`;
+  const isReady = !monsterTruck.active && monsterTruck.frustration >= 1;
+  const isTruck = monsterTruck.active;
+  frustrationWrap.classList.toggle('ready', isReady);
+  frustrationWrap.classList.toggle('truck-active', isTruck);
+  if (isTruck) {
+    frustrationLabel.textContent = '🚛 BIG TRUCK TING!';
+  } else if (isReady) {
+    frustrationLabel.textContent = '😤 PRESS H';
+  } else {
+    frustrationLabel.textContent = '😤 FRUSTRATION';
+  }
+
   renderer.render(scene, camera);
 });
