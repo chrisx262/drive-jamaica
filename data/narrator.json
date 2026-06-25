@@ -16,6 +16,26 @@
     ],
     "tyre.fixed": [
       "Tyre patch up — gwaan!"
+    ],
+    "offroad.enter": [
+      "Aye, weh yuh a go? Di road deh so!",
+      "Boss, yuh miss di road! Turn back nuh!",
+      "Eh eh, dat nuh look like nuh road to me!"
+    ],
+    "offroad.rough": [
+      "Dis road rough bad, boss! Turn back before yuh damage di car!",
+      "Rhatid! Dem nuh pave dis part at all! Turn around!",
+      "Yuh sure yuh know weh yuh a go? Road almost done out here!"
+    ],
+    "offroad.no-road": [
+      "Jah know! Yuh gone pon di mountainside, brethren! No road nuh deh!",
+      "Lawd have mercy — tyre bus'! Dis nuh road, a di mountain slope!",
+      "Rhatid! Road done! Yuh a drive off di side a Mount Rosser!"
+    ],
+    "offroad.escape": [
+      "Tank God yuh find di road back! Almost lick up di place!",
+      "Wooii! Yuh make it! Neva do dat again, boss — dat coulda end bad.",
+      "See it deh — di real road! Gwaan pon di proper way now."
     ]
   }
 }

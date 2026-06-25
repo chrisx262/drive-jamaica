@@ -5,6 +5,7 @@ import { Road } from './road';
 import { Recognition } from './recognition';
 import { buildScenery } from './scenery';
 import { Potholes } from './potholes';
+import { OffRoad } from './offroad';
 import { initNarrator, narrate } from './narrator';
 
 const app = document.getElementById('app')!;
@@ -31,6 +32,8 @@ scene.add(road.object);
 scene.add(buildScenery(road));
 const potholes = new Potholes(road);
 scene.add(potholes.object);
+const offRoad = new OffRoad(road);
+scene.add(offRoad.object);
 
 const car = new Car();
 // Spawn at the route start — or at ?jump=<road name match> for quick scenery
@@ -76,11 +79,14 @@ renderer.setAnimationLoop(() => {
 
   car.update(dt, input);
   potholes.update(car);
+  const shake = offRoad.update(car, dt);
   recognition.update(car.position);
 
   // Chase camera: behind and above the car, smoothed.
+  // Off-road shake adds sinusoidal Y wobble — amplitude from offRoad.update().
   camOffset.set(Math.sin(car.heading) * 9, 5, Math.cos(car.heading) * 9);
   camera.position.lerp(car.position.clone().add(camOffset), 1 - Math.exp(-5 * dt));
+  camera.position.y += Math.sin(now / 40) * shake;
   camera.lookAt(car.position.x, car.position.y + 1.2, car.position.z);
 
   hud.textContent = `${Math.round(car.speedKmh)} km/h${car.tyreBurst ? '  \u{1F6DE} TYRE BUST!' : ''}`;
