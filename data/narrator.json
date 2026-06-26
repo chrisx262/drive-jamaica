@@ -1,21 +1,178 @@
 {
-  "comment": "Event -> possible narrator lines. Lines are picked at random per event. Audio files (assets/voice/) will map by line id later; V1 scaffold shows captions only.",
+  "comment": "Event -> possible narrator lines. A random line is picked per firing. {vars} are interpolated at runtime. Audio sprite IDs will map to these line ids once voice talent records them. OWNER REVIEW NEEDED: all patois lines should be verified for authenticity by the owner before recording session.",
   "events": {
     "game.start": [
-      "Welcome to Jamaica, brethren! Touch di road!"
+      "Welcome to Jamaica, brethren! Touch di road!",
+      "Alright, alright! Let we drive dis ting!",
+      "Wagwan driver! Airport to Ochi — let's go!",
+      "Yow! Di engine a purr. Gwaan mek wi drive!"
     ],
     "road.enter": [
-      "Yuh deh pon {road} now!"
+      "Yuh deh pon {road} now!",
+      "{road} — big road dis!",
+      "Right, dis yah is {road}."
+    ],
+    "community.enter": [
+      "Welcome to {community}!",
+      "Yuh reach {community} now, driver!",
+      "{community}! Big up di community!",
+      "Ah so dem seh — {community} dis!"
     ],
     "landmark.enter": [
-      "See {landmark} deh!"
+      "See {landmark} deh!",
+      "Big up {landmark}!",
+      "Yow, dat's {landmark} right deh so!"
     ],
     "pothole.burst": [
       "Yuh tyre bust, brethren!",
-      "Wheeel! Mind di pothole dem!"
+      "Wheeel! Mind di pothole dem!",
+      "BLOWOUT! Lawd have mercy!",
+      "Rhatid — dem road deh full a hole!"
     ],
     "tyre.fixed": [
-      "Tyre patch up — gwaan!"
+      "Tyre patch up — gwaan!",
+      "Good as new! Drive on, driver!",
+      "Tyre man fix yuh up. Big respect!"
+    ],
+    "dog.chase": [
+      "YOW! Dutty dog a follow yuh!",
+      "Dog a bark, dog a run — just drive!",
+      "Woiee! Di dog dem angry today!",
+      "Bwoy, dat dog mean business — skeet!"
+    ],
+    "dog.bark": [
+      "Hear how di dog a bark!",
+      "Dem dog deh nuh like yuh car, seen?",
+      "Every town have dem yard dog. Drive on."
+    ],
+    "goat.hit": [
+      "YUH LICK DOWN DI GOAT?! Bwoy...",
+      "Rhatid! Yuh lick di goat, driver!",
+      "Woi! Dat poor goat neva deserve dat!",
+      "Di goat nevah do yuh nutten an' yuh lick it down!"
+    ],
+    "goat.nearMiss": [
+      "Nearly lick di billy goat deh!",
+      "Aye aye aye — close one! Di goat safe!",
+      "Yuh see how yuh nearly mash up di goat?",
+      "One love, likkle goat. Drive careful nuh!"
+    ],
+    "cow.block": [
+      "Man, cow inna di road! Swerve nuh!",
+      "Yow! Big cow blocking di way — ease off!",
+      "Aye! Di cow herder man nuh care 'bout traffic!",
+      "Lawd, cow pon di road again. Dis is Jamaica, driver."
+    ],
+    "cow.swerve": [
+      "Nice move! Yuh miss di cow clean!",
+      "Irie — cow safe, car safe. Gwaan drive!",
+      "Smooth! Dat's how yuh handle Jamaican roads!"
+    ],
+    "faithsPen.arrive": [
+      "Faith's Pen! Pull over and nyam some jerk chicken!",
+      "Yow — Faith's Pen cookshop dem right deh so! Stop nuh?",
+      "Smell dat jerk? Di best inna Jamaica — pull over, driver!",
+      "Faith's Pen! Jerk chicken, roast yam, festival — yuh must stop!"
+    ],
+    "faithsPen.eat": [
+      "Mmm! Dat jerk chicken fix everyting!",
+      "Ah di best food inna Jamaica, dat deh!",
+      "Roast yam an' festival — yuh ready fi di road again!",
+      "Belly full, tyre good, road ahead — GWAAN!"
+    ],
+    "faithsPen.skip": [
+      "Yuh pass Faith's Pen?! Lawd, driver...",
+      "Bwoy, yuh muss be in a real rush. Next time, stop nuh!",
+      "Skipping di jerk? Yuh missing out, brethren."
+    ],
+    "monster.transform": [
+      "BIG TRUCK TING! Mash dem up!",
+      "WHEEEEEL! MONSTER TRUCK TIME!",
+      "Traffic too much? TRANSFORM! Clear di road!",
+      "YOW! Biggest ting pon di road right now!"
+    ],
+    "monster.revert": [
+      "Back to di Corolla. Gwaan drive.",
+      "Monster time done — Corolla again. Easy nuh.",
+      "Back to basics, driver. Corolla never let yuh down."
+    ],
+    "monster.crush": [
+      "Flatten dem out! Dem can shake dem fist!",
+      "Hahahaha! Clear di way!",
+      "Kingston traffic? Nuh problem fi BIG TRUCK!"
+    ],
+    "offroad.enter": [
+      "Weh yuh a go?! Dat's not a road!",
+      "DRIVER! Yuh gone off di road!",
+      "Bwoy — yuh take di wrong turn inna di bush!",
+      "Lawd have mercy — yuh gone off-road pon di mountain!"
+    ],
+    "offroad.slide": [
+      "WHEEEL! Yuh gone off di road inna di bush!",
+      "Dirt road turn into NO road! Come back!",
+      "Mountainside nuh have no road, driver — TURN BACK!"
+    ],
+    "offroad.recover": [
+      "Back pon di road! Thank God!",
+      "Yuh make it back! Di Corolla tough, seen?",
+      "Back on asphalt! Gwaan drive!"
+    ],
+    "traffic.stuck": [
+      "Kingston traffic! Nuh rush, jus' cool.",
+      "Half Way Tree traffic — dis is di life, driver.",
+      "Everybody stuck. Welcome to Kingston, brethren.",
+      "Yuh nuh go nowhere fast inna Kingston. Patience."
+    ],
+    "speeding": [
+      "Yuh a fly, driver! Mind di speed trap!",
+      "Easy nuh — di police dem love dis road!",
+      "Fast fast fast! Di Corolla a show off!",
+      "Bwoy, yuh a drive like yuh late fi work!"
+    ],
+    "road.palisadoes": [
+      "Palisadoes road — sea pon both side! Beautiful!",
+      "Look di harbour! Look di open sea! Jamaica nice!",
+      "Airport road straight straight. Sea all around yuh!"
+    ],
+    "landmark.halfWayTree": [
+      "Half Way Tree! Big junction dis — everybody pass through!",
+      "Half Way Tree clock tower! Mi used to lime right deh so!",
+      "Half Way Tree — di heart a St. Andrew!"
+    ],
+    "landmark.bogWalk": [
+      "Bog Walk gorge! Look how di river run through!",
+      "Rio Cobre down below — Flat Bridge right round di corner!",
+      "Bog Walk! Di gorge dem beautiful, seen? Mind di road though!"
+    ],
+    "landmark.fernGully": [
+      "Fern Gully! Green and cool — one of a kind!",
+      "Bamboo and fern all around yuh — dis is Fern Gully, brethren!",
+      "Natural air conditioning in Fern Gully! Irie!"
+    ],
+    "landmark.dunnsRiver": [
+      "Dunn's River Falls! YOW! Yuh reach Ocho Rios, driver!",
+      "Di falls! Di falls! Jump inna di water!"
+    ],
+    "finish.arrive": [
+      "YOW! Yuh reach Dunn's River Falls! Jump inna di water, driver!",
+      "AIRPORT TO OCHI! Yuh done it, brethren! BIG UP YUHSELF!",
+      "Dunn's River! Take off yuh shoes — di bath time now!",
+      "Woooooi! End of di road! Dunn's River! JAMAICA!"
+    ],
+    "score.high": [
+      "Top driver! Yuh handle Jamaica roads like a PRO!",
+      "Respect, driver! Yuh skill is REAL!",
+      "Bwoy, yuh drive like yuh born inna Jamaica! Outstanding!"
+    ],
+    "score.mid": [
+      "Not bad, driver! Few rough spots but yuh made it.",
+      "Good drive! Jamaica roads nuh easy but yuh manage.",
+      "Solid run, brethren. Practice make perfect!"
+    ],
+    "score.low": [
+      "Driver... di goats, di potholes, di road... yuh must try harder!",
+      "Bwoy. Di road win dis time. Come back and try again!",
+      "Plenty damage pon di journey. Next time, tek it easy nuh!"
     ]
   }
 }

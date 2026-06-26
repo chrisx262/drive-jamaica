@@ -1,5 +1,6 @@
 import * as THREE from 'three';
 import { initInput } from './input';
+import { initTouch } from './touch';
 import { Car } from './car';
 import { Road } from './road';
 import type { RoadLike } from './road';
@@ -77,6 +78,7 @@ car.object.rotation.y = car.heading;
 scene.add(car.object);
 
 const input = initInput();
+initTouch(input);
 initNarrator();
 
 let debug: Debug | null = null;
