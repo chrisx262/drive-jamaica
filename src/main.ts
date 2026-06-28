@@ -8,6 +8,7 @@ import { buildScenery } from './scenery';
 import { buildTrees } from './trees';
 import { Potholes } from './potholes';
 import { initNarrator, narrate } from './narrator';
+import { Multiplayer } from './multiplayer';
 import { TestTrack } from './testtrack';
 import { Debug } from './debug';
 
@@ -79,6 +80,13 @@ scene.add(car.object);
 const input = initInput();
 initNarrator();
 
+// Ambient multiplayer: connect if VITE_WS_URL is set (or localhost:8080 in dev).
+// Falls back to solo silently if the server is unreachable.
+const wsUrl: string | undefined =
+  (import.meta.env as Record<string, string | undefined>)['VITE_WS_URL'] ??
+  (import.meta.env.DEV ? 'ws://localhost:8080' : undefined);
+const multiplayer = new Multiplayer(scene, car, wsUrl);
+
 let debug: Debug | null = null;
 if (isDebug) {
   debug = new Debug(scene, car, road.points, potholes, isTestTrack);
@@ -94,7 +102,7 @@ narrate('game.start');
 
 // Dev-only handle for automated drive tests (stripped from production builds).
 if (import.meta.env.DEV) {
-  (window as unknown as Record<string, unknown>).__dj = { car, road, potholes };
+  (window as unknown as Record<string, unknown>).__dj = { car, road, potholes, multiplayer };
 }
 
 const camOffset = new THREE.Vector3();
@@ -107,6 +115,7 @@ renderer.setAnimationLoop(() => {
 
   car.update(dt, input);
   potholes.update(car);
+  multiplayer.update(dt, camera);
   recognition?.update(car.position);
   debug?.update(dt);
 

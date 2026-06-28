@@ -16,6 +16,11 @@
     ],
     "tyre.fixed": [
       "Tyre patch up — gwaan!"
+    ],
+    "player.join": [
+      "{nickname} just reach pon di road!",
+      "Big up {nickname} — anodda driver inna di building!",
+      "{nickname} link up — nuh race dem, just drive!"
     ]
   }
 }

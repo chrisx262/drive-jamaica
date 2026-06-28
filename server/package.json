@@ -1,0 +1,16 @@
+{
+  "name": "drive-jamaica-ws",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Drive Jamaica ambient multiplayer WebSocket server",
+  "scripts": {
+    "start": "node ws-server.mjs"
+  },
+  "dependencies": {
+    "ws": "^8.18.0"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
