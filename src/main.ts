@@ -10,6 +10,7 @@ import { Potholes } from './potholes';
 import { initNarrator, narrate } from './narrator';
 import { TestTrack } from './testtrack';
 import { Debug } from './debug';
+import { UpgradeSystem } from './upgrades';
 
 const app = document.getElementById('app')!;
 const hud = document.getElementById('hud')!;
@@ -78,6 +79,7 @@ scene.add(car.object);
 
 const input = initInput();
 initNarrator();
+const upgrades = new UpgradeSystem(car, scene);
 
 let debug: Debug | null = null;
 if (isDebug) {
@@ -107,6 +109,7 @@ renderer.setAnimationLoop(() => {
 
   car.update(dt, input);
   potholes.update(car);
+  upgrades.update(dt);
   recognition?.update(car.position);
   debug?.update(dt);
 
