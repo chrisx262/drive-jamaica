@@ -16,6 +16,22 @@
     ],
     "tyre.fixed": [
       "Tyre patch up — gwaan!"
+    ],
+    "upgrade.exhaust": [
+      "She puffing now! Exhaust mod done proper, boss!",
+      "Backfire and smoke — pure deportee style, yaad man!"
+    ],
+    "upgrade.rims": [
+      "Look pon di rims! Chrome up and everything!",
+      "Gold rims ting! Pure showmanship, bredda!"
+    ],
+    "upgrade.engine": [
+      "Engine work done — she ready fi road now!",
+      "Hood scoop and tune-up — she pulling strong!"
+    ],
+    "upgrade.sound": [
+      "Big sound system! Earthquake a come, dem a hear you from Ochi!",
+      "Bass line drop! Trunk rattling, whole street shaking!"
     ]
   }
 }
