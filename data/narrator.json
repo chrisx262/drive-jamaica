@@ -1,21 +1,130 @@
 {
-  "comment": "Event -> possible narrator lines. Lines are picked at random per event. Audio files (assets/voice/) will map by line id later; V1 scaffold shows captions only.",
+  "comment": "Event -> possible narrator lines. Lines are picked at random per event. Audio files (assets/voice/) will map by line id later; V1 scaffold shows captions only. Specific-key events (e.g. 'road.enter.Milford Road') are checked before the generic fallback ('road.enter') — add per-road and per-landmark lines here without touching any TypeScript.",
   "events": {
     "game.start": [
-      "Welcome to Jamaica, brethren! Touch di road!"
+      "Welcome to Jamaica, brethren! Touch di road!",
+      "Yuh reach Jamaica! Drive on di LEFT — Jamaicans always drive on di LEFT!",
+      "Airport to Ochi — one route, pure adventure. Gwaan!",
+      "Norman Manley International, straight ahead! Drive careful, drive smart!",
+      "Irie! Jamaica a-wait. Di road long but di journey sweet!"
     ],
     "road.enter": [
-      "Yuh deh pon {road} now!"
+      "Yuh deh pon {road} now!",
+      "Welcome to {road}, driver!",
+      "{road} — know weh yuh deh!",
+      "Now pon {road} — eyes on di road!",
+      "Tek time through {road}, star!"
+    ],
+    "road.enter.Norman Manley Highway / Palisadoes Road": [
+      "Palisadoes! Sea on every side — beautiful Jamaica!",
+      "Airport road smooth like butter — enjoy it while it last, brethren!",
+      "Calm harbour one side, rough open sea di other — yuh entre Jamaica proper!"
+    ],
+    "road.enter.Sir Florizel Glaspole Boulevard": [
+      "Kingston a-come, driver! Harbour View junction ahead!",
+      "Leavin' di Palisadoes — real Kingston life a-start now!"
+    ],
+    "road.enter.Windward Road": [
+      "Windward Road — welcome to Kingston, capital of Jamaica!",
+      "Kingston! Di hustle and bustle — all inna one road!"
+    ],
+    "road.enter.Mountain View Avenue": [
+      "Mountain View Avenue — National Stadium right deh so!",
+      "Big up Excelsior High — Puma dem run and win from right here!"
+    ],
+    "road.enter.Hope Road": [
+      "Hope Road! Bob Marley Museum jus' up di road — one love!",
+      "Hope Road — where Kingston elegance meet Jamaican soul!"
+    ],
+    "road.enter.Hagley Park Road": [
+      "Half Way Tree coming up! Everybody meet at Half Way Tree!",
+      "Hagley Park — nuff taxis, nuff people, nuff life!"
+    ],
+    "road.enter.Spanish Town Road": [
+      "Spanish Town Road — heading west, leavin' Kingston behind!",
+      "Out of di city now — Spanish Town Road tek yuh through!"
+    ],
+    "road.enter.Nelson Mandela Highway": [
+      "Nelson Mandela Highway — smooth sailing to Bog Walk!",
+      "Bypass road — di real Jamaica start when dis highway done!"
+    ],
+    "road.enter.Bog Walk Gorge": [
+      "Bog Walk Gorge! Rio Cobre runnin' down below — majestic!",
+      "Watch di limestone cliffs! Gorge nah business wid careless driving!",
+      "Flat Bridge ahead — one lane, nuh railings, pure vibes!"
+    ],
+    "road.enter.Bogwalk Gorge Road": [
+      "Still inside di gorge — Rio Cobre right there beside yuh!",
+      "Walls close, road narrow — tek it easy through di gorge!"
+    ],
+    "road.enter.River Road": [
+      "River Road — Rio Cobre right beside yuh, fresh and green!",
+      "Rio Cobre water flowing strong — Jamaica heartland inna full view!"
+    ],
+    "road.enter.Linstead - Moneague Road": [
+      "Linstead-Moneague stretch — country road, goat might cross any moment!",
+      "Hill country now — easy on di corners, brethren!"
+    ],
+    "road.enter.Milford Road": [
+      "Fern Gully! Di most beautiful road in di Caribbean!",
+      "Milford Road — every Jamaican know it as Fern Gully. Drive slow, soak it in!",
+      "Green like emerald, cool like A/C — Fern Gully a Jamaica gift!",
+      "Dem fern dem growing since before yuh born — show some respect!"
+    ],
+    "road.enter.Northern Coastal Highway": [
+      "Northern Coastal Highway — Ocho Rios almost reach! Sea breeze fresh!",
+      "Ochi just ahead — Dunn's River Falls a-wait!",
+      "Final stretch! Airport to Ochi — you almost done it, brethren!"
     ],
     "landmark.enter": [
-      "See {landmark} deh!"
+      "See {landmark} deh!",
+      "{landmark} — big ting deh so!",
+      "Pass {landmark} — real Jamaican landmark dat!"
+    ],
+    "landmark.enter.Gun Boat Beach": [
+      "Gun Boat Beach! Coconut tree, calm water — Jamaican paradise right there!",
+      "Gunboat Beach — soldier used to anchor here. Now is just pure beach vibes!"
+    ],
+    "landmark.enter.National Stadium": [
+      "National Stadium! Where Jamaica glory come alive — track, football, everything!",
+      "Usain Bolt train near here — di stadium dat build champions!"
+    ],
+    "landmark.enter.Devon House": [
+      "Devon House! Best ice cream in Jamaica right here — stop if yuh can!",
+      "George Stiebel build dat mansion — first black millionaire in Jamaica. Respect!",
+      "Devon House ice cream — di only ting sweeter than di journey itself!"
+    ],
+    "landmark.enter.Half Way Tree Clock Tower": [
+      "Half Way Tree Clock Tower! 1813 — older than Jamaica independence!",
+      "Half Way Tree! Every Jamaican pass through here — di crossroads of Kingston!"
+    ],
+    "landmark.enter.Flat Bridge": [
+      "Flat Bridge! One lane, nuh railing — one of di most thrilling bridges in Jamaica!",
+      "Rio Cobre running wild below Flat Bridge — hold di wheel tight!",
+      "Historic Flat Bridge — flood come, flood go, but di bridge remain. Respect!"
+    ],
+    "landmark.enter.Faith's Pen": [
+      "Faith's Pen! Pull over if yuh smart — best jerk chicken on di island!",
+      "Faith's Pen cookshop — roast yam, festival, jerk pork! Di road heal everything!",
+      "Every driver stop at Faith's Pen — it's tradition, brethren! Nuh bypass it!"
+    ],
+    "landmark.enter.Dunn's River Falls": [
+      "Dunn's River Falls! Journey done — now is time to cool off!",
+      "Airport to Ochi — yuh make it, driver! Jump in di water, yuh earn it!",
+      "Di falls a-run, di sea a-shine — Ocho Rios welcome yuh! One love!"
     ],
     "pothole.burst": [
       "Yuh tyre bust, brethren!",
-      "Wheeel! Mind di pothole dem!"
+      "Wheeel! Mind di pothole dem!",
+      "Lawd have mercy — di pothole ketch yuh!",
+      "KABOOM! Government nuh fix dem road yet!",
+      "Tyre gone flat — dem pothole merciless, man!",
+      "Cho! Every day di same road — every day di same pothole!"
     ],
     "tyre.fixed": [
-      "Tyre patch up — gwaan!"
+      "Tyre patch up — gwaan!",
+      "Good as new! Di road a-call yuh back!",
+      "Sorted! Press on, driver — Ochi nah reach itself!"
     ]
   }
 }

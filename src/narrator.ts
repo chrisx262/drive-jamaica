@@ -19,7 +19,14 @@ export function initNarrator(): void {
 }
 
 export function narrate(event: string, vars: Record<string, string> = {}): void {
-  const lines = events[event];
+  // Try a specific-key override before falling back to the generic event:
+  // "road.enter.Milford Road" is checked before "road.enter", letting per-road
+  // and per-landmark flavor lines live in narrator.json with no call-site changes.
+  let lines = events[event];
+  for (const v of Object.values(vars)) {
+    const specific = events[`${event}.${v}`];
+    if (specific?.length) { lines = specific; break; }
+  }
   if (!lines?.length || !captionEl) return;
   let line = lines[Math.floor(Math.random() * lines.length)];
   for (const [k, v] of Object.entries(vars)) line = line.replaceAll(`{${k}}`, v);
