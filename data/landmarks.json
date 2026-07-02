@@ -1,13 +1,47 @@
 {
-  "comment": "Recognition layer 3: landmark popups. Coordinates are real OSM lat/lon, projected into world space via the route origin+scale at load. radius = trigger distance in compressed-world meters. Each landmark has a stable id from creation (standing rule - the future ad system depends on this pattern).",
+  "comment": "Recognition layer 3: landmark popups. Coordinates are real OSM lat/lon, projected into world space via the route origin+scale at load. radius = trigger distance in compressed-world units. Each landmark has a stable id from creation (standing rule — the future ad system depends on this pattern). category drives popup border colour and narrator event selection. needs_owner_review: true = map-research coords only; owner's lived knowledge is authoritative.",
   "landmarks": [
+    {
+      "id": "lmk-nmi-airport",
+      "name": "Norman Manley International Airport",
+      "lat": 17.9356,
+      "lon": -76.7875,
+      "radius": 350,
+      "category": "road",
+      "narrator_event": "landmark.airport",
+      "fact": "Jamaica's main international gateway — named after National Hero and first Chief Minister Norman Washington Manley"
+    },
     {
       "id": "lmk-gun-boat-beach",
       "name": "Gun Boat Beach",
       "lat": 17.9443,
       "lon": -76.7617,
       "radius": 160,
-      "fact": "Harbour-side bathing spot on the Palisadoes strip"
+      "category": "nature",
+      "narrator_event": "landmark.enter",
+      "fact": "Harbour-side bathing spot on the Palisadoes strip — calm water on the left, open sea on the right"
+    },
+    {
+      "id": "lmk-port-royal-signpost",
+      "name": "Port Royal",
+      "lat": 17.9405,
+      "lon": -76.7900,
+      "radius": 200,
+      "category": "cultural",
+      "narrator_event": "landmark.cultural",
+      "needs_owner_review": true,
+      "fact": "Once the wickedest city on earth — the pirate capital that sank into the sea in 1692"
+    },
+    {
+      "id": "lmk-harbour-view",
+      "name": "Harbour View Roundabout",
+      "lat": 17.9724,
+      "lon": -76.7526,
+      "radius": 200,
+      "category": "road",
+      "narrator_event": "landmark.enter",
+      "needs_owner_review": true,
+      "fact": "Where the Palisadoes meets the city — Kingston Harbour opens up to your left"
     },
     {
       "id": "lmk-national-stadium",
@@ -15,7 +49,52 @@
       "lat": 18.0014,
       "lon": -76.7726,
       "radius": 320,
+      "category": "cultural",
+      "narrator_event": "landmark.cultural",
       "fact": "Home of Jamaican track and football glory — Excelsior High is just across Mountain View Avenue"
+    },
+    {
+      "id": "lmk-excelsior-high",
+      "name": "Excelsior High School",
+      "lat": 18.0012,
+      "lon": -76.7732,
+      "radius": 180,
+      "category": "school",
+      "narrator_event": "landmark.school",
+      "needs_owner_review": true,
+      "fact": "Opposite the National Stadium on Mountain View Avenue — powerhouse of Jamaican athletics and academics"
+    },
+    {
+      "id": "lmk-national-heroes-park",
+      "name": "National Heroes Park",
+      "lat": 18.0041,
+      "lon": -76.7787,
+      "radius": 220,
+      "category": "cultural",
+      "narrator_event": "landmark.cultural",
+      "needs_owner_review": true,
+      "fact": "Resting place of Jamaica's National Heroes — Marcus Garvey, Norman Manley, Alexander Bustamante and more"
+    },
+    {
+      "id": "lmk-jamaica-college",
+      "name": "Jamaica College",
+      "lat": 18.0197,
+      "lon": -76.7831,
+      "radius": 160,
+      "category": "school",
+      "narrator_event": "landmark.school",
+      "needs_owner_review": true,
+      "fact": "Old Hope Road — one of Jamaica's most celebrated high schools, home of the 'Old Boys'"
+    },
+    {
+      "id": "lmk-bob-marley-museum",
+      "name": "Bob Marley Museum",
+      "lat": 18.0125,
+      "lon": -76.7895,
+      "radius": 200,
+      "category": "cultural",
+      "narrator_event": "landmark.cultural",
+      "fact": "56 Hope Road — the Tuff Gong's home, studio and spiritual centre, now a museum visited by fans worldwide"
     },
     {
       "id": "lmk-devon-house",
@@ -23,7 +102,31 @@
       "lat": 18.0147,
       "lon": -76.79,
       "radius": 250,
+      "category": "cultural",
+      "narrator_event": "landmark.cultural",
       "fact": "1881 mansion of George Stiebel, Jamaica's first black millionaire — and legendary ice cream"
+    },
+    {
+      "id": "lmk-tracks-and-records",
+      "name": "Tracks & Records",
+      "lat": 18.0340,
+      "lon": -76.8060,
+      "radius": 160,
+      "category": "food",
+      "narrator_event": "landmark.food",
+      "needs_owner_review": true,
+      "fact": "Usain Bolt's restaurant on Constant Spring Road — world's fastest man, world's best jerk chicken?"
+    },
+    {
+      "id": "lmk-emancipation-park",
+      "name": "Emancipation Park",
+      "lat": 18.0064,
+      "lon": -76.7899,
+      "radius": 200,
+      "category": "cultural",
+      "narrator_event": "landmark.cultural",
+      "needs_owner_review": true,
+      "fact": "New Kingston's green heart — the Redemption Song sculpture marks Jamaica's journey from slavery to freedom"
     },
     {
       "id": "lmk-hwt-clock",
@@ -31,7 +134,97 @@
       "lat": 18.0109,
       "lon": -76.796,
       "radius": 200,
+      "category": "cultural",
+      "narrator_event": "landmark.cultural",
       "fact": "The 1813 clock tower at the crossroads of Kingston"
+    },
+    {
+      "id": "lmk-st-andrew-high",
+      "name": "St. Andrew High School",
+      "lat": 18.0089,
+      "lon": -76.7902,
+      "radius": 160,
+      "category": "school",
+      "narrator_event": "landmark.school",
+      "needs_owner_review": true,
+      "fact": "Half Way Tree area — top all-girls school, sister school to Kingston College"
+    },
+    {
+      "id": "lmk-holy-childhood-high",
+      "name": "Holy Childhood High School",
+      "lat": 18.0091,
+      "lon": -76.7939,
+      "radius": 160,
+      "category": "school",
+      "narrator_event": "landmark.school",
+      "needs_owner_review": true,
+      "fact": "Half Way Tree area — Catholic girls' school with deep roots in Jamaican education"
+    },
+    {
+      "id": "lmk-kfc-half-way-tree",
+      "name": "KFC Half Way Tree",
+      "lat": 18.0121,
+      "lon": -76.7975,
+      "radius": 140,
+      "category": "food",
+      "narrator_event": "landmark.food",
+      "needs_owner_review": true,
+      "fact": "KFC Jamaica — among the highest-grossing KFC locations anywhere in the world"
+    },
+    {
+      "id": "lmk-tastee-hwt",
+      "name": "Tastee Patties",
+      "lat": 18.0115,
+      "lon": -76.7967,
+      "radius": 130,
+      "category": "food",
+      "narrator_event": "landmark.food",
+      "needs_owner_review": true,
+      "fact": "The original Jamaican patty — Tastee has been feeding Kingston since 1966"
+    },
+    {
+      "id": "lmk-juici-patties-nk",
+      "name": "Juici Patties",
+      "lat": 18.0088,
+      "lon": -76.7977,
+      "radius": 130,
+      "category": "food",
+      "narrator_event": "landmark.food",
+      "needs_owner_review": true,
+      "fact": "Juici Patties — the great patty rivalry lives on every lunchtime in Kingston"
+    },
+    {
+      "id": "lmk-burger-king-nk",
+      "name": "Burger King",
+      "lat": 18.0087,
+      "lon": -76.7946,
+      "radius": 130,
+      "category": "food",
+      "narrator_event": "landmark.food",
+      "needs_owner_review": true,
+      "fact": "New Kingston — Burger King Jamaica, a favourite stop on the Half Way Tree strip"
+    },
+    {
+      "id": "lmk-calabar-high",
+      "name": "Calabar High School",
+      "lat": 18.0242,
+      "lon": -76.8126,
+      "radius": 180,
+      "category": "school",
+      "narrator_event": "landmark.calabar",
+      "needs_owner_review": true,
+      "fact": "Red Hills Road — Baptist-founded school, one of Jamaica's leading boys' high schools"
+    },
+    {
+      "id": "lmk-hydel-high",
+      "name": "Hydel High School",
+      "lat": 17.9785,
+      "lon": -76.8598,
+      "radius": 160,
+      "category": "school",
+      "narrator_event": "landmark.school",
+      "needs_owner_review": true,
+      "fact": "Leaving the city heading west — Hydel's athletics programme has punched well above its weight"
     },
     {
       "id": "lmk-flat-bridge",
@@ -39,6 +232,8 @@
       "lat": 18.0614,
       "lon": -76.9845,
       "radius": 160,
+      "category": "nature",
+      "narrator_event": "landmark.enter",
       "fact": "Historic one-lane bridge over the Rio Cobre in Bog Walk gorge"
     },
     {
@@ -47,7 +242,30 @@
       "lat": 18.2347,
       "lon": -77.0951,
       "radius": 220,
-      "fact": "Legendary roadside stop — jerk chicken, roast yam and festival"
+      "category": "food",
+      "narrator_event": "landmark.faiths-pen",
+      "fact": "Legendary roadside stop — jerk chicken, roast yam and festival since before anyone can remember"
+    },
+    {
+      "id": "lmk-fern-gully",
+      "name": "Fern Gully",
+      "lat": 18.3808,
+      "lon": -77.1065,
+      "radius": 300,
+      "category": "nature",
+      "narrator_event": "landmark.fern-gully",
+      "fact": "A natural tunnel of ferns and bamboo — the most photographed road in Jamaica"
+    },
+    {
+      "id": "lmk-ocho-rios-bay",
+      "name": "Ocho Rios Bay",
+      "lat": 18.4077,
+      "lon": -77.1053,
+      "radius": 280,
+      "category": "nature",
+      "narrator_event": "landmark.enter",
+      "needs_owner_review": true,
+      "fact": "The Caribbean coast opens up — you made it to Ocho Rios"
     },
     {
       "id": "lmk-dunns-river",
@@ -55,6 +273,8 @@
       "lat": 18.4155,
       "lon": -77.1377,
       "radius": 250,
+      "category": "nature",
+      "narrator_event": "landmark.enter",
       "fact": "Jamaica's famous climbable waterfall — journey's end"
     }
   ]

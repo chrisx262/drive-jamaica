@@ -1,0 +1,169 @@
+{
+  "comment": "Recognition layer 2: community/district entry signs. Coordinates are real-world lat/lon, projected into compressed world space via road.project(). radius = trigger distance in compressed-world units (~3.3× real metres due to 0.3 scale). Each entry has a stable id assigned at creation — do not renumber. Entries marked needs_owner_review: true have coordinates sourced from map research, not from lived knowledge; owner should verify placement and whether the community is actually passed on the game route.",
+  "communities": [
+    {
+      "id": "com-harbour-view",
+      "name": "Harbour View",
+      "lat": 17.9627,
+      "lon": -76.7381,
+      "radius": 180,
+      "note": "Where the Palisadoes strip meets the Kingston mainland — the Harbour View roundabout"
+    },
+    {
+      "id": "com-rollington-town",
+      "name": "Rollington Town",
+      "lat": 17.9904,
+      "lon": -76.7681,
+      "radius": 120,
+      "note": "Eastern Kingston community along Windward Road",
+      "needs_owner_review": true
+    },
+    {
+      "id": "com-vineyard-town",
+      "name": "Vineyard Town",
+      "lat": 17.9969,
+      "lon": -76.7672,
+      "radius": 120,
+      "note": "Historic Kingston community between Rollington Town and Mountain View Avenue",
+      "needs_owner_review": true
+    },
+    {
+      "id": "com-mountain-view",
+      "name": "Mountain View",
+      "lat": 18.0022,
+      "lon": -76.7617,
+      "radius": 130,
+      "note": "Eastern Kingston, along Mountain View Avenue",
+      "needs_owner_review": true
+    },
+    {
+      "id": "com-wareika-hill",
+      "name": "Wareika Hill",
+      "lat": 18.0073,
+      "lon": -76.7549,
+      "radius": 120,
+      "note": "Eastern Kingston hillside community; birthplace of Count Ossie's nyahbinghi drumming tradition",
+      "needs_owner_review": true
+    },
+    {
+      "id": "com-liguanea",
+      "name": "Liguanea",
+      "lat": 18.0124,
+      "lon": -76.7852,
+      "radius": 150,
+      "note": "Uptown Kingston neighbourhood along the Trafalgar Road corridor",
+      "needs_owner_review": true
+    },
+    {
+      "id": "com-new-kingston",
+      "name": "New Kingston",
+      "lat": 18.0141,
+      "lon": -76.7969,
+      "radius": 180,
+      "note": "Kingston's central business district — hotels, offices, restaurants",
+      "needs_owner_review": true
+    },
+    {
+      "id": "com-half-way-tree",
+      "name": "Half Way Tree",
+      "lat": 18.0109,
+      "lon": -76.7960,
+      "radius": 200,
+      "note": "The crossroads of uptown Kingston — the 1813 clock tower marks the spot"
+    },
+    {
+      "id": "com-twickenham-park",
+      "name": "Twickenham Park",
+      "lat": 18.0107,
+      "lon": -76.9638,
+      "radius": 140,
+      "note": "St. Catherine community between Spanish Town and Bog Walk",
+      "needs_owner_review": true
+    },
+    {
+      "id": "com-spanish-town",
+      "name": "Spanish Town",
+      "lat": 17.9919,
+      "lon": -76.9543,
+      "radius": 300,
+      "note": "Jamaica's original colonial capital — Georgian parade square and cathedral"
+    },
+    {
+      "id": "com-angels",
+      "name": "Angels",
+      "lat": 18.0415,
+      "lon": -76.9738,
+      "radius": 130,
+      "note": "Junction community on the approach to Bog Walk gorge",
+      "needs_owner_review": true
+    },
+    {
+      "id": "com-bog-walk",
+      "name": "Bog Walk",
+      "lat": 18.0534,
+      "lon": -76.9775,
+      "radius": 160,
+      "note": "Community in the dramatic Rio Cobre gorge — Flat Bridge is the famous one-lane crossing"
+    },
+    {
+      "id": "com-ewarton",
+      "name": "Ewarton",
+      "lat": 18.1239,
+      "lon": -77.0880,
+      "radius": 150,
+      "note": "St. Catherine community on the Rio Cobre above Flat Bridge",
+      "needs_owner_review": true
+    },
+    {
+      "id": "com-linstead",
+      "name": "Linstead",
+      "lat": 18.1398,
+      "lon": -77.0276,
+      "radius": 250,
+      "note": "Famous since the folk song — Linstead Market draws all of St. Catherine on Saturdays"
+    },
+    {
+      "id": "com-moneague",
+      "name": "Moneague",
+      "lat": 18.2420,
+      "lon": -77.1100,
+      "radius": 220,
+      "note": "St. Ann crossroads where the road climbs to the hills — the old Moneague Hotel is a Jamaican institution"
+    },
+    {
+      "id": "com-cave-valley",
+      "name": "Cave Valley",
+      "lat": 18.2822,
+      "lon": -77.0888,
+      "radius": 130,
+      "note": "St. Ann community in the hills between Moneague and Alexandria",
+      "needs_owner_review": true
+    },
+    {
+      "id": "com-alexandria",
+      "name": "Alexandria",
+      "lat": 18.2897,
+      "lon": -77.0641,
+      "radius": 160,
+      "note": "St. Ann market town on the road down to Ocho Rios",
+      "needs_owner_review": true
+    },
+    {
+      "id": "com-steer-town",
+      "name": "Steer Town",
+      "lat": 18.3376,
+      "lon": -77.0915,
+      "radius": 130,
+      "note": "Hillside community at the top of Fern Gully",
+      "needs_owner_review": true
+    },
+    {
+      "id": "com-ocho-rios",
+      "name": "Ocho Rios",
+      "lat": 18.4097,
+      "lon": -77.1065,
+      "radius": 300,
+      "note": "Tourist capital of Jamaica's north coast — journey's end at Dunn's River Falls"
+    }
+  ]
+}

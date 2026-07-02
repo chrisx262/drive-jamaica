@@ -1,0 +1,30 @@
+{
+  "comment": "Dogs spawn only in town segments (GAME_SPEC: 'dogs chase and bark at the car through towns'). Segments not listed stay dog-free — goats own the unattended country stretches (Linstead-Moneague, see goats backlog item). kingstonSegments get the 'look both ways' pause before giving chase (owner detail: 'city dogs in Kingston famously look both ways before crossing').",
+  "globalSeed": 7331,
+  "minGap": 140,
+  "maxGap": 260,
+  "kingstonSegments": [
+    "Windward Road",
+    "Mountain View Avenue",
+    "Trafalgar Road",
+    "Hope Road",
+    "Hagley Park Road"
+  ],
+  "townSegments": [
+    "Windward Road",
+    "Mountain View Avenue",
+    "Trafalgar Road",
+    "Hope Road",
+    "Hagley Park Road",
+    "Spanish Town Road",
+    "Burke Road",
+    "Barrett Street",
+    "White Church Street",
+    "Wellington Street",
+    "King's Street",
+    "Main Road",
+    "Church Road",
+    "Ocho Rios Bypass",
+    "DaCosta Drive"
+  ]
+}
