@@ -7,7 +7,8 @@ export const HIT_RADIUS = 1.4; // exported for debug overlay
 const MIN_GAP = 90; // meters between potholes (compressed world)
 const MAX_GAP = 280;
 const BURST_SPEED = 13; // m/s — slower than this rolls through safely
-const PATCH_AFTER = 18_000; // ms; placeholder until tyre-shop stops exist (see GAME_SPEC)
+// Emergency fallback: auto-repair after 4 min if player never reaches a tyre shop.
+const PATCH_AFTER = 240_000;
 // Owner rule: government maintains the airport showcase road — no potholes
 // until just past the Harbour View roundabout at the end of the Palisadoes.
 const PRISTINE_UNTIL_SEGMENT = 'Norman Manley Highway / Palisadoes Road';
