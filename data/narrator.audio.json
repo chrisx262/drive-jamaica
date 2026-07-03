@@ -1,0 +1,7 @@
+{
+  "_format": "narrator-audio-sprite-v1",
+  "_doc": "Narrator voice sprite manifest. spriteFile is the stitched MP3 (path relative to site root). sprites maps event.lineIndex to [startSeconds, durationSeconds], matching the arrays in data/narrator.json. Empty sprites = caption-only mode — safe to ship until the recording session is done.",
+  "_adding_entries": "Record all lines in narrator.json into one MP3 (silence-padded between clips). For event 'pothole.burst' lines[0] and lines[1], add: 'pothole.burst.0': [startSec, durationSec], 'pothole.burst.1': [nextStartSec, durationSec]. The narrator picks a random line index per event; the matching sprite key is event + '.' + index.",
+  "spriteFile": "assets/voice/narrator.mp3",
+  "sprites": {}
+}
