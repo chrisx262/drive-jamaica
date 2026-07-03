@@ -7,7 +7,7 @@ import { Recognition } from './recognition';
 import { buildScenery } from './scenery';
 import { buildTrees } from './trees';
 import { Potholes } from './potholes';
-import { initNarrator, narrate } from './narrator';
+import { initNarrator, narrate, loadNarratorAudio } from './narrator';
 import { TestTrack } from './testtrack';
 import { Debug } from './debug';
 
@@ -78,6 +78,17 @@ scene.add(car.object);
 
 const input = initInput();
 initNarrator();
+
+// Load narrator audio after first user interaction (browser autoplay policy).
+// Silent no-op until data/narrator.audio.json has entries and assets/voice/narrator.mp3 exists.
+let _audioTriggered = false;
+const tryLoadAudio = (): void => {
+  if (_audioTriggered) return;
+  _audioTriggered = true;
+  void loadNarratorAudio('/data/narrator.audio.json');
+};
+document.addEventListener('pointerdown', tryLoadAudio, { once: true });
+document.addEventListener('keydown', tryLoadAudio, { once: true });
 
 let debug: Debug | null = null;
 if (isDebug) {
