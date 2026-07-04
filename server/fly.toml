@@ -1,0 +1,46 @@
+# Drive Jamaica — WebSocket server Fly.io config
+# Region: Miami (closest to Jamaica with low latency for Caribbean players)
+#
+# One-time setup:
+#   fly auth login
+#   cd server && fly launch --no-deploy   # pick your app name, skip deploy
+#   fly deploy                             # first deploy
+#
+# After deploy, set in your frontend environment:
+#   VITE_WS_URL=wss://YOUR-APP-NAME.fly.dev
+#
+# Subsequent deploys: fly deploy (from server/ directory)
+# Stream logs:        fly logs
+# Open dashboard:     fly dashboard
+
+app = "drive-jamaica-ws"
+primary_region = "mia"
+
+[build]
+# Fly.io auto-detects Node.js from package.json via Nixpacks — no Dockerfile needed.
+
+[env]
+  WS_PORT = "8080"
+  NODE_ENV = "production"
+
+[http_service]
+  internal_port = 8080
+  force_https = true
+  # Keep at least one machine warm so players always get a fast connection.
+  # Cost: ~$1.94/month for one shared-cpu-1x 256 MB machine.
+  auto_stop_machines = "off"
+  auto_start_machines = true
+  min_machines_running = 1
+  processes = ["app"]
+
+  [[http_service.checks]]
+    grace_period = "10s"
+    interval = "30s"
+    method = "GET"
+    timeout = "5s"
+    path = "/health"
+
+[[vm]]
+  memory = "256mb"
+  cpu_kind = "shared"
+  cpus = 1
