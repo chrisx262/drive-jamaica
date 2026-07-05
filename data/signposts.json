@@ -1,0 +1,47 @@
+{
+  "comment": "Recognition layer: downtown prominence signposts. These Kingston schools are NOT on the V1 route but are prominent institutions that get a road-sign HUD callout when the route passes closest to them. See GAME_SPEC.md: 'road signs / map callouts pointing downtown, narrator may name-check them'. All entries marked needs_owner_review: true — trigger_road is a best guess from map research; owner's lived knowledge is authoritative for exact placement.",
+  "signposts": [
+    {
+      "id": "sp-downtown-kingston-schools",
+      "label": "Kingston College (KC)  •  St. George's  •  Kingston Technical  •  Wolmer's Boys & Girls",
+      "direction": "Downtown Kingston",
+      "schools": [
+        {
+          "name": "Kingston College",
+          "nickname": "KC",
+          "lat": 18.0023,
+          "lon": -76.7882,
+          "needs_owner_review": true
+        },
+        {
+          "name": "St. George's College",
+          "lat": 18.0018,
+          "lon": -76.7879,
+          "needs_owner_review": true
+        },
+        {
+          "name": "Kingston Technical High School",
+          "lat": 17.9961,
+          "lon": -76.8047,
+          "needs_owner_review": true
+        },
+        {
+          "name": "Wolmer's Boys' School",
+          "lat": 18.0053,
+          "lon": -76.8051,
+          "needs_owner_review": true
+        },
+        {
+          "name": "Wolmer's Girls' School",
+          "lat": 18.0055,
+          "lon": -76.8048,
+          "needs_owner_review": true
+        }
+      ],
+      "trigger_road": "Hagley Park Road",
+      "narrator_event": "signpost.downtown_schools",
+      "needs_owner_review": true,
+      "note": "trigger_road is a best guess — Hagley Park Road is the route segment nearest Wolmer's Boys/Girls (Arthur Wint Drive area). KC, St. George's, and Kingston Technical are further east (downtown/Cross Roads area) and may warrant a separate signpost triggered earlier on Mountain View Avenue or Windward Road. Owner please advise exact trigger placement and whether to split into two signposts."
+    }
+  ]
+}
