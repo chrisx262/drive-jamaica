@@ -1,0 +1,121 @@
+{
+  "comment": "Recognition layer 2: community/district signs. trigger_segment must exactly match a segment name in data/route.json. Fired once per session as the player enters that road segment for the first time. lat/lon are reference coordinates (not used by the engine). needs_owner_review: true where OSM data may be imprecise — the owner's lived knowledge of the route is authoritative.",
+  "communities": [
+    {
+      "id": "com-palisadoes",
+      "name": "Palisadoes",
+      "lat": 17.955,
+      "lon": -76.748,
+      "trigger_segment": "Norman Manley Highway / Palisadoes Road",
+      "note": "The iconic strip — sea on both sides, airport behind you, the Blue Mountains ahead"
+    },
+    {
+      "id": "com-harbour-view",
+      "name": "Harbour View",
+      "lat": 17.975,
+      "lon": -76.733,
+      "trigger_segment": "Sir Florizel Glaspole Boulevard",
+      "note": "Eastern gateway into Kingston, at the foot of the Palisadoes causeway"
+    },
+    {
+      "id": "com-rockfort",
+      "name": "Rockfort",
+      "lat": 17.982,
+      "lon": -76.758,
+      "trigger_segment": "Windward Road",
+      "note": "Eastern Kingston community, named for the historic Rockfort mineral baths and fort",
+      "needs_owner_review": true
+    },
+    {
+      "id": "com-wareika-hill",
+      "name": "Wareika Hill",
+      "lat": 18.002,
+      "lon": -76.771,
+      "trigger_segment": "Mountain View Avenue",
+      "note": "Hillside community in east Kingston — spiritual home of Rastafari drumming; Count Ossie's legacy",
+      "needs_owner_review": true
+    },
+    {
+      "id": "com-new-kingston",
+      "name": "New Kingston",
+      "lat": 18.013,
+      "lon": -76.786,
+      "trigger_segment": "Trafalgar Road",
+      "note": "Kingston's modern business and hotel district — Emancipation Park is here",
+      "needs_owner_review": true
+    },
+    {
+      "id": "com-half-way-tree",
+      "name": "Half Way Tree",
+      "lat": 18.011,
+      "lon": -76.796,
+      "trigger_segment": "Hagley Park Road",
+      "note": "The crossroads of Kingston — halfway between Port Royal and Spanish Town in colonial times"
+    },
+    {
+      "id": "com-spanish-town",
+      "name": "Spanish Town",
+      "lat": 17.994,
+      "lon": -76.957,
+      "trigger_segment": "Spanish Town Bypass",
+      "note": "Jamaica's historic capital, founded by the Spanish in 1534 — Old King's House is here"
+    },
+    {
+      "id": "com-bog-walk",
+      "name": "Bog Walk",
+      "lat": 18.062,
+      "lon": -76.983,
+      "trigger_segment": "Bog Walk Gorge",
+      "note": "Gateway to the gorge — the Rio Cobre runs alongside, and Flat Bridge is famous for its lack of railings"
+    },
+    {
+      "id": "com-linstead",
+      "name": "Linstead",
+      "lat": 18.138,
+      "lon": -77.030,
+      "trigger_segment": "Linstead Bypass",
+      "note": "\"Carry mi ackee go a Linstead market\" — the song names this famous market town"
+    },
+    {
+      "id": "com-ewarton",
+      "name": "Ewarton",
+      "lat": 18.183,
+      "lon": -77.055,
+      "trigger_segment": "Linstead - Moneague Road",
+      "note": "Small St. Catherine town on the climb toward Moneague, known for the JAMALCO alumina plant nearby",
+      "needs_owner_review": true
+    },
+    {
+      "id": "com-moneague",
+      "name": "Moneague",
+      "lat": 18.268,
+      "lon": -77.082,
+      "trigger_segment": "Moneague - Golden Grove Road",
+      "note": "Hill-country crossroads where St. Ann meets St. Catherine — the road north opens up here"
+    },
+    {
+      "id": "com-faiths-pen",
+      "name": "Faith's Pen",
+      "lat": 18.258,
+      "lon": -77.095,
+      "trigger_segment": "Moneague - Ocho Rios Road",
+      "note": "Legendary roadside cookshop strip — jerk chicken, roast yam, festival. Pull over or regret it."
+    },
+    {
+      "id": "com-fern-gully",
+      "name": "Fern Gully",
+      "lat": 18.388,
+      "lon": -77.100,
+      "trigger_segment": "Milford Road",
+      "note": "3 km canopy road through giant ferns and bamboo on the descent into Ocho Rios"
+    },
+    {
+      "id": "com-ocho-rios",
+      "name": "Ocho Rios",
+      "lat": 18.408,
+      "lon": -77.103,
+      "trigger_segment": "DaCosta Drive",
+      "note": "St. Ann's tourist capital — Dunn's River Falls and the end of the road await"
+    }
+  ]
+}
