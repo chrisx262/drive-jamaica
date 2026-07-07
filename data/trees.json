@@ -19,9 +19,9 @@
     "Twikenham Park Road": 0.006,
     "Twickenham Park Road": 0.006,
     "Sligoville Road": 0.010,
-    "Bog Walk Gorge": 0.020,
-    "Bogwalk Gorge Road": 0.020,
-    "River Road": 0.018,
+    "Bog Walk Gorge": { "density": 0.022, "coconutFraction": 0.0, "bambooFraction": 0.45 },
+    "Bogwalk Gorge Road": { "density": 0.022, "coconutFraction": 0.0, "bambooFraction": 0.45 },
+    "River Road": { "density": 0.018, "coconutFraction": 0.0, "bambooFraction": 0.45 },
     "Bog Walk Roundabout": 0.010,
     "Linstead Bypass": 0.010,
     "Main Road": 0.010,
@@ -29,7 +29,7 @@
     "Pleasant Farm Road": 0.018,
     "McGrath Road": 0.015,
     "Moneague - Ocho Rios Road": 0.015,
-    "Milford Road": 0.035,
+    "Milford Road": { "density": 0.035, "coconutFraction": 0.0, "bambooFraction": 0.75 },
     "Northern Coastal Highway": 0.010
   }
 }

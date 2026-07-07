@@ -6,6 +6,11 @@ import type { Road } from './road';
 const TRUNK_COL = 0x6b4c2a;
 const COCONUT_CROWN_COL = 0x2d5d23;
 const BROAD_COLS = [0x3a7d2c, 0x2d5d23, 0x4e8c3a] as const;
+// Bamboo: bright yellow-green culm + dark forest-green leaf cluster.
+// Appears in Fern Gully (Milford Rd) and Bog Walk gorge only — per Jamaica accuracy rules
+// (coconut trees must not appear on those stretches; bamboo is the correct vegetation).
+const BAMBOO_CULM_COL = 0x9cbf2f;
+const BAMBOO_LEAF_COL = 0x2d6b1f;
 
 // Road half-width matches ROAD_WIDTH in road.ts — trees start beyond the edge.
 const ROAD_HALF = 4;
@@ -14,28 +19,44 @@ const ROAD_HALF = 4;
 // When GLB assets land, swap buildTrees() to load them via GLTFLoader
 // (see assets/CREDITS.md for sources + expected filenames).
 
+type TreeKind = 'coconut' | 'broad' | 'bamboo';
+
 interface TreePlacement {
   pos: THREE.Vector3;
   scale: number;
   rotY: number;
-  isCoconut: boolean;
+  kind: TreeKind;
   colorIdx: number;   // index into BROAD_COLS (broad trees only)
-  crownTiltX: number; // slight lean variation (coconut trees only)
+  crownTiltX: number; // slight lean variation
   crownTiltZ: number;
   canopyScale: number; // broad canopy radius multiplier
 }
 
-type SegmentConfig = number | { density: number; coconutFraction?: number };
+type SegmentConfig = number | { density: number; coconutFraction?: number; bambooFraction?: number };
 
-function resolveSegment(cfg: SegmentConfig, globalCoconutFraction: number): { density: number; coconutFraction: number } {
-  if (typeof cfg === 'number') return { density: cfg, coconutFraction: globalCoconutFraction };
-  return { density: cfg.density, coconutFraction: cfg.coconutFraction ?? globalCoconutFraction };
+function resolveSegment(
+  cfg: SegmentConfig,
+  globalCoconutFraction: number,
+): { density: number; coconutFraction: number; bambooFraction: number } {
+  if (typeof cfg === 'number') {
+    return { density: cfg, coconutFraction: globalCoconutFraction, bambooFraction: 0 };
+  }
+  return {
+    density: cfg.density,
+    coconutFraction: cfg.coconutFraction ?? globalCoconutFraction,
+    bambooFraction: cfg.bambooFraction ?? 0,
+  };
 }
 
 function collectPlacements(road: Road, rng: () => number): TreePlacement[] {
   const out: TreePlacement[] = [];
   const segmentMap = treesData.segments as Record<string, SegmentConfig>;
-  const { minLateralOffset: minOff, maxLateralOffset: maxOff, coconutFraction: globalCoconutFraction, defaultDensity } = treesData as typeof treesData & { coconutFraction: number };
+  const {
+    minLateralOffset: minOff,
+    maxLateralOffset: maxOff,
+    coconutFraction: globalCoconutFraction,
+    defaultDensity,
+  } = treesData as typeof treesData & { coconutFraction: number };
 
   let accumL = 0;
   let accumR = 0;
@@ -46,9 +67,9 @@ function collectPlacements(road: Road, rng: () => number): TreePlacement[] {
     const segLen = a.distanceTo(b);
 
     const seg = road.segmentAt(i - 1);
-    const { density, coconutFraction } = seg
+    const { density, coconutFraction, bambooFraction } = seg
       ? resolveSegment(segmentMap[seg.name] ?? defaultDensity, globalCoconutFraction)
-      : { density: defaultDensity, coconutFraction: globalCoconutFraction };
+      : { density: defaultDensity, coconutFraction: globalCoconutFraction, bambooFraction: 0 };
 
     const dir = b.clone().sub(a).normalize();
     // Driver's left = (dir.z, 0, -dir.x), right is its negation.
@@ -57,37 +78,28 @@ function collectPlacements(road: Road, rng: () => number): TreePlacement[] {
     accumL += segLen * density;
     accumR += segLen * density;
 
-    while (accumL >= 1) {
-      accumL -= 1;
+    const placeTree = (side: 1 | -1) => {
       const t = rng();
       const offset = ROAD_HALF + minOff + rng() * (maxOff - minOff);
+      const r = rng();
+      const kind: TreeKind =
+        r < coconutFraction ? 'coconut'
+        : r < coconutFraction + bambooFraction ? 'bamboo'
+        : 'broad';
       out.push({
-        pos: a.clone().lerp(b, t).addScaledVector(leftDir, offset),
+        pos: a.clone().lerp(b, t).addScaledVector(leftDir, side * offset),
         scale: 0.7 + rng() * 0.8,
         rotY: rng() * Math.PI * 2,
-        isCoconut: rng() < coconutFraction,
+        kind,
         colorIdx: Math.floor(rng() * BROAD_COLS.length),
         crownTiltX: (rng() - 0.5) * 0.32,
         crownTiltZ: (rng() - 0.5) * 0.32,
         canopyScale: 2.2 + rng() * 0.9,
       });
-    }
+    };
 
-    while (accumR >= 1) {
-      accumR -= 1;
-      const t = rng();
-      const offset = ROAD_HALF + minOff + rng() * (maxOff - minOff);
-      out.push({
-        pos: a.clone().lerp(b, t).addScaledVector(leftDir, -offset),
-        scale: 0.7 + rng() * 0.8,
-        rotY: rng() * Math.PI * 2,
-        isCoconut: rng() < coconutFraction,
-        colorIdx: Math.floor(rng() * BROAD_COLS.length),
-        crownTiltX: (rng() - 0.5) * 0.32,
-        crownTiltZ: (rng() - 0.5) * 0.32,
-        canopyScale: 2.2 + rng() * 0.9,
-      });
-    }
+    while (accumL >= 1) { accumL -= 1; placeTree(1); }
+    while (accumR >= 1) { accumR -= 1; placeTree(-1); }
   }
 
   return out;
@@ -97,8 +109,9 @@ export function buildTrees(road: Road): THREE.Group {
   const group = new THREE.Group();
   const rng = mulberry32(treesData.globalSeed);
   const all = collectPlacements(road, rng);
-  const coconuts = all.filter((p) => p.isCoconut);
-  const broads = all.filter((p) => !p.isCoconut);
+  const coconuts = all.filter((p) => p.kind === 'coconut');
+  const broads = all.filter((p) => p.kind === 'broad');
+  const bamboos = all.filter((p) => p.kind === 'bamboo');
 
   // Shared trunk geometry: unit cylinder, slightly tapered, flat-shaded.
   const trunkGeo = new THREE.CylinderGeometry(0.28, 0.44, 1, 5, 1);
@@ -180,6 +193,45 @@ export function buildTrees(road: Road): THREE.Group {
       mesh.instanceMatrix.needsUpdate = true;
       group.add(mesh);
     }
+  }
+
+  // --- Bamboo trees (Fern Gully, Bog Walk gorge) ---
+  // Tall thin culm (bright green) with a flat spreading leaf cluster at top.
+  // Each instance is a single culm; the dense scatter produces the grove effect.
+  const BAMBOO_H = 9.0;
+  if (bamboos.length > 0) {
+    // Culm: thin tapered cylinder, bright yellow-green.
+    const culmGeo = new THREE.CylinderGeometry(0.10, 0.18, 1, 6, 1);
+    const culmMat = new THREE.MeshLambertMaterial({ color: BAMBOO_CULM_COL, flatShading: true });
+    const culms = new THREE.InstancedMesh(culmGeo, culmMat, bamboos.length);
+
+    // Leaf cluster: flat icosahedron (stretched wide, compressed tall) at the top.
+    const leafGeo = new THREE.IcosahedronGeometry(1, 0);
+    const leafMat = new THREE.MeshLambertMaterial({ color: BAMBOO_LEAF_COL, flatShading: true });
+    const leaves = new THREE.InstancedMesh(leafGeo, leafMat, bamboos.length);
+
+    const dummy = new THREE.Object3D();
+    for (let i = 0; i < bamboos.length; i++) {
+      const p = bamboos[i];
+      const h = BAMBOO_H * p.scale;
+
+      // Culm: very thin (0.3× scale in x/z), slight characteristic lean.
+      dummy.position.copy(p.pos).setY(h * 0.5);
+      dummy.rotation.set(p.crownTiltX * 0.5, p.rotY, p.crownTiltZ * 0.5);
+      dummy.scale.set(p.scale * 0.3, h, p.scale * 0.3);
+      dummy.updateMatrix();
+      culms.setMatrixAt(i, dummy.matrix);
+
+      // Leaf cluster: wide and flat (2× wide, 0.55× tall), leaning with culm.
+      dummy.position.copy(p.pos).setY(h + p.scale * 0.5);
+      dummy.rotation.set(p.crownTiltX, p.rotY, p.crownTiltZ);
+      dummy.scale.set(p.scale * 2.0, p.scale * 0.55, p.scale * 2.0);
+      dummy.updateMatrix();
+      leaves.setMatrixAt(i, dummy.matrix);
+    }
+    culms.instanceMatrix.needsUpdate = true;
+    leaves.instanceMatrix.needsUpdate = true;
+    group.add(culms, leaves);
   }
 
   return group;
