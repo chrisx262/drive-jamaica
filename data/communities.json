@@ -1,0 +1,175 @@
+{
+  "comment": "Recognition layer 2 — community and district signs. Coordinates are real-world lat/lon projected to world space via road.project() at runtime. radius = trigger distance in compressed-world units (~300 units per real km). needs_owner_review: true marks any entry where OSM-derived position may differ from the owner's lived knowledge — the owner's knowledge is authoritative.",
+  "communities": [
+    {
+      "id": "com-palisadoes",
+      "name": "Palisadoes",
+      "lat": 17.940,
+      "lon": -76.762,
+      "radius": 600,
+      "note": "The narrow sand spit connecting Norman Manley Airport to Kingston — sea on both sides"
+    },
+    {
+      "id": "com-harbour-view",
+      "name": "Harbour View",
+      "lat": 17.953,
+      "lon": -76.724,
+      "radius": 350,
+      "note": "Eastern gateway into Kingston at the foot of the Palisadoes roundabout",
+      "needs_owner_review": true
+    },
+    {
+      "id": "com-rockfort",
+      "name": "Rockfort",
+      "lat": 17.968,
+      "lon": -76.745,
+      "radius": 280,
+      "note": "Named for the 17th-century fortress walls; the mineral bath is a Kingston institution",
+      "needs_owner_review": true
+    },
+    {
+      "id": "com-wareika-hill",
+      "name": "Wareika Hill",
+      "lat": 17.978,
+      "lon": -76.752,
+      "radius": 320,
+      "note": "Hillside community overlooking eastern Kingston",
+      "needs_owner_review": true
+    },
+    {
+      "id": "com-franklin-town",
+      "name": "Franklin Town",
+      "lat": 17.997,
+      "lon": -76.776,
+      "radius": 280,
+      "note": "Eastern Kingston community along the Windward Road and Mountain View corridor",
+      "needs_owner_review": true
+    },
+    {
+      "id": "com-kingston",
+      "name": "Kingston",
+      "lat": 17.997,
+      "lon": -76.794,
+      "radius": 700,
+      "note": "Capital and largest city of Jamaica"
+    },
+    {
+      "id": "com-cross-roads",
+      "name": "Cross Roads",
+      "lat": 18.003,
+      "lon": -76.797,
+      "radius": 250,
+      "note": "The famous Kingston junction — north to Half Way Tree, east to downtown",
+      "needs_owner_review": true
+    },
+    {
+      "id": "com-new-kingston",
+      "name": "New Kingston",
+      "lat": 18.013,
+      "lon": -76.789,
+      "radius": 380,
+      "note": "Kingston's modern business, hotel and shopping district",
+      "needs_owner_review": true
+    },
+    {
+      "id": "com-half-way-tree",
+      "name": "Half Way Tree",
+      "lat": 18.011,
+      "lon": -76.796,
+      "radius": 420,
+      "note": "The commercial heart of St. Andrew — the 1813 clock tower marks its centre"
+    },
+    {
+      "id": "com-hagley-park",
+      "name": "Hagley Park",
+      "lat": 18.004,
+      "lon": -76.816,
+      "radius": 300,
+      "note": "Western Kingston residential area along the Spanish Town Road corridor",
+      "needs_owner_review": true
+    },
+    {
+      "id": "com-trench-town",
+      "name": "Trench Town",
+      "lat": 17.993,
+      "lon": -76.823,
+      "radius": 300,
+      "note": "West Kingston community that gave the world reggae — Bob Marley grew up here",
+      "needs_owner_review": true
+    },
+    {
+      "id": "com-spanish-town",
+      "name": "Spanish Town",
+      "lat": 17.991,
+      "lon": -76.957,
+      "radius": 550,
+      "note": "Jamaica's former capital since the 1500s — seat of St. Catherine parish"
+    },
+    {
+      "id": "com-twickenham-park",
+      "name": "Twickenham Park",
+      "lat": 18.047,
+      "lon": -76.940,
+      "radius": 280,
+      "note": "Community north of Spanish Town on the road to Bog Walk gorge",
+      "needs_owner_review": true
+    },
+    {
+      "id": "com-angels",
+      "name": "Angels",
+      "lat": 18.055,
+      "lon": -76.964,
+      "radius": 220,
+      "note": "Small community at the foot of Bog Walk gorge",
+      "needs_owner_review": true
+    },
+    {
+      "id": "com-bog-walk",
+      "name": "Bog Walk",
+      "lat": 18.064,
+      "lon": -76.972,
+      "radius": 380,
+      "note": "Gateway to the Rio Cobre gorge — Flat Bridge is just ahead"
+    },
+    {
+      "id": "com-linstead",
+      "name": "Linstead",
+      "lat": 18.139,
+      "lon": -76.999,
+      "radius": 450,
+      "note": "Market town in St. Catherine — immortalised in the folk song Linstead Market"
+    },
+    {
+      "id": "com-moneague",
+      "name": "Moneague",
+      "lat": 18.237,
+      "lon": -77.069,
+      "radius": 400,
+      "note": "Cool hill-country junction — the watershed between St. Catherine and St. Ann"
+    },
+    {
+      "id": "com-faiths-pen",
+      "name": "Faith's Pen",
+      "lat": 18.235,
+      "lon": -77.095,
+      "radius": 320,
+      "note": "Legendary roadside cookshop strip — jerk chicken, roast yam and festival"
+    },
+    {
+      "id": "com-fern-gully",
+      "name": "Fern Gully",
+      "lat": 18.385,
+      "lon": -77.106,
+      "radius": 380,
+      "note": "The spectacular canopy descent into Ocho Rios — bamboo arches overhead"
+    },
+    {
+      "id": "com-ocho-rios",
+      "name": "Ocho Rios",
+      "lat": 18.407,
+      "lon": -77.103,
+      "radius": 500,
+      "note": "St. Ann resort town — the end of the road and Dunn's River Falls awaits"
+    }
+  ]
+}
