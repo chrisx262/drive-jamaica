@@ -4,6 +4,7 @@ import { Car } from './car';
 import { Road } from './road';
 import type { RoadLike } from './road';
 import { Recognition } from './recognition';
+import { RouteProgress } from './progress';
 import { buildScenery } from './scenery';
 import { buildTrees } from './trees';
 import { Potholes } from './potholes';
@@ -36,6 +37,7 @@ const isDebug = isTestTrack || params.has('debug');
 
 let road: RoadLike;
 let recognition: Recognition | null = null;
+let progress: RouteProgress | null = null;
 
 if (isTestTrack) {
   const tt = new TestTrack();
@@ -49,6 +51,7 @@ if (isTestTrack) {
   scene.add(buildScenery(r));
   scene.add(buildTrees(r));
   recognition = new Recognition(r);
+  progress = new RouteProgress(r);
 }
 
 const potholes = new Potholes(road);
@@ -108,6 +111,7 @@ renderer.setAnimationLoop(() => {
   car.update(dt, input);
   potholes.update(car);
   recognition?.update(car.position);
+  progress?.update(car.position);
   debug?.update(dt);
 
   // Chase camera: behind and above the car, smoothed.
