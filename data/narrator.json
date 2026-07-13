@@ -1,5 +1,5 @@
 {
-  "comment": "Event -> possible narrator lines. Lines are picked at random per event. Audio files (assets/voice/) will map by line id later; V1 scaffold shows captions only.",
+  "comment": "Event -> possible narrator lines. Picked at random per event. Audio files (assets/voice/) map by key later; V1 shows captions only. Specific-key entries (e.g. 'landmark.enter.Devon House') are checked before the generic fallback ('landmark.enter') — add per-landmark flavour lines here with no TypeScript changes needed.",
   "events": {
     "game.start": [
       "Welcome to Jamaica, brethren! Touch di road!"
@@ -8,7 +8,121 @@
       "Yuh deh pon {road} now!"
     ],
     "landmark.enter": [
-      "See {landmark} deh!"
+      "See {landmark} deh!",
+      "Big up {landmark}!",
+      "Yuh pass {landmark} — recognize di place!"
+    ],
+    "landmark.enter.Norman Manley International Airport": [
+      "Norman Manley Airport — named after a true National Hero. Leh wi drive!",
+      "Left di airport — di real Jamaica start right now, brethren!"
+    ],
+    "landmark.enter.Gun Boat Beach": [
+      "Gun Boat Beach — harbour water calm calm on di left, open sea rough on di right. Pure Palisadoes vibes!",
+      "Best beach on di Palisadoes strip — coconut tree line up and everything!"
+    ],
+    "landmark.enter.Port Royal": [
+      "Port Royal sign deh — wickedest city on earth, sank in di earthquake of 1692. Duppy town!",
+      "Port Royal — pirate capital, earthquake victim, pure Jamaican history right deh so!"
+    ],
+    "landmark.enter.Harbour View Roundabout": [
+      "Harbour View roundabout — Kingston Harbour open up to di left. Welcome to di city, driver!",
+      "Leavin' di Palisadoes — di capital spread out before yuh. Drive wid respect!"
+    ],
+    "landmark.enter.National Stadium": [
+      "National Stadium! Every Olympic medal, every World Championship — Jamaica prove herself right deh so!",
+      "Di stadium where legends born — from Herb McKenley to Usain Bolt, dis ground know greatness!"
+    ],
+    "landmark.enter.Excelsior High School": [
+      "Excelsior High — right deh cross from di National Stadium. Champions on both sides a di road!",
+      "Big up Excelsior! Track star, academic star — Excelsior nuh play around!"
+    ],
+    "landmark.enter.National Heroes Park": [
+      "National Heroes Park — Marcus Garvey, Norman Manley, Bustamante all rest deh so. Give respect!",
+      "Di resting place of Jamaica's greatest sons and daughters. Drive slow, show reverence!"
+    ],
+    "landmark.enter.Jamaica College": [
+      "Jamaica College — di Old Boys keep di tradition alive! Old Hope Road, serious academics!",
+      "JC right deh — Jamaica College, where excellence is di standard and di Old Boys nuh forget!"
+    ],
+    "landmark.enter.Bob Marley Museum": [
+      "Fifty-Six Hope Road — di Tuff Gong lived right here! One Love from di legend himself!",
+      "Bob Marley Museum! Di whole world come a Jamaica to touch dis ground. Pure spirit right deh so!",
+      "Tuff Gong home — reggae was born right here pon Hope Road. Feel di vibration!"
+    ],
+    "landmark.enter.Devon House": [
+      "Devon House! George Stiebel — Jamaica's first Black millionaire — build dis mansion in 1881. And di ice cream? Best inna di world!",
+      "Devon House ice cream — yuh MUST stop next time, driver. Di best scoop on di island, no argument!",
+      "See Devon House deh — history and ice cream in di same place. Jamaica always do it different!"
+    ],
+    "landmark.enter.Tracks & Records": [
+      "Tracks and Records! Usain Bolt own restaurant — world's fastest man jerk chicken? Dat must be fast too!",
+      "Bolt's place — Constant Spring Road. Di man run nine-five-eight AND him cook? Jamaica nuh stop!"
+    ],
+    "landmark.enter.Emancipation Park": [
+      "Emancipation Park — Redemption Song sculpture stand tall. From slavery to freedom, Jamaica remember!",
+      "New Kingston green heart — di Redemption Song right deh. Freedom reach, brethren!"
+    ],
+    "landmark.enter.Half Way Tree Clock Tower": [
+      "Half Way Tree clock! 1813 and still keeping time — every Kingstonian know dis corner by heart!",
+      "Half Way Tree! Di heartbeat of Kingston — every bus, every taxi, every face pass through here!",
+      "Di clock tower! Half Way Tree been di crossroads of dis city for two hundred years. Respect to di place!"
+    ],
+    "landmark.enter.St. Andrew High School": [
+      "St. Andrew High! Top girls school, Half Way Tree — STATHS gyal dem run tings!",
+      "St. Andrew High School — excellence in di heart of Half Way Tree. Big up di institution!"
+    ],
+    "landmark.enter.Holy Childhood High School": [
+      "Holy Childhood High — Catholic education, Half Way Tree. Deep roots in Jamaican learning!",
+      "Big up Holy Childhood! Half Way Tree school wid generations of proud graduates!"
+    ],
+    "landmark.enter.KFC Half Way Tree": [
+      "KFC Half Way Tree! Highest-grossing KFC inna di whole world — Jamaica love di colonel SERIOUS!",
+      "Di KFC right deh — highest grossing inna di world dem say. Jamaican people nuh play when it come to chicken!"
+    ],
+    "landmark.enter.Tastee Patties": [
+      "Tastee Patties! Di original Jamaican patty since 1966 — nuttn nuh beat a fresh Tastee!",
+      "Tastee! Every Jamaican grow up on dis — beef patty inna coco bread, pure memories right deh so!"
+    ],
+    "landmark.enter.Juici Patties": [
+      "Juici Patties right deh! Di great patty rivalry — Tastee or Juici? Every Jamaican have di opinion!",
+      "Juici Patties! You a Tastee person or Juici person? Di debate never done in Jamaica!"
+    ],
+    "landmark.enter.Burger King": [
+      "Burger King New Kingston — Jamaicans choose di Whopper and dem own jerk chicken in di same breath!",
+      "BK right deh — Half Way Tree strip. Jamaican fast food culture is its own thing entirely!"
+    ],
+    "landmark.enter.Calabar High School": [
+      "CALABAR! Red Hills Road — di Great House, di best boys school inna Jamaica! Big up di Baptist foundation!",
+      "Calabar High — Red Hills Road. From di Great House to di track, Calabar man dem nuh easy!",
+      "Cala-BAR! Di pride of Red Hills Road — Baptist-founded, champion-producing, nuh stop, nuh stop!"
+    ],
+    "landmark.enter.Hydel High School": [
+      "Hydel High! Leaving Kingston heading west — Hydel athletes punch above dem weight every season!",
+      "Big up Hydel! Spanish Town Road corridor — small school, big heart, bigger dreams!"
+    ],
+    "landmark.enter.Flat Bridge": [
+      "Flat Bridge! One lane, no railings, river rushing below — most exciting bridge inna Jamaica!",
+      "Flat Bridge inna di gorge — Rio Cobre right below yuh. No railings, full trust. Pure Jamaica!",
+      "Dis is Flat Bridge — one car at a time, driver. Di river nuh care who inna a hurry!"
+    ],
+    "landmark.enter.Faith's Pen": [
+      "FAITH'S PEN! Di legendary stop — jerk chicken, roast yam, festival right deh! Pull over, driver!",
+      "Faith's Pen — if yuh nuh stop and eat here, yuh doing di journey wrong. Slow down, smell di jerk!",
+      "Jerk chicken a-call yuh name! Faith's Pen cookshops line up — dis is di most delicious stretch a road inna Jamaica!"
+    ],
+    "landmark.enter.Fern Gully": [
+      "FERN GULLY! Di most famous road inna Jamaica — green canopy above, cool air, pure magic!",
+      "Fern Gully! Bamboo and fern arch overhead — slow down and tek in di beauty, brethren. Nuh rush dis!",
+      "Three kilometre of pure canopy — Fern Gully is di most photographed road on di island. Eyes wide open!"
+    ],
+    "landmark.enter.Ocho Rios Bay": [
+      "Ocho Rios! Di coast open up — blue Caribbean water straight ahead. Yuh reach, driver!",
+      "Ochi Bay right deh! Sea breeze, sunshine, resort town — yuh drive di whole way and deserve dis view!"
+    ],
+    "landmark.enter.Dunn's River Falls": [
+      "DUNN'S RIVER FALLS! Journey done, brethren — di waterfall a-call yuh name!",
+      "Dunn's River Falls — end of di road, beginning of di bath. Jamaica bless yuh, driver! Give thanks!",
+      "Yuh reach Dunn's River! Climb di falls, feel di water, celebrate — yuh drove di whole Airport-to-Ochi run!"
     ],
     "pothole.burst": [
       "Yuh tyre bust, brethren!",
