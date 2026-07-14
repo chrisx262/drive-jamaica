@@ -1,21 +1,29 @@
 import * as THREE from 'three';
 import landmarksData from '../data/landmarks.json';
+import communitiesData from '../data/communities.json';
 import type { Road } from './road';
 import { narrate } from './narrator';
 
-
-// Recognition system: layer 1 road callouts + layer 3 landmark popups.
-// Community signs (layer 2) extend this module later.
+// Recognition system — three layers of place identification, all data-driven.
+//   Layer 1: road callouts  — segment-name HUD when the player turns onto a road.
+//   Layer 2: community signs — entry sign + HUD when entering a named community.
+//   Layer 3: landmark popups — name + one-line fact for specific POIs.
 export class Recognition {
   private currentRoad: string | undefined;
   private calloutEl: HTMLElement;
   private popupEl: HTMLElement;
+  private communityEl: HTMLElement;
   private hideTimer: ReturnType<typeof setTimeout> | undefined;
   private popupTimer: ReturnType<typeof setTimeout> | undefined;
+  private communityHideTimer: ReturnType<typeof setTimeout> | undefined;
   private landmarks: { name: string; fact: string; pos: THREE.Vector3; radius: number; shown: boolean }[] = [];
+  private communities: { name: string; pos: THREE.Vector3; radius: number; shown: boolean }[] = [];
 
   constructor(private road: Road) {
+    // Layer 1 — road callout (already in index.html as #callout)
     this.calloutEl = document.getElementById('callout')!;
+
+    // Layer 3 — landmark popup (created dynamically, sits below road callout)
     this.popupEl = document.createElement('div');
     Object.assign(this.popupEl.style, {
       position: 'fixed', top: '64px', left: '50%', transform: 'translateX(-50%)',
@@ -26,12 +34,32 @@ export class Recognition {
     } satisfies Partial<CSSStyleDeclaration>);
     document.body.appendChild(this.popupEl);
 
+    // Layer 2 — community sign: right-side HUD styled in Jamaican colours (gold + green).
+    // Styled like a real Jamaican road sign: gold plate, green border and text.
+    this.communityEl = document.createElement('div');
+    Object.assign(this.communityEl.style, {
+      position: 'fixed', top: '50%', right: '20px', transform: 'translateY(-50%)',
+      padding: '10px 20px', borderRadius: '4px',
+      background: '#fed100', color: '#007749', border: '3px solid #007749',
+      fontFamily: 'system-ui, sans-serif', fontWeight: '800', fontSize: '17px',
+      opacity: '0', transition: 'opacity 0.4s', userSelect: 'none',
+      textAlign: 'center', lineHeight: '1.3',
+      boxShadow: '0 2px 8px rgba(0,0,0,0.35)',
+      pointerEvents: 'none',
+    } satisfies Partial<CSSStyleDeclaration>);
+    document.body.appendChild(this.communityEl);
+
     for (const l of landmarksData.landmarks) {
       this.landmarks.push({ name: l.name, fact: l.fact, pos: road.project(l.lat, l.lon), radius: l.radius, shown: false });
+    }
+
+    for (const c of communitiesData.communities) {
+      this.communities.push({ name: c.name, pos: road.project(c.lat, c.lon), radius: c.radius, shown: false });
     }
   }
 
   update(carPos: THREE.Vector3): void {
+    // Layer 1 — road callout
     const seg = this.road.segmentAt(this.road.nearestPointIndex(carPos));
     if (seg && seg.name !== this.currentRoad) {
       this.currentRoad = seg.name;
@@ -42,6 +70,19 @@ export class Recognition {
       narrate('road.enter', { road: seg.name });
     }
 
+    // Layer 2 — community signs (show once per session per community)
+    for (const c of this.communities) {
+      if (c.shown || c.pos.distanceTo(carPos) > c.radius) continue;
+      c.shown = true;
+      this.communityEl.textContent = c.name;
+      this.communityEl.style.opacity = '1';
+      clearTimeout(this.communityHideTimer);
+      this.communityHideTimer = setTimeout(() => { this.communityEl.style.opacity = '0'; }, 4500);
+      narrate('community.enter', { community: c.name });
+      break; // one sign at a time; next fires on next update pass
+    }
+
+    // Layer 3 — landmark popups
     for (const l of this.landmarks) {
       if (l.shown || l.pos.distanceTo(carPos) > l.radius) continue;
       l.shown = true;
