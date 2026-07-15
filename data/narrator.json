@@ -16,6 +16,16 @@
     ],
     "tyre.fixed": [
       "Tyre patch up — gwaan!"
+    ],
+    "cowherder.approach": [
+      "Hol' on, man — cows pon di road!",
+      "Ease off! Big bull up ahead deh!",
+      "Move careful, nuh — herd a cross!"
+    ],
+    "cowherder.hit": [
+      "Yuh lick di man cow! Have some manners, brethren!",
+      "Aye! Watch where yuh gaan wid di car!",
+      "Rhatid! Yuh just box over di man livestock!"
     ]
   }
 }
