@@ -1,0 +1,181 @@
+{
+  "comment": "Recognition layer 2 — community and district signs. Route order: Norman Manley Airport → Palisadoes → Harbour View → Kingston → Half Way Tree → Spanish Town → Bog Walk → Linstead → Moneague → Faith's Pen → Fern Gully → Ocho Rios. Coordinates are real-world lat/lon projected to world space via road.project() at runtime. radius = trigger distance in compressed-world units (scale 0.3, so 100 world units ≈ 333 m real). needs_owner_review: true marks any entry where OSM/research data may differ from the owner's lived knowledge — the owner's knowledge is authoritative.",
+  "communities": [
+    {
+      "id": "com-palisadoes",
+      "name": "Palisadoes",
+      "lat": 17.940,
+      "lon": -76.762,
+      "radius": 600,
+      "note": "The narrow sand spit connecting Norman Manley Airport to Kingston — sea on both sides; Gun Boat Beach on the harbour side"
+    },
+    {
+      "id": "com-harbour-view",
+      "name": "Harbour View",
+      "lat": 17.953,
+      "lon": -76.724,
+      "radius": 350,
+      "note": "Eastern gateway into Kingston at the foot of the Palisadoes roundabout; potholes begin just past here"
+    },
+    {
+      "id": "com-rockfort",
+      "name": "Rockfort",
+      "lat": 17.968,
+      "lon": -76.741,
+      "radius": 280,
+      "note": "Named for the 17th-century fortress walls; Rockfort Mineral Bath is a Kingston institution along Windward Road",
+      "needs_owner_review": true
+    },
+    {
+      "id": "com-wareika-hill",
+      "name": "Wareika Hill",
+      "lat": 17.978,
+      "lon": -76.752,
+      "radius": 320,
+      "note": "Hillside community overlooking eastern Kingston; a cradle of Rastafarian culture and Jamaican jazz",
+      "needs_owner_review": true
+    },
+    {
+      "id": "com-mountain-view",
+      "name": "Mountain View",
+      "lat": 17.990,
+      "lon": -76.763,
+      "radius": 300,
+      "note": "Eastern Kingston community along Mountain View Avenue — the National Stadium is close by"
+    },
+    {
+      "id": "com-kingston",
+      "name": "Kingston",
+      "lat": 17.997,
+      "lon": -76.794,
+      "radius": 700,
+      "note": "Capital and largest city of Jamaica — founded 1692 after the earthquake that destroyed Port Royal"
+    },
+    {
+      "id": "com-cross-roads",
+      "name": "Cross Roads",
+      "lat": 18.003,
+      "lon": -76.797,
+      "radius": 280,
+      "note": "Busy Kingston intersection and commercial hub — the pulse of south uptown",
+      "needs_owner_review": true
+    },
+    {
+      "id": "com-new-kingston",
+      "name": "New Kingston",
+      "lat": 18.013,
+      "lon": -76.789,
+      "radius": 380,
+      "note": "Kingston's financial and hotel district — Emancipation Park, embassies, and Devon House nearby"
+    },
+    {
+      "id": "com-liguanea",
+      "name": "Liguanea",
+      "lat": 18.013,
+      "lon": -76.779,
+      "radius": 300,
+      "note": "Old-money uptown neighbourhood along Hope Road — Bob Marley Museum is close by",
+      "needs_owner_review": true
+    },
+    {
+      "id": "com-half-way-tree",
+      "name": "Half Way Tree",
+      "lat": 18.011,
+      "lon": -76.796,
+      "radius": 420,
+      "note": "The beating heart of uptown Kingston — named for the cotton tree that stood halfway between Kingston and Spanish Town"
+    },
+    {
+      "id": "com-hagley-park",
+      "name": "Hagley Park",
+      "lat": 18.004,
+      "lon": -76.816,
+      "radius": 300,
+      "note": "West Kingston community along Hagley Park Road, heading toward Spanish Town",
+      "needs_owner_review": true
+    },
+    {
+      "id": "com-trench-town",
+      "name": "Trench Town",
+      "lat": 17.993,
+      "lon": -76.823,
+      "radius": 300,
+      "note": "Birthplace of reggae and ska — home of Bob Marley, the Wailers, and Toots and the Maytals",
+      "needs_owner_review": true
+    },
+    {
+      "id": "com-spanish-town",
+      "name": "Spanish Town",
+      "lat": 17.991,
+      "lon": -76.957,
+      "radius": 550,
+      "note": "Jamaica's first capital, founded by the Spanish in 1534 — the old courthouse and Spanish Town Square still stand"
+    },
+    {
+      "id": "com-twickenham-park",
+      "name": "Twickenham Park",
+      "lat": 18.047,
+      "lon": -76.940,
+      "radius": 280,
+      "note": "St. Catherine community on the road north toward Bog Walk",
+      "needs_owner_review": true
+    },
+    {
+      "id": "com-angels",
+      "name": "Angels",
+      "lat": 18.052,
+      "lon": -76.972,
+      "radius": 260,
+      "note": "Small St. Catherine community just before the Bog Walk gorge entrance",
+      "needs_owner_review": true
+    },
+    {
+      "id": "com-bog-walk",
+      "name": "Bog Walk",
+      "lat": 18.063,
+      "lon": -76.986,
+      "radius": 400,
+      "note": "Gateway to the Rio Cobre gorge — Flat Bridge at its heart, one of Jamaica's most dramatic roads"
+    },
+    {
+      "id": "com-linstead",
+      "name": "Linstead",
+      "lat": 18.136,
+      "lon": -77.031,
+      "radius": 400,
+      "note": "St. Catherine market town — immortalised in the folk song: 'Carry mi ackee go a Linstead Market…'"
+    },
+    {
+      "id": "com-moneague",
+      "name": "Moneague",
+      "lat": 18.249,
+      "lon": -77.091,
+      "radius": 380,
+      "note": "Hill-country junction at ~450 m elevation — the famous Moneague Lake is a sinkhole that fills seasonally"
+    },
+    {
+      "id": "com-faiths-pen",
+      "name": "Faith's Pen",
+      "lat": 18.235,
+      "lon": -77.095,
+      "radius": 320,
+      "note": "The legendary hilltop cookshop strip — jerk chicken, roast yam, festival, and views north all the way to the coast"
+    },
+    {
+      "id": "com-fern-gully",
+      "name": "Fern Gully",
+      "lat": 18.380,
+      "lon": -77.119,
+      "radius": 420,
+      "note": "A lush 3 km canyon road canopied by hundreds of fern species — one of Jamaica's most iconic drives"
+    },
+    {
+      "id": "com-ocho-rios",
+      "name": "Ocho Rios",
+      "lat": 18.404,
+      "lon": -77.103,
+      "radius": 500,
+      "note": "St. Ann's Bay cruise-ship town — home of Dunn's River Falls, journey's end"
+    }
+  ]
+}
