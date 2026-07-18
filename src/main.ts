@@ -7,6 +7,7 @@ import { Recognition } from './recognition';
 import { buildScenery } from './scenery';
 import { buildTrees } from './trees';
 import { Potholes } from './potholes';
+import { Score } from './score';
 import { initNarrator, narrate } from './narrator';
 import { TestTrack } from './testtrack';
 import { Debug } from './debug';
@@ -55,6 +56,7 @@ const potholes = new Potholes(road);
 scene.add(potholes.object);
 
 const car = new Car();
+const score = new Score();
 
 // Spawn at the route start — or at ?jump=<road name match> for quick scenery
 // review (e.g. /?jump=gorge, /?jump=milford, /?jump=faith).
@@ -94,11 +96,12 @@ narrate('game.start');
 
 // Dev-only handle for automated drive tests (stripped from production builds).
 if (import.meta.env.DEV) {
-  (window as unknown as Record<string, unknown>).__dj = { car, road, potholes };
+  (window as unknown as Record<string, unknown>).__dj = { car, road, potholes, score };
 }
 
 const camOffset = new THREE.Vector3();
 let last = performance.now();
+let prevTyreBurst = false;
 
 renderer.setAnimationLoop(() => {
   const now = performance.now();
@@ -109,6 +112,11 @@ renderer.setAnimationLoop(() => {
   potholes.update(car);
   recognition?.update(car.position);
   debug?.update(dt);
+
+  // Detect tyre-burst transition so score is notified exactly once per burst.
+  if (car.tyreBurst && !prevTyreBurst) score.tyreBurst();
+  prevTyreBurst = car.tyreBurst;
+  score.update(car, potholes.positions, dt);
 
   // Chase camera: behind and above the car, smoothed.
   camOffset.set(Math.sin(car.heading) * 9, 5, Math.cos(car.heading) * 9);
