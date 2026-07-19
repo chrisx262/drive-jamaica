@@ -1,0 +1,117 @@
+{
+  "comment": "Recognition-layer billboard surfaces. Each entry has a stable id assigned at creation — the future self-serve ad portal will reference these ids; never rename or reassign them. side: 'left' = driver's side (kerb, same side as the left lane); side: 'right' = across the road (oncoming lane side). V1 ships placeholder / house-ad copy. radius = trigger distance for the narrator one-shot (compressed world units, scale 0.3).",
+  "billboards": [
+    {
+      "id": "bb-palisadoes-e01",
+      "lat": 17.9405,
+      "lon": -76.7618,
+      "side": "left",
+      "radius": 180,
+      "lines": ["VISIT JAMAICA", "The Land We Love"]
+    },
+    {
+      "id": "bb-palisadoes-e02",
+      "lat": 17.9435,
+      "lon": -76.7480,
+      "side": "right",
+      "radius": 180,
+      "lines": ["ADVERTISE HERE", "drive-jamaica.com"]
+    },
+    {
+      "id": "bb-harbour-view-01",
+      "lat": 17.9538,
+      "lon": -76.7265,
+      "side": "left",
+      "radius": 200,
+      "lines": ["KINGSTON CALLING", "The Pulse of Jamaica"]
+    },
+    {
+      "id": "bb-windward-01",
+      "lat": 17.9700,
+      "lon": -76.7400,
+      "side": "right",
+      "radius": 180,
+      "lines": ["ADVERTISE HERE", "drive-jamaica.com"]
+    },
+    {
+      "id": "bb-mountain-view-01",
+      "lat": 17.9905,
+      "lon": -76.7628,
+      "side": "left",
+      "radius": 200,
+      "lines": ["BIG UP JAMAICA", "Home of Champions"]
+    },
+    {
+      "id": "bb-half-way-tree-01",
+      "lat": 18.0118,
+      "lon": -76.7958,
+      "side": "right",
+      "radius": 220,
+      "lines": ["ADVERTISE HERE", "drive-jamaica.com"]
+    },
+    {
+      "id": "bb-hagley-park-01",
+      "lat": 18.0040,
+      "lon": -76.8170,
+      "side": "left",
+      "radius": 200,
+      "lines": ["HALF WAY TREE", "Meet Mi Deh So"]
+    },
+    {
+      "id": "bb-spanish-town-01",
+      "lat": 17.9935,
+      "lon": -76.8540,
+      "side": "right",
+      "radius": 200,
+      "lines": ["ADVERTISE HERE", "drive-jamaica.com"]
+    },
+    {
+      "id": "bb-bog-walk-01",
+      "lat": 18.0620,
+      "lon": -76.9830,
+      "side": "left",
+      "radius": 200,
+      "lines": ["BOG WALK GORGE", "Flat Bridge Ahead"]
+    },
+    {
+      "id": "bb-linstead-01",
+      "lat": 18.1352,
+      "lon": -77.0315,
+      "side": "right",
+      "radius": 200,
+      "lines": ["LINSTEAD MARKET", "Carry Mi Ackee Go"]
+    },
+    {
+      "id": "bb-country-road-01",
+      "lat": 18.1862,
+      "lon": -77.0590,
+      "side": "left",
+      "radius": 180,
+      "lines": ["ADVERTISE HERE", "drive-jamaica.com"]
+    },
+    {
+      "id": "bb-faiths-pen-01",
+      "lat": 18.2338,
+      "lon": -77.0935,
+      "side": "right",
+      "radius": 220,
+      "lines": ["FAITH'S PEN", "200m - Jerk & Festival"]
+    },
+    {
+      "id": "bb-fern-gully-01",
+      "lat": 18.3775,
+      "lon": -77.1178,
+      "side": "left",
+      "radius": 220,
+      "lines": ["FERN GULLY", "Nature's Tunnel Ahead"]
+    },
+    {
+      "id": "bb-ocho-rios-01",
+      "lat": 18.4040,
+      "lon": -77.1055,
+      "side": "right",
+      "radius": 250,
+      "lines": ["OCHO RIOS", "Gateway to Paradise"]
+    }
+  ]
+}
