@@ -10,6 +10,7 @@ import { Potholes } from './potholes';
 import { initNarrator, narrate } from './narrator';
 import { TestTrack } from './testtrack';
 import { Debug } from './debug';
+import { Dogs } from './dogs';
 
 const app = document.getElementById('app')!;
 const hud = document.getElementById('hud')!;
@@ -53,6 +54,11 @@ if (isTestTrack) {
 
 const potholes = new Potholes(road);
 scene.add(potholes.object);
+
+// Dogs chase in town zones (Kingston, Spanish Town, Linstead, Moneague, Ochi).
+// Not placed on the test track — city/town context only.
+const dogs = isTestTrack ? null : new Dogs(road);
+if (dogs) scene.add(dogs.object);
 
 const car = new Car();
 
@@ -107,6 +113,7 @@ renderer.setAnimationLoop(() => {
 
   car.update(dt, input);
   potholes.update(car);
+  dogs?.update(car, dt);
   recognition?.update(car.position);
   debug?.update(dt);
 
