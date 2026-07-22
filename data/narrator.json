@@ -16,6 +16,20 @@
     ],
     "tyre.fixed": [
       "Tyre patch up — gwaan!"
+    ],
+    "traffic.meter_full": [
+      "Yuh frustrate bad, brethren! Press SPACE — gi dem di BIG TRUCK!",
+      "Kingston traffic a mad yuh! SPACE fi di monster truck!"
+    ],
+    "monster.transform": [
+      "BIG TRUCK TING! Move outta di way, Kingston!",
+      "Ayyyy! Monster truck inna town — RUN!",
+      "Traffic meet its match today, star!"
+    ],
+    "monster.revert": [
+      "Awright, cool down. Back to di Corolla, brethren.",
+      "Monster truck done — drive normal now, star.",
+      "Di big truck gone. Yuh feel better now?"
     ]
   }
 }
