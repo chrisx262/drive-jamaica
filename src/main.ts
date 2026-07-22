@@ -7,6 +7,8 @@ import { Recognition } from './recognition';
 import { buildScenery } from './scenery';
 import { buildTrees } from './trees';
 import { Potholes } from './potholes';
+import { Traffic } from './traffic';
+import { MonsterTruck } from './monstertruck';
 import { initNarrator, narrate } from './narrator';
 import { TestTrack } from './testtrack';
 import { Debug } from './debug';
@@ -54,6 +56,10 @@ if (isTestTrack) {
 const potholes = new Potholes(road);
 scene.add(potholes.object);
 
+// Kingston traffic + monster truck (full route only — test track skipped internally)
+const traffic = new Traffic(road);
+scene.add(traffic.object);
+
 const car = new Car();
 
 // Spawn at the route start — or at ?jump=<road name match> for quick scenery
@@ -78,6 +84,9 @@ scene.add(car.object);
 
 const input = initInput();
 initNarrator();
+
+// Monster truck lives after car + input so it can reference both
+const monsterTruck = new MonsterTruck(car, scene);
 
 let debug: Debug | null = null;
 if (isDebug) {
@@ -107,6 +116,9 @@ renderer.setAnimationLoop(() => {
 
   car.update(dt, input);
   potholes.update(car);
+  const frustrDelta = traffic.getFrustrationDelta(car.position, car.speed);
+  traffic.update(dt, car.position, monsterTruck.isActive);
+  monsterTruck.update(dt, frustrDelta, input);
   recognition?.update(car.position);
   debug?.update(dt);
 
