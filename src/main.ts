@@ -7,6 +7,7 @@ import { Recognition } from './recognition';
 import { buildScenery } from './scenery';
 import { buildTrees } from './trees';
 import { Potholes } from './potholes';
+import { CowHerder } from './cowherder';
 import { initNarrator, narrate } from './narrator';
 import { TestTrack } from './testtrack';
 import { Debug } from './debug';
@@ -53,6 +54,10 @@ if (isTestTrack) {
 
 const potholes = new Potholes(road);
 scene.add(potholes.object);
+
+// Cow herder event — only on the main route (test track skips it)
+const cowHerder = isTestTrack ? null : new CowHerder(road);
+if (cowHerder) scene.add(cowHerder.object);
 
 const car = new Car();
 
@@ -107,6 +112,7 @@ renderer.setAnimationLoop(() => {
 
   car.update(dt, input);
   potholes.update(car);
+  cowHerder?.update(car);
   recognition?.update(car.position);
   debug?.update(dt);
 

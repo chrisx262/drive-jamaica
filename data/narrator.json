@@ -16,6 +16,20 @@
     ],
     "tyre.fixed": [
       "Tyre patch up — gwaan!"
+    ],
+    "cowherder.approach": [
+      "Careful! Man wid him cow dem block di road!",
+      "Herder inna di road, boss — ease off!",
+      "Big man and him cow a hold up traffic — swerve, nuh!"
+    ],
+    "cowherder.hit": [
+      "Yuh lick di man cow! Him nah go forget dat!",
+      "Bwoy, yuh run down di cow! Di herder vex bad!",
+      "Jesus! Yuh knock di cow? Dat a go cost yuh!"
+    ],
+    "cowherder.clear": [
+      "Herder move him cow dem — road clear, carry on!",
+      "Di cow dem gone now. Big up di herder!"
     ]
   }
 }
