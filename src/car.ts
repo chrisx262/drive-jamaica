@@ -16,6 +16,9 @@ export class Car {
   heading = 0; // radians, 0 = -Z
   speed = 0; // m/s, signed
   tyreBurst = false;
+  locked = false;
+  tyresBurstCount = 0;
+  topSpeedKmh = 0;
   private steer = 0; // smoothed steering position, -1 (right) .. 1 (left)
 
   constructor() {
@@ -44,7 +47,13 @@ export class Car {
     }
   }
 
+  lock(): void {
+    this.locked = true;
+    this.speed = 0;
+  }
+
   update(dt: number, input: InputState): void {
+    if (this.locked) return;
     if (input.accelerate) this.speed += ACCEL * dt;
     else if (input.brake) this.speed -= BRAKE * dt;
     else this.speed -= Math.sign(this.speed) * Math.min(DRAG * dt, Math.abs(this.speed));
@@ -68,6 +77,7 @@ export class Car {
     this.object.position.x -= Math.sin(this.heading) * this.speed * dt;
     this.object.position.z -= Math.cos(this.heading) * this.speed * dt;
     this.object.rotation.y = this.heading;
+    this.topSpeedKmh = Math.max(this.topSpeedKmh, this.speedKmh);
   }
 
   get position(): THREE.Vector3 {
@@ -84,6 +94,7 @@ export class Car {
 
   burstTyre(): void {
     this.tyreBurst = true;
+    this.tyresBurstCount++;
   }
 
   repairTyre(): void {

@@ -8,6 +8,7 @@ import { buildScenery } from './scenery';
 import { buildTrees } from './trees';
 import { Potholes } from './potholes';
 import { initNarrator, narrate } from './narrator';
+import { Finale } from './finale';
 import { TestTrack } from './testtrack';
 import { Debug } from './debug';
 
@@ -34,8 +35,11 @@ const params = new URLSearchParams(location.search);
 const isTestTrack = params.has('testtrack');
 const isDebug = isTestTrack || params.has('debug');
 
+const car = new Car();
+
 let road: RoadLike;
 let recognition: Recognition | null = null;
+let finale: Finale | null = null;
 
 if (isTestTrack) {
   const tt = new TestTrack();
@@ -49,12 +53,11 @@ if (isTestTrack) {
   scene.add(buildScenery(r));
   scene.add(buildTrees(r));
   recognition = new Recognition(r);
+  finale = new Finale(r, car);
 }
 
 const potholes = new Potholes(road);
 scene.add(potholes.object);
-
-const car = new Car();
 
 // Spawn at the route start — or at ?jump=<road name match> for quick scenery
 // review (e.g. /?jump=gorge, /?jump=milford, /?jump=faith).
@@ -108,6 +111,7 @@ renderer.setAnimationLoop(() => {
   car.update(dt, input);
   potholes.update(car);
   recognition?.update(car.position);
+  finale?.update();
   debug?.update(dt);
 
   // Chase camera: behind and above the car, smoothed.
