@@ -57,13 +57,24 @@ scene.add(potholes.object);
 const car = new Car();
 
 // Spawn at the route start — or at ?jump=<road name match> for quick scenery
-// review (e.g. /?jump=gorge, /?jump=milford, /?jump=faith).
+// review (e.g. /?jump=gorge, /?jump=linstead, /?jump=ochi).
+// Common place aliases are resolved first so names like "ochi" work even though
+// the underlying segment is named "DaCosta Drive".
 // In test track mode jump is ignored and the car starts at the track beginning.
+const JUMP_ALIASES: Record<string, string> = {
+  ochi:     'dacosta',         // DaCosta Drive — Ocho Rios proper
+  fern:     'milford',         // Milford Road — Fern Gully
+  dunns:    'northern',        // Northern Coastal Highway — near Dunn's River
+  moneague: 'moneague - ocho', // Moneague–Ocho Rios Road (avoids early "Linstead–Moneague" match)
+  kingston: 'windward',        // Windward Road — Kingston entrance from Harbour View
+};
 let startIndex = 0;
 if (!isTestTrack) {
   const jump = params.get('jump');
   if (jump) {
-    const seg = road.segments.find((s) => s.name.toLowerCase().includes(jump.toLowerCase()));
+    const jumpLower = jump.toLowerCase();
+    const resolved = JUMP_ALIASES[jumpLower] ?? jumpLower;
+    const seg = road.segments.find((s) => s.name.toLowerCase().includes(resolved));
     if (seg) startIndex = seg.from;
   }
 }
