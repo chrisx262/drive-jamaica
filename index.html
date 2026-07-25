@@ -12,12 +12,23 @@
         font-family: system-ui, sans-serif; font-weight: 700;
         text-shadow: 0 1px 3px rgba(0,0,0,0.6); user-select: none;
       }
+      /* Road nameplate sign — slides in from the left when entering a new road.
+         Styled after real Jamaican road signs: rectangular, green bg, white text.
+         Position left side: in left-hand-drive Jamaica, signs are on the driver's left. */
       #callout {
-        position: fixed; top: 12px; left: 50%; transform: translateX(-50%);
-        padding: 6px 16px; border-radius: 6px;
-        background: #007749; color: #fed100; border: 2px solid #fed100;
-        font-family: system-ui, sans-serif; font-weight: 800; font-size: 18px;
-        opacity: 0; transition: opacity 0.3s; user-select: none;
+        position: fixed; top: 44px; left: 12px;
+        padding: 6px 16px 7px;
+        background: #005c2e; color: #fff;
+        border: 2px solid #fff;
+        outline: 1px solid rgba(255,255,255,0.35);
+        outline-offset: -5px;
+        font-family: system-ui, sans-serif; font-weight: 800; font-size: 16px;
+        letter-spacing: 0.04em; text-transform: uppercase;
+        box-shadow: 3px 3px 8px rgba(0,0,0,0.4);
+        user-select: none;
+        opacity: 0;
+        transform: translateX(-130%);
+        transition: opacity 0.32s ease, transform 0.32s ease;
       }
     </style>
   </head>
@@ -25,6 +36,22 @@
     <div id="app"></div>
     <div id="hud"></div>
     <div id="callout"></div>
+    <!-- Syncs #callout transform to its JS-set opacity so the sign slides in
+         from the left (matching left-hand-traffic signpost placement).
+         Must run before the module script so the observer is live before any
+         recognition.ts calls. -->
+    <script>
+      (function () {
+        var c = document.getElementById('callout');
+        var prevOp = '';
+        new MutationObserver(function () {
+          var op = c.style.opacity;
+          if (op === prevOp) return; // transform-only change — skip to avoid loop
+          prevOp = op;
+          c.style.transform = op === '1' ? 'translateX(0)' : 'translateX(-130%)';
+        }).observe(c, { attributes: true, attributeFilter: ['style'] });
+      }());
+    </script>
     <script type="module" src="/src/main.ts"></script>
   </body>
 </html>
