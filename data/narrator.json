@@ -7,6 +7,40 @@
     "road.enter": [
       "Yuh deh pon {road} now!"
     ],
+    "community.enter": [
+      "Yuh reach {community}!",
+      "Welcome to {community}, massive!",
+      "Dis is {community} — big up di area!",
+      "Yuh deh inna {community} now, drive good!"
+    ],
+    "community.enter.Half Way Tree": [
+      "Half Way Tree! Everybody pass through ya so!",
+      "HWT massive! Di clock tower still a stand!"
+    ],
+    "community.enter.Linstead": [
+      "Linstead! Carry mi ackee go a Linstead market!",
+      "Linstead Market — di song never lie!"
+    ],
+    "community.enter.Moneague": [
+      "Moneague! Di air fresh up here, nuh true?",
+      "Moneague crossroads — almost deh!"
+    ],
+    "community.enter.Faith's Pen": [
+      "Faith's Pen! Pull over and nyam some jerk, nuh!",
+      "Bwoy, di smell a dat jerk chicken! Stop di car!"
+    ],
+    "community.enter.Fern Gully": [
+      "Fern Gully! Bamboo and fern all about — mind yuh speed!",
+      "Di gully dark and cool — watch di bend dem!"
+    ],
+    "community.enter.Ocho Rios": [
+      "Ochi Rios! Yuh reach, brethren — Dunn's River deh wait!",
+      "Welcome to Ocho Rios! Di north coast sweet, nuh true?"
+    ],
+    "community.enter.Spanish Town": [
+      "Spanish Town! Di old capital — history all round yuh!",
+      "St. Catherine capital! Big up di square!"
+    ],
     "landmark.enter": [
       "See {landmark} deh!"
     ],
