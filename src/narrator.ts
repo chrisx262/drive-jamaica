@@ -19,7 +19,13 @@ export function initNarrator(): void {
 }
 
 export function narrate(event: string, vars: Record<string, string> = {}): void {
-  const lines = events[event];
+  // Per-value override: try "event.{varValue}" first so individual places can have
+  // custom lines (e.g. "community.enter.Half Way Tree") without code changes.
+  let key = event;
+  for (const v of Object.values(vars)) {
+    if (events[`${event}.${v}`]) { key = `${event}.${v}`; break; }
+  }
+  const lines = events[key] ?? events[event];
   if (!lines?.length || !captionEl) return;
   let line = lines[Math.floor(Math.random() * lines.length)];
   for (const [k, v] of Object.entries(vars)) line = line.replaceAll(`{${k}}`, v);

@@ -1,0 +1,222 @@
+{
+  "comment": "Recognition layer 2: community/district signs. Shown as an in-world sign + HUD popup when the car enters proximity. Coordinates are real lat/lon projected into world space at runtime (same pipeline as landmarks.json). route_order follows the Airport→Ochi direction. Entries marked needs_owner_review:true are best-effort from OSM/map research — the owner's lived knowledge is authoritative and should override them.",
+  "communities": [
+    {
+      "id": "com-palisadoes",
+      "name": "Palisadoes",
+      "parish": "Kingston",
+      "lat": 17.958,
+      "lon": -76.741,
+      "radius": 600,
+      "note": "The narrow Palisadoes peninsula — sea on both sides; coconut trees line the road",
+      "route_order": 1
+    },
+    {
+      "id": "com-port-royal-signpost",
+      "name": "Port Royal",
+      "parish": "Kingston",
+      "lat": 17.936,
+      "lon": -76.841,
+      "radius": 400,
+      "note": "Historic former pirate capital; signposted from the Palisadoes road; off-route to the south",
+      "needs_owner_review": true,
+      "route_order": 2
+    },
+    {
+      "id": "com-harbour-view",
+      "name": "Harbour View",
+      "parish": "St. Andrew",
+      "lat": 17.9843,
+      "lon": -76.7225,
+      "radius": 350,
+      "note": "Roundabout community at the end of the Palisadoes strip; gateway into Kingston",
+      "route_order": 3
+    },
+    {
+      "id": "com-rockfort",
+      "name": "Rockfort",
+      "parish": "Kingston",
+      "lat": 17.987,
+      "lon": -76.736,
+      "radius": 300,
+      "note": "Industrial community along Windward Road near the Rockfort Mineral Bath",
+      "needs_owner_review": true,
+      "route_order": 4
+    },
+    {
+      "id": "com-rollington-town",
+      "name": "Rollington Town",
+      "parish": "Kingston",
+      "lat": 17.992,
+      "lon": -76.751,
+      "radius": 280,
+      "note": "East Kingston community along Windward Road",
+      "needs_owner_review": true,
+      "route_order": 5
+    },
+    {
+      "id": "com-wareika-hill",
+      "name": "Wareika Hill",
+      "parish": "Kingston",
+      "lat": 18.003,
+      "lon": -76.759,
+      "radius": 320,
+      "note": "Hillside community above Mountain View Avenue; known for its Rasta traditions",
+      "route_order": 6
+    },
+    {
+      "id": "com-mountain-view",
+      "name": "Mountain View",
+      "parish": "Kingston",
+      "lat": 18.0005,
+      "lon": -76.760,
+      "radius": 280,
+      "note": "Community and avenue in east Kingston",
+      "route_order": 7
+    },
+    {
+      "id": "com-vineyard-town",
+      "name": "Vineyard Town",
+      "parish": "Kingston",
+      "lat": 17.999,
+      "lon": -76.772,
+      "radius": 260,
+      "note": "Residential community between Mountain View and Cross Roads",
+      "needs_owner_review": true,
+      "route_order": 8
+    },
+    {
+      "id": "com-cross-roads",
+      "name": "Cross Roads",
+      "parish": "Kingston",
+      "lat": 18.008,
+      "lon": -76.783,
+      "radius": 300,
+      "note": "Major Kingston junction where Trafalgar Road meets South Camp Road",
+      "route_order": 9
+    },
+    {
+      "id": "com-new-kingston",
+      "name": "New Kingston",
+      "parish": "Kingston",
+      "lat": 18.013,
+      "lon": -76.793,
+      "radius": 400,
+      "note": "Kingston's financial and business district; towers, hotels, Emancipation Park",
+      "route_order": 10
+    },
+    {
+      "id": "com-half-way-tree",
+      "name": "Half Way Tree",
+      "parish": "St. Andrew",
+      "lat": 18.0109,
+      "lon": -76.796,
+      "radius": 380,
+      "note": "The beating heart of uptown Kingston — transport hub, clock tower, market",
+      "route_order": 11
+    },
+    {
+      "id": "com-olympic-gardens",
+      "name": "Olympic Gardens",
+      "parish": "Kingston",
+      "lat": 18.006,
+      "lon": -76.808,
+      "radius": 280,
+      "note": "Kingston community near Hagley Park Road",
+      "needs_owner_review": true,
+      "route_order": 12
+    },
+    {
+      "id": "com-spanish-town",
+      "name": "Spanish Town",
+      "parish": "St. Catherine",
+      "lat": 17.992,
+      "lon": -76.952,
+      "radius": 600,
+      "note": "Former capital of Jamaica; historic Georgian square, cathedrals and old iron bridge",
+      "route_order": 13
+    },
+    {
+      "id": "com-sligoville",
+      "name": "Sligoville",
+      "parish": "St. Catherine",
+      "lat": 18.045,
+      "lon": -76.972,
+      "radius": 300,
+      "note": "Mountain community on the road between Spanish Town and Bog Walk",
+      "needs_owner_review": true,
+      "route_order": 14
+    },
+    {
+      "id": "com-bog-walk",
+      "name": "Bog Walk",
+      "parish": "St. Catherine",
+      "lat": 18.055,
+      "lon": -76.975,
+      "radius": 400,
+      "note": "Community in the dramatic Rio Cobre gorge; gateway to the mountains",
+      "route_order": 15
+    },
+    {
+      "id": "com-linstead",
+      "name": "Linstead",
+      "parish": "St. Catherine",
+      "lat": 18.135,
+      "lon": -77.023,
+      "radius": 480,
+      "note": "\"Linstead Market\" — the famous folk song; bustling market town in the Rio Cobre valley",
+      "route_order": 16
+    },
+    {
+      "id": "com-ewarton",
+      "name": "Ewarton",
+      "parish": "St. Catherine",
+      "lat": 18.181,
+      "lon": -77.074,
+      "radius": 300,
+      "note": "Small town on the Linstead–Moneague road; alumina plant nearby",
+      "needs_owner_review": true,
+      "route_order": 17
+    },
+    {
+      "id": "com-moneague",
+      "name": "Moneague",
+      "parish": "St. Ann",
+      "lat": 18.280,
+      "lon": -77.096,
+      "radius": 420,
+      "note": "Crossroads village in the St. Ann highlands; cool air and sweeping views",
+      "route_order": 18
+    },
+    {
+      "id": "com-faiths-pen",
+      "name": "Faith's Pen",
+      "parish": "St. Ann",
+      "lat": 18.2347,
+      "lon": -77.0951,
+      "radius": 300,
+      "note": "World-famous roadside cookshop strip — best jerk chicken on the island",
+      "route_order": 19
+    },
+    {
+      "id": "com-fern-gully",
+      "name": "Fern Gully",
+      "parish": "St. Ann",
+      "lat": 18.392,
+      "lon": -77.095,
+      "radius": 400,
+      "note": "A steep gorge road once used as a riverbed; walls covered in ferns and bamboo",
+      "route_order": 20
+    },
+    {
+      "id": "com-ocho-rios",
+      "name": "Ocho Rios",
+      "parish": "St. Ann",
+      "lat": 18.412,
+      "lon": -77.110,
+      "radius": 600,
+      "note": "Jamaica's tourist capital on the north coast; Dunn's River Falls, cruise ships, resort town",
+      "route_order": 21
+    }
+  ]
+}
