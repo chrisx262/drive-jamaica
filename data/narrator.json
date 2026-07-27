@@ -16,6 +16,23 @@
     ],
     "tyre.fixed": [
       "Tyre patch up — gwaan!"
+    ],
+    "offroad.warn": [
+      "Weh yuh a go?! Dis a bush track, not di road!",
+      "Brethren, yuh tek a wrong turn — dat nuh lead nowhere good!",
+      "Hold on — dis a mountain road, it soon done finish!"
+    ],
+    "offroad.tyre": [
+      "Yuh tyre bus pon di rockstone dem! Turn back!",
+      "Di rock-rock road lick yuh tyre — come off di mountain!"
+    ],
+    "offroad.noroad": [
+      "Road done finish! Nuttn up here but bush and mountain — turn back!",
+      "Yuh reach di dead end, brethren — no road from here!"
+    ],
+    "offroad.return": [
+      "Good — yuh find di real road again! Drive carefully!",
+      "Back pon di proper road! No more shortcuts up di mountain!"
     ]
   }
 }
