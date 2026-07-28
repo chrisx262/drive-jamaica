@@ -1,0 +1,164 @@
+{
+  "comment": "Recognition layer 2: community/district sign popups. Coordinates are real lat/lon projected into world space via road.project(). radius is trigger distance in compressed-world meters. needs_owner_review:true = best estimate from map data — the owner's lived knowledge is authoritative over all coordinates and community boundaries.",
+  "communities": [
+    {
+      "id": "comm-palisadoes",
+      "name": "Palisadoes",
+      "lat": 17.952,
+      "lon": -76.757,
+      "radius": 900,
+      "note": "Narrow peninsula — calm harbour to the left, rough open sea to the right"
+    },
+    {
+      "id": "comm-harbour-view",
+      "name": "Harbour View",
+      "lat": 17.9707,
+      "lon": -76.7497,
+      "radius": 400,
+      "note": "Gateway where the Palisadoes strip meets Kingston"
+    },
+    {
+      "id": "comm-rockfort",
+      "name": "Rockfort",
+      "lat": 17.9763,
+      "lon": -76.7573,
+      "radius": 320,
+      "note": "Famous for Rockfort Mineral Bath — natural sulphur spring pools",
+      "needs_owner_review": true
+    },
+    {
+      "id": "comm-mountain-view",
+      "name": "Mountain View",
+      "lat": 17.999,
+      "lon": -76.773,
+      "radius": 380,
+      "note": "Named for the clear Blue Mountain views from the avenue"
+    },
+    {
+      "id": "comm-cross-roads",
+      "name": "Cross Roads",
+      "lat": 18.003,
+      "lon": -76.789,
+      "radius": 320,
+      "note": "Kingston's busiest crossroads — major bus terminus",
+      "needs_owner_review": true
+    },
+    {
+      "id": "comm-new-kingston",
+      "name": "New Kingston",
+      "lat": 18.009,
+      "lon": -76.793,
+      "radius": 400,
+      "note": "Kingston's uptown business district — hotels, offices, restaurants"
+    },
+    {
+      "id": "comm-half-way-tree",
+      "name": "Half Way Tree",
+      "lat": 18.0109,
+      "lon": -76.796,
+      "radius": 320,
+      "note": "Named for the great cotton tree that marked the halfway point to the hills"
+    },
+    {
+      "id": "comm-hagley-park",
+      "name": "Hagley Park",
+      "lat": 18.013,
+      "lon": -76.804,
+      "radius": 300,
+      "note": "West Kingston residential area along Hagley Park Road",
+      "needs_owner_review": true
+    },
+    {
+      "id": "comm-spanish-town",
+      "name": "Spanish Town",
+      "lat": 17.9957,
+      "lon": -76.9558,
+      "radius": 550,
+      "note": "Jamaica's former capital, founded by the Spanish in 1534 — historic square intact"
+    },
+    {
+      "id": "comm-sligoville",
+      "name": "Sligoville",
+      "lat": 18.047,
+      "lon": -76.996,
+      "radius": 320,
+      "note": "St. Catherine hill community — named after Lord Sligo, a governor of Jamaica",
+      "needs_owner_review": true
+    },
+    {
+      "id": "comm-bog-walk",
+      "name": "Bog Walk",
+      "lat": 18.101,
+      "lon": -77.014,
+      "radius": 450,
+      "note": "Rio Cobre gorge town — the historic one-lane Flat Bridge is just ahead"
+    },
+    {
+      "id": "comm-ewarton",
+      "name": "Ewarton",
+      "lat": 18.110,
+      "lon": -77.075,
+      "radius": 320,
+      "note": "St. Catherine market town at the north end of the gorge",
+      "needs_owner_review": true
+    },
+    {
+      "id": "comm-linstead",
+      "name": "Linstead",
+      "lat": 18.134,
+      "lon": -77.033,
+      "radius": 480,
+      "note": "Famous for Linstead Market — 'Carry mi ackee go a Linstead Market'"
+    },
+    {
+      "id": "comm-guys-hill",
+      "name": "Guys Hill",
+      "lat": 18.156,
+      "lon": -77.068,
+      "radius": 280,
+      "note": "Rural St. Catherine community up in the hills",
+      "needs_owner_review": true
+    },
+    {
+      "id": "comm-moneague",
+      "name": "Moneague",
+      "lat": 18.218,
+      "lon": -77.100,
+      "radius": 430,
+      "note": "St. Ann crossroads town — the road forks here toward Ochi"
+    },
+    {
+      "id": "comm-faiths-pen",
+      "name": "Faith's Pen",
+      "lat": 18.232,
+      "lon": -77.091,
+      "radius": 320,
+      "note": "Legendary roadside strip — jerk chicken, roast yam and festival since forever"
+    },
+    {
+      "id": "comm-alexandria",
+      "name": "Alexandria",
+      "lat": 18.303,
+      "lon": -77.064,
+      "radius": 320,
+      "note": "St. Ann market town in the interior",
+      "needs_owner_review": true
+    },
+    {
+      "id": "comm-fern-gully",
+      "name": "Fern Gully",
+      "lat": 18.387,
+      "lon": -77.097,
+      "radius": 450,
+      "note": "World-famous canopy road — over 550 species of ferns line the gorge walls"
+    },
+    {
+      "id": "comm-ocho-rios",
+      "name": "Ocho Rios",
+      "lat": 18.408,
+      "lon": -77.104,
+      "radius": 650,
+      "note": "St. Ann resort town — journey's end at Dunn's River Falls"
+    }
+  ]
+}

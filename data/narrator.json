@@ -7,6 +7,13 @@
     "road.enter": [
       "Yuh deh pon {road} now!"
     ],
+    "community.enter": [
+      "Yow, welcome to {community}!",
+      "Big up {community} — big up all mi people deh so!",
+      "Yuh reach {community} now, brethren!",
+      "Drive careful, yuh inna {community} now.",
+      "{community} dis! Nuff respect!"
+    ],
     "landmark.enter": [
       "See {landmark} deh!"
     ],
