@@ -7,6 +7,7 @@ import { Recognition } from './recognition';
 import { buildScenery } from './scenery';
 import { buildTrees } from './trees';
 import { Potholes } from './potholes';
+import { TyreShops } from './tyreshops';
 import { initNarrator, narrate } from './narrator';
 import { TestTrack } from './testtrack';
 import { Debug } from './debug';
@@ -53,6 +54,9 @@ if (isTestTrack) {
 
 const potholes = new Potholes(road);
 scene.add(potholes.object);
+
+const tyreShops = new TyreShops(road);
+scene.add(tyreShops.object);
 
 const car = new Car();
 
@@ -107,6 +111,7 @@ renderer.setAnimationLoop(() => {
 
   car.update(dt, input);
   potholes.update(car);
+  tyreShops.update(car);
   recognition?.update(car.position);
   debug?.update(dt);
 
