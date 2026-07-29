@@ -16,6 +16,19 @@
     ],
     "tyre.fixed": [
       "Tyre patch up — gwaan!"
+    ],
+    "tyreshop.nearby": [
+      "Tyre man right deh so — ease up!",
+      "Slow down! Tyre shop right yah nuh!"
+    ],
+    "tyreshop.repairing": [
+      "Di tyre man a work pon it — hold on nuh!",
+      "Easy — dem a fix it fi yuh now!"
+    ],
+    "tyreshop.repaired": [
+      "Tyre sort out! Lick road, brethren!",
+      "Ready fi roll! Di man come through!",
+      "Fixed up — gwaan bout yuh business!"
     ]
   }
 }
