@@ -49,6 +49,7 @@ if (isTestTrack) {
   scene.add(buildScenery(r));
   scene.add(buildTrees(r));
   recognition = new Recognition(r);
+  scene.add(recognition.signs);
 }
 
 const potholes = new Potholes(road);
