@@ -1,0 +1,161 @@
+{
+  "comment": "Recognition layer 2: community/district signs. Coordinates are real-world lat/lon, projected to world space via road.project() at load time. Trigger radius in compressed-world metres (scale 0.3). needs_owner_review:true = confirmed by map research only — owner's lived knowledge is authoritative over any entry here.",
+  "communities": [
+    {
+      "id": "cmn-palisadoes",
+      "name": "Palisadoes",
+      "lat": 17.941,
+      "lon": -76.752,
+      "radius": 600,
+      "note": "Narrow sand spit — sea on both sides, coconut trees, Gun Boat Beach on the left"
+    },
+    {
+      "id": "cmn-harbour-view",
+      "name": "Harbour View",
+      "lat": 17.948,
+      "lon": -76.723,
+      "radius": 320,
+      "note": "Roundabout at the end of the Palisadoes where the airport road meets the main road"
+    },
+    {
+      "id": "cmn-rockfort",
+      "name": "Rockfort",
+      "lat": 17.961,
+      "lon": -76.732,
+      "radius": 280,
+      "note": "Industrial area and Rockfort Mineral Bath",
+      "needs_owner_review": true
+    },
+    {
+      "id": "cmn-east-kingston",
+      "name": "East Kingston",
+      "lat": 17.972,
+      "lon": -76.752,
+      "radius": 350,
+      "needs_owner_review": true
+    },
+    {
+      "id": "cmn-mountain-view",
+      "name": "Mountain View",
+      "lat": 17.986,
+      "lon": -76.765,
+      "radius": 300,
+      "needs_owner_review": true
+    },
+    {
+      "id": "cmn-new-kingston",
+      "name": "New Kingston",
+      "lat": 18.004,
+      "lon": -76.785,
+      "radius": 350,
+      "note": "Kingston's modern business and hotel district"
+    },
+    {
+      "id": "cmn-half-way-tree",
+      "name": "Half Way Tree",
+      "lat": 18.010,
+      "lon": -76.799,
+      "radius": 380,
+      "note": "Major uptown commercial hub — the clock tower dates to 1813"
+    },
+    {
+      "id": "cmn-washington-gardens",
+      "name": "Washington Gardens",
+      "lat": 18.016,
+      "lon": -76.830,
+      "radius": 300,
+      "needs_owner_review": true
+    },
+    {
+      "id": "cmn-waterhouse",
+      "name": "Waterhouse",
+      "lat": 18.022,
+      "lon": -76.851,
+      "radius": 300,
+      "needs_owner_review": true
+    },
+    {
+      "id": "cmn-spanish-town",
+      "name": "Spanish Town",
+      "lat": 17.997,
+      "lon": -76.939,
+      "radius": 500,
+      "note": "Capital of Saint Catherine Parish — first Spanish capital of Jamaica (Villa de la Vega, 1534)"
+    },
+    {
+      "id": "cmn-sligoville",
+      "name": "Sligoville",
+      "lat": 18.066,
+      "lon": -76.998,
+      "radius": 280,
+      "note": "First free village in the Caribbean after Emancipation (August 1838)",
+      "needs_owner_review": true
+    },
+    {
+      "id": "cmn-bog-walk",
+      "name": "Bog Walk",
+      "lat": 18.100,
+      "lon": -77.003,
+      "radius": 380,
+      "note": "Gateway to the gorge — Rio Cobre and Flat Bridge just ahead"
+    },
+    {
+      "id": "cmn-linstead",
+      "name": "Linstead",
+      "lat": 18.148,
+      "lon": -77.031,
+      "radius": 420,
+      "note": "Busy market town in St. Catherine — immortalised in the folk song Linstead Market"
+    },
+    {
+      "id": "cmn-ewarton",
+      "name": "Ewarton",
+      "lat": 18.182,
+      "lon": -77.071,
+      "radius": 280,
+      "needs_owner_review": true
+    },
+    {
+      "id": "cmn-moneague",
+      "name": "Moneague",
+      "lat": 18.278,
+      "lon": -77.112,
+      "radius": 380,
+      "note": "Cool mountain crossroads between St. Catherine and St. Ann — once a famous spa town",
+      "needs_owner_review": true
+    },
+    {
+      "id": "cmn-faiths-pen",
+      "name": "Faith's Pen",
+      "lat": 18.334,
+      "lon": -77.093,
+      "radius": 320,
+      "note": "Famous strip of roadside cook shops — jerk chicken, roast yam and festival",
+      "needs_owner_review": true
+    },
+    {
+      "id": "cmn-bamboo",
+      "name": "Bamboo",
+      "lat": 18.371,
+      "lon": -77.094,
+      "radius": 280,
+      "needs_owner_review": true
+    },
+    {
+      "id": "cmn-fern-gully",
+      "name": "Fern Gully",
+      "lat": 18.394,
+      "lon": -77.094,
+      "radius": 350,
+      "note": "Iconic bamboo-arched road — once a riverbed, now a living cathedral of green"
+    },
+    {
+      "id": "cmn-ocho-rios",
+      "name": "Ocho Rios",
+      "lat": 18.407,
+      "lon": -77.107,
+      "radius": 520,
+      "note": "Tourism hub on Jamaica's north coast — journey's end at Dunn's River Falls"
+    }
+  ]
+}
