@@ -16,6 +16,15 @@
     ],
     "tyre.fixed": [
       "Tyre patch up — gwaan!"
+    ],
+    "goat.hit.first": [
+      "Bredda, yuh jus lick down somebody goat! Lawd have mercy!",
+      "Wooii! Di goat! Yuh kyaan duh dat, man!"
+    ],
+    "goat.hit": [
+      "Yuh lick down di goat dem again! Nuh learn nuttin?",
+      "Ai ai ai — di goat! Brethren, watch di road!",
+      "Bwoy, yuh a mash up every goat pon di road!"
     ]
   }
 }

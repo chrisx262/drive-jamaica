@@ -10,6 +10,7 @@ import { Potholes } from './potholes';
 import { initNarrator, narrate } from './narrator';
 import { TestTrack } from './testtrack';
 import { Debug } from './debug';
+import { Goats } from './goats';
 
 const app = document.getElementById('app')!;
 const hud = document.getElementById('hud')!;
@@ -36,6 +37,7 @@ const isDebug = isTestTrack || params.has('debug');
 
 let road: RoadLike;
 let recognition: Recognition | null = null;
+let goats: Goats | null = null;
 
 if (isTestTrack) {
   const tt = new TestTrack();
@@ -49,6 +51,8 @@ if (isTestTrack) {
   scene.add(buildScenery(r));
   scene.add(buildTrees(r));
   recognition = new Recognition(r);
+  goats = new Goats(r);
+  scene.add(goats.object);
 }
 
 const potholes = new Potholes(road);
@@ -107,6 +111,7 @@ renderer.setAnimationLoop(() => {
 
   car.update(dt, input);
   potholes.update(car);
+  goats?.update(car, dt);
   recognition?.update(car.position);
   debug?.update(dt);
 
