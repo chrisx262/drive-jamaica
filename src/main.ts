@@ -7,6 +7,8 @@ import { Recognition } from './recognition';
 import { buildScenery } from './scenery';
 import { buildTrees } from './trees';
 import { Potholes } from './potholes';
+import { Dogs } from './dogs';
+import { Goats } from './goats';
 import { initNarrator, narrate } from './narrator';
 import { TestTrack } from './testtrack';
 import { Debug } from './debug';
@@ -36,12 +38,14 @@ const isDebug = isTestTrack || params.has('debug');
 
 let road: RoadLike;
 let recognition: Recognition | null = null;
+let dogs: Dogs | null = null;
+let goats: Goats | null = null;
 
 if (isTestTrack) {
   const tt = new TestTrack();
   road = tt;
   scene.add(tt.object);
-  // Test track supplies its own geometry; no route scenery zones apply.
+  // Test track supplies its own geometry; no route systems apply.
 } else {
   const r = new Road();
   road = r;
@@ -49,6 +53,11 @@ if (isTestTrack) {
   scene.add(buildScenery(r));
   scene.add(buildTrees(r));
   recognition = new Recognition(r);
+  scene.add(recognition.signs);
+  dogs = new Dogs(r);
+  scene.add(dogs.object);
+  goats = new Goats(r);
+  scene.add(goats.object);
 }
 
 const potholes = new Potholes(road);
@@ -94,7 +103,7 @@ narrate('game.start');
 
 // Dev-only handle for automated drive tests (stripped from production builds).
 if (import.meta.env.DEV) {
-  (window as unknown as Record<string, unknown>).__dj = { car, road, potholes };
+  (window as unknown as Record<string, unknown>).__dj = { car, road, potholes, dogs, goats };
 }
 
 const camOffset = new THREE.Vector3();
@@ -107,6 +116,8 @@ renderer.setAnimationLoop(() => {
 
   car.update(dt, input);
   potholes.update(car);
+  dogs?.update(car, dt);
+  goats?.update(car, dt);
   recognition?.update(car.position);
   debug?.update(dt);
 
