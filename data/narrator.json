@@ -16,6 +16,12 @@
     ],
     "tyre.fixed": [
       "Tyre patch up — gwaan!"
+    ],
+    "community.enter": [
+      "Yuh reach {community} now, star!",
+      "Big up {community}!",
+      "Welcome to {community}, brethren!",
+      "Ah {community} dis — nuh miss it!"
     ]
   }
 }
