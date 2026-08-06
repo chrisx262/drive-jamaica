@@ -19,12 +19,22 @@
         font-family: system-ui, sans-serif; font-weight: 800; font-size: 18px;
         opacity: 0; transition: opacity 0.3s; user-select: none;
       }
+      /* Community sign — green highway-style board (recognition layer 2) */
+      #community-sign {
+        position: fixed; top: 54px; left: 50%; transform: translateX(-50%);
+        padding: 5px 20px; border-radius: 3px;
+        background: #1a5c30; color: #fff; border: 3px solid #fff;
+        font-family: system-ui, sans-serif; font-weight: 700; font-size: 17px;
+        letter-spacing: 0.04em; opacity: 0; transition: opacity 0.3s;
+        user-select: none; white-space: nowrap; pointer-events: none;
+      }
     </style>
   </head>
   <body>
     <div id="app"></div>
     <div id="hud"></div>
     <div id="callout"></div>
+    <div id="community-sign"></div>
     <script type="module" src="/src/main.ts"></script>
   </body>
 </html>
