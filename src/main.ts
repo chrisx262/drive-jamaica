@@ -7,6 +7,8 @@ import { Recognition } from './recognition';
 import { buildScenery } from './scenery';
 import { buildTrees } from './trees';
 import { Potholes } from './potholes';
+import { Dogs } from './dogs';
+import { Goats } from './goats';
 import { initNarrator, narrate } from './narrator';
 import { TestTrack } from './testtrack';
 import { Debug } from './debug';
@@ -49,10 +51,18 @@ if (isTestTrack) {
   scene.add(buildScenery(r));
   scene.add(buildTrees(r));
   recognition = new Recognition(r);
+  // Community sign posts are 3D objects placed along the route
+  scene.add(recognition.signs);
 }
 
 const potholes = new Potholes(road);
 scene.add(potholes.object);
+
+const dogs = new Dogs(road);
+scene.add(dogs.object);
+
+const goats = new Goats(road);
+scene.add(goats.object);
 
 const car = new Car();
 
@@ -94,7 +104,7 @@ narrate('game.start');
 
 // Dev-only handle for automated drive tests (stripped from production builds).
 if (import.meta.env.DEV) {
-  (window as unknown as Record<string, unknown>).__dj = { car, road, potholes };
+  (window as unknown as Record<string, unknown>).__dj = { car, road, potholes, dogs, goats };
 }
 
 const camOffset = new THREE.Vector3();
@@ -107,6 +117,8 @@ renderer.setAnimationLoop(() => {
 
   car.update(dt, input);
   potholes.update(car);
+  dogs.update(dt, car);
+  goats.update(dt, car);
   recognition?.update(car.position);
   debug?.update(dt);
 
