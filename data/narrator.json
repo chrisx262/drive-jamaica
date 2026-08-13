@@ -7,6 +7,13 @@
     "road.enter": [
       "Yuh deh pon {road} now!"
     ],
+    "community.enter": [
+      "Dis a {community} — big up di people dem!",
+      "Welcome to {community}, yaah!",
+      "{community} — mi know dis place well!",
+      "Ah {community} dis — respek!",
+      "Drive careful through {community}, nuh!"
+    ],
     "landmark.enter": [
       "See {landmark} deh!"
     ],
@@ -16,6 +23,20 @@
     ],
     "tyre.fixed": [
       "Tyre patch up — gwaan!"
+    ],
+    "dog.chase": [
+      "Dawg a run yuh down! Step pon it!",
+      "Watch di dawg deh, brethren — him serious!",
+      "Lawd, di dawg dem nuh ramp!"
+    ],
+    "goat.hit.first": [
+      "Yuh lick down di goat?! Lawd have mercy!",
+      "Eh-eh! Goat get clap — dat ago cost yuh!"
+    ],
+    "goat.hit": [
+      "Anotha goat bite di dust — watch yuhself!",
+      "Di goat dem nuh see yuh coming? Slow down!",
+      "Yuh a wipe out di whole herd, man!"
     ]
   }
 }
