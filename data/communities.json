@@ -1,0 +1,191 @@
+{
+  "comment": "Recognition layer 2: community/district signs. Coordinates are real OSM lat/lon, projected into world space via Road.project(). trigger_radius is in compressed-world metres. Entries marked needs_owner_review require the owner's lived knowledge to confirm placement and note. Route order: Norman Manley Airport → Palisadoes → Harbour View → Kingston → Spanish Town → Bog Walk → Linstead → Moneague → Faith's Pen → Fern Gully → Ocho Rios.",
+  "communities": [
+    {
+      "id": "com-palisadoes",
+      "name": "Palisadoes",
+      "lat": 17.9472,
+      "lon": -76.7455,
+      "trigger_radius": 200,
+      "note": "The iconic sand spit — sea on both sides, coconut trees lining the road, mountains rising dead ahead"
+    },
+    {
+      "id": "com-harbour-view",
+      "name": "Harbour View",
+      "lat": 17.9916,
+      "lon": -76.7388,
+      "trigger_radius": 160,
+      "note": "Where the Palisadoes meets the mainland — the roundabout that ends the airport road"
+    },
+    {
+      "id": "com-rockfort",
+      "name": "Rockfort",
+      "lat": 17.9968,
+      "lon": -76.7453,
+      "trigger_radius": 140,
+      "note": "Industrial waterfront along Windward Road, Kingston East",
+      "needs_owner_review": true
+    },
+    {
+      "id": "com-rollington-town",
+      "name": "Rollington Town",
+      "lat": 18.0022,
+      "lon": -76.7528,
+      "trigger_radius": 140,
+      "note": "Kingston East community along Windward Road",
+      "needs_owner_review": true
+    },
+    {
+      "id": "com-mountain-view",
+      "name": "Mountain View",
+      "lat": 18.0047,
+      "lon": -76.7601,
+      "trigger_radius": 160,
+      "note": "Kingston neighbourhood named for the view of the Blue Mountains"
+    },
+    {
+      "id": "com-vineyard-town",
+      "name": "Vineyard Town",
+      "lat": 18.0065,
+      "lon": -76.7737,
+      "trigger_radius": 140,
+      "note": "Central Kingston community, east of New Kingston",
+      "needs_owner_review": true
+    },
+    {
+      "id": "com-new-kingston",
+      "name": "New Kingston",
+      "lat": 18.0055,
+      "lon": -76.7854,
+      "trigger_radius": 180,
+      "note": "Kingston's business district — Emancipation Park, hotels, embassies"
+    },
+    {
+      "id": "com-half-way-tree",
+      "name": "Half Way Tree",
+      "lat": 18.0114,
+      "lon": -76.7968,
+      "trigger_radius": 200,
+      "note": "Heart of uptown Kingston — the 1813 clock tower, the big junction, pure vibes"
+    },
+    {
+      "id": "com-constant-spring",
+      "name": "Constant Spring",
+      "lat": 18.0162,
+      "lon": -76.8082,
+      "trigger_radius": 140,
+      "note": "Uptown Kingston — home of Tracks & Records and Sovereign Centre",
+      "needs_owner_review": true
+    },
+    {
+      "id": "com-spanish-town",
+      "name": "Spanish Town",
+      "lat": 17.9913,
+      "lon": -76.9542,
+      "trigger_radius": 240,
+      "note": "Jamaica's old capital, founded by the Spanish in 1534 — White Marl, Spanish Town Cathedral"
+    },
+    {
+      "id": "com-twickenham-park",
+      "name": "Twickenham Park",
+      "lat": 18.0028,
+      "lon": -76.9612,
+      "trigger_radius": 130,
+      "note": "St. Catherine community just west of Spanish Town",
+      "needs_owner_review": true
+    },
+    {
+      "id": "com-sligoville",
+      "name": "Sligoville",
+      "lat": 18.0451,
+      "lon": -76.9814,
+      "trigger_radius": 130,
+      "note": "First free village in Jamaica (1835) — hillside community above the gorge approach",
+      "needs_owner_review": true
+    },
+    {
+      "id": "com-bog-walk",
+      "name": "Bog Walk",
+      "lat": 18.0724,
+      "lon": -76.9823,
+      "trigger_radius": 170,
+      "note": "Gateway to the gorge — where the Rio Cobre cuts through the limestone hills"
+    },
+    {
+      "id": "com-flat-bridge",
+      "name": "Flat Bridge",
+      "lat": 18.0981,
+      "lon": -77.0021,
+      "trigger_radius": 130,
+      "note": "Legendary one-lane bridge over the Rio Cobre — floods shut the island when it goes under",
+      "needs_owner_review": true
+    },
+    {
+      "id": "com-riversdale",
+      "name": "Riversdale",
+      "lat": 18.1183,
+      "lon": -77.0452,
+      "trigger_radius": 130,
+      "note": "River Road community in the Bog Walk valley",
+      "needs_owner_review": true
+    },
+    {
+      "id": "com-linstead",
+      "name": "Linstead",
+      "lat": 18.1343,
+      "lon": -77.0228,
+      "trigger_radius": 220,
+      "note": "\"Carry mi ackee go a Linstead market\" — the song town, famous for its Saturday market"
+    },
+    {
+      "id": "com-ewarton",
+      "name": "Ewarton",
+      "lat": 18.1786,
+      "lon": -77.0752,
+      "trigger_radius": 140,
+      "note": "St. Catherine junction town on the road to Moneague",
+      "needs_owner_review": true
+    },
+    {
+      "id": "com-mount-rosser",
+      "name": "Mount Rosser",
+      "lat": 18.2337,
+      "lon": -77.1022,
+      "trigger_radius": 140,
+      "note": "High hill country between Linstead and Moneague — prime wrong-turn territory",
+      "needs_owner_review": true
+    },
+    {
+      "id": "com-moneague",
+      "name": "Moneague",
+      "lat": 18.2643,
+      "lon": -77.0873,
+      "trigger_radius": 200,
+      "note": "Crossroads town in the interior hills — the turn that takes you north to the coast"
+    },
+    {
+      "id": "com-faiths-pen",
+      "name": "Faith's Pen",
+      "lat": 18.2471,
+      "lon": -77.0946,
+      "trigger_radius": 180,
+      "note": "Legendary roadside cookshops — jerk chicken, roast yam, festival. Don't you dare drive past."
+    },
+    {
+      "id": "com-fern-gully",
+      "name": "Fern Gully",
+      "lat": 18.3782,
+      "lon": -77.0975,
+      "trigger_radius": 200,
+      "note": "Spectacular tree-fern canopy road — one of Jamaica's most photographed stretches"
+    },
+    {
+      "id": "com-ocho-rios",
+      "name": "Ocho Rios",
+      "lat": 18.4074,
+      "lon": -77.1048,
+      "trigger_radius": 260,
+      "note": "Ochi — the tourist capital of the north coast, home to Dunn's River Falls"
+    }
+  ]
+}

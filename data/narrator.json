@@ -7,6 +7,11 @@
     "road.enter": [
       "Yuh deh pon {road} now!"
     ],
+    "community.enter": [
+      "Dis a {community}, yaad man!",
+      "Welcome to {community}!",
+      "Yuh reach {community} now, drive careful!"
+    ],
     "landmark.enter": [
       "See {landmark} deh!"
     ],
@@ -16,6 +21,20 @@
     ],
     "tyre.fixed": [
       "Tyre patch up — gwaan!"
+    ],
+    "dog.chase": [
+      "Dutty dawg a chase yuh! Step pon it!",
+      "Weh di dawg want wid yuh, eeh?",
+      "Lawd, di dawg dem nuh like yuh bumper!"
+    ],
+    "goat.hit": [
+      "Yuh lick di goat! Owner a go vex wid yuh bad!",
+      "Ahh! Mi did tell yuh watch di goat dem!",
+      "Bwoy, dat goat have family an dem a go remember yuh face."
+    ],
+    "goat.near_miss": [
+      "Seet deh — almost lick di goat! Drive good nuh man!",
+      "Goat a cross! Cool nuh, driver!"
     ]
   }
 }
