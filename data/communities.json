@@ -1,0 +1,110 @@
+{
+  "comment": "Recognition layer 2: communities/districts along the Airport→Ochi route. Coordinates are real OSM lat/lon, projected into world space via route origin+scale at runtime. radius = trigger distance in compressed-world meters. needs_owner_review flags entries where the owner's lived knowledge should confirm placement or note text — map data is a starting point, not authoritative.",
+  "communities": [
+    {
+      "name": "Harbour View",
+      "lat": 17.9817,
+      "lon": -76.7433,
+      "radius": 400,
+      "note": "End of the Palisadoes strip — the famous roundabout into Kingston"
+    },
+    {
+      "name": "Rockfort",
+      "lat": 17.9883,
+      "lon": -76.7558,
+      "radius": 300,
+      "note": "Along Windward Road; home of the Rockfort Mineral Baths",
+      "needs_owner_review": true
+    },
+    {
+      "name": "Wareika Hill",
+      "lat": 17.9895,
+      "lon": -76.7750,
+      "radius": 300,
+      "note": "Hillside community above east Kingston",
+      "needs_owner_review": true
+    },
+    {
+      "name": "Rollington Town",
+      "lat": 17.9930,
+      "lon": -76.7700,
+      "radius": 350,
+      "note": "Residential community along Mountain View Avenue",
+      "needs_owner_review": true
+    },
+    {
+      "name": "Cross Roads",
+      "lat": 17.9940,
+      "lon": -76.7890,
+      "radius": 350,
+      "note": "Major Kingston junction",
+      "needs_owner_review": true
+    },
+    {
+      "name": "New Kingston",
+      "lat": 18.0066,
+      "lon": -76.7864,
+      "radius": 450,
+      "note": "Kingston business district, Trafalgar and Hope Road area",
+      "needs_owner_review": true
+    },
+    {
+      "name": "Half Way Tree",
+      "lat": 18.0109,
+      "lon": -76.7960,
+      "radius": 350,
+      "note": "Kingston's commercial hub — 1813 clock tower"
+    },
+    {
+      "name": "Spanish Town",
+      "lat": 17.9908,
+      "lon": -76.9543,
+      "radius": 500,
+      "note": "Jamaica's historic former capital"
+    },
+    {
+      "name": "Bog Walk",
+      "lat": 18.0650,
+      "lon": -77.0200,
+      "radius": 350,
+      "note": "At the entrance to the Rio Cobre gorge",
+      "needs_owner_review": true
+    },
+    {
+      "name": "Linstead",
+      "lat": 18.1340,
+      "lon": -77.0270,
+      "radius": 400,
+      "note": "Market town — immortalised in the Linstead Market folk song"
+    },
+    {
+      "name": "Ewarton",
+      "lat": 18.1750,
+      "lon": -77.0700,
+      "radius": 300,
+      "note": "Town on the Linstead–Moneague road",
+      "needs_owner_review": true
+    },
+    {
+      "name": "Moneague",
+      "lat": 18.2640,
+      "lon": -77.1150,
+      "radius": 400,
+      "note": "Junction town in the St Ann hills"
+    },
+    {
+      "name": "Faith's Pen",
+      "lat": 18.2347,
+      "lon": -77.0951,
+      "radius": 300,
+      "note": "Legendary roadside stop — jerk chicken, roast yam and festival"
+    },
+    {
+      "name": "Ocho Rios",
+      "lat": 18.4080,
+      "lon": -77.1090,
+      "radius": 500,
+      "note": "North coast resort town — the journey ends here"
+    }
+  ]
+}
