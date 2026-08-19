@@ -1,0 +1,149 @@
+{
+  "comment": "Recognition layer-2 community signs. Each community triggers a name sign (HUD popup) as the player drives through. lat/lon in WGS84; radius in compressed world-units (~300 per real km). 'needs_owner_review': true marks entries where owner's lived knowledge should override research data.",
+  "communities": [
+    {
+      "id": "com_palisadoes",
+      "name": "Palisadoes",
+      "lat": 17.942,
+      "lon": -76.729,
+      "radius": 700,
+      "note": "The airport peninsula — sea on both sides, coconut trees lining the road.",
+      "needs_owner_review": false
+    },
+    {
+      "id": "com_harbour_view",
+      "name": "Harbour View",
+      "lat": 17.958,
+      "lon": -76.734,
+      "radius": 400,
+      "note": "Community at the end of Palisadoes, just before the roundabout onto Windward Road.",
+      "needs_owner_review": false
+    },
+    {
+      "id": "com_rockfort",
+      "name": "Rockfort",
+      "lat": 17.966,
+      "lon": -76.748,
+      "radius": 350,
+      "note": "Industrial and residential area on Windward Road heading into Kingston.",
+      "needs_owner_review": true
+    },
+    {
+      "id": "com_kingston",
+      "name": "Kingston",
+      "lat": 17.997,
+      "lon": -76.793,
+      "radius": 900,
+      "note": "Capital city — downtown waterfront, Coronation Market, National Heroes Park.",
+      "needs_owner_review": false
+    },
+    {
+      "id": "com_new_kingston",
+      "name": "New Kingston",
+      "lat": 18.004,
+      "lon": -76.785,
+      "radius": 450,
+      "note": "Business and hotel district.",
+      "needs_owner_review": false
+    },
+    {
+      "id": "com_liguanea",
+      "name": "Liguanea",
+      "lat": 18.004,
+      "lon": -76.778,
+      "radius": 350,
+      "note": "Uptown residential area near New Kingston — Sovereign Centre nearby.",
+      "needs_owner_review": true
+    },
+    {
+      "id": "com_half_way_tree",
+      "name": "Half Way Tree",
+      "lat": 18.013,
+      "lon": -76.794,
+      "radius": 550,
+      "note": "Kingston's main commercial hub — the famous clock tower stands at the crossroads.",
+      "needs_owner_review": false
+    },
+    {
+      "id": "com_spanish_town",
+      "name": "Spanish Town",
+      "lat": 17.991,
+      "lon": -76.956,
+      "radius": 700,
+      "note": "Former colonial capital of Jamaica — the Cathedral, Rodney Memorial, White Marl.",
+      "needs_owner_review": false
+    },
+    {
+      "id": "com_flat_bridge",
+      "name": "Flat Bridge",
+      "lat": 18.080,
+      "lon": -76.963,
+      "radius": 300,
+      "note": "Historic single-lane bridge over the Rio Cobre at the mouth of Bog Walk gorge.",
+      "needs_owner_review": false
+    },
+    {
+      "id": "com_bog_walk",
+      "name": "Bog Walk",
+      "lat": 18.097,
+      "lon": -76.965,
+      "radius": 450,
+      "note": "Community in the dramatic gorge — Rio Cobre river runs alongside the road.",
+      "needs_owner_review": false
+    },
+    {
+      "id": "com_ewarton",
+      "name": "Ewarton",
+      "lat": 18.115,
+      "lon": -77.002,
+      "radius": 400,
+      "note": "Alumina plant town between Bog Walk and Linstead.",
+      "needs_owner_review": true
+    },
+    {
+      "id": "com_linstead",
+      "name": "Linstead",
+      "lat": 18.134,
+      "lon": -77.040,
+      "radius": 550,
+      "note": "Market town — home of the folk song 'Carry Me Ackee Go A Linstead Market'.",
+      "needs_owner_review": false
+    },
+    {
+      "id": "com_moneague",
+      "name": "Moneague",
+      "lat": 18.279,
+      "lon": -77.120,
+      "radius": 450,
+      "note": "Mountain junction town — Moneague College, cool highland air.",
+      "needs_owner_review": false
+    },
+    {
+      "id": "com_faiths_pen",
+      "name": "Faith's Pen",
+      "lat": 18.307,
+      "lon": -77.163,
+      "radius": 450,
+      "note": "Famous roadside cookshop row — jerk chicken, roast yam, festival, water coconut.",
+      "needs_owner_review": false
+    },
+    {
+      "id": "com_fern_gully",
+      "name": "Fern Gully",
+      "lat": 18.383,
+      "lon": -77.098,
+      "radius": 550,
+      "note": "Bamboo-canopied gorge carved through the mountains — one of Jamaica's iconic drives.",
+      "needs_owner_review": false
+    },
+    {
+      "id": "com_ocho_rios",
+      "name": "Ocho Rios",
+      "lat": 18.410,
+      "lon": -77.105,
+      "radius": 750,
+      "note": "Tourist hub on the north coast — Dunn's River Falls, cruise ship port.",
+      "needs_owner_review": false
+    }
+  ]
+}
