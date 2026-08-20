@@ -1,0 +1,180 @@
+{
+  "comment": "Recognition layer 2: community/district signs. Coordinates are real OSM lat/lon projected into world space. trigger_radius = in compressed-world meters. needs_owner_review=true means the owner's lived knowledge should verify the placement — he knows the road better than any map. All communities are along the V1 route: Norman Manley Airport → Palisadoes → Harbour View → Kingston → Spanish Town Road → Bog Walk → Linstead → Moneague → Faith's Pen → Fern Gully → Ocho Rios.",
+  "communities": [
+    {
+      "id": "com-palisadoes",
+      "name": "Palisadoes",
+      "lat": 17.9430,
+      "lon": -76.7780,
+      "trigger_radius": 300,
+      "note": "The narrow strip of land carrying Norman Manley Highway — sea on both sides"
+    },
+    {
+      "id": "com-harbour-view",
+      "name": "Harbour View",
+      "lat": 17.9590,
+      "lon": -76.7480,
+      "trigger_radius": 200,
+      "note": "Harbour View roundabout — where the Palisadoes meets Windward Road and the potholes begin"
+    },
+    {
+      "id": "com-rockfort",
+      "name": "Rockfort",
+      "lat": 17.9730,
+      "lon": -76.7640,
+      "trigger_radius": 180,
+      "note": "Industrial east Kingston — cement plant visible on the left"
+    },
+    {
+      "id": "com-wareika-hill",
+      "name": "Wareika Hill",
+      "lat": 17.9880,
+      "lon": -76.7570,
+      "trigger_radius": 200,
+      "needs_owner_review": true,
+      "note": "Hillside community above Windward Road; exact trigger point on the curated route needs owner verification"
+    },
+    {
+      "id": "com-east-kingston",
+      "name": "East Kingston",
+      "lat": 17.9950,
+      "lon": -76.7750,
+      "trigger_radius": 250,
+      "note": "Entering the city proper on Windward Road"
+    },
+    {
+      "id": "com-jones-town",
+      "name": "Jones Town",
+      "lat": 17.9980,
+      "lon": -76.8010,
+      "trigger_radius": 200,
+      "needs_owner_review": true,
+      "note": "West of downtown; included if the curated Kingston route passes through here"
+    },
+    {
+      "id": "com-trenchtown",
+      "name": "Trenchtown",
+      "lat": 17.9950,
+      "lon": -76.8100,
+      "trigger_radius": 220,
+      "needs_owner_review": true,
+      "note": "Birthplace of reggae and Bob Marley — strong diaspora recognition; include if route brushes past"
+    },
+    {
+      "id": "com-cross-roads",
+      "name": "Cross Roads",
+      "lat": 18.0030,
+      "lon": -76.7890,
+      "trigger_radius": 180,
+      "note": "Major Kingston junction — Maxfield Ave meets South Camp Rd"
+    },
+    {
+      "id": "com-new-kingston",
+      "name": "New Kingston",
+      "lat": 18.0110,
+      "lon": -76.7900,
+      "trigger_radius": 220,
+      "note": "Kingston's modern business district — hotels, banks, corporate towers"
+    },
+    {
+      "id": "com-half-way-tree",
+      "name": "Half Way Tree",
+      "lat": 18.0109,
+      "lon": -76.7960,
+      "trigger_radius": 250,
+      "note": "Kingston's uptown hub — the 1813 clock tower, buses, markets and the loudest horns on the island"
+    },
+    {
+      "id": "com-three-miles",
+      "name": "Three Miles",
+      "lat": 18.0010,
+      "lon": -76.8430,
+      "trigger_radius": 180,
+      "needs_owner_review": true,
+      "note": "Named for its distance from the city centre; on Spanish Town Road heading west"
+    },
+    {
+      "id": "com-six-miles",
+      "name": "Six Miles",
+      "lat": 18.0010,
+      "lon": -76.8830,
+      "trigger_radius": 180,
+      "needs_owner_review": true,
+      "note": "Six miles from downtown Kingston on the Spanish Town Road — owner to confirm exact roadside feel"
+    },
+    {
+      "id": "com-spanish-town",
+      "name": "Spanish Town",
+      "lat": 17.9910,
+      "lon": -76.9570,
+      "trigger_radius": 350,
+      "note": "Former capital of Jamaica — over 500 years of history, the square and courthouse are iconic"
+    },
+    {
+      "id": "com-bog-walk",
+      "name": "Bog Walk",
+      "lat": 18.0650,
+      "lon": -76.9850,
+      "trigger_radius": 220,
+      "note": "Gateway to the gorge — Rio Cobre runs below, road narrows dramatically"
+    },
+    {
+      "id": "com-linstead",
+      "name": "Linstead",
+      "lat": 18.1380,
+      "lon": -76.9940,
+      "trigger_radius": 280,
+      "note": "\"Linstead Market\" — home of the famous folk song; busy country market town"
+    },
+    {
+      "id": "com-ewarton",
+      "name": "Ewarton",
+      "lat": 18.1740,
+      "lon": -77.0390,
+      "trigger_radius": 180,
+      "needs_owner_review": true,
+      "note": "Small town between Linstead and Moneague on the A1"
+    },
+    {
+      "id": "com-moneague",
+      "name": "Moneague",
+      "lat": 18.2530,
+      "lon": -77.0950,
+      "trigger_radius": 220,
+      "note": "High ground junction town — where the wrong-turn mountain moment tempts the player"
+    },
+    {
+      "id": "com-faiths-pen",
+      "name": "Faith's Pen",
+      "lat": 18.2750,
+      "lon": -77.0970,
+      "trigger_radius": 200,
+      "note": "Legendary roadside cookshops at the summit — jerk chicken, roast yam, festival; the smell gets you before the sign does"
+    },
+    {
+      "id": "com-claremont",
+      "name": "Claremont",
+      "lat": 18.3650,
+      "lon": -77.1170,
+      "trigger_radius": 180,
+      "needs_owner_review": true,
+      "note": "Small town near the northern end of Fern Gully — owner to confirm it is on the curated route"
+    },
+    {
+      "id": "com-fern-gully",
+      "name": "Fern Gully",
+      "lat": 18.3780,
+      "lon": -77.1130,
+      "trigger_radius": 240,
+      "note": "Three kilometres of road canopied by bamboo and ferns — one of the most beautiful drives in the Caribbean"
+    },
+    {
+      "id": "com-ocho-rios",
+      "name": "Ocho Rios",
+      "lat": 18.4070,
+      "lon": -77.1080,
+      "trigger_radius": 350,
+      "note": "Journey's end — cruise ships, Dunn's River Falls, and a well-earned bath"
+    }
+  ]
+}
