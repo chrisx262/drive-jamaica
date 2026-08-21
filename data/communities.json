@@ -1,0 +1,132 @@
+{
+  "comment": "Communities/districts along the Airport→Kingston→Bog Walk→Fern Gully→Ocho Rios route. Recognition layer 2. Positions are map-derived — mark needs_owner_review:true wherever the owner's lived knowledge should be authoritative. Radius is in compressed world metres.",
+  "communities": [
+    {
+      "name": "Palisadoes",
+      "lat": 17.938,
+      "lon": -76.755,
+      "note": "The iconic strip — sea on both sides, coconut trees, gateway to the island",
+      "radius": 400
+    },
+    {
+      "name": "Port Royal",
+      "lat": 17.921,
+      "lon": -76.844,
+      "note": "Once the 'wickedest city in the world'; now a quiet fishing village at the tip of the Palisadoes",
+      "radius": 250,
+      "needs_owner_review": true
+    },
+    {
+      "name": "Harbour View",
+      "lat": 17.978,
+      "lon": -76.744,
+      "note": "Eastern Kingston; the Harbour View roundabout marks where the Palisadoes meets the mainland",
+      "radius": 300
+    },
+    {
+      "name": "Rockfort",
+      "lat": 17.994,
+      "lon": -76.771,
+      "note": "Industrial area along Windward Road; home to Rockfort Mineral Baths",
+      "radius": 250,
+      "needs_owner_review": true
+    },
+    {
+      "name": "Kingston",
+      "lat": 18.002,
+      "lon": -76.792,
+      "note": "Capital and largest city; seat of government, culture, and commerce",
+      "radius": 500
+    },
+    {
+      "name": "Cross Roads",
+      "lat": 18.002,
+      "lon": -76.790,
+      "note": "Busy Kingston intersection; gateway between downtown and uptown",
+      "radius": 200,
+      "needs_owner_review": true
+    },
+    {
+      "name": "Half Way Tree",
+      "lat": 18.011,
+      "lon": -76.795,
+      "note": "Uptown Kingston's commercial hub; St. Andrew parish capital — named for a long-gone cotton tree",
+      "radius": 350
+    },
+    {
+      "name": "New Kingston",
+      "lat": 17.998,
+      "lon": -76.790,
+      "note": "Modern business district; hotels, offices, and the US Embassy",
+      "radius": 300,
+      "needs_owner_review": true
+    },
+    {
+      "name": "Arnett Gardens",
+      "lat": 17.993,
+      "lon": -76.800,
+      "note": "Community known locally as 'The Jungle'",
+      "radius": 250,
+      "needs_owner_review": true
+    },
+    {
+      "name": "Spanish Town",
+      "lat": 17.991,
+      "lon": -76.957,
+      "note": "Former Spanish colonial capital of Jamaica; St. Catherine parish capital",
+      "radius": 400
+    },
+    {
+      "name": "Flat Bridge",
+      "lat": 18.065,
+      "lon": -77.012,
+      "note": "Historic single-lane bridge over the Rio Cobre — floods in heavy rain",
+      "radius": 200
+    },
+    {
+      "name": "Bog Walk",
+      "lat": 18.085,
+      "lon": -77.020,
+      "note": "Town at the mouth of the gorge; the gorge road is cut through the mountains",
+      "radius": 250,
+      "needs_owner_review": true
+    },
+    {
+      "name": "Linstead",
+      "lat": 18.136,
+      "lon": -77.037,
+      "note": "Market town in St. Catherine; immortalised in the folk song 'Linstead Market'",
+      "radius": 350
+    },
+    {
+      "name": "Moneague",
+      "lat": 18.262,
+      "lon": -77.101,
+      "note": "Cool hilltop crossroads; Moneague Lake nearby disappears in dry season",
+      "radius": 300,
+      "needs_owner_review": true
+    },
+    {
+      "name": "Faith's Pen",
+      "lat": 18.302,
+      "lon": -77.125,
+      "note": "Legendary roadside cookshops — jerk chicken, roast yam, festival; every Jamaican knows this stop",
+      "radius": 300,
+      "needs_owner_review": true
+    },
+    {
+      "name": "Fern Gully",
+      "lat": 18.376,
+      "lon": -77.124,
+      "note": "Lush canopy tunnel through the mountains — once a riverbed, now one of Jamaica's most scenic roads",
+      "radius": 400
+    },
+    {
+      "name": "Ocho Rios",
+      "lat": 18.405,
+      "lon": -77.109,
+      "note": "North coast resort town; home to Dunn's River Falls — end of the Airport Run",
+      "radius": 500
+    }
+  ]
+}
