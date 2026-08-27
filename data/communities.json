@@ -1,0 +1,119 @@
+{
+  "comment": "Communities/districts along the Airport Run (Norman Manley → Ocho Rios). Real-world lat/lon, projected into world space by recognition.ts. Entries marked needs_owner_review need confirmation against lived knowledge — OSM data alone is not authoritative for exact community boundaries.",
+  "communities": [
+    {
+      "name": "Harbour View",
+      "lat": 17.9681,
+      "lon": -76.7453,
+      "radius": 350,
+      "note": "Roundabout entry from the Palisadoes into Kingston."
+    },
+    {
+      "name": "Rockfort",
+      "lat": 17.9737,
+      "lon": -76.7584,
+      "radius": 300,
+      "note": "Industrial/residential district along Windward Road heading into Kingston.",
+      "needs_owner_review": true
+    },
+    {
+      "name": "Kingston",
+      "lat": 17.9971,
+      "lon": -76.7936,
+      "radius": 700,
+      "note": "Capital city. Route threads through downtown and uptown."
+    },
+    {
+      "name": "Cross Roads",
+      "lat": 17.9990,
+      "lon": -76.7830,
+      "radius": 300,
+      "note": "Major Kingston junction — Mountain View Ave meets central Kingston.",
+      "needs_owner_review": true
+    },
+    {
+      "name": "New Kingston",
+      "lat": 18.0040,
+      "lon": -76.7950,
+      "radius": 350,
+      "note": "Business district — Trafalgar Road / Knutsford Boulevard area.",
+      "needs_owner_review": true
+    },
+    {
+      "name": "Half Way Tree",
+      "lat": 18.0102,
+      "lon": -76.7996,
+      "radius": 350,
+      "note": "Busy commercial hub; the clock tower is a landmark."
+    },
+    {
+      "name": "Spanish Town",
+      "lat": 17.9912,
+      "lon": -76.9567,
+      "radius": 500,
+      "note": "Former capital of Jamaica. Route passes on the bypass.",
+      "needs_owner_review": true
+    },
+    {
+      "name": "Bog Walk",
+      "lat": 18.0730,
+      "lon": -76.9920,
+      "radius": 350,
+      "note": "Village at the entrance to the famous Bog Walk Gorge."
+    },
+    {
+      "name": "Flat Bridge",
+      "lat": 18.0780,
+      "lon": -76.9990,
+      "radius": 300,
+      "note": "Iconic low bridge over the Rio Cobre in the gorge.",
+      "needs_owner_review": true
+    },
+    {
+      "name": "Ewarton",
+      "lat": 18.0955,
+      "lon": -77.0800,
+      "radius": 350,
+      "note": "Town on the far side of the Bog Walk Gorge, near the alumina plant.",
+      "needs_owner_review": true
+    },
+    {
+      "name": "Linstead",
+      "lat": 18.1330,
+      "lon": -77.0300,
+      "radius": 400,
+      "note": "St. Catherine market town; famous for the Linstead Market folk song."
+    },
+    {
+      "name": "Moneague",
+      "lat": 18.2330,
+      "lon": -77.1080,
+      "radius": 350,
+      "note": "Small town in St. Ann on the plateau.",
+      "needs_owner_review": true
+    },
+    {
+      "name": "Faith's Pen",
+      "lat": 18.2800,
+      "lon": -77.0600,
+      "radius": 350,
+      "note": "Famous roadside cookshop strip — jerk chicken, roast yam, festival.",
+      "needs_owner_review": true
+    },
+    {
+      "name": "Fern Gully",
+      "lat": 18.3750,
+      "lon": -77.0940,
+      "radius": 400,
+      "note": "Bamboo-canopied gully road descending to the north coast.",
+      "needs_owner_review": true
+    },
+    {
+      "name": "Ocho Rios",
+      "lat": 18.4055,
+      "lon": -77.1010,
+      "radius": 500,
+      "note": "Tourist town on the north coast. The run ends at Dunn's River Falls."
+    }
+  ]
+}
