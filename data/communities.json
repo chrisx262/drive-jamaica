@@ -1,0 +1,181 @@
+{
+  "comment": "Recognition layer 2: community/district signs. Coordinates are real OSM lat/lon projected via road.project(). radius = trigger distance in compressed-world meters (~30% of real). Entries marked needs_owner_review:true have uncertain coordinates or boundaries — owner's lived knowledge is authoritative. IDs are stable from creation for the future ad/analytics system.",
+  "communities": [
+    {
+      "id": "comm-palisadoes",
+      "name": "Palisadoes",
+      "lat": 17.9490,
+      "lon": -76.7365,
+      "radius": 600,
+      "note": "The narrow barrier spit connecting the airport to the mainland — sea on both sides"
+    },
+    {
+      "id": "comm-harbour-view",
+      "name": "Harbour View",
+      "lat": 17.9565,
+      "lon": -76.6966,
+      "radius": 350,
+      "note": "Major community at the eastern end of the Palisadoes — roundabout marks the gateway to Kingston"
+    },
+    {
+      "id": "comm-rockfort",
+      "name": "Rockfort",
+      "lat": 17.9660,
+      "lon": -76.7102,
+      "radius": 250,
+      "note": "Industrial community on Windward Road, site of Rockfort Mineral Bath",
+      "needs_owner_review": true
+    },
+    {
+      "id": "comm-mountain-view",
+      "name": "Mountain View",
+      "lat": 17.9865,
+      "lon": -76.7543,
+      "radius": 300,
+      "note": "Community along Mountain View Avenue, close to the National Stadium"
+    },
+    {
+      "id": "comm-rollington-town",
+      "name": "Rollington Town",
+      "lat": 17.9940,
+      "lon": -76.7632,
+      "radius": 250,
+      "note": "Inner-city community adjacent to Mountain View Avenue",
+      "needs_owner_review": true
+    },
+    {
+      "id": "comm-kingston",
+      "name": "Kingston",
+      "lat": 17.9971,
+      "lon": -76.7936,
+      "radius": 600,
+      "note": "Jamaica's capital and commercial hub"
+    },
+    {
+      "id": "comm-new-kingston",
+      "name": "New Kingston",
+      "lat": 18.0050,
+      "lon": -76.7895,
+      "radius": 300,
+      "note": "Kingston's business district — offices, hotels, Emancipation Park"
+    },
+    {
+      "id": "comm-half-way-tree",
+      "name": "Half Way Tree",
+      "lat": 18.0109,
+      "lon": -76.7960,
+      "radius": 350,
+      "note": "The crossroads of uptown Kingston — clock tower, courts, market"
+    },
+    {
+      "id": "comm-constant-spring",
+      "name": "Constant Spring",
+      "lat": 18.0296,
+      "lon": -76.8040,
+      "radius": 280,
+      "note": "Uptown suburb along Constant Spring Road",
+      "needs_owner_review": true
+    },
+    {
+      "id": "comm-washington-gdns",
+      "name": "Washington Gardens",
+      "lat": 18.0064,
+      "lon": -76.8250,
+      "radius": 280,
+      "note": "Residential community west of Half Way Tree",
+      "needs_owner_review": true
+    },
+    {
+      "id": "comm-spanish-town",
+      "name": "Spanish Town",
+      "lat": 17.9920,
+      "lon": -76.9545,
+      "radius": 500,
+      "note": "Former capital of Jamaica and St. Catherine parish capital"
+    },
+    {
+      "id": "comm-waterford",
+      "name": "Waterford",
+      "lat": 17.9793,
+      "lon": -76.9418,
+      "radius": 280,
+      "note": "Community between Kingston and Spanish Town on the highway",
+      "needs_owner_review": true
+    },
+    {
+      "id": "comm-caymanas",
+      "name": "Caymanas",
+      "lat": 18.0074,
+      "lon": -76.9685,
+      "radius": 250,
+      "note": "Caymanas Estate area — sugar cane and horse racing heritage",
+      "needs_owner_review": true
+    },
+    {
+      "id": "comm-bog-walk",
+      "name": "Bog Walk",
+      "lat": 18.0614,
+      "lon": -76.9845,
+      "radius": 350,
+      "note": "Community at the mouth of the Rio Cobre gorge — Flat Bridge is nearby"
+    },
+    {
+      "id": "comm-ewarton",
+      "name": "Ewarton",
+      "lat": 18.1249,
+      "lon": -77.0617,
+      "radius": 300,
+      "note": "Small St. Catherine community in the gorge hills",
+      "needs_owner_review": true
+    },
+    {
+      "id": "comm-linstead",
+      "name": "Linstead",
+      "lat": 18.1395,
+      "lon": -77.0262,
+      "radius": 380,
+      "note": "St. Catherine market town — the song 'Linstead Market' is named for it"
+    },
+    {
+      "id": "comm-moneague",
+      "name": "Moneague",
+      "lat": 18.2607,
+      "lon": -77.0958,
+      "radius": 350,
+      "note": "St. Ann border town at the crest of the hills — cool air, misty mornings"
+    },
+    {
+      "id": "comm-faiths-pen",
+      "name": "Faith's Pen",
+      "lat": 18.2347,
+      "lon": -77.0951,
+      "radius": 280,
+      "note": "Legendary roadside cookshop strip — jerk chicken, roast yam, festival"
+    },
+    {
+      "id": "comm-claremont",
+      "name": "Claremont",
+      "lat": 18.3479,
+      "lon": -77.0808,
+      "radius": 300,
+      "note": "St. Ann community on the descent toward Ocho Rios",
+      "needs_owner_review": true
+    },
+    {
+      "id": "comm-fern-gully",
+      "name": "Fern Gully",
+      "lat": 18.3920,
+      "lon": -77.0968,
+      "radius": 350,
+      "note": "The famous fern-canopied gorge road dropping into Ocho Rios — bamboo arches overhead"
+    },
+    {
+      "id": "comm-ocho-rios",
+      "name": "Ocho Rios",
+      "lat": 18.4097,
+      "lon": -77.1042,
+      "radius": 500,
+      "note": "St. Ann resort town — cruise ships, Dunn's River Falls, journey's end"
+    }
+  ]
+}
