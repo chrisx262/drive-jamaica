@@ -54,6 +54,15 @@
       "needs_owner_review": true
     },
     {
+      "id": "com-angels",
+      "name": "Angels",
+      "lat": 18.0430,
+      "lon": -77.0160,
+      "radius": 280,
+      "note": "Small community on the A1 north of Spanish Town, before the Bog Walk junction",
+      "needs_owner_review": true
+    },
+    {
       "id": "com-bog-walk",
       "name": "Bog Walk",
       "lat": 18.0772,
@@ -89,6 +98,15 @@
       "needs_owner_review": true
     },
     {
+      "id": "com-mount-rosser",
+      "name": "Mount Rosser",
+      "lat": 18.2115,
+      "lon": -77.0340,
+      "radius": 380,
+      "note": "Hill-country stretch on the Linstead–Moneague road — commanding views north",
+      "needs_owner_review": true
+    },
+    {
       "id": "com-moneague",
       "name": "Moneague",
       "lat": 18.2406,
@@ -112,6 +130,14 @@
       "radius": 320,
       "note": "Village at the crest of Fern Gully — the famous canopy begins here",
       "needs_owner_review": true
+    },
+    {
+      "id": "com-fern-gully",
+      "name": "Fern Gully",
+      "lat": 18.3620,
+      "lon": -77.0985,
+      "radius": 500,
+      "note": "Iconic 3 km canopy of tropical ferns and trees — a UNESCO-considered heritage road"
     },
     {
       "id": "com-ocho-rios",
