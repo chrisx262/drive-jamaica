@@ -2,35 +2,50 @@
   "comment": "Event -> possible narrator lines. Lines are picked at random per event. Audio files (assets/voice/) will map by line id later; V1 scaffold shows captions only.",
   "events": {
     "game.start": [
-      "Welcome to Jamaica, brethren! Touch di road!"
+      "Welcome to Jamaica, brethren! Touch di road!",
+      "Airport run start! Norman Manley to Dunn's River — lesh go!",
+      "One time fi Jamaica! Drive safe… or don't."
     ],
     "road.enter": [
-      "Yuh deh pon {road} now!"
+      "Yuh deh pon {road} now!",
+      "{road} — hold it steady, star.",
+      "Dis a {road} — nuh speed through here, yuh hear?"
     ],
     "community.enter": [
       "Big up {community}!",
       "Welcome to {community}, yuh reach!",
-      "{community} — good people live here, sah!"
+      "{community} — good people live here, sah!",
+      "Yuh pass through {community} — respec' to di community!",
+      "{community}! If yuh know, yuh know."
     ],
     "landmark.enter": [
-      "See {landmark} deh!"
+      "See {landmark} deh!",
+      "Dat a {landmark} — one of di best inna Jamaica!",
+      "Big up {landmark}!"
     ],
     "pothole.burst": [
       "Yuh tyre bust, brethren!",
-      "Wheeel! Mind di pothole dem!"
+      "Wheeel! Mind di pothole dem!",
+      "Bwoy, di road dem nuh easy out here!",
+      "Lawd — dem need fi fix dis road, sah!"
     ],
     "tyre.fixed": [
-      "Tyre patch up — gwaan!"
+      "Tyre patch up — gwaan!",
+      "Back pon di road! Drive careful dis time, star."
     ],
     "dog.chase": [
       "Dawg! Dawg a run yuh dung, brethren!",
       "Weh di dog deh pon yuh?! Step pon it!",
-      "Rhatid — di dawg dem bad out here!"
+      "Rhatid — di dawg dem bad out here!",
+      "Dog! Real dog! Nuh stop fi pet dem!",
+      "Lawd, di dog dem want a piece of yuh bumper!"
     ],
     "goat.hit": [
       "Smaddy goat dat! Yuh owe dem, brethren!",
       "Rhatid! Yuh lick dung di goat!",
-      "Cho! Di goat neva see yuh coming either!"
+      "Cho! Di goat neva see yuh coming either!",
+      "Lawd have mercy — man goat inna di road and yuh just run dem dung?!",
+      "Unattended goat, unattended driver — nuh true?"
     ]
   }
 }

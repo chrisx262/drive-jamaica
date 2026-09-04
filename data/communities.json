@@ -28,6 +28,15 @@
       "needs_owner_review": true
     },
     {
+      "id": "com-wareika-hill",
+      "name": "Wareika Hill",
+      "lat": 18.0050,
+      "lon": -76.7750,
+      "radius": 260,
+      "note": "Hillside community east of Kingston; mentioned explicitly in GAME_SPEC as a recognition example",
+      "needs_owner_review": true
+    },
+    {
       "id": "com-cross-roads",
       "name": "Cross Roads",
       "lat": 18.0011,
@@ -43,6 +52,15 @@
       "lon": -76.7963,
       "radius": 450,
       "note": "The commercial heart of uptown Kingston — the 1813 clock tower marks the centre"
+    },
+    {
+      "id": "com-caymanas",
+      "name": "Caymanas",
+      "lat": 17.9900,
+      "lon": -76.8720,
+      "radius": 300,
+      "note": "Home of Caymanas Park — Jamaica's famous horse racing track — on Spanish Town Road",
+      "needs_owner_review": true
     },
     {
       "id": "com-spanish-town",
@@ -121,6 +139,15 @@
       "lon": -77.0951,
       "radius": 320,
       "note": "Legendary string of roadside cookshops — jerk chicken, roast yam, festival"
+    },
+    {
+      "id": "com-walkerswood",
+      "name": "Walkerswood",
+      "lat": 18.2780,
+      "lon": -77.0888,
+      "radius": 300,
+      "note": "Famous for Walkerswood Caribbean Foods — jerk seasoning made here since 1978",
+      "needs_owner_review": true
     },
     {
       "id": "com-milford",

@@ -72,7 +72,7 @@ export class Recognition {
     for (const c of this.communities) {
       if (c.shown || c.pos.distanceTo(carPos) > c.radius) continue;
       c.shown = true;
-      this.communityEl.textContent = `\u{1F6A7} ${c.name}`;
+      this.communityEl.textContent = c.name;
       this.communityEl.style.opacity = '1';
       clearTimeout(this.communityTimer);
       this.communityTimer = setTimeout(() => { this.communityEl.style.opacity = '0'; }, 4500);
