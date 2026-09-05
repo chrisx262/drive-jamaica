@@ -1,0 +1,196 @@
+{
+  "comment": "Recognition layer 2: community/district signs along the Airport→Ochi route. Coordinates are real lat/lon projected via road.project(). Radius is trigger distance in compressed-world metres. Entries marked needs_owner_review are sourced from OSM/research — the owner's lived knowledge is authoritative for placement and naming.",
+  "communities": [
+    {
+      "id": "com-harbour-view",
+      "name": "Harbour View",
+      "lat": 17.9855,
+      "lon": -76.7361,
+      "radius": 350,
+      "note": "Gateway from the Palisadoes strip into Kingston — the big roundabout"
+    },
+    {
+      "id": "com-rockfort",
+      "name": "Rockfort",
+      "lat": 17.9934,
+      "lon": -76.7560,
+      "radius": 280,
+      "note": "Home of the Rockfort Mineral Baths; industrial eastern Kingston",
+      "needs_owner_review": true
+    },
+    {
+      "id": "com-vineyard-town",
+      "name": "Vineyard Town",
+      "lat": 17.9978,
+      "lon": -76.7680,
+      "radius": 260,
+      "note": "Inner-city community on Windward Road between Rockfort and East Kingston",
+      "needs_owner_review": true
+    },
+    {
+      "id": "com-east-kingston",
+      "name": "East Kingston",
+      "lat": 17.9985,
+      "lon": -76.7740,
+      "radius": 320,
+      "note": "Working-class community along Windward Road into the city",
+      "needs_owner_review": true
+    },
+    {
+      "id": "com-wareika-hill",
+      "name": "Wareika Hill",
+      "lat": 18.0050,
+      "lon": -76.7750,
+      "radius": 260,
+      "note": "Hillside community east of Kingston; mentioned explicitly in GAME_SPEC as a recognition example",
+      "needs_owner_review": true
+    },
+    {
+      "id": "com-cross-roads",
+      "name": "Cross Roads",
+      "lat": 18.0011,
+      "lon": -76.7928,
+      "radius": 220,
+      "note": "Major city junction — the gateway between downtown and uptown Kingston",
+      "needs_owner_review": true
+    },
+    {
+      "id": "com-new-kingston",
+      "name": "New Kingston",
+      "lat": 18.0065,
+      "lon": -76.7950,
+      "radius": 280,
+      "note": "Kingston's modern commercial district — offices, hotels, restaurants",
+      "needs_owner_review": true
+    },
+    {
+      "id": "com-half-way-tree",
+      "name": "Half Way Tree",
+      "lat": 18.0109,
+      "lon": -76.7963,
+      "radius": 450,
+      "note": "The commercial heart of uptown Kingston — the 1813 clock tower marks the centre"
+    },
+    {
+      "id": "com-caymanas",
+      "name": "Caymanas",
+      "lat": 17.9900,
+      "lon": -76.8720,
+      "radius": 300,
+      "note": "Home of Caymanas Park — Jamaica's famous horse racing track — on Spanish Town Road",
+      "needs_owner_review": true
+    },
+    {
+      "id": "com-spanish-town",
+      "name": "Spanish Town",
+      "lat": 17.9962,
+      "lon": -76.9574,
+      "radius": 550,
+      "note": "Jamaica's former colonial capital — the historic square is at the centre",
+      "needs_owner_review": true
+    },
+    {
+      "id": "com-angels",
+      "name": "Angels",
+      "lat": 18.0430,
+      "lon": -77.0160,
+      "radius": 280,
+      "note": "Small community on the A1 north of Spanish Town, before the Bog Walk junction",
+      "needs_owner_review": true
+    },
+    {
+      "id": "com-bog-walk",
+      "name": "Bog Walk",
+      "lat": 18.0772,
+      "lon": -76.9556,
+      "radius": 400,
+      "note": "Entrance to the dramatic gorge — Flat Bridge and the Rio Cobre are ahead",
+      "needs_owner_review": true
+    },
+    {
+      "id": "com-ewarton",
+      "name": "Ewarton",
+      "lat": 18.0825,
+      "lon": -76.9408,
+      "radius": 320,
+      "note": "Industrial community in the gorge area, known for the bauxite plant",
+      "needs_owner_review": true
+    },
+    {
+      "id": "com-linstead",
+      "name": "Linstead",
+      "lat": 18.1419,
+      "lon": -76.9711,
+      "radius": 520,
+      "note": "Famous for its bustling market and the Jamaican folk song 'Linstead Market'"
+    },
+    {
+      "id": "com-guys-hill",
+      "name": "Guy's Hill",
+      "lat": 18.1869,
+      "lon": -76.9978,
+      "radius": 320,
+      "note": "Rural community in the hills between Linstead and Moneague",
+      "needs_owner_review": true
+    },
+    {
+      "id": "com-mount-rosser",
+      "name": "Mount Rosser",
+      "lat": 18.2115,
+      "lon": -77.0340,
+      "radius": 380,
+      "note": "Hill-country stretch on the Linstead–Moneague road — commanding views north",
+      "needs_owner_review": true
+    },
+    {
+      "id": "com-moneague",
+      "name": "Moneague",
+      "lat": 18.2406,
+      "lon": -77.0669,
+      "radius": 420,
+      "note": "Crossroads junction town in the hills of St. Ann"
+    },
+    {
+      "id": "com-faiths-pen",
+      "name": "Faith's Pen",
+      "lat": 18.2347,
+      "lon": -77.0951,
+      "radius": 320,
+      "note": "Legendary string of roadside cookshops — jerk chicken, roast yam, festival"
+    },
+    {
+      "id": "com-walkerswood",
+      "name": "Walkerswood",
+      "lat": 18.2780,
+      "lon": -77.0888,
+      "radius": 300,
+      "note": "Famous for Walkerswood Caribbean Foods — jerk seasoning made here since 1978",
+      "needs_owner_review": true
+    },
+    {
+      "id": "com-milford",
+      "name": "Milford",
+      "lat": 18.3180,
+      "lon": -77.0890,
+      "radius": 320,
+      "note": "Village at the crest of Fern Gully — the famous canopy begins here",
+      "needs_owner_review": true
+    },
+    {
+      "id": "com-fern-gully",
+      "name": "Fern Gully",
+      "lat": 18.3620,
+      "lon": -77.0985,
+      "radius": 500,
+      "note": "Iconic 3 km canopy of tropical ferns and trees — a UNESCO-considered heritage road"
+    },
+    {
+      "id": "com-ocho-rios",
+      "name": "Ocho Rios",
+      "lat": 18.4050,
+      "lon": -77.1028,
+      "radius": 650,
+      "note": "Tourist hub of the north coast — Dunn's River Falls is the journey's end"
+    }
+  ]
+}
