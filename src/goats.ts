@@ -4,6 +4,7 @@ import type { Car } from './car';
 import { makeGoat } from './animals';
 import { narrate } from './narrator';
 import { mulberry32 } from './rng';
+import { addScoringEvent } from './scoring';
 
 const HIT_RADIUS = 1.8;       // metres — close enough to count as a collision
 const GOAT_SPEED = 2.2;       // m/s — ambling across the road
@@ -67,9 +68,11 @@ class GoatHerd {
       if (hit) {
         this.collisionFired = true;
         narrate('goat.hit');
+        addScoringEvent('goat.hit');
       } else if (!this.nearMissFired && closestDist < HIT_RADIUS * 3.5) {
         this.nearMissFired = true;
         narrate('goat.spared');
+        addScoringEvent('goat.spared');
       }
     }
 

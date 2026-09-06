@@ -2,6 +2,7 @@ import * as THREE from 'three';
 import type { RoadLike } from './road';
 import type { Car } from './car';
 import { narrate } from './narrator';
+import { addScoringEvent } from './scoring';
 
 export const HIT_RADIUS = 1.4; // exported for debug overlay
 const MIN_GAP = 90; // meters between potholes (compressed world)
@@ -64,6 +65,7 @@ export class Potholes {
       if (p.distanceToSquared(car.position) > HIT_RADIUS * HIT_RADIUS) continue;
       car.burstTyre();
       narrate('pothole.burst');
+      addScoringEvent('tyre.burst');
       clearTimeout(this.patchTimer);
       this.patchTimer = setTimeout(() => {
         car.repairTyre();

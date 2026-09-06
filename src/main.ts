@@ -10,6 +10,7 @@ import { Potholes } from './potholes';
 import { Dogs } from './dogs';
 import { Goats } from './goats';
 import { initNarrator, narrate } from './narrator';
+import { initScoring, scoring } from './scoring';
 import { TestTrack } from './testtrack';
 import { Debug } from './debug';
 
@@ -89,6 +90,7 @@ scene.add(car.object);
 
 const input = initInput();
 initNarrator();
+initScoring();
 
 let debug: Debug | null = null;
 if (isDebug) {
@@ -105,7 +107,7 @@ narrate('game.start');
 
 // Dev-only handle for automated drive tests (stripped from production builds).
 if (import.meta.env.DEV) {
-  (window as unknown as Record<string, unknown>).__dj = { car, road, potholes };
+  (window as unknown as Record<string, unknown>).__dj = { car, road, potholes, scoring };
 }
 
 const camOffset = new THREE.Vector3();
@@ -120,6 +122,7 @@ renderer.setAnimationLoop(() => {
   potholes.update(car);
   dogs?.update(car, dt);
   goats?.update(car, dt);
+  scoring.update(car);
   recognition?.update(car.position);
   debug?.update(dt);
 

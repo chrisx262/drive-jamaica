@@ -4,6 +4,7 @@ import type { Car } from './car';
 import { makeDog } from './animals';
 import { narrate } from './narrator';
 import { mulberry32 } from './rng';
+import { addScoringEvent } from './scoring';
 
 const WAKE_RADIUS = 28;       // car must enter this radius to wake a dog
 const GIVE_UP_DIST = 90;      // dog gives up when this far from its start
@@ -113,6 +114,7 @@ export class Dogs {
       if (firstChase && !this.chaseNarratedThisSession) {
         this.chaseNarratedThisSession = true;
         narrate('dog.chase');
+        addScoringEvent('dog.chase');
       }
     }
   }
