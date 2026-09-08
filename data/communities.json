@@ -1,0 +1,176 @@
+{
+  "comment": "Recognition layer 2: community/district entry signs. Coordinates are real-world lat/lon projected into world space via Road.project(). radius = trigger distance in compressed-world meters. Entries marked needs_owner_review need confirmation from the owner's lived knowledge — map data may be approximate.",
+  "communities": [
+    {
+      "id": "cmn-palisadoes",
+      "name": "Palisadoes",
+      "lat": 17.943,
+      "lon": -76.762,
+      "radius": 400,
+      "note": "The airport spit — sea on both sides, coconut trees lining the road."
+    },
+    {
+      "id": "cmn-harbour-view",
+      "name": "Harbour View",
+      "lat": 17.974,
+      "lon": -76.724,
+      "radius": 280,
+      "note": "Harbour View roundabout — where Windward Road begins."
+    },
+    {
+      "id": "cmn-rockfort",
+      "name": "Rockfort",
+      "lat": 17.980,
+      "lon": -76.737,
+      "radius": 220,
+      "needs_owner_review": true
+    },
+    {
+      "id": "cmn-wareika-hill",
+      "name": "Wareika Hill",
+      "lat": 17.984,
+      "lon": -76.744,
+      "radius": 250,
+      "note": "Hillside community above Windward Road.",
+      "needs_owner_review": true
+    },
+    {
+      "id": "cmn-rollington-town",
+      "name": "Rollington Town",
+      "lat": 17.997,
+      "lon": -76.758,
+      "radius": 240,
+      "needs_owner_review": true
+    },
+    {
+      "id": "cmn-kingston",
+      "name": "Kingston",
+      "lat": 17.999,
+      "lon": -76.793,
+      "radius": 600,
+      "note": "Capital and largest city of Jamaica."
+    },
+    {
+      "id": "cmn-cross-roads",
+      "name": "Cross Roads",
+      "lat": 18.002,
+      "lon": -76.793,
+      "radius": 220,
+      "note": "Major intersection linking Half Way Tree and downtown."
+    },
+    {
+      "id": "cmn-halfway-tree",
+      "name": "Half Way Tree",
+      "lat": 18.011,
+      "lon": -76.796,
+      "radius": 300,
+      "note": "Commercial hub of uptown Kingston — the 1813 clock tower marks the crossroads."
+    },
+    {
+      "id": "cmn-washington-gardens",
+      "name": "Washington Gardens",
+      "lat": 17.996,
+      "lon": -76.814,
+      "radius": 250,
+      "needs_owner_review": true
+    },
+    {
+      "id": "cmn-spanish-town",
+      "name": "Spanish Town",
+      "lat": 17.994,
+      "lon": -76.957,
+      "radius": 500,
+      "note": "Jamaica's old colonial capital, St Catherine parish."
+    },
+    {
+      "id": "cmn-angels",
+      "name": "Angels",
+      "lat": 18.021,
+      "lon": -76.984,
+      "radius": 200,
+      "needs_owner_review": true,
+      "note": "Small community between Spanish Town and Bog Walk."
+    },
+    {
+      "id": "cmn-bog-walk",
+      "name": "Bog Walk",
+      "lat": 18.045,
+      "lon": -76.999,
+      "radius": 300,
+      "note": "Gateway to the Rio Cobre gorge."
+    },
+    {
+      "id": "cmn-linstead",
+      "name": "Linstead",
+      "lat": 18.142,
+      "lon": -77.033,
+      "radius": 350,
+      "note": "Lively market town — 'Linstead Market, couldn't sell a quattie worth a ackee.'"
+    },
+    {
+      "id": "cmn-lydford",
+      "name": "Lydford",
+      "lat": 18.184,
+      "lon": -77.092,
+      "radius": 180,
+      "needs_owner_review": true
+    },
+    {
+      "id": "cmn-mount-rosser",
+      "name": "Mount Rosser",
+      "lat": 18.224,
+      "lon": -77.099,
+      "radius": 200,
+      "needs_owner_review": true,
+      "note": "Hill community on the approach to Moneague."
+    },
+    {
+      "id": "cmn-moneague",
+      "name": "Moneague",
+      "lat": 18.253,
+      "lon": -77.120,
+      "radius": 320,
+      "note": "Crossroads town at the top of the hill — right turn for Ocho Rios."
+    },
+    {
+      "id": "cmn-faiths-pen",
+      "name": "Faith's Pen",
+      "lat": 18.235,
+      "lon": -77.095,
+      "radius": 280,
+      "note": "Legendary roadside cookshop strip — jerk chicken, roast yam, festival."
+    },
+    {
+      "id": "cmn-fern-gully",
+      "name": "Fern Gully",
+      "lat": 18.368,
+      "lon": -77.104,
+      "radius": 320,
+      "note": "Three kilometres of lush ferns and bamboo canopy — one of Jamaica's most iconic roads."
+    },
+    {
+      "id": "cmn-priory",
+      "name": "Priory",
+      "lat": 18.379,
+      "lon": -77.104,
+      "radius": 200,
+      "needs_owner_review": true
+    },
+    {
+      "id": "cmn-mammee-bay",
+      "name": "Mammee Bay",
+      "lat": 18.408,
+      "lon": -77.113,
+      "radius": 220,
+      "needs_owner_review": true
+    },
+    {
+      "id": "cmn-ocho-rios",
+      "name": "Ocho Rios",
+      "lat": 18.404,
+      "lon": -77.103,
+      "radius": 450,
+      "note": "Major north coast resort town. Cruise ships, waterfalls, and jerk stands."
+    }
+  ]
+}
