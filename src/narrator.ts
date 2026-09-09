@@ -18,6 +18,10 @@ export function initNarrator(): void {
   document.body.appendChild(captionEl);
 }
 
+export function hasEvent(event: string): boolean {
+  return Boolean(events[event]?.length);
+}
+
 export function narrate(event: string, vars: Record<string, string> = {}): void {
   const lines = events[event];
   if (!lines?.length || !captionEl) return;
