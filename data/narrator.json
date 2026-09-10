@@ -16,6 +16,49 @@
     ],
     "tyre.fixed": [
       "Tyre patch up — gwaan!"
+    ],
+    "community.enter": [
+      "Welcome to {community}!",
+      "Yuh reach {community} now!",
+      "Dis a {community} — big up di place!"
+    ],
+    "community.enter.half-way-tree": [
+      "Half Way Tree! Heart of uptown Kingston!",
+      "HWT! Everybody pass through Half Way Tree!"
+    ],
+    "community.enter.linstead": [
+      "Linstead Market! Carry mi ackee go a Linstead Market!",
+      "Yuh reach Linstead — nuh badda speed through di market!"
+    ],
+    "community.enter.bog-walk": [
+      "Bog Walk Gorge — beautiful road, mind di corners!",
+      "Di gorge beautiful, enuh! Easy round di bends!"
+    ],
+    "community.enter.faiths-pen": [
+      "Faith's Pen! Stop and get some jerk chicken, nuh?",
+      "Dem jerk chicken at Faith's Pen? Best pon di island!"
+    ],
+    "community.enter.fern-gully": [
+      "Fern Gully! Look how pretty di gully green!",
+      "Welcome to Fern Gully — di most beautiful road in Jamaica!"
+    ],
+    "community.enter.ocho-rios": [
+      "Ocho Rios! Yuh reach! Dunn's River a call yuh!",
+      "Ochi! Di tourist dem a wait fi yuh!"
+    ],
+    "dog.chase": [
+      "Dog deh pon yuh! Drive drive drive!",
+      "Lawd a mercy, di dawg a chase yuh!",
+      "Town dawg nuh easy — step pon it!"
+    ],
+    "goat.hit": [
+      "Yuh lick di goat! Look wah yuh do!",
+      "Brethren, dat a somebody goat yuh lick deh!",
+      "Di goat! Di goat! Lawd have mercy!"
+    ],
+    "goat.nearMiss": [
+      "Nearly lick di goat — mind where yuh a drive!",
+      "Eh-eh, di goat cross right in front a yuh!"
     ]
   }
 }

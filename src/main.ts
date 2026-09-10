@@ -7,9 +7,12 @@ import { Recognition } from './recognition';
 import { buildScenery } from './scenery';
 import { buildTrees } from './trees';
 import { Potholes } from './potholes';
+import { Dogs } from './dogs';
+import { Goats } from './goats';
 import { initNarrator, narrate } from './narrator';
 import { TestTrack } from './testtrack';
 import { Debug } from './debug';
+import { Score } from './score';
 
 const app = document.getElementById('app')!;
 const hud = document.getElementById('hud')!;
@@ -35,6 +38,7 @@ const isTestTrack = params.has('testtrack');
 const isDebug = isTestTrack || params.has('debug');
 
 let road: RoadLike;
+let realRoad: Road | null = null;
 let recognition: Recognition | null = null;
 
 if (isTestTrack) {
@@ -43,17 +47,27 @@ if (isTestTrack) {
   scene.add(tt.object);
   // Test track supplies its own geometry; no route scenery zones apply.
 } else {
-  const r = new Road();
-  road = r;
-  scene.add(r.object);
-  scene.add(buildScenery(r));
-  scene.add(buildTrees(r));
-  recognition = new Recognition(r);
+  realRoad = new Road();
+  road = realRoad;
+  scene.add(realRoad.object);
+  scene.add(buildScenery(realRoad));
+  scene.add(buildTrees(realRoad));
+  recognition = new Recognition(realRoad);
 }
 
 const potholes = new Potholes(road);
 scene.add(potholes.object);
 
+let dogs: Dogs | null = null;
+let goats: Goats | null = null;
+if (realRoad) {
+  dogs = new Dogs(realRoad);
+  scene.add(dogs.object);
+  goats = new Goats(realRoad, (delta) => score.adjust(delta));
+  scene.add(goats.object);
+}
+
+const score = new Score();
 const car = new Car();
 
 // Spawn at the route start — or at ?jump=<road name match> for quick scenery
@@ -107,8 +121,13 @@ renderer.setAnimationLoop(() => {
 
   car.update(dt, input);
   potholes.update(car);
+  dogs?.update(car, dt);
+  goats?.update(car, dt);
   recognition?.update(car.position);
   debug?.update(dt);
+
+  score.addMetres(Math.abs(car.speed) * dt);
+  score.tick(car.tyreBurst);
 
   // Chase camera: behind and above the car, smoothed.
   camOffset.set(Math.sin(car.heading) * 9, 5, Math.cos(car.heading) * 9);

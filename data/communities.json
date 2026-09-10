@@ -1,0 +1,194 @@
+{
+  "comment": "Communities/districts along the Airport→Kingston→Bog Walk→Fern Gully→Ocho Rios route. Lat/lon are approximate — entries marked needs_owner_review:true should be verified against the owner's lived knowledge before release. Radius is in compressed world units (~400m real-world at scale=0.3).",
+  "communities": [
+    {
+      "id": "palisadoes",
+      "name": "Palisadoes",
+      "lat": 17.9470,
+      "lon": -76.7380,
+      "radius": 300,
+      "note": "The iconic narrow peninsula — sea on both sides. Coconut tree corridor.",
+      "needs_owner_review": false
+    },
+    {
+      "id": "harbour-view",
+      "name": "Harbour View",
+      "lat": 17.9615,
+      "lon": -76.7218,
+      "radius": 120,
+      "note": "Roundabout at the end of the Palisadoes strip; gateway into Kingston.",
+      "needs_owner_review": true
+    },
+    {
+      "id": "rockfort",
+      "name": "Rockfort",
+      "lat": 17.9673,
+      "lon": -76.7330,
+      "radius": 100,
+      "note": "Industrial/residential community on Windward Road approach.",
+      "needs_owner_review": true
+    },
+    {
+      "id": "wareika-hill",
+      "name": "Wareika Hill",
+      "lat": 17.9850,
+      "lon": -76.7500,
+      "radius": 120,
+      "note": "Hillside community; Rastafarian cultural significance.",
+      "needs_owner_review": true
+    },
+    {
+      "id": "mountain-view",
+      "name": "Mountain View",
+      "lat": 18.0010,
+      "lon": -76.7650,
+      "radius": 130,
+      "note": "Residential area along Mountain View Avenue.",
+      "needs_owner_review": true
+    },
+    {
+      "id": "cross-roads",
+      "name": "Cross Roads",
+      "lat": 18.0040,
+      "lon": -76.7820,
+      "radius": 110,
+      "note": "Major intersection in the heart of Kingston.",
+      "needs_owner_review": true
+    },
+    {
+      "id": "new-kingston",
+      "name": "New Kingston",
+      "lat": 18.0030,
+      "lon": -76.7890,
+      "radius": 150,
+      "note": "Kingston's commercial and financial district.",
+      "needs_owner_review": false
+    },
+    {
+      "id": "half-way-tree",
+      "name": "Half Way Tree",
+      "lat": 18.0120,
+      "lon": -76.7940,
+      "radius": 160,
+      "note": "The beating heart of uptown Kingston. Clock tower landmark.",
+      "needs_owner_review": false
+    },
+    {
+      "id": "vineyard-town",
+      "name": "Vineyard Town",
+      "lat": 17.9980,
+      "lon": -76.8100,
+      "radius": 100,
+      "note": "Community along the Spanish Town Road corridor.",
+      "needs_owner_review": true
+    },
+    {
+      "id": "twickenham-park",
+      "name": "Twickenham Park",
+      "lat": 17.9940,
+      "lon": -76.9500,
+      "radius": 120,
+      "note": "Semi-rural community along the Nelson Mandela Highway.",
+      "needs_owner_review": true
+    },
+    {
+      "id": "flat-bridge",
+      "name": "Flat Bridge",
+      "lat": 18.0475,
+      "lon": -76.9770,
+      "radius": 100,
+      "note": "Historic low bridge over the Rio Cobre; iconic Bog Walk entrance.",
+      "needs_owner_review": false
+    },
+    {
+      "id": "bog-walk",
+      "name": "Bog Walk",
+      "lat": 18.0900,
+      "lon": -77.0080,
+      "radius": 150,
+      "note": "Town at the heart of the gorge; named for the surrounding bog.",
+      "needs_owner_review": false
+    },
+    {
+      "id": "ewarton",
+      "name": "Ewarton",
+      "lat": 18.1100,
+      "lon": -77.0340,
+      "radius": 130,
+      "note": "Small community along the River Road approaching Linstead.",
+      "needs_owner_review": true
+    },
+    {
+      "id": "linstead",
+      "name": "Linstead",
+      "lat": 18.1330,
+      "lon": -77.0330,
+      "radius": 180,
+      "note": "Market town; the song 'Linstead Market' is known worldwide.",
+      "needs_owner_review": false
+    },
+    {
+      "id": "kellits",
+      "name": "Kellits",
+      "lat": 18.1700,
+      "lon": -77.0650,
+      "radius": 100,
+      "note": "Small community along the Linstead–Moneague road.",
+      "needs_owner_review": true
+    },
+    {
+      "id": "mount-rosser",
+      "name": "Mount Rosser",
+      "lat": 18.2150,
+      "lon": -77.0820,
+      "radius": 110,
+      "note": "Hillside community before Moneague.",
+      "needs_owner_review": true
+    },
+    {
+      "id": "moneague",
+      "name": "Moneague",
+      "lat": 18.2615,
+      "lon": -77.0900,
+      "radius": 150,
+      "note": "Junction town in the interior; Camp Moneague nearby.",
+      "needs_owner_review": false
+    },
+    {
+      "id": "faiths-pen",
+      "name": "Faith's Pen",
+      "lat": 18.2820,
+      "lon": -77.0260,
+      "radius": 130,
+      "note": "Famous roadside cookshops — jerk chicken, roast yam, festival. Don't skip.",
+      "needs_owner_review": false
+    },
+    {
+      "id": "angels",
+      "name": "Angels",
+      "lat": 18.2970,
+      "lon": -77.0100,
+      "radius": 110,
+      "note": "Small community on the descent towards Fern Gully.",
+      "needs_owner_review": true
+    },
+    {
+      "id": "fern-gully",
+      "name": "Fern Gully",
+      "lat": 18.3690,
+      "lon": -77.0010,
+      "radius": 200,
+      "note": "Iconic canopied gully road — bamboo and tropical ferns overhead.",
+      "needs_owner_review": false
+    },
+    {
+      "id": "ocho-rios",
+      "name": "Ocho Rios",
+      "lat": 18.4090,
+      "lon": -77.1050,
+      "radius": 300,
+      "note": "Vibrant north-coast resort town. Dunn's River Falls awaits.",
+      "needs_owner_review": false
+    }
+  ]
+}
