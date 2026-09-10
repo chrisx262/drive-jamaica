@@ -134,6 +134,7 @@ export class Goats {
           herd.crossProgress[g] = CROSS_DISTANCE; // remove from road
         } else if (distToCar < NEAR_MISS_RADIUS && Math.random() < 0.08) {
           narrate('goat.nearMiss');
+          this.scoreCallback?.(+10);
         }
       }
 

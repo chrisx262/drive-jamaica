@@ -12,6 +12,7 @@ import { Goats } from './goats';
 import { initNarrator, narrate } from './narrator';
 import { TestTrack } from './testtrack';
 import { Debug } from './debug';
+import { Score } from './score';
 
 const app = document.getElementById('app')!;
 const hud = document.getElementById('hud')!;
@@ -62,10 +63,11 @@ let goats: Goats | null = null;
 if (realRoad) {
   dogs = new Dogs(realRoad);
   scene.add(dogs.object);
-  goats = new Goats(realRoad);
+  goats = new Goats(realRoad, (delta) => score.adjust(delta));
   scene.add(goats.object);
 }
 
+const score = new Score();
 const car = new Car();
 
 // Spawn at the route start — or at ?jump=<road name match> for quick scenery
@@ -123,6 +125,9 @@ renderer.setAnimationLoop(() => {
   goats?.update(car, dt);
   recognition?.update(car.position);
   debug?.update(dt);
+
+  score.addMetres(Math.abs(car.speed) * dt);
+  score.tick(car.tyreBurst);
 
   // Chase camera: behind and above the car, smoothed.
   camOffset.set(Math.sin(car.heading) * 9, 5, Math.cos(car.heading) * 9);
