@@ -1,0 +1,113 @@
+{
+  "comment": "Recognition layer 2 — community/district signs along the Airport→Ochi route. lat/lon are real-world and projected to world space at runtime via road.project(). radius is the trigger distance in compressed-world meters. needs_owner_review marks entries where the owner's lived knowledge should confirm or correct the placement.",
+  "communities": [
+    {
+      "id": "com-palisadoes",
+      "name": "Palisadoes",
+      "lat": 17.952,
+      "lon": -76.771,
+      "radius": 450,
+      "note": "The narrow limestone peninsula linking Norman Manley Airport to Kingston — sea on both sides, coconut trees along the strip"
+    },
+    {
+      "id": "com-harbour-view",
+      "name": "Harbour View",
+      "lat": 17.9838,
+      "lon": -76.7579,
+      "radius": 320,
+      "note": "Eastern Kingston suburb where the Palisadoes meets the city — Harbour View roundabout into Windward Road"
+    },
+    {
+      "id": "com-east-kingston",
+      "name": "East Kingston",
+      "lat": 17.992,
+      "lon": -76.773,
+      "radius": 350,
+      "note": "Windward Road corridor into the city, industrial and residential east of downtown",
+      "needs_owner_review": true
+    },
+    {
+      "id": "com-mountain-view",
+      "name": "Mountain View",
+      "lat": 18.002,
+      "lon": -76.780,
+      "radius": 280,
+      "note": "Mountain View Avenue neighbourhood — National Stadium, Excelsior High, wareika hills above",
+      "needs_owner_review": true
+    },
+    {
+      "id": "com-half-way-tree",
+      "name": "Half Way Tree",
+      "lat": 18.0109,
+      "lon": -76.796,
+      "radius": 350,
+      "note": "The commercial heart of uptown Kingston — historic clock tower at the crossroads"
+    },
+    {
+      "id": "com-spanish-town",
+      "name": "Spanish Town",
+      "lat": 17.991,
+      "lon": -76.955,
+      "radius": 420,
+      "note": "Jamaica's former capital on the Rio Cobre plain — White Church, historic square",
+      "needs_owner_review": true
+    },
+    {
+      "id": "com-sligoville",
+      "name": "Sligoville",
+      "lat": 18.033,
+      "lon": -76.950,
+      "radius": 250,
+      "note": "First free village in Jamaica (1838) — small hill community on the road toward Bog Walk",
+      "needs_owner_review": true
+    },
+    {
+      "id": "com-bog-walk",
+      "name": "Bog Walk",
+      "lat": 18.063,
+      "lon": -76.985,
+      "radius": 320,
+      "note": "Gateway to the Rio Cobre gorge — Flat Bridge, one lane, limestone walls either side"
+    },
+    {
+      "id": "com-linstead",
+      "name": "Linstead",
+      "lat": 18.134,
+      "lon": -77.031,
+      "radius": 360,
+      "note": "Market town in Saint Catherine — 'Linstead Market, couldn't sell a quattie worth of ackee'"
+    },
+    {
+      "id": "com-moneague",
+      "name": "Moneague",
+      "lat": 18.264,
+      "lon": -77.104,
+      "radius": 300,
+      "note": "Crossroads village in the cool hills — last stop before Fern Gully and the coast"
+    },
+    {
+      "id": "com-faiths-pen",
+      "name": "Faith's Pen",
+      "lat": 18.234,
+      "lon": -77.095,
+      "radius": 260,
+      "note": "Legendary roadside cookshop strip — jerk chicken, roast yam and festival since the 1960s"
+    },
+    {
+      "id": "com-fern-gully",
+      "name": "Fern Gully",
+      "lat": 18.375,
+      "lon": -77.112,
+      "radius": 380,
+      "note": "Three-kilometre canopied gorge — bamboo and tropical ferns arch over the road"
+    },
+    {
+      "id": "com-ocho-rios",
+      "name": "Ocho Rios",
+      "lat": 18.407,
+      "lon": -77.119,
+      "radius": 480,
+      "note": "Jamaica's premier resort town — Dunn's River Falls, journey's end"
+    }
+  ]
+}
