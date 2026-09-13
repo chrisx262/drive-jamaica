@@ -110,6 +110,10 @@ if (import.meta.env.DEV) {
 
 const camOffset = new THREE.Vector3();
 let last = performance.now();
+// Speed commentary: fire narrator once per N seconds while car runs hot.
+const SPEED_HIGH_KMH = 90;
+const SPEED_HIGH_COOLDOWN = 15; // seconds between events
+let speedHighCooldown = 0;
 
 renderer.setAnimationLoop(() => {
   const now = performance.now();
@@ -122,6 +126,12 @@ renderer.setAnimationLoop(() => {
   goats?.update(car, dt);
   recognition?.update(car.position);
   debug?.update(dt);
+
+  speedHighCooldown = Math.max(0, speedHighCooldown - dt);
+  if (car.speedKmh >= SPEED_HIGH_KMH && speedHighCooldown === 0) {
+    speedHighCooldown = SPEED_HIGH_COOLDOWN;
+    narrate('speed.high');
+  }
 
   // Chase camera: behind and above the car, smoothed.
   camOffset.set(Math.sin(car.heading) * 9, 5, Math.cos(car.heading) * 9);

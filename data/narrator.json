@@ -1,36 +1,80 @@
 {
-  "comment": "Event -> possible narrator lines. Lines are picked at random per event. Audio files (assets/voice/) will map by line id later; V1 scaffold shows captions only.",
+  "comment": "Event -> possible narrator lines. Lines are picked at random per event. Audio files (assets/voice/) will map by line id later; V1 scaffold shows captions only. Target: 30-50 starter lines per GAME_SPEC.",
   "events": {
     "game.start": [
-      "Welcome to Jamaica, brethren! Touch di road!"
+      "Welcome to Jamaica, brethren! Touch di road!",
+      "Wah gwaan! Start di engine — di road nah wait!",
+      "One love, one road! Norman Manley deh behind yuh — Ocho Rios ahead!"
     ],
     "road.enter": [
-      "Yuh deh pon {road} now!"
+      "Yuh deh pon {road} now!",
+      "Watch yuhself — dis a {road}!"
     ],
     "landmark.enter": [
-      "See {landmark} deh!"
+      "See {landmark} deh!",
+      "Big up {landmark} — real Jamaican ting!",
+      "Deh deh — {landmark}! Tell di people dem!"
     ],
     "pothole.burst": [
       "Yuh tyre bust, brethren!",
-      "Wheeel! Mind di pothole dem!"
+      "Wheeel! Mind di pothole dem!",
+      "Rhatid — tyre done bruck! Di road a kill yuh, sah!",
+      "Lawd have mercy — di pothole ketch yuh! Slow dung next time!"
     ],
     "tyre.fixed": [
-      "Tyre patch up — gwaan!"
+      "Tyre patch up — gwaan!",
+      "Good tings — tyre fix! Back pon di road!",
+      "Irie! Tyre good now — press on to Ochi!"
     ],
     "community.enter": [
       "Big up {community}!",
       "Welcome to {community}, yuh reach!",
-      "{community} — good people live here, sah!"
+      "{community} — good people live here, sah!",
+      "Pass through {community} — real roots community dis!",
+      "Respect to {community} — wi reach!"
     ],
     "dog.chase": [
       "Dawg! Dawg a run yuh dung, brethren!",
       "Weh di dog deh pon yuh?! Step pon it!",
-      "Rhatid — di dawg dem bad out here!"
+      "Rhatid — di dawg dem bad out here!",
+      "Dem Kingston dog nuh play — accelerate, man!",
+      "Dog a run! Dem say dem brave — prove dem wrong!"
     ],
     "goat.hit": [
       "Smaddy goat dat! Yuh owe dem, brethren!",
       "Rhatid! Yuh lick dung di goat!",
-      "Cho! Di goat neva see yuh coming either!"
+      "Cho! Di goat neva see yuh coming either!",
+      "Lawd — di farmer a go vex wid yuh! Dat was somebody goat!",
+      "Watch di road, sah! Dem goat did a cross peacefully!"
+    ],
+    "goat.nearmiss": [
+      "Yuh barely miss di goat deh — dat was close, sah!",
+      "Lawd! Di goat coulda done yuh — drive careful inna di hills!",
+      "Dem goat have nine lives, and yuh just use one!"
+    ],
+    "speed.high": [
+      "Yuh a fly, brethren! Slow dung before di police ketch yuh!",
+      "Easy, sah — dis nuh racetrack! Di road curving up ahead!",
+      "Step pon di brake, man — yuh a drive like yuh late fi Ocho Rios!"
+    ],
+    "faiths.pen.arrive": [
+      "Faith's Pen! Pull over, nuh — di jerk chicken a call yuh name!",
+      "Lawd, smell dat! Jerk chicken and roast yam — best stop pon di island!",
+      "Faith's Pen since di 1960s — respect di tradition, pull in!"
+    ],
+    "dunns.river.arrive": [
+      "Yuh reach! Dunn's River Falls — di water a wait pon yuh!",
+      "Journey done! Welcome to Ocho Rios, brethren — now go tek di bath!",
+      "From Norman Manley all di way to Dunn's River — respect yuhself!"
+    ],
+    "pothole.nearmiss": [
+      "Swerve! Yuh dodge di pothole — good driving, sah!",
+      "Close one — dat pothole woulda bruck yuh up good!"
+    ],
+    "traffic.jam": [
+      "Kingston traffic! Di city say welcome — now park up and wait!",
+      "Gridlock pon Windward Road — dis is di authentic Jamaica experience!",
+      "Nuff car pon di road today — di frustration meter a fill up!"
     ]
   }
 }

@@ -1,5 +1,5 @@
 {
-  "comment": "Recognition layer 3: landmark popups. Coordinates are real OSM lat/lon, projected into world space via the route origin+scale at load. radius = trigger distance in compressed-world meters. Each landmark has a stable id from creation (standing rule - the future ad system depends on this pattern).",
+  "comment": "Recognition layer 3: landmark popups. Coordinates are real OSM lat/lon, projected into world space via the route origin+scale at load. radius = trigger distance in compressed-world meters. Each landmark has a stable id from creation (standing rule - the future ad system depends on this pattern). needs_owner_review = true marks entries where owner's lived knowledge should confirm or correct placement.",
   "landmarks": [
     {
       "id": "lmk-gun-boat-beach",
@@ -12,10 +12,45 @@
     {
       "id": "lmk-national-stadium",
       "name": "National Stadium",
-      "lat": 18.0014,
+      "lat": 17.9990,
       "lon": -76.7726,
       "radius": 320,
       "fact": "Home of Jamaican track and football glory — Excelsior High is just across Mountain View Avenue"
+    },
+    {
+      "id": "lmk-excelsior-high",
+      "name": "Excelsior High School",
+      "lat": 17.9962,
+      "lon": -76.7648,
+      "radius": 250,
+      "fact": "Opposite the National Stadium on Mountain View Ave — one of Kingston's best",
+      "needs_owner_review": true
+    },
+    {
+      "id": "lmk-national-heroes-park",
+      "name": "National Heroes Park",
+      "lat": 18.0064,
+      "lon": -76.7908,
+      "radius": 280,
+      "fact": "Jamaica's national pantheon — resting place of Norman Manley, Marcus Garvey, and other national heroes",
+      "needs_owner_review": true
+    },
+    {
+      "id": "lmk-emancipation-park",
+      "name": "Emancipation Park",
+      "lat": 18.0175,
+      "lon": -76.7873,
+      "radius": 200,
+      "fact": "Laura Facey's bronze of two Maroons breaking free — facing north, toward freedom"
+    },
+    {
+      "id": "lmk-bob-marley-museum",
+      "name": "Bob Marley Museum",
+      "lat": 18.0157,
+      "lon": -76.7874,
+      "radius": 220,
+      "fact": "56 Hope Road — the Tuff Gong recording studio where reggae was born",
+      "needs_owner_review": true
     },
     {
       "id": "lmk-devon-house",
@@ -34,6 +69,51 @@
       "fact": "The 1813 clock tower at the crossroads of Kingston"
     },
     {
+      "id": "lmk-st-andrew-high",
+      "name": "St. Andrew High School",
+      "lat": 18.0147,
+      "lon": -76.7965,
+      "radius": 200,
+      "fact": "Half Way Tree area — one of Jamaica's top-ranked all-girls schools",
+      "needs_owner_review": true
+    },
+    {
+      "id": "lmk-holy-childhood-high",
+      "name": "Holy Childhood High",
+      "lat": 18.0090,
+      "lon": -76.7989,
+      "radius": 200,
+      "fact": "Catholic girls' school in the Half Way Tree area — long academic tradition",
+      "needs_owner_review": true
+    },
+    {
+      "id": "lmk-calabar-high",
+      "name": "Calabar High School",
+      "lat": 18.0380,
+      "lon": -76.8140,
+      "radius": 250,
+      "fact": "Red Hills Road — the founder's alma mater and a powerhouse in Jamaican athletics",
+      "needs_owner_review": true
+    },
+    {
+      "id": "lmk-hydel-high",
+      "name": "Hydel High School",
+      "lat": 17.9935,
+      "lon": -76.8285,
+      "radius": 220,
+      "fact": "On Spanish Town Road heading west — a west Kingston institution",
+      "needs_owner_review": true
+    },
+    {
+      "id": "lmk-tracks-and-records",
+      "name": "Tracks & Records",
+      "lat": 18.0307,
+      "lon": -76.8058,
+      "radius": 200,
+      "fact": "Usain Bolt's restaurant on Constant Spring Road — fastest man on Earth, finest jerk chicken",
+      "needs_owner_review": true
+    },
+    {
       "id": "lmk-flat-bridge",
       "name": "Flat Bridge",
       "lat": 18.0614,
@@ -47,7 +127,7 @@
       "lat": 18.2347,
       "lon": -77.0951,
       "radius": 220,
-      "fact": "Legendary roadside stop — jerk chicken, roast yam and festival"
+      "fact": "Legendary roadside stop — jerk chicken, roast yam and festival since the 1960s"
     },
     {
       "id": "lmk-dunns-river",
