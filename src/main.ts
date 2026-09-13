@@ -7,6 +7,8 @@ import { Recognition } from './recognition';
 import { buildScenery } from './scenery';
 import { buildTrees } from './trees';
 import { Potholes } from './potholes';
+import { Dogs } from './dogs';
+import { Goats } from './goats';
 import { initNarrator, narrate } from './narrator';
 import { TestTrack } from './testtrack';
 import { Debug } from './debug';
@@ -54,6 +56,15 @@ if (isTestTrack) {
 const potholes = new Potholes(road);
 scene.add(potholes.object);
 
+let dogs: Dogs | null = null;
+let goats: Goats | null = null;
+if (!isTestTrack) {
+  dogs = new Dogs(road);
+  scene.add(dogs.object);
+  goats = new Goats(road);
+  scene.add(goats.object);
+}
+
 const car = new Car();
 
 // Spawn at the route start — or at ?jump=<road name match> for quick scenery
@@ -99,6 +110,10 @@ if (import.meta.env.DEV) {
 
 const camOffset = new THREE.Vector3();
 let last = performance.now();
+// Speed commentary: fire narrator once per N seconds while car runs hot.
+const SPEED_HIGH_KMH = 90;
+const SPEED_HIGH_COOLDOWN = 15; // seconds between events
+let speedHighCooldown = 0;
 
 renderer.setAnimationLoop(() => {
   const now = performance.now();
@@ -107,8 +122,16 @@ renderer.setAnimationLoop(() => {
 
   car.update(dt, input);
   potholes.update(car);
+  dogs?.update(car, dt);
+  goats?.update(car, dt);
   recognition?.update(car.position);
   debug?.update(dt);
+
+  speedHighCooldown = Math.max(0, speedHighCooldown - dt);
+  if (car.speedKmh >= SPEED_HIGH_KMH && speedHighCooldown === 0) {
+    speedHighCooldown = SPEED_HIGH_COOLDOWN;
+    narrate('speed.high');
+  }
 
   // Chase camera: behind and above the car, smoothed.
   camOffset.set(Math.sin(car.heading) * 9, 5, Math.cos(car.heading) * 9);
