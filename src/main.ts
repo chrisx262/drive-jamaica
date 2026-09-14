@@ -6,13 +6,15 @@ import type { RoadLike } from './road';
 import { Recognition } from './recognition';
 import { buildScenery } from './scenery';
 import { buildTrees } from './trees';
-import { Potholes } from './potholes';
+import { Potholes, HIT_RADIUS } from './potholes';
 import { initNarrator, narrate } from './narrator';
 import { TestTrack } from './testtrack';
 import { Debug } from './debug';
+import { Scoring } from './scoring';
 
 const app = document.getElementById('app')!;
 const hud = document.getElementById('hud')!;
+const scoreEl = document.getElementById('score')!;
 
 const renderer = new THREE.WebGLRenderer({ antialias: true });
 renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
@@ -54,6 +56,8 @@ if (isTestTrack) {
 const potholes = new Potholes(road);
 scene.add(potholes.object);
 
+const scoring = new Scoring();
+
 const car = new Car();
 
 // Spawn at the route start — or at ?jump=<road name match> for quick scenery
@@ -94,11 +98,33 @@ narrate('game.start');
 
 // Dev-only handle for automated drive tests (stripped from production builds).
 if (import.meta.env.DEV) {
-  (window as unknown as Record<string, unknown>).__dj = { car, road, potholes };
+  (window as unknown as Record<string, unknown>).__dj = { car, road, potholes, scoring };
 }
 
 const camOffset = new THREE.Vector3();
 let last = performance.now();
+
+// Speed commentary: fire narrator once per N seconds while car runs hot.
+const SPEED_HIGH_KMH = 90;
+const SPEED_HIGH_COOLDOWN = 15; // seconds between events
+let speedHighCooldown = 0;
+
+// Tyre burst transition tracking for scoring (burst is latching; track leading edge).
+let prevTyreBurst = false;
+
+// Swerve detection: large steering at speed, debounced.
+const SWERVE_STEER_THRESHOLD = 0.65;
+const SWERVE_SPEED_MIN = 10; // m/s
+const SWERVE_COOLDOWN = 3;   // seconds between recorded swerves
+let swerveCooldown = 0;
+
+// Pothole near-miss detection radius (between hit radius and a wider zone).
+const NEAR_MISS_INNER_SQ = HIT_RADIUS * HIT_RADIUS;
+const NEAR_MISS_OUTER = 4.0;
+const NEAR_MISS_OUTER_SQ = NEAR_MISS_OUTER * NEAR_MISS_OUTER;
+const NEAR_MISS_SPEED_MIN = 13; // m/s (same threshold as pothole burst)
+const NEAR_MISS_COOLDOWN = 2;  // seconds
+let nearMissCooldown = 0;
 
 renderer.setAnimationLoop(() => {
   const now = performance.now();
@@ -110,11 +136,50 @@ renderer.setAnimationLoop(() => {
   recognition?.update(car.position);
   debug?.update(dt);
 
+  // Distance scoring — only while moving forward.
+  if (car.speed > 0) scoring.addDistance(car.speed * dt);
+
+  // Tyre burst — record each distinct burst (leading-edge detection).
+  if (car.tyreBurst && !prevTyreBurst) scoring.recordTyreBurst();
+  prevTyreBurst = car.tyreBurst;
+
+  // Swerve style scoring.
+  swerveCooldown = Math.max(0, swerveCooldown - dt);
+  if (swerveCooldown === 0 && Math.abs(car.steerPos) >= SWERVE_STEER_THRESHOLD && Math.abs(car.speed) >= SWERVE_SPEED_MIN) {
+    scoring.recordSwerve();
+    swerveCooldown = SWERVE_COOLDOWN;
+  }
+
+  // Pothole near-miss scoring.
+  nearMissCooldown = Math.max(0, nearMissCooldown - dt);
+  if (nearMissCooldown === 0 && !car.tyreBurst && Math.abs(car.speed) >= NEAR_MISS_SPEED_MIN) {
+    for (const p of potholes.positions) {
+      const dsq = car.position.distanceToSquared(p);
+      if (dsq < NEAR_MISS_OUTER_SQ && dsq > NEAR_MISS_INNER_SQ) {
+        scoring.recordNearMiss();
+        narrate('pothole.nearmiss');
+        nearMissCooldown = NEAR_MISS_COOLDOWN;
+        break;
+      }
+    }
+  }
+
+  // Speed commentary.
+  speedHighCooldown = Math.max(0, speedHighCooldown - dt);
+  if (car.speedKmh >= SPEED_HIGH_KMH && speedHighCooldown === 0) {
+    speedHighCooldown = SPEED_HIGH_COOLDOWN;
+    narrate('speed.high');
+  }
+
   // Chase camera: behind and above the car, smoothed.
   camOffset.set(Math.sin(car.heading) * 9, 5, Math.cos(car.heading) * 9);
   camera.position.lerp(car.position.clone().add(camOffset), 1 - Math.exp(-5 * dt));
   camera.lookAt(car.position.x, car.position.y + 1.2, car.position.z);
 
   hud.textContent = `${Math.round(car.speedKmh)} km/h${car.tyreBurst ? '  \u{1F6DE} TYRE BUST!' : ''}`;
+
+  const s = scoring.stats;
+  scoreEl.textContent = `Score: ${scoring.score.toLocaleString()}  |  ${s.distKm} km  |  \u{1F6DE}${s.tyreBursts}  \u{1F993}${s.goatsHit}`;
+
   renderer.render(scene, camera);
 });
