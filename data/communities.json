@@ -1,0 +1,123 @@
+{
+  "comment": "Recognition layer 2: community sign triggers. lat/lon projected into world space via road.project(). radius = trigger distance in compressed-world units. Entries marked needs_owner_review require confirmation from the owner's lived knowledge — map data alone is not sufficient.",
+  "communities": [
+    {
+      "name": "Palisadoes",
+      "lat": 17.942,
+      "lon": -76.748,
+      "note": "The narrow strip of land linking the airport to Kingston — coconut trees and sea on both sides",
+      "radius": 200
+    },
+    {
+      "name": "Harbour View",
+      "lat": 17.9501,
+      "lon": -76.7206,
+      "note": "The roundabout where the Palisadoes strip meets Windward Road",
+      "radius": 200
+    },
+    {
+      "name": "Rockfort",
+      "lat": 17.9606,
+      "lon": -76.7361,
+      "note": "Industrial waterfront area on the approach into Kingston",
+      "radius": 180,
+      "needs_owner_review": true
+    },
+    {
+      "name": "Kingston",
+      "lat": 17.9971,
+      "lon": -76.7936,
+      "note": "Capital of Jamaica",
+      "radius": 500
+    },
+    {
+      "name": "Half Way Tree",
+      "lat": 18.0109,
+      "lon": -76.796,
+      "note": "Kingston's commercial hub",
+      "radius": 280
+    },
+    {
+      "name": "Sligoville",
+      "lat": 18.0200,
+      "lon": -76.8850,
+      "note": "First free village in the Western Hemisphere (1838)",
+      "radius": 220,
+      "needs_owner_review": true
+    },
+    {
+      "name": "Spanish Town",
+      "lat": 18.0290,
+      "lon": -76.9600,
+      "note": "Former capital of Jamaica — bypass skirting the historic centre",
+      "radius": 280,
+      "needs_owner_review": true
+    },
+    {
+      "name": "Bog Walk",
+      "lat": 18.0780,
+      "lon": -77.0009,
+      "note": "Gorge town at the Rio Cobre river, home of the famous Flat Bridge",
+      "radius": 250
+    },
+    {
+      "name": "Linstead",
+      "lat": 18.1260,
+      "lon": -77.0050,
+      "note": "Market town in St. Catherine — famous for jerk pork",
+      "radius": 300
+    },
+    {
+      "name": "Ewarton",
+      "lat": 18.1720,
+      "lon": -77.0470,
+      "note": "Community on the Linstead–Moneague road",
+      "radius": 200,
+      "needs_owner_review": true
+    },
+    {
+      "name": "Moneague",
+      "lat": 18.2766,
+      "lon": -77.1126,
+      "note": "Hill-country crossroads in St. Ann — junction to the north coast",
+      "radius": 280
+    },
+    {
+      "name": "Mount Rosser",
+      "lat": 18.3010,
+      "lon": -77.1090,
+      "note": "Hillside community on the mountain climb toward Faith's Pen",
+      "radius": 220,
+      "needs_owner_review": true
+    },
+    {
+      "name": "Faith's Pen",
+      "lat": 18.3338,
+      "lon": -77.1050,
+      "note": "Legendary roadside cookshop stop — jerk chicken, festival, roast yam at the mountain summit",
+      "radius": 280
+    },
+    {
+      "name": "Angels",
+      "lat": 18.3600,
+      "lon": -77.1010,
+      "note": "Community above Fern Gully on the descent to Ocho Rios",
+      "radius": 200,
+      "needs_owner_review": true
+    },
+    {
+      "name": "Fern Gully",
+      "lat": 18.3943,
+      "lon": -77.0943,
+      "note": "3 km of dense tropical greenery — a natural wonder on the descent into Ocho Rios",
+      "radius": 300
+    },
+    {
+      "name": "Ocho Rios",
+      "lat": 18.4117,
+      "lon": -77.1334,
+      "note": "Resort town on Jamaica's north coast — end of the Airport Run",
+      "radius": 400
+    }
+  ]
+}
