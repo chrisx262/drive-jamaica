@@ -10,12 +10,27 @@
     "landmark.enter": [
       "See {landmark} deh!"
     ],
+    "community.enter": [
+      "Welcome to {community}!",
+      "Big up {community}!",
+      "Yuh reach {community} now!"
+    ],
     "pothole.burst": [
       "Yuh tyre bust, brethren!",
       "Wheeel! Mind di pothole dem!"
     ],
     "tyre.fixed": [
       "Tyre patch up — gwaan!"
+    ],
+    "dog.chase": [
+      "Dawg a chase yuh! Step pon it!",
+      "Woof woof! Dat dawg nuh business!",
+      "Di dog dem mad inna town, brethren!"
+    ],
+    "goat.hit": [
+      "Yuh lick down di man goat! Lawd ave mercy!",
+      "Watch di goat dem, nuh! Dat one cyan dead!",
+      "Mi seh — yuh run dung di goat!"
     ]
   }
 }
