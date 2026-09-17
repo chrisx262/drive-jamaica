@@ -1,0 +1,138 @@
+{
+  "comment": "Recognition layer 2: community signs. Coordinates are real-world lat/lon projected into world space via road.project(). radius = trigger distance in compressed-world meters. Entries marked needs_owner_review require owner's lived knowledge to confirm. All coordinates sourced from OpenStreetMap.",
+  "communities": [
+    {
+      "id": "com-palisadoes",
+      "name": "Palisadoes",
+      "lat": 17.9440,
+      "lon": -76.7620,
+      "radius": 350,
+      "note": "The narrow strip between Kingston Harbour and the open Caribbean — iconic beachside road with coconut trees both sides"
+    },
+    {
+      "id": "com-harbour-view",
+      "name": "Harbour View",
+      "lat": 17.9951,
+      "lon": -76.7378,
+      "radius": 300,
+      "note": "Roundabout community where the Palisadoes meets the mainland — gateway into Kingston proper"
+    },
+    {
+      "id": "com-rockfort",
+      "name": "Rockfort",
+      "lat": 17.9971,
+      "lon": -76.7641,
+      "radius": 250,
+      "note": "East Kingston industrial community, home of Rockfort Mineral Bath",
+      "needs_owner_review": true
+    },
+    {
+      "id": "com-kingston",
+      "name": "Kingston",
+      "lat": 18.0044,
+      "lon": -76.7970,
+      "radius": 500,
+      "note": "The capital — National Stadium, Emancipation Park, the full city bustle"
+    },
+    {
+      "id": "com-half-way-tree",
+      "name": "Half Way Tree",
+      "lat": 18.0109,
+      "lon": -76.7960,
+      "radius": 280,
+      "note": "Uptown Kingston commercial hub — the 1813 clock tower marks the centre"
+    },
+    {
+      "id": "com-portmore",
+      "name": "Portmore",
+      "lat": 17.9612,
+      "lon": -76.8869,
+      "radius": 350,
+      "note": "Jamaica's largest dormitory city, across the causeway from Kingston",
+      "needs_owner_review": true
+    },
+    {
+      "id": "com-spanish-town",
+      "name": "Spanish Town",
+      "lat": 17.9954,
+      "lon": -76.9545,
+      "radius": 380,
+      "note": "The old colonial capital of Jamaica — Spanish Court, Rodney Memorial, and the White Marl Taino Museum"
+    },
+    {
+      "id": "com-bog-walk",
+      "name": "Bog Walk",
+      "lat": 18.0614,
+      "lon": -76.9845,
+      "radius": 300,
+      "note": "Rio Cobre gorge — dramatic limestone cliffs and the famous Flat Bridge"
+    },
+    {
+      "id": "com-linstead",
+      "name": "Linstead",
+      "lat": 18.1392,
+      "lon": -77.0272,
+      "radius": 320,
+      "note": "St Catherine market town — forever linked to the Linstead Market folk song"
+    },
+    {
+      "id": "com-ewarton",
+      "name": "Ewarton",
+      "lat": 18.1754,
+      "lon": -77.0796,
+      "radius": 220,
+      "note": "Small community on the climb up from Linstead toward Moneague",
+      "needs_owner_review": true
+    },
+    {
+      "id": "com-moneague",
+      "name": "Moneague",
+      "lat": 18.2320,
+      "lon": -77.1158,
+      "radius": 280,
+      "note": "Crossroads at the top of the hill — cool air, panoramic views, goat country"
+    },
+    {
+      "id": "com-faiths-pen",
+      "name": "Faith's Pen",
+      "lat": 18.2347,
+      "lon": -77.0951,
+      "radius": 220,
+      "note": "The legendary roadside cookshop strip — jerk chicken, roast yam, festival"
+    },
+    {
+      "id": "com-claremont",
+      "name": "Claremont",
+      "lat": 18.3210,
+      "lon": -77.1648,
+      "radius": 250,
+      "note": "St Ann community on the descent toward Ocho Rios",
+      "needs_owner_review": true
+    },
+    {
+      "id": "com-angels",
+      "name": "Angels",
+      "lat": 18.3480,
+      "lon": -77.1590,
+      "radius": 200,
+      "note": "Small community on the road to Ocho Rios",
+      "needs_owner_review": true
+    },
+    {
+      "id": "com-fern-gully",
+      "name": "Fern Gully",
+      "lat": 18.3760,
+      "lon": -77.1390,
+      "radius": 280,
+      "note": "A 3-km canopy road through a lush ravine — bamboo arching overhead, cool shade on the way into Ochi"
+    },
+    {
+      "id": "com-ocho-rios",
+      "name": "Ocho Rios",
+      "lat": 18.4075,
+      "lon": -77.1017,
+      "radius": 380,
+      "note": "North coast resort town — journey's end, Dunn's River Falls just ahead"
+    }
+  ]
+}
