@@ -7,6 +7,12 @@
     "road.enter": [
       "Yuh deh pon {road} now!"
     ],
+    "community.enter": [
+      "Dis a {community}!",
+      "Big up {community}!",
+      "Yuh reach {community} now, respect!",
+      "Welcome to {community}, star!"
+    ],
     "landmark.enter": [
       "See {landmark} deh!"
     ],
@@ -16,6 +22,27 @@
     ],
     "tyre.fixed": [
       "Tyre patch up — gwaan!"
+    ],
+    "dog.chase": [
+      "Dawg a run yuh down! Step pon it!",
+      "Woooi — di dawg dem nuh easy!",
+      "Seet deh, di yard dawg nuh like yuh speed!",
+      "Run from di dawg, nuh!"
+    ],
+    "dog.chase.kingston": [
+      "Dat Kingston dawg look both ways before him run — smarter than some drivers!",
+      "City dawg dem civilised — check traffic first, THEN run yuh down!"
+    ],
+    "goat.hit": [
+      "Yuh lick di goat! Farmer ago vex wid yuh!",
+      "Lawd have mercy — dat poor goat!",
+      "Bredda, mi cyaan believe yuh lick di goat. Di whole parish know now.",
+      "Goat down! Di farmer ago find yuh, trust mi."
+    ],
+    "goat.nearMiss": [
+      "Yuh nearly lick di goat! Be careful, star!",
+      "Close one — di goat run cross like dem own di road!",
+      "Dat goat nuh know traffic law but yuh nearly kill him still!"
     ]
   }
 }
