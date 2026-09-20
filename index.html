@@ -19,12 +19,19 @@
         font-family: system-ui, sans-serif; font-weight: 800; font-size: 18px;
         opacity: 0; transition: opacity 0.3s; user-select: none;
       }
+      #score {
+        position: fixed; bottom: 12px; right: 12px; color: #fff;
+        font-family: system-ui, sans-serif; font-weight: 700; font-size: 14px;
+        text-shadow: 0 1px 3px rgba(0,0,0,0.6); user-select: none;
+        text-align: right;
+      }
     </style>
   </head>
   <body>
     <div id="app"></div>
     <div id="hud"></div>
     <div id="callout"></div>
+    <div id="score"></div>
     <script type="module" src="/src/main.ts"></script>
   </body>
 </html>
