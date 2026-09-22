@@ -1,0 +1,160 @@
+{
+  "comment": "Recognition layer 2: community/district signs. Coordinates are real-world lat/lon, projected into world space via road.project(). trigger_radius is proximity in compressed-world meters. Entries marked needs_owner_review:true need confirmation from lived knowledge — map data is not authoritative here.",
+  "communities": [
+    {
+      "id": "com-palisadoes",
+      "name": "Palisadoes",
+      "lat": 17.9487,
+      "lon": -76.7635,
+      "trigger_radius": 280,
+      "note": "The narrow causeway strip between the airport and Harbour View — sea on both sides"
+    },
+    {
+      "id": "com-harbour-view",
+      "name": "Harbour View",
+      "lat": 17.9808,
+      "lon": -76.7480,
+      "trigger_radius": 260,
+      "note": "The roundabout where the Palisadoes strip meets Windward Road"
+    },
+    {
+      "id": "com-rockfort",
+      "name": "Rockfort",
+      "lat": 17.9930,
+      "lon": -76.7620,
+      "trigger_radius": 250,
+      "note": "Industrial waterfront community — home of the Rockfort Mineral Baths",
+      "needs_owner_review": true
+    },
+    {
+      "id": "com-rollington-town",
+      "name": "Rollington Town",
+      "lat": 18.0030,
+      "lon": -76.7730,
+      "trigger_radius": 260,
+      "note": "Residential community in East Kingston near the National Stadium",
+      "needs_owner_review": true
+    },
+    {
+      "id": "com-east-kingston",
+      "name": "East Kingston",
+      "lat": 18.0014,
+      "lon": -76.7726,
+      "trigger_radius": 300,
+      "note": "Along Mountain View Avenue, past the National Stadium",
+      "needs_owner_review": true
+    },
+    {
+      "id": "com-cross-roads",
+      "name": "Cross Roads",
+      "lat": 18.0060,
+      "lon": -76.7930,
+      "trigger_radius": 240,
+      "note": "Central Kingston junction — the city's pulse",
+      "needs_owner_review": true
+    },
+    {
+      "id": "com-new-kingston",
+      "name": "New Kingston",
+      "lat": 18.0147,
+      "lon": -76.7900,
+      "trigger_radius": 280,
+      "note": "Financial and hotel district, home of Devon House and Emancipation Park",
+      "needs_owner_review": true
+    },
+    {
+      "id": "com-half-way-tree",
+      "name": "Half Way Tree",
+      "lat": 18.0109,
+      "lon": -76.7960,
+      "trigger_radius": 300,
+      "note": "Kingston's main commercial hub — the 1813 clock tower marks the crossroads"
+    },
+    {
+      "id": "com-six-miles",
+      "name": "Six Miles",
+      "lat": 18.0090,
+      "lon": -76.8530,
+      "trigger_radius": 260,
+      "note": "Major junction on Spanish Town Road — gateway out of Kingston heading west",
+      "needs_owner_review": true
+    },
+    {
+      "id": "com-spanish-town",
+      "name": "Spanish Town",
+      "lat": 17.9897,
+      "lon": -76.9567,
+      "trigger_radius": 350,
+      "note": "Original capital of Jamaica — Cathedral, courthouse, and Rodney Memorial square"
+    },
+    {
+      "id": "com-angels",
+      "name": "Angels",
+      "lat": 18.0550,
+      "lon": -76.9920,
+      "trigger_radius": 240,
+      "note": "Small community on the A1 approaching the Bog Walk gorge",
+      "needs_owner_review": true
+    },
+    {
+      "id": "com-bog-walk",
+      "name": "Bog Walk",
+      "lat": 18.0614,
+      "lon": -76.9845,
+      "trigger_radius": 280,
+      "note": "Gateway to the Rio Cobre gorge — Flat Bridge is just ahead"
+    },
+    {
+      "id": "com-linstead",
+      "name": "Linstead",
+      "lat": 18.1367,
+      "lon": -77.0272,
+      "trigger_radius": 320,
+      "note": "Busy market town in St Catherine — 'Linstead Market' is a beloved folk song"
+    },
+    {
+      "id": "com-ewarton",
+      "name": "Ewarton",
+      "lat": 18.1533,
+      "lon": -77.0307,
+      "trigger_radius": 240,
+      "note": "Small bauxite-industry town in St Catherine between Linstead and Moneague",
+      "needs_owner_review": true
+    },
+    {
+      "id": "com-moneague",
+      "name": "Moneague",
+      "lat": 18.2786,
+      "lon": -77.0972,
+      "trigger_radius": 300,
+      "note": "Quiet village in St Ann at the crest before the road descends toward Ocho Rios"
+    },
+    {
+      "id": "com-faiths-pen",
+      "name": "Faith's Pen",
+      "lat": 18.2972,
+      "lon": -77.1010,
+      "trigger_radius": 260,
+      "note": "Legendary roadside cookshop strip — jerk chicken, roast yam and festival",
+      "needs_owner_review": true,
+      "_review_note": "Coordinates estimated north of Moneague as geography requires; landmarks.json uses 18.2347 which appears too far south — owner to confirm"
+    },
+    {
+      "id": "com-fern-gully",
+      "name": "Fern Gully",
+      "lat": 18.3947,
+      "lon": -77.1156,
+      "trigger_radius": 280,
+      "note": "Famous gorge road canopied by bamboo and tropical ferns — only for Bog Walk and Fern Gully per vegetation rules",
+      "needs_owner_review": true
+    },
+    {
+      "id": "com-ocho-rios",
+      "name": "Ocho Rios",
+      "lat": 18.4078,
+      "lon": -77.1047,
+      "trigger_radius": 380,
+      "note": "Jamaica's North Coast resort town — Dunn's River Falls, cruise ships, and the journey's end"
+    }
+  ]
+}
