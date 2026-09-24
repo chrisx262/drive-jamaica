@@ -1,0 +1,181 @@
+{
+  "comment": "Recognition layer 2: community/district signs. Coordinates are real-world lat/lon projected into world space by road.project(). trigger_radius is in compressed-world metres. needs_owner_review flags entries where map data may differ from lived knowledge — owner's word is authoritative.",
+  "communities": [
+    {
+      "id": "com-palisadoes",
+      "name": "Palisadoes",
+      "lat": 17.9435,
+      "lon": -76.7610,
+      "trigger_radius": 300,
+      "note": "The narrow spit of land between the harbour and the open sea — iconic beachside drive"
+    },
+    {
+      "id": "com-harbour-view",
+      "name": "Harbour View",
+      "lat": 17.9519,
+      "lon": -76.7370,
+      "trigger_radius": 220,
+      "note": "Roundabout community at the end of the Palisadoes — gateway to Kingston"
+    },
+    {
+      "id": "com-rockfort",
+      "name": "Rockfort",
+      "lat": 17.9690,
+      "lon": -76.7440,
+      "trigger_radius": 200,
+      "note": "Industrial and residential community on Windward Road, named for the 17th-century fort",
+      "needs_owner_review": true
+    },
+    {
+      "id": "com-rae-town",
+      "name": "Rae Town",
+      "lat": 17.9872,
+      "lon": -76.7700,
+      "trigger_radius": 180,
+      "note": "Historic Kingston waterfront community",
+      "needs_owner_review": true
+    },
+    {
+      "id": "com-rollington-town",
+      "name": "Rollington Town",
+      "lat": 18.0023,
+      "lon": -76.7700,
+      "trigger_radius": 180,
+      "note": "Kingston East community along Mountain View Avenue",
+      "needs_owner_review": true
+    },
+    {
+      "id": "com-cross-roads",
+      "name": "Cross Roads",
+      "lat": 18.0040,
+      "lon": -76.7879,
+      "trigger_radius": 160,
+      "note": "Kingston's busy crossroads junction — the original uptown/downtown divide"
+    },
+    {
+      "id": "com-half-way-tree",
+      "name": "Half Way Tree",
+      "lat": 18.0109,
+      "lon": -76.7960,
+      "trigger_radius": 250,
+      "note": "The commercial heart of uptown Kingston — named for the cotton tree that once stood here"
+    },
+    {
+      "id": "com-new-kingston",
+      "name": "New Kingston",
+      "lat": 18.0133,
+      "lon": -76.7912,
+      "trigger_radius": 200,
+      "note": "Kingston's modern business district — hotels, offices, Emancipation Park"
+    },
+    {
+      "id": "com-havendale",
+      "name": "Havendale",
+      "lat": 18.0073,
+      "lon": -76.8061,
+      "trigger_radius": 180,
+      "note": "Residential community on Hagley Park Road",
+      "needs_owner_review": true
+    },
+    {
+      "id": "com-three-miles",
+      "name": "Three Miles",
+      "lat": 17.9997,
+      "lon": -76.8262,
+      "trigger_radius": 180,
+      "note": "Named for its distance from the Kingston waterfront along Spanish Town Road"
+    },
+    {
+      "id": "com-six-miles",
+      "name": "Six Miles",
+      "lat": 17.9993,
+      "lon": -76.8361,
+      "trigger_radius": 180,
+      "note": "Community on Spanish Town Road — gateway to the west"
+    },
+    {
+      "id": "com-spanish-town",
+      "name": "Spanish Town",
+      "lat": 17.9913,
+      "lon": -76.9556,
+      "trigger_radius": 350,
+      "note": "Jamaica's former capital — the route passes on the bypass but the city is unmissable",
+      "needs_owner_review": true
+    },
+    {
+      "id": "com-twickenham-park",
+      "name": "Twickenham Park",
+      "lat": 18.0153,
+      "lon": -76.9661,
+      "trigger_radius": 220,
+      "note": "Rural community on the approach to Bog Walk gorge",
+      "needs_owner_review": true
+    },
+    {
+      "id": "com-angels",
+      "name": "Angels",
+      "lat": 18.0388,
+      "lon": -76.9840,
+      "trigger_radius": 200,
+      "note": "Small village just before the descent into Bog Walk gorge",
+      "needs_owner_review": true
+    },
+    {
+      "id": "com-bog-walk",
+      "name": "Bog Walk",
+      "lat": 18.0614,
+      "lon": -76.9845,
+      "trigger_radius": 250,
+      "note": "Community at the heart of the Bog Walk gorge — Rio Cobre and lush cliffs surround you"
+    },
+    {
+      "id": "com-linstead",
+      "name": "Linstead",
+      "lat": 18.1378,
+      "lon": -77.0259,
+      "trigger_radius": 280,
+      "note": "Town famous in the folk song — 'Linstead Market, not a quattie wut' sell'"
+    },
+    {
+      "id": "com-ewarton",
+      "name": "Ewarton",
+      "lat": 18.1569,
+      "lon": -77.0518,
+      "trigger_radius": 200,
+      "note": "Rural junction town before the climb to Moneague",
+      "needs_owner_review": true
+    },
+    {
+      "id": "com-moneague",
+      "name": "Moneague",
+      "lat": 18.2158,
+      "lon": -77.1117,
+      "trigger_radius": 260,
+      "note": "Quiet town in the hills — start of the cool-air interior before the descent to Ochi"
+    },
+    {
+      "id": "com-faiths-pen",
+      "name": "Faith's Pen",
+      "lat": 18.2347,
+      "lon": -77.0951,
+      "trigger_radius": 220,
+      "note": "Legendary roadside cookshop strip — jerk chicken, roast yam, festival. Don't drive past hungry."
+    },
+    {
+      "id": "com-fern-gully",
+      "name": "Fern Gully",
+      "lat": 18.3590,
+      "lon": -77.1020,
+      "trigger_radius": 280,
+      "note": "Three-kilometre canyon of giant tree ferns — one of Jamaica's most dramatic drives"
+    },
+    {
+      "id": "com-ocho-rios",
+      "name": "Ocho Rios",
+      "lat": 18.4077,
+      "lon": -77.1006,
+      "trigger_radius": 350,
+      "note": "Tourist capital of the north coast — Dunn's River Falls awaits"
+    }
+  ]
+}
