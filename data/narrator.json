@@ -16,6 +16,16 @@
     ],
     "tyre.fixed": [
       "Tyre patch up — gwaan!"
+    ],
+    "score.swerve": [
+      "Look at dat style! Yuh ah road warrior!",
+      "Woi! Smooth moves, driver!",
+      "Dem seh yuh slick like dat!"
+    ],
+    "score.run_complete": [
+      "Yuh reach Dunn's River! Big up yuhself, champion!",
+      "Ochi ah reach! Dem cyan stop yuh!",
+      "Yuh mek it from Norman Manley to Ochi — respect due!"
     ]
   }
 }
