@@ -1,0 +1,139 @@
+{
+  "comment": "Recognition layer 2: community/district signs along the Airport Run route. Coordinates are real-world lat/lon; projected into world space at runtime via road.project(). needs_owner_review entries should be verified against the owner's lived knowledge — map data is a starting point only.",
+  "communities": [
+    {
+      "id": "com-palisadoes",
+      "name": "Palisadoes",
+      "lat": 17.942,
+      "lon": -76.762,
+      "radius": 380,
+      "note": "The iconic coastal spit connecting the airport to Kingston — coconut palms, sea on both sides"
+    },
+    {
+      "id": "com-harbour-view",
+      "name": "Harbour View",
+      "lat": 17.977,
+      "lon": -76.738,
+      "radius": 260,
+      "note": "Eastern gateway roundabout entering Kingston — potholes begin here"
+    },
+    {
+      "id": "com-rockfort",
+      "name": "Rockfort",
+      "lat": 17.993,
+      "lon": -76.762,
+      "radius": 240,
+      "note": "Historic fort and industrial Kingston — Windward Road entry",
+      "needs_owner_review": true
+    },
+    {
+      "id": "com-kingston",
+      "name": "Kingston",
+      "lat": 18.003,
+      "lon": -76.790,
+      "radius": 480,
+      "note": "Capital city of Jamaica"
+    },
+    {
+      "id": "com-cross-roads",
+      "name": "Cross Roads",
+      "lat": 18.005,
+      "lon": -76.793,
+      "radius": 200,
+      "note": "Major Kingston junction — Maxfield Avenue, Half Way Tree bound",
+      "needs_owner_review": true
+    },
+    {
+      "id": "com-half-way-tree",
+      "name": "Half Way Tree",
+      "lat": 18.011,
+      "lon": -76.796,
+      "radius": 220,
+      "note": "The commercial heart of uptown Kingston"
+    },
+    {
+      "id": "com-spanish-town",
+      "name": "Spanish Town",
+      "lat": 17.991,
+      "lon": -76.957,
+      "radius": 360,
+      "note": "Historic capital of Jamaica — the route threads through on Wellington Street",
+      "needs_owner_review": true
+    },
+    {
+      "id": "com-bog-walk",
+      "name": "Bog Walk",
+      "lat": 18.035,
+      "lon": -76.966,
+      "radius": 300,
+      "note": "Gateway to the Rio Cobre gorge"
+    },
+    {
+      "id": "com-linstead",
+      "name": "Linstead",
+      "lat": 18.134,
+      "lon": -77.039,
+      "radius": 300,
+      "note": "Market town — immortalised in the folk song 'Linstead Market'"
+    },
+    {
+      "id": "com-ewarton",
+      "name": "Ewarton",
+      "lat": 18.172,
+      "lon": -77.062,
+      "radius": 240,
+      "note": "Small town on the road up to Moneague",
+      "needs_owner_review": true
+    },
+    {
+      "id": "com-moneague",
+      "name": "Moneague",
+      "lat": 18.245,
+      "lon": -77.096,
+      "radius": 300,
+      "note": "Hill country junction — where the route turns north toward Ochi"
+    },
+    {
+      "id": "com-faiths-pen",
+      "name": "Faith's Pen",
+      "lat": 18.2347,
+      "lon": -77.0951,
+      "radius": 200,
+      "note": "Legendary roadside cookshop strip"
+    },
+    {
+      "id": "com-cave-valley",
+      "name": "Cave Valley",
+      "lat": 18.285,
+      "lon": -77.100,
+      "radius": 240,
+      "note": "Hill country community on the northern descent",
+      "needs_owner_review": true
+    },
+    {
+      "id": "com-bamboo",
+      "name": "Bamboo",
+      "lat": 18.320,
+      "lon": -77.105,
+      "radius": 240,
+      "note": "Famous Bamboo Avenue — giant bamboo arching over the road",
+      "needs_owner_review": true
+    },
+    {
+      "id": "com-fern-gully",
+      "name": "Fern Gully",
+      "lat": 18.356,
+      "lon": -77.100,
+      "radius": 280,
+      "note": "Hundreds of fern species lining the road down to Ochi"
+    },
+    {
+      "id": "com-ocho-rios",
+      "name": "Ocho Rios",
+      "lat": 18.408,
+      "lon": -77.105,
+      "radius": 400,
+      "note": "North coast resort town — end of the road"
+    }
+  ]
+}
