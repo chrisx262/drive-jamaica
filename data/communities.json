@@ -1,0 +1,148 @@
+{
+  "comment": "Recognition layer 2: community/district entry signs. Coordinates are real lat/lon projected into world space via the route origin+scale at load. radius = trigger distance in compressed-world meters. needs_owner_review entries are best-effort from map data — the owner's lived knowledge is authoritative.",
+  "communities": [
+    {
+      "id": "com-palisadoes",
+      "name": "Palisadoes",
+      "lat": 17.9371,
+      "lon": -76.7560,
+      "radius": 200,
+      "note": "The narrow causeway linking Norman Manley Airport to Kingston — sea on both sides"
+    },
+    {
+      "id": "com-harbour-view",
+      "name": "Harbour View",
+      "lat": 17.9738,
+      "lon": -76.7355,
+      "radius": 180,
+      "note": "Eastern gateway into Kingston where the Palisadoes meets the city"
+    },
+    {
+      "id": "com-wareika-hill",
+      "name": "Wareika Hill",
+      "lat": 17.9868,
+      "lon": -76.7596,
+      "radius": 160,
+      "note": "Hillside community above Windward Road",
+      "needs_owner_review": true
+    },
+    {
+      "id": "com-mountain-view",
+      "name": "Mountain View",
+      "lat": 17.9965,
+      "lon": -76.7614,
+      "radius": 200,
+      "note": "East Kingston community along Mountain View Avenue"
+    },
+    {
+      "id": "com-half-way-tree",
+      "name": "Half Way Tree",
+      "lat": 18.0109,
+      "lon": -76.7960,
+      "radius": 220,
+      "note": "Kingston's main crossroads — transport hub named for a long-gone cotton tree"
+    },
+    {
+      "id": "com-new-kingston",
+      "name": "New Kingston",
+      "lat": 18.0083,
+      "lon": -76.7872,
+      "radius": 200,
+      "note": "Kingston's modern business and hotel district",
+      "needs_owner_review": true
+    },
+    {
+      "id": "com-spanish-town",
+      "name": "Spanish Town",
+      "lat": 17.9961,
+      "lon": -76.9534,
+      "radius": 280,
+      "note": "Jamaica's former colonial capital — founded 1534"
+    },
+    {
+      "id": "com-portmore",
+      "name": "Portmore",
+      "lat": 17.9951,
+      "lon": -76.8946,
+      "radius": 250,
+      "note": "Jamaica's largest dormitory city, home to hundreds of thousands",
+      "needs_owner_review": true
+    },
+    {
+      "id": "com-sligoville",
+      "name": "Sligoville",
+      "lat": 18.0748,
+      "lon": -77.0172,
+      "radius": 180,
+      "note": "First free village in Jamaica, established 1835 after Emancipation",
+      "needs_owner_review": true
+    },
+    {
+      "id": "com-bog-walk",
+      "name": "Bog Walk",
+      "lat": 18.0876,
+      "lon": -77.0044,
+      "radius": 200,
+      "note": "Town at the southern end of the Rio Cobre gorge"
+    },
+    {
+      "id": "com-linstead",
+      "name": "Linstead",
+      "lat": 18.1356,
+      "lon": -77.0263,
+      "radius": 250,
+      "note": "Busy market town — home of the famous Linstead Market song"
+    },
+    {
+      "id": "com-ewarton",
+      "name": "Ewarton",
+      "lat": 18.1886,
+      "lon": -77.0774,
+      "radius": 180,
+      "note": "Small town in St. Catherine on the way to Moneague",
+      "needs_owner_review": true
+    },
+    {
+      "id": "com-moneague",
+      "name": "Moneague",
+      "lat": 18.2442,
+      "lon": -77.0975,
+      "radius": 220,
+      "note": "Rural junction town in St. Ann where the hill country begins"
+    },
+    {
+      "id": "com-mount-rosser",
+      "name": "Mount Rosser",
+      "lat": 18.2750,
+      "lon": -77.1050,
+      "radius": 180,
+      "note": "Hillside community with steep mountain roads — potential off-road detour zone",
+      "needs_owner_review": true
+    },
+    {
+      "id": "com-angels",
+      "name": "Angels",
+      "lat": 18.3528,
+      "lon": -77.0959,
+      "radius": 160,
+      "note": "Small community in St. Ann on the approach to Fern Gully",
+      "needs_owner_review": true
+    },
+    {
+      "id": "com-fern-gully",
+      "name": "Fern Gully",
+      "lat": 18.3927,
+      "lon": -77.0946,
+      "radius": 200,
+      "note": "Kilometre-long canopy of bamboo and tree ferns — formerly a riverbed"
+    },
+    {
+      "id": "com-ocho-rios",
+      "name": "Ocho Rios",
+      "lat": 18.4114,
+      "lon": -77.1002,
+      "radius": 300,
+      "note": "Tourism capital of Jamaica's north coast — end of the road!"
+    }
+  ]
+}

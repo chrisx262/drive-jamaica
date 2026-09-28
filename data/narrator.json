@@ -2,20 +2,73 @@
   "comment": "Event -> possible narrator lines. Lines are picked at random per event. Audio files (assets/voice/) will map by line id later; V1 scaffold shows captions only.",
   "events": {
     "game.start": [
-      "Welcome to Jamaica, brethren! Touch di road!"
+      "Welcome to Jamaica, brethren! Touch di road!",
+      "Alright, alright — Airport run! Leh we go!",
+      "Buckle up, star — Jamaican road nuh play!"
     ],
     "road.enter": [
-      "Yuh deh pon {road} now!"
+      "Yuh deh pon {road} now!",
+      "Welcome to {road} — mind how yuh drive!"
+    ],
+    "community.enter": [
+      "Big up {community}!",
+      "Welcome to {community}, star!",
+      "Yuh reach {community} now — respect!",
+      "{community} massive, big up unuh!"
     ],
     "landmark.enter": [
-      "See {landmark} deh!"
+      "See {landmark} deh!",
+      "Ahh — {landmark}! Nuff memories deh so.",
+      "Big up {landmark}, Jamaica landmark dat!"
     ],
     "pothole.burst": [
       "Yuh tyre bust, brethren!",
-      "Wheeel! Mind di pothole dem!"
+      "Wheeel! Mind di pothole dem!",
+      "Lawd — dat pothole nearly swallow di whole car!",
+      "Yuh see how dem nuh fix di road?! Smh."
     ],
     "tyre.fixed": [
-      "Tyre patch up — gwaan!"
+      "Tyre patch up — gwaan!",
+      "Good good, back on di road now!",
+      "Roadside mechanic save di day, respect!"
+    ],
+    "dog.chase": [
+      "Watch di dawg, star! Him nuh 'fraid!",
+      "Rahtid! Di dawg dem a run yuh dung!",
+      "Lawd have mercy, di dawg dem bad bad!",
+      "Kingston dawg nuh normal — dem look both ways before dem chase yuh!"
+    ],
+    "goat.hit": [
+      "Yuh lick down di man goat! Him nuh cheap yuh know!",
+      "Weh yuh a do?! Di goat dem innocent!",
+      "Brethren, dat nuh right — di poor goat!",
+      "Ayyy! Farmer ago vex wid yuh still!"
+    ],
+    "score.milestone.first": [
+      "Yuh start move now! Keep it up, star!",
+      "Alright alright — good start, brethren!"
+    ],
+    "score.milestone.halfway": [
+      "Halfway through, and yuh still inna one piece! Respect!",
+      "Half di journey done — di hill country coming up now!"
+    ],
+    "score.goats.spared": [
+      "Yuh dodge all di goat dem — big respect fi dat!",
+      "Goat herder love yuh today, star!"
+    ],
+    "speed.fast": [
+      "Easy nuh, brethren — dis nuh race track!",
+      "Yuh a fly — slow down before di police catch yuh!",
+      "Wooiee! Yuh serious bout dis ting!"
+    ],
+    "faiths.pen": [
+      "Faith's Pen, star! Best jerk chicken inna Jamaica right here!",
+      "Pull over nuh — di festival and roast yam calling yuh!"
+    ],
+    "arrive.ochi": [
+      "Ocho Rios! Yuh mek it, brethren — di journey done!",
+      "Dunn's River calling — time fi cool off inna di waterfall!",
+      "Ochi Rios massive! Welcome to di north coast, star!"
     ]
   }
 }
