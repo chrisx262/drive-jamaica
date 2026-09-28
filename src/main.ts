@@ -7,6 +7,9 @@ import { Recognition } from './recognition';
 import { buildScenery } from './scenery';
 import { buildTrees } from './trees';
 import { Potholes } from './potholes';
+import { Dogs } from './dogs';
+import { Goats } from './goats';
+import { Score } from './score';
 import { initNarrator, narrate } from './narrator';
 import { TestTrack } from './testtrack';
 import { Debug } from './debug';
@@ -54,6 +57,14 @@ if (isTestTrack) {
 const potholes = new Potholes(road);
 scene.add(potholes.object);
 
+const dogs = new Dogs(road);
+scene.add(dogs.object);
+
+const goats = new Goats(road);
+scene.add(goats.object);
+
+const score = new Score();
+
 const car = new Car();
 
 // Spawn at the route start — or at ?jump=<road name match> for quick scenery
@@ -94,7 +105,7 @@ narrate('game.start');
 
 // Dev-only handle for automated drive tests (stripped from production builds).
 if (import.meta.env.DEV) {
-  (window as unknown as Record<string, unknown>).__dj = { car, road, potholes };
+  (window as unknown as Record<string, unknown>).__dj = { car, road, potholes, dogs, goats, score };
 }
 
 const camOffset = new THREE.Vector3();
@@ -105,8 +116,14 @@ renderer.setAnimationLoop(() => {
   const dt = Math.min((now - last) / 1000, 0.05);
   last = now;
 
+  const prevPos = car.position.clone();
   car.update(dt, input);
+  const moved = prevPos.distanceTo(car.position);
+  score.addDistance(moved);
+
   potholes.update(car);
+  dogs.update(car, dt);
+  goats.update(car, dt);
   recognition?.update(car.position);
   debug?.update(dt);
 
@@ -115,6 +132,7 @@ renderer.setAnimationLoop(() => {
   camera.position.lerp(car.position.clone().add(camOffset), 1 - Math.exp(-5 * dt));
   camera.lookAt(car.position.x, car.position.y + 1.2, car.position.z);
 
-  hud.textContent = `${Math.round(car.speedKmh)} km/h${car.tyreBurst ? '  \u{1F6DE} TYRE BUST!' : ''}`;
+  const summary = score.summary();
+  hud.textContent = `${Math.round(car.speedKmh)} km/h${car.tyreBurst ? '  \u{1F6DE} TYRE BUST!' : ''}  ·  ${summary.total} pts`;
   renderer.render(scene, camera);
 });
