@@ -1,0 +1,153 @@
+{
+  "comment": "Communities/districts along the Airport→Kingston→Bog Walk→Ocho Rios route. Each entry triggers a recognition-layer-2 community sign as the player enters. Entries marked needs_owner_review require the owner's lived knowledge to confirm exact placement and note.",
+  "communities": [
+    {
+      "name": "Palisadoes",
+      "lat": 17.958,
+      "lon": -76.752,
+      "note": "The iconic narrow peninsula — sea on both sides of the road.",
+      "radius": 500
+    },
+    {
+      "name": "Harbour View",
+      "lat": 17.980,
+      "lon": -76.733,
+      "note": "Where the Palisadoes meets Windward Road.",
+      "radius": 300
+    },
+    {
+      "name": "Rockfort",
+      "lat": 17.991,
+      "lon": -76.748,
+      "note": "Home of the Rockfort Mineral Bath.",
+      "radius": 300
+    },
+    {
+      "name": "Wareika Hill",
+      "lat": 17.994,
+      "lon": -76.762,
+      "note": "East Kingston hillside community.",
+      "radius": 300,
+      "needs_owner_review": true
+    },
+    {
+      "name": "Kingston",
+      "lat": 17.997,
+      "lon": -76.793,
+      "note": "Jamaica's capital city.",
+      "radius": 700
+    },
+    {
+      "name": "Cross Roads",
+      "lat": 18.007,
+      "lon": -76.793,
+      "note": "Major Kingston junction.",
+      "radius": 250,
+      "needs_owner_review": true
+    },
+    {
+      "name": "New Kingston",
+      "lat": 18.011,
+      "lon": -76.791,
+      "note": "Kingston's business and entertainment hub.",
+      "radius": 350
+    },
+    {
+      "name": "Half Way Tree",
+      "lat": 18.018,
+      "lon": -76.793,
+      "note": "Kingston's busiest commercial hub — the clock tower is the landmark.",
+      "radius": 350
+    },
+    {
+      "name": "Trench Town",
+      "lat": 18.005,
+      "lon": -76.822,
+      "note": "Birthplace of reggae — Bob Marley grew up here.",
+      "radius": 350,
+      "needs_owner_review": true
+    },
+    {
+      "name": "Washington Gardens",
+      "lat": 17.994,
+      "lon": -76.854,
+      "note": "Kingston suburb along Spanish Town Road.",
+      "radius": 300,
+      "needs_owner_review": true
+    },
+    {
+      "name": "Riverton",
+      "lat": 17.997,
+      "lon": -76.875,
+      "note": "On the western edge of Kingston.",
+      "radius": 300,
+      "needs_owner_review": true
+    },
+    {
+      "name": "Spanish Town",
+      "lat": 17.990,
+      "lon": -76.959,
+      "note": "Jamaica's former colonial capital.",
+      "radius": 450,
+      "needs_owner_review": true
+    },
+    {
+      "name": "Bog Walk",
+      "lat": 18.089,
+      "lon": -76.975,
+      "note": "The gorge community where the Rio Cobre carves through limestone hills.",
+      "radius": 400
+    },
+    {
+      "name": "Flat Bridge",
+      "lat": 18.105,
+      "lon": -77.016,
+      "note": "Historic single-lane bridge over the Rio Cobre, dates to the 1700s.",
+      "radius": 250,
+      "needs_owner_review": true
+    },
+    {
+      "name": "Linstead",
+      "lat": 18.134,
+      "lon": -77.032,
+      "note": "Market town in St. Catherine — 'Carry Me Ackee Go a Linstead Market'.",
+      "radius": 400
+    },
+    {
+      "name": "Ewarton",
+      "lat": 18.168,
+      "lon": -77.072,
+      "note": "St. Catherine community, home of the Alpart alumina plant.",
+      "radius": 300,
+      "needs_owner_review": true
+    },
+    {
+      "name": "Moneague",
+      "lat": 18.271,
+      "lon": -77.119,
+      "note": "Hill-country junction between Kingston and Ocho Rios.",
+      "radius": 350
+    },
+    {
+      "name": "Faith's Pen",
+      "lat": 18.336,
+      "lon": -77.129,
+      "note": "Famous open-air cookshop strip — jerk chicken, roast yam, festival.",
+      "radius": 300
+    },
+    {
+      "name": "Fern Gully",
+      "lat": 18.381,
+      "lon": -77.110,
+      "note": "2km natural tunnel of tree ferns — one of Jamaica's most scenic drives.",
+      "radius": 350
+    },
+    {
+      "name": "Ocho Rios",
+      "lat": 18.408,
+      "lon": -77.101,
+      "note": "St. Ann's Bay resort town — Dunn's River Falls is the finale.",
+      "radius": 600
+    }
+  ]
+}
