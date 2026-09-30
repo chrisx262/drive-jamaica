@@ -1,0 +1,148 @@
+{
+  "comment": "Communities and districts along the Airport Run route (Norman Manley → Ocho Rios). Each entry triggers an in-world community sign + HUD callout (recognition layer 2). Entries with needs_owner_review require the owner's lived knowledge to confirm placement — the owner's experience is authoritative over map data.",
+  "communities": [
+    {
+      "id": "palisadoes",
+      "name": "Palisadoes",
+      "lat": 17.9390,
+      "lon": -76.7450,
+      "radius": 350,
+      "note": "Narrow sand-spit linking the airport to Kingston — coconut trees, sea on both sides"
+    },
+    {
+      "id": "harbour-view",
+      "name": "Harbour View",
+      "lat": 17.9517,
+      "lon": -76.7226,
+      "radius": 220,
+      "note": "Eastern gateway into Kingston at the roundabout off the Palisadoes"
+    },
+    {
+      "id": "rockfort",
+      "name": "Rockfort",
+      "lat": 17.9620,
+      "lon": -76.7530,
+      "radius": 200,
+      "note": "Community along Windward Road with the old Rockfort mineral bath",
+      "needs_owner_review": true
+    },
+    {
+      "id": "wareika-hill",
+      "name": "Wareika Hill",
+      "lat": 17.9900,
+      "lon": -76.7700,
+      "radius": 220,
+      "note": "Kingston east community along Mountain View Avenue",
+      "needs_owner_review": true
+    },
+    {
+      "id": "kingston",
+      "name": "Kingston",
+      "lat": 17.9977,
+      "lon": -76.7930,
+      "radius": 500,
+      "note": "Capital of Jamaica — the route threads through the city centre"
+    },
+    {
+      "id": "half-way-tree",
+      "name": "Half Way Tree",
+      "lat": 17.9935,
+      "lon": -76.8033,
+      "radius": 280,
+      "note": "Kingston's commercial heart — clock tower, busy market, route-taxi hub"
+    },
+    {
+      "id": "cross-roads",
+      "name": "Cross Roads",
+      "lat": 17.9825,
+      "lon": -76.7935,
+      "radius": 200,
+      "note": "Major junction south of Half Way Tree where several roads converge",
+      "needs_owner_review": true
+    },
+    {
+      "id": "spanish-town",
+      "name": "Spanish Town",
+      "lat": 17.9922,
+      "lon": -76.9500,
+      "radius": 380,
+      "note": "St. Catherine's capital — Jamaica's historic former capital, founded 1534"
+    },
+    {
+      "id": "angels",
+      "name": "Angels",
+      "lat": 18.0650,
+      "lon": -76.9700,
+      "radius": 200,
+      "note": "Community on the road north toward Bog Walk gorge",
+      "needs_owner_review": true
+    },
+    {
+      "id": "flat-bridge",
+      "name": "Flat Bridge",
+      "lat": 18.0800,
+      "lon": -76.9720,
+      "radius": 180,
+      "note": "Famous low bridge over the Rio Cobre — floods when the river rises",
+      "needs_owner_review": true
+    },
+    {
+      "id": "bog-walk",
+      "name": "Bog Walk",
+      "lat": 18.1020,
+      "lon": -76.9660,
+      "radius": 260,
+      "note": "Town at the north end of the gorge — junction on the Rio Cobre plain"
+    },
+    {
+      "id": "linstead",
+      "name": "Linstead",
+      "lat": 18.1365,
+      "lon": -77.0257,
+      "radius": 320,
+      "note": "Market town made famous by the folk song 'Linstead Market' — bustling on Saturdays"
+    },
+    {
+      "id": "mount-rosser",
+      "name": "Mount Rosser",
+      "lat": 18.1800,
+      "lon": -77.0800,
+      "radius": 260,
+      "note": "Hill country between Linstead and Moneague — goat country",
+      "needs_owner_review": true
+    },
+    {
+      "id": "faiths-pen",
+      "name": "Faith's Pen",
+      "lat": 18.1950,
+      "lon": -77.0760,
+      "radius": 200,
+      "note": "Famous hilltop cookshop row — jerk chicken, roast yam, festival. Mandatory stop.",
+      "needs_owner_review": true
+    },
+    {
+      "id": "moneague",
+      "name": "Moneague",
+      "lat": 18.2577,
+      "lon": -77.0875,
+      "radius": 270,
+      "note": "Village at the St. Ann crossroads before the long descent to Ocho Rios"
+    },
+    {
+      "id": "fern-gully",
+      "name": "Fern Gully",
+      "lat": 18.3800,
+      "lon": -77.1200,
+      "radius": 320,
+      "note": "Kilometre-long gorge canopied by bamboo — one of Jamaica's most iconic drives"
+    },
+    {
+      "id": "ocho-rios",
+      "name": "Ocho Rios",
+      "lat": 18.4010,
+      "lon": -77.1012,
+      "radius": 380,
+      "note": "Jamaica's north-coast tourist hub — Dunn's River Falls finish"
+    }
+  ]
+}
