@@ -4,6 +4,9 @@ import { Car } from './car';
 import { Road } from './road';
 import type { RoadLike } from './road';
 import { Recognition } from './recognition';
+import { Communities } from './communities';
+import { Dogs } from './dogs';
+import { Goats } from './goats';
 import { buildScenery } from './scenery';
 import { buildTrees } from './trees';
 import { Potholes } from './potholes';
@@ -36,6 +39,9 @@ const isDebug = isTestTrack || params.has('debug');
 
 let road: RoadLike;
 let recognition: Recognition | null = null;
+let communities: Communities | null = null;
+let dogs: Dogs | null = null;
+let goats: Goats | null = null;
 
 if (isTestTrack) {
   const tt = new TestTrack();
@@ -49,6 +55,11 @@ if (isTestTrack) {
   scene.add(buildScenery(r));
   scene.add(buildTrees(r));
   recognition = new Recognition(r);
+  communities = new Communities(r);
+  dogs = new Dogs(r);
+  goats = new Goats(r);
+  scene.add(dogs.object);
+  scene.add(goats.object);
 }
 
 const potholes = new Potholes(road);
@@ -108,6 +119,9 @@ renderer.setAnimationLoop(() => {
   car.update(dt, input);
   potholes.update(car);
   recognition?.update(car.position);
+  communities?.update(car.position);
+  dogs?.update(car, dt);
+  goats?.update(car, dt);
   debug?.update(dt);
 
   // Chase camera: behind and above the car, smoothed.
