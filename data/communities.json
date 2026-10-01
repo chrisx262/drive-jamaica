@@ -1,0 +1,119 @@
+{
+  "comment": "Recognition layer 2: community sign data. Coordinates are real lat/lon, projected into world space via the route origin+scale. Radius is trigger distance in compressed-world metres. Entries marked needs_owner_review may be inaccurate — owner's lived knowledge is authoritative over map data.",
+  "communities": [
+    {
+      "id": "cmn-palisadoes",
+      "name": "Palisadoes",
+      "lat": 17.942,
+      "lon": -76.760,
+      "radius": 400,
+      "note": "The famous strip road — sea on both sides"
+    },
+    {
+      "id": "cmn-harbour-view",
+      "name": "Harbour View",
+      "lat": 17.959,
+      "lon": -76.752,
+      "radius": 280,
+      "note": "Gateway into Kingston; pothole territory begins here"
+    },
+    {
+      "id": "cmn-rockfort",
+      "name": "Rockfort",
+      "lat": 17.973,
+      "lon": -76.741,
+      "radius": 240,
+      "needs_owner_review": true
+    },
+    {
+      "id": "cmn-kingston",
+      "name": "Kingston",
+      "lat": 17.998,
+      "lon": -76.793,
+      "radius": 500,
+      "note": "The capital of Jamaica"
+    },
+    {
+      "id": "cmn-cross-roads",
+      "name": "Cross Roads",
+      "lat": 17.994,
+      "lon": -76.786,
+      "radius": 240,
+      "needs_owner_review": true
+    },
+    {
+      "id": "cmn-half-way-tree",
+      "name": "Half Way Tree",
+      "lat": 18.011,
+      "lon": -76.798,
+      "radius": 300,
+      "note": "The commercial heart of Kingston"
+    },
+    {
+      "id": "cmn-washington-gardens",
+      "name": "Washington Gardens",
+      "lat": 18.019,
+      "lon": -76.817,
+      "radius": 240,
+      "needs_owner_review": true
+    },
+    {
+      "id": "cmn-angels",
+      "name": "Angels",
+      "lat": 18.046,
+      "lon": -76.967,
+      "radius": 240,
+      "needs_owner_review": true,
+      "note": "Village at the entrance to Bog Walk gorge"
+    },
+    {
+      "id": "cmn-bog-walk",
+      "name": "Bog Walk",
+      "lat": 18.072,
+      "lon": -76.993,
+      "radius": 280,
+      "note": "Gateway to the Rio Cobre gorge"
+    },
+    {
+      "id": "cmn-linstead",
+      "name": "Linstead",
+      "lat": 18.133,
+      "lon": -77.034,
+      "radius": 320,
+      "note": "Market town — famous in Jamaica's folk songs"
+    },
+    {
+      "id": "cmn-moneague",
+      "name": "Moneague",
+      "lat": 18.217,
+      "lon": -77.105,
+      "radius": 280,
+      "note": "High-country crossroads town"
+    },
+    {
+      "id": "cmn-faiths-pen",
+      "name": "Faith's Pen",
+      "lat": 18.2347,
+      "lon": -77.0951,
+      "radius": 280,
+      "note": "Legendary roadside cookshops — jerk chicken, roast yam, festival"
+    },
+    {
+      "id": "cmn-fern-gully",
+      "name": "Fern Gully",
+      "lat": 18.345,
+      "lon": -77.142,
+      "radius": 300,
+      "needs_owner_review": true,
+      "note": "Famous canopy-covered descent into Ocho Rios"
+    },
+    {
+      "id": "cmn-ocho-rios",
+      "name": "Ocho Rios",
+      "lat": 18.408,
+      "lon": -77.108,
+      "radius": 400,
+      "note": "Tourist hub on Jamaica's north coast"
+    }
+  ]
+}
