@@ -1,0 +1,156 @@
+{
+  "comment": "Recognition layer 2: community / district sign triggers. lat/lon are real-world OSM coordinates; road.project() converts them to world space at runtime. triggerRadius is in compressed-world metres (~0.3× real distance). Entries marked needs_owner_review: true require the owner's lived knowledge to confirm name, exact placement, or the one-line note — owner's knowledge is authoritative over map data.",
+  "communities": [
+    {
+      "id": "comm-palisadoes",
+      "name": "Palisadoes",
+      "lat": 17.9520,
+      "lon": -76.7600,
+      "triggerRadius": 300,
+      "note": "The narrow sand spit connecting the airport to Kingston — coconut trees and sea on both sides"
+    },
+    {
+      "id": "comm-harbour-view",
+      "name": "Harbour View",
+      "lat": 17.9858,
+      "lon": -76.7510,
+      "triggerRadius": 220,
+      "note": "The roundabout where the Palisadoes road meets Kingston — city straight ahead"
+    },
+    {
+      "id": "comm-rockfort",
+      "name": "Rockfort",
+      "lat": 18.0012,
+      "lon": -76.7632,
+      "triggerRadius": 200,
+      "note": "Industrial community on Windward Road near the old fort ruins",
+      "needs_owner_review": true
+    },
+    {
+      "id": "comm-rae-town",
+      "name": "Rae Town",
+      "lat": 18.0042,
+      "lon": -76.7775,
+      "triggerRadius": 200,
+      "note": "Old Kingston Harbour fishing village — roots sound-system culture",
+      "needs_owner_review": true
+    },
+    {
+      "id": "comm-cross-roads",
+      "name": "Cross Roads",
+      "lat": 18.0054,
+      "lon": -76.7876,
+      "triggerRadius": 220,
+      "note": "Kingston's gateway intersection between downtown and uptown"
+    },
+    {
+      "id": "comm-half-way-tree",
+      "name": "Half Way Tree",
+      "lat": 18.0108,
+      "lon": -76.7960,
+      "triggerRadius": 260,
+      "note": "Uptown Kingston's commercial hub — named for the cotton tree that stood halfway to Spanish Town"
+    },
+    {
+      "id": "comm-six-miles",
+      "name": "Six Miles",
+      "lat": 17.9980,
+      "lon": -76.8297,
+      "triggerRadius": 200,
+      "note": "Community on Spanish Town Road — six miles from downtown Kingston",
+      "needs_owner_review": true
+    },
+    {
+      "id": "comm-spanish-town",
+      "name": "Spanish Town",
+      "lat": 17.9919,
+      "lon": -76.9571,
+      "triggerRadius": 320,
+      "note": "Former capital of Jamaica — founded by the Spanish in 1534, Jamaica's oldest city"
+    },
+    {
+      "id": "comm-sligoville",
+      "name": "Sligoville",
+      "lat": 18.0376,
+      "lon": -76.9850,
+      "triggerRadius": 200,
+      "note": "First free village in Jamaica — established after Emancipation in 1838",
+      "needs_owner_review": true
+    },
+    {
+      "id": "comm-bog-walk",
+      "name": "Bog Walk",
+      "lat": 18.0483,
+      "lon": -76.9774,
+      "triggerRadius": 220,
+      "note": "Gateway to the Rio Cobre gorge — the name is a corruption of the Spanish 'boca del agua'"
+    },
+    {
+      "id": "comm-angels",
+      "name": "Angels",
+      "lat": 18.0620,
+      "lon": -76.9860,
+      "triggerRadius": 180,
+      "note": "Small community inside the Bog Walk gorge",
+      "needs_owner_review": true
+    },
+    {
+      "id": "comm-linstead",
+      "name": "Linstead",
+      "lat": 18.1361,
+      "lon": -77.0319,
+      "triggerRadius": 280,
+      "note": "Market town of St. Catherine — immortalised in the folk song Linstead Market"
+    },
+    {
+      "id": "comm-ewarton",
+      "name": "Ewarton",
+      "lat": 18.1553,
+      "lon": -77.0731,
+      "triggerRadius": 200,
+      "note": "Junction town in St. Catherine — Alcan alumina plant is nearby",
+      "needs_owner_review": true
+    },
+    {
+      "id": "comm-moneague",
+      "name": "Moneague",
+      "lat": 18.1950,
+      "lon": -77.0736,
+      "triggerRadius": 260,
+      "note": "Mountain crossroads between St. Catherine and St. Ann — cool breeze country"
+    },
+    {
+      "id": "comm-faiths-pen",
+      "name": "Faith's Pen",
+      "lat": 18.2347,
+      "lon": -77.0951,
+      "triggerRadius": 240,
+      "note": "Legendary roadside cookshop strip — jerk chicken, roast yam and festival since the 1970s"
+    },
+    {
+      "id": "comm-claremont",
+      "name": "Claremont",
+      "lat": 18.3297,
+      "lon": -77.1281,
+      "triggerRadius": 200,
+      "note": "St. Ann hill town at the top of Fern Gully",
+      "needs_owner_review": true
+    },
+    {
+      "id": "comm-fern-gully",
+      "name": "Fern Gully",
+      "lat": 18.3631,
+      "lon": -77.1077,
+      "triggerRadius": 280,
+      "note": "Three kilometres of road canopied by tree ferns — one of Jamaica's most iconic drives"
+    },
+    {
+      "id": "comm-ocho-rios",
+      "name": "Ocho Rios",
+      "lat": 18.4085,
+      "lon": -77.1042,
+      "triggerRadius": 360,
+      "note": "Tourism capital of the north coast — you made it, brethren!"
+    }
+  ]
+}
