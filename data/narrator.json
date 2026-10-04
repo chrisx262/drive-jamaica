@@ -16,6 +16,21 @@
     ],
     "tyre.fixed": [
       "Tyre patch up — gwaan!"
+    ],
+    "score.near_miss": [
+      "Yuh dodge dat one, sah! Swerve king!",
+      "Aye — nearly! But yuh good, brethren!",
+      "Close one! Dem cyaan catch yuh!"
+    ],
+    "score.goat_spared": [
+      "Mercy to di goat — respect, brethren!",
+      "Yuh miss di goat! Di farmer haffi love yuh!",
+      "Dat goat live fi another day — nice move!"
+    ],
+    "score.milestone": [
+      "Yuh a rack up di points, sah!",
+      "Big score already — keep it moving!",
+      "Respect di road and di road respect yuh back!"
     ]
   }
 }

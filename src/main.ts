@@ -10,6 +10,7 @@ import { Potholes } from './potholes';
 import { initNarrator, narrate } from './narrator';
 import { TestTrack } from './testtrack';
 import { Debug } from './debug';
+import { Scoring } from './scoring';
 
 const app = document.getElementById('app')!;
 const hud = document.getElementById('hud')!;
@@ -84,6 +85,9 @@ if (isDebug) {
   debug = new Debug(scene, car, road.points, potholes, isTestTrack);
 }
 
+const scoring = new Scoring();
+let prevTyreBurst = false;
+
 window.addEventListener('resize', () => {
   camera.aspect = window.innerWidth / window.innerHeight;
   camera.updateProjectionMatrix();
@@ -94,7 +98,7 @@ narrate('game.start');
 
 // Dev-only handle for automated drive tests (stripped from production builds).
 if (import.meta.env.DEV) {
-  (window as unknown as Record<string, unknown>).__dj = { car, road, potholes };
+  (window as unknown as Record<string, unknown>).__dj = { car, road, potholes, scoring };
 }
 
 const camOffset = new THREE.Vector3();
@@ -109,6 +113,11 @@ renderer.setAnimationLoop(() => {
   potholes.update(car);
   recognition?.update(car.position);
   debug?.update(dt);
+
+  // Scoring: fire onTyreBurst on the rising edge of the tyre-burst state.
+  if (car.tyreBurst && !prevTyreBurst) scoring.onTyreBurst();
+  prevTyreBurst = car.tyreBurst;
+  scoring.update(car, dt);
 
   // Chase camera: behind and above the car, smoothed.
   camOffset.set(Math.sin(car.heading) * 9, 5, Math.cos(car.heading) * 9);
