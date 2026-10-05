@@ -1,0 +1,122 @@
+{
+  "comment": "Recognition layer 2: community/district sign data. Passing into a community triggers an in-world sign and HUD callout. Coordinates are real-world lat/lon, projected at runtime. needs_owner_review:true means the owner's lived knowledge should confirm placement — the owner is authoritative over map data.",
+  "communities": [
+    {
+      "id": "cmty-palisadoes",
+      "name": "Palisadoes",
+      "lat": 17.9510,
+      "lon": -76.7370,
+      "radius": 500,
+      "note": "The narrow peninsula and its iconic strip road from Norman Manley Airport to Kingston"
+    },
+    {
+      "id": "cmty-harbour-view",
+      "name": "Harbour View",
+      "lat": 17.9975,
+      "lon": -76.7680,
+      "radius": 300,
+      "note": "Roundabout junction at the end of the Palisadoes strip — gateway into Kingston"
+    },
+    {
+      "id": "cmty-wareika-hill",
+      "name": "Wareika Hill",
+      "lat": 18.0030,
+      "lon": -76.7700,
+      "radius": 280,
+      "note": "Eastern Kingston hillside community near Mountain View Avenue",
+      "needs_owner_review": true
+    },
+    {
+      "id": "cmty-mountain-view",
+      "name": "Mountain View",
+      "lat": 18.0065,
+      "lon": -76.7740,
+      "radius": 280,
+      "note": "Eastern Kingston community along Mountain View Avenue"
+    },
+    {
+      "id": "cmty-cross-roads",
+      "name": "Cross Roads",
+      "lat": 18.0095,
+      "lon": -76.7840,
+      "radius": 250,
+      "note": "Major inner Kingston junction",
+      "needs_owner_review": true
+    },
+    {
+      "id": "cmty-new-kingston",
+      "name": "New Kingston",
+      "lat": 18.0130,
+      "lon": -76.7910,
+      "radius": 280,
+      "note": "Kingston's modern business and hotel district"
+    },
+    {
+      "id": "cmty-half-way-tree",
+      "name": "Half Way Tree",
+      "lat": 18.0109,
+      "lon": -76.7960,
+      "radius": 300,
+      "note": "St. Andrew's main hub — shops, transport, and the famous 1813 clock tower"
+    },
+    {
+      "id": "cmty-washington-gardens",
+      "name": "Washington Gardens",
+      "lat": 17.9900,
+      "lon": -76.8340,
+      "radius": 280,
+      "note": "Western Kingston residential area",
+      "needs_owner_review": true
+    },
+    {
+      "id": "cmty-spanish-town",
+      "name": "Spanish Town",
+      "lat": 17.9980,
+      "lon": -76.9560,
+      "radius": 350,
+      "note": "Jamaica's ancient colonial capital in St. Catherine (route passes on bypass)",
+      "needs_owner_review": true
+    },
+    {
+      "id": "cmty-bog-walk",
+      "name": "Bog Walk",
+      "lat": 18.0630,
+      "lon": -76.9820,
+      "radius": 320,
+      "note": "Community at the mouth of the Rio Cobre gorge — Flat Bridge just ahead"
+    },
+    {
+      "id": "cmty-linstead",
+      "name": "Linstead",
+      "lat": 18.1360,
+      "lon": -76.9980,
+      "radius": 380,
+      "note": "Market town immortalised in the folk song — ackee and saltfish country"
+    },
+    {
+      "id": "cmty-ewarton",
+      "name": "Ewarton",
+      "lat": 18.1640,
+      "lon": -77.0700,
+      "radius": 280,
+      "note": "Town in St. Catherine near the alumina plant",
+      "needs_owner_review": true
+    },
+    {
+      "id": "cmty-moneague",
+      "name": "Moneague",
+      "lat": 18.2350,
+      "lon": -77.0940,
+      "radius": 340,
+      "note": "Hilltop village at a historic road junction — cool mountain air and coconut water stops"
+    },
+    {
+      "id": "cmty-ocho-rios",
+      "name": "Ocho Rios",
+      "lat": 18.4060,
+      "lon": -77.1060,
+      "radius": 400,
+      "note": "Cruise port and beach town on Jamaica's north coast — journey's end"
+    }
+  ]
+}
