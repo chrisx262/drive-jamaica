@@ -1,5 +1,5 @@
 {
-  "comment": "Recognition layer 3: landmark popups. Coordinates are real OSM lat/lon, projected into world space via the route origin+scale at load. radius = trigger distance in compressed-world meters. Each landmark has a stable id from creation (standing rule - the future ad system depends on this pattern).",
+  "comment": "Recognition layer 3: landmark popups. Coordinates are real OSM lat/lon, projected into world space via the route origin+scale at load. radius = trigger distance in compressed-world meters. Each landmark has a stable id from creation (standing rule - the future ad system depends on this pattern). narrator_event overrides the default 'landmark.enter' event when set — lets special stops have dedicated narrator lines.",
   "landmarks": [
     {
       "id": "lmk-gun-boat-beach",
@@ -7,7 +7,8 @@
       "lat": 17.9443,
       "lon": -76.7617,
       "radius": 160,
-      "fact": "Harbour-side bathing spot on the Palisadoes strip"
+      "fact": "Harbour-side bathing spot on the Palisadoes strip",
+      "narrator_event": "landmark.enter"
     },
     {
       "id": "lmk-national-stadium",
@@ -15,7 +16,8 @@
       "lat": 18.0014,
       "lon": -76.7726,
       "radius": 320,
-      "fact": "Home of Jamaican track and football glory — Excelsior High is just across Mountain View Avenue"
+      "fact": "Home of Jamaican track and football glory — Excelsior High is just across Mountain View Avenue",
+      "narrator_event": "landmark.enter"
     },
     {
       "id": "lmk-devon-house",
@@ -23,7 +25,8 @@
       "lat": 18.0147,
       "lon": -76.79,
       "radius": 250,
-      "fact": "1881 mansion of George Stiebel, Jamaica's first black millionaire — and legendary ice cream"
+      "fact": "1881 mansion of George Stiebel, Jamaica's first black millionaire — and legendary ice cream",
+      "narrator_event": "landmark.enter"
     },
     {
       "id": "lmk-hwt-clock",
@@ -31,7 +34,8 @@
       "lat": 18.0109,
       "lon": -76.796,
       "radius": 200,
-      "fact": "The 1813 clock tower at the crossroads of Kingston"
+      "fact": "The 1813 clock tower at the crossroads of Kingston",
+      "narrator_event": "landmark.enter"
     },
     {
       "id": "lmk-flat-bridge",
@@ -39,7 +43,8 @@
       "lat": 18.0614,
       "lon": -76.9845,
       "radius": 160,
-      "fact": "Historic one-lane bridge over the Rio Cobre in Bog Walk gorge"
+      "fact": "Historic one-lane bridge over the Rio Cobre in Bog Walk gorge",
+      "narrator_event": "landmark.enter"
     },
     {
       "id": "lmk-faiths-pen",
@@ -47,7 +52,8 @@
       "lat": 18.2347,
       "lon": -77.0951,
       "radius": 220,
-      "fact": "Legendary roadside stop — jerk chicken, roast yam and festival"
+      "fact": "Legendary roadside stop — jerk chicken, roast yam and festival",
+      "narrator_event": "faithspen.enter"
     },
     {
       "id": "lmk-dunns-river",
@@ -55,7 +61,8 @@
       "lat": 18.4155,
       "lon": -77.1377,
       "radius": 250,
-      "fact": "Jamaica's famous climbable waterfall — journey's end"
+      "fact": "Jamaica's famous climbable waterfall — journey's end",
+      "narrator_event": "landmark.enter"
     }
   ]
 }
