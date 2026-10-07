@@ -1,0 +1,193 @@
+{
+  "comment": "Communities/districts along the Airport→Kingston→Bog Walk→Fern Gully→Ocho Rios route. Lat/lon from OSM. Entries marked needs_owner_review require the owner's lived knowledge to confirm. Ordering follows the drive direction.",
+  "communities": [
+    {
+      "name": "Norman Manley International Airport",
+      "lat": 17.9357,
+      "lon": -76.7875,
+      "note": "Route start — international gateway to Jamaica"
+    },
+    {
+      "name": "Palisadoes",
+      "lat": 17.9410,
+      "lon": -76.7620,
+      "note": "Narrow tombolo strip — sea on both sides, iconic coconut trees lining the road"
+    },
+    {
+      "name": "Port Royal",
+      "lat": 17.9352,
+      "lon": -76.8423,
+      "note": "Historic pirate city — signpost from the Palisadoes; route does not enter",
+      "needs_owner_review": true
+    },
+    {
+      "name": "Harbour View",
+      "lat": 17.9624,
+      "lon": -76.7428,
+      "note": "Roundabout where potholes begin; junction for Port Morant road east"
+    },
+    {
+      "name": "Rockfort",
+      "lat": 17.9713,
+      "lon": -76.7490,
+      "note": "Industrial area along Windward Road; Rockfort Mineral Bath nearby",
+      "needs_owner_review": true
+    },
+    {
+      "name": "Wareika Hill",
+      "lat": 17.9785,
+      "lon": -76.7540,
+      "note": "Rastafari hillside community overlooking Kingston Harbour",
+      "needs_owner_review": true
+    },
+    {
+      "name": "Arnett Gardens",
+      "lat": 17.9900,
+      "lon": -76.7800,
+      "note": "Inner-city community; known locally as Jungle",
+      "needs_owner_review": true
+    },
+    {
+      "name": "Kingston Downtown",
+      "lat": 17.9966,
+      "lon": -76.7939,
+      "note": "Commercial heart — National Heroes Park, Kingston Waterfront, historic squares"
+    },
+    {
+      "name": "New Kingston",
+      "lat": 18.0105,
+      "lon": -76.7786,
+      "note": "Financial and hotel district; Emancipation Park, Devon House nearby"
+    },
+    {
+      "name": "Half Way Tree",
+      "lat": 18.0118,
+      "lon": -76.7941,
+      "note": "The transport hub of Jamaica — clock tower, market, constant gridlock"
+    },
+    {
+      "name": "Cross Roads",
+      "lat": 18.0025,
+      "lon": -76.7883,
+      "note": "Major intersection linking uptown and downtown Kingston",
+      "needs_owner_review": true
+    },
+    {
+      "name": "Havendale",
+      "lat": 18.0185,
+      "lon": -76.8212,
+      "note": "Residential suburb west of Half Way Tree",
+      "needs_owner_review": true
+    },
+    {
+      "name": "Spanish Town Road Corridor",
+      "lat": 17.9950,
+      "lon": -76.8350,
+      "note": "Main artery heading west out of Kingston toward Spanish Town",
+      "needs_owner_review": true
+    },
+    {
+      "name": "Six Miles",
+      "lat": 17.9968,
+      "lon": -76.8538,
+      "note": "Junction community; named for its distance from old Kingston centre",
+      "needs_owner_review": true
+    },
+    {
+      "name": "Caymanas",
+      "lat": 17.9937,
+      "lon": -76.9050,
+      "note": "Sugarcane plain and Caymanas Park racetrack — horse racing is serious business here",
+      "needs_owner_review": true
+    },
+    {
+      "name": "Spanish Town",
+      "lat": 17.9910,
+      "lon": -76.9545,
+      "note": "Historic colonial capital of Jamaica; Cathedral, Iron Bridge, Rodney Memorial"
+    },
+    {
+      "name": "Flat Bridge",
+      "lat": 18.0725,
+      "lon": -77.0143,
+      "note": "One-lane bridge over the Rio Cobre — famous flood spot at the Bog Walk gorge entrance"
+    },
+    {
+      "name": "Bog Walk",
+      "lat": 18.1043,
+      "lon": -77.0218,
+      "note": "Gorge community in the Rio Cobre valley; dramatic limestone cliffs"
+    },
+    {
+      "name": "Ewarton",
+      "lat": 18.1690,
+      "lon": -77.0820,
+      "note": "Alumina plant town; marks the climb out of the gorge",
+      "needs_owner_review": true
+    },
+    {
+      "name": "Linstead",
+      "lat": 18.1363,
+      "lon": -77.0302,
+      "note": "Famous market town — 'Linstead Market' folk song; bustling on Saturdays"
+    },
+    {
+      "name": "Riversdale",
+      "lat": 18.1600,
+      "lon": -77.0750,
+      "note": "Small farming community on the climb to Moneague",
+      "needs_owner_review": true
+    },
+    {
+      "name": "Moneague",
+      "lat": 18.2618,
+      "lon": -77.1155,
+      "note": "Cool hill-country crossroads; famous for goats on the road"
+    },
+    {
+      "name": "Mount Rosser",
+      "lat": 18.2300,
+      "lon": -77.0850,
+      "note": "Rural mountain community; wrong-turn off-road option in-game",
+      "needs_owner_review": true
+    },
+    {
+      "name": "Faith's Pen",
+      "lat": 18.3010,
+      "lon": -77.1060,
+      "note": "Famous roadside cookshop strip — jerk chicken, roast yam, festival; legendary rest stop"
+    },
+    {
+      "name": "Moneague College",
+      "lat": 18.2640,
+      "lon": -77.1200,
+      "note": "Community college serving the interior parishes",
+      "needs_owner_review": true
+    },
+    {
+      "name": "Alexandria",
+      "lat": 18.3200,
+      "lon": -77.1050,
+      "note": "Small St. Ann community on the descent toward Fern Gully",
+      "needs_owner_review": true
+    },
+    {
+      "name": "Fern Gully",
+      "lat": 18.3800,
+      "lon": -77.1020,
+      "note": "3 km canopy tunnel — hundreds of fern species, bamboo arching overhead; one of Jamaica's most iconic drives"
+    },
+    {
+      "name": "Ocho Rios",
+      "lat": 18.4051,
+      "lon": -77.1040,
+      "note": "Tourist hub on the north coast; route ends at Dunn's River Falls"
+    },
+    {
+      "name": "Dunn's River Falls",
+      "lat": 18.4197,
+      "lon": -77.1326,
+      "note": "Route terminus — climb the famous cascading falls, then the bath finale"
+    }
+  ]
+}
