@@ -4,7 +4,7 @@ import type { Car } from './car';
 import { makeGoat } from './animals';
 import { narrate } from './narrator';
 
-export const GOAT_HIT_RADIUS = 2.2; // exported for debug overlay
+export const GOAT_HIT_RADIUS = 2.2; // exported for debug overlay and scoring
 
 const HERD_SPEED = 1.8;      // m/s — goats amble across the road
 const HERD_SPREAD = 3.0;     // random scatter within the herd
@@ -18,6 +18,7 @@ const GOAT_STRETCH: [number, number] = [391, 628];
 
 export class Goats {
   readonly object: THREE.Group;
+  private _hitCount = 0;
   private herds: {
     goats: THREE.Object3D[];
     crossPoint: THREE.Vector3;
@@ -91,6 +92,7 @@ export class Goats {
 
           if (goat.position.distanceTo(car.position) < GOAT_HIT_RADIUS) {
             narrate('goat.hit');
+            this._hitCount++;
             herd.phase = 'done';
             break;
           }
@@ -100,6 +102,9 @@ export class Goats {
       }
     }
   }
+
+  get hitCount(): number { return this._hitCount; }
+  get herdCount(): number { return this.herds.length; }
 }
 
 function mulberry32(seed: number): () => number {
