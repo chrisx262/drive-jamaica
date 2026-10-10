@@ -7,6 +7,10 @@ import { Recognition } from './recognition';
 import { buildScenery } from './scenery';
 import { buildTrees } from './trees';
 import { Potholes } from './potholes';
+import { Dogs } from './dogs';
+import { Goats } from './goats';
+import { FaithsPen } from './faithspen';
+import { Scoring } from './scoring';
 import { initNarrator, narrate } from './narrator';
 import { TestTrack } from './testtrack';
 import { Debug } from './debug';
@@ -36,6 +40,7 @@ const isDebug = isTestTrack || params.has('debug');
 
 let road: RoadLike;
 let recognition: Recognition | null = null;
+let faithsPen: FaithsPen | null = null;
 
 if (isTestTrack) {
   const tt = new TestTrack();
@@ -49,10 +54,17 @@ if (isTestTrack) {
   scene.add(buildScenery(r));
   scene.add(buildTrees(r));
   recognition = new Recognition(r);
+  faithsPen = new FaithsPen(r);
 }
 
 const potholes = new Potholes(road);
 scene.add(potholes.object);
+
+const dogs = new Dogs(road);
+scene.add(dogs.object);
+
+const goats = new Goats(road);
+scene.add(goats.object);
 
 const car = new Car();
 
@@ -79,6 +91,8 @@ scene.add(car.object);
 const input = initInput();
 initNarrator();
 
+const scoring = new Scoring(car, potholes, goats, faithsPen);
+
 let debug: Debug | null = null;
 if (isDebug) {
   debug = new Debug(scene, car, road.points, potholes, isTestTrack);
@@ -94,7 +108,7 @@ narrate('game.start');
 
 // Dev-only handle for automated drive tests (stripped from production builds).
 if (import.meta.env.DEV) {
-  (window as unknown as Record<string, unknown>).__dj = { car, road, potholes };
+  (window as unknown as Record<string, unknown>).__dj = { car, road, potholes, scoring, faithsPen };
 }
 
 const camOffset = new THREE.Vector3();
@@ -107,6 +121,10 @@ renderer.setAnimationLoop(() => {
 
   car.update(dt, input);
   potholes.update(car);
+  dogs.update(car, dt);
+  goats.update(car, dt);
+  faithsPen?.update(car, dt);
+  scoring.update(dt);
   recognition?.update(car.position);
   debug?.update(dt);
 
@@ -115,6 +133,7 @@ renderer.setAnimationLoop(() => {
   camera.position.lerp(car.position.clone().add(camOffset), 1 - Math.exp(-5 * dt));
   camera.lookAt(car.position.x, car.position.y + 1.2, car.position.z);
 
-  hud.textContent = `${Math.round(car.speedKmh)} km/h${car.tyreBurst ? '  \u{1F6DE} TYRE BUST!' : ''}`;
+  const burstFlag = car.tyreBurst ? '  \u{1F6DE} TYRE BUST!' : '';
+  hud.textContent = `${Math.round(car.speedKmh)} km/h${burstFlag}  ★ ${scoring.score}`;
   renderer.render(scene, camera);
 });

@@ -1,11 +1,15 @@
 {
-  "comment": "Event -> possible narrator lines. Lines are picked at random per event. Audio files (assets/voice/) will map by line id later; V1 scaffold shows captions only.",
+  "comment": "Event → possible narrator lines. Lines are picked at random per event. Audio files (assets/voice/) will map by line id later; V1 scaffold shows captions only.",
   "events": {
     "game.start": [
       "Welcome to Jamaica, brethren! Touch di road!"
     ],
     "road.enter": [
       "Yuh deh pon {road} now!"
+    ],
+    "community.enter": [
+      "Big up {community}!",
+      "Respec' to {community}!"
     ],
     "landmark.enter": [
       "See {landmark} deh!"
@@ -16,6 +20,27 @@
     ],
     "tyre.fixed": [
       "Tyre patch up — gwaan!"
+    ],
+    "dog.chase": [
+      "Weh di dog yah come from?! Floor it, nuh!",
+      "Dog pon yuh bumper, brethren — drive!"
+    ],
+    "dog.bark": [
+      "Di dog still deh deh, yuh know!",
+      "Lawd, di dog nuh give up!"
+    ],
+    "goat.hit": [
+      "Yuh lick di goat?! Farmer nah happy bout dat!",
+      "Noooo — dat a somebody goat, yuh know!"
+    ],
+    "faith.pen.stop": [
+      "Jerk chicken an' festival — di real ting! Tyre good now, brethren!",
+      "Yuh stop at Faith's Pen! Respect — dat is di authentic Jamaican experience!",
+      "Aye! Jerk chicken fix everyt'ing — tyre an' soul!"
+    ],
+    "faith.pen.skip": [
+      "Yuh pass Faith's Pen without stopping?! Brethren, dat is criminal!",
+      "Nuh bother, next time pull over at Faith's Pen — best jerk on di island!"
     ]
   }
 }
