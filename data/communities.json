@@ -1,0 +1,138 @@
+{
+  "comment": "Recognition layer 2: community/district name signs. Coordinates are real OSM lat/lon, projected into world space via Road.project(). trigger_radius in compressed-world meters. needs_owner_review: true flags entries where lived knowledge should confirm name and placement.",
+  "communities": [
+    {
+      "id": "com-palisadoes",
+      "name": "Palisadoes",
+      "lat": 17.948,
+      "lon": -76.757,
+      "trigger_radius": 180,
+      "note": "Narrow sand-spit road joining the airport to Kingston — coconut trees, sea on both sides"
+    },
+    {
+      "id": "com-harbour-view",
+      "name": "Harbour View",
+      "lat": 17.960,
+      "lon": -76.738,
+      "trigger_radius": 150,
+      "note": "Roundabout end of the Palisadoes — gateway into Kingston from the east"
+    },
+    {
+      "id": "com-rockfort",
+      "name": "Rockfort",
+      "lat": 17.979,
+      "lon": -76.763,
+      "trigger_radius": 140,
+      "needs_owner_review": true,
+      "note": "Industrial / residential strip on Windward Road — confirm sign placement"
+    },
+    {
+      "id": "com-wareika-hills",
+      "name": "Wareika Hills",
+      "lat": 17.992,
+      "lon": -76.771,
+      "trigger_radius": 150,
+      "needs_owner_review": true,
+      "note": "Hillside community above the Windward Road — confirm proximity to route"
+    },
+    {
+      "id": "com-east-kingston",
+      "name": "East Kingston",
+      "lat": 17.996,
+      "lon": -76.775,
+      "trigger_radius": 180,
+      "needs_owner_review": true
+    },
+    {
+      "id": "com-new-kingston",
+      "name": "New Kingston",
+      "lat": 18.013,
+      "lon": -76.790,
+      "trigger_radius": 220,
+      "note": "Business and hotel district — Trafalgar Road / Knutsford Boulevard"
+    },
+    {
+      "id": "com-half-way-tree",
+      "name": "Half Way Tree",
+      "lat": 18.011,
+      "lon": -76.796,
+      "trigger_radius": 200,
+      "note": "Busiest commercial crossroads in Kingston — clock tower and constant hustle"
+    },
+    {
+      "id": "com-havendale",
+      "name": "Havendale",
+      "lat": 18.026,
+      "lon": -76.822,
+      "trigger_radius": 160,
+      "needs_owner_review": true,
+      "note": "Residential suburb on the way out of Kingston toward Spanish Town Road"
+    },
+    {
+      "id": "com-spanish-town",
+      "name": "Spanish Town",
+      "lat": 17.997,
+      "lon": -76.954,
+      "trigger_radius": 280,
+      "note": "Former capital of Jamaica — founded by the Spanish in 1534"
+    },
+    {
+      "id": "com-bog-walk",
+      "name": "Bog Walk",
+      "lat": 18.054,
+      "lon": -76.989,
+      "trigger_radius": 160,
+      "note": "Entrance to Bog Walk gorge — Rio Cobre river road below"
+    },
+    {
+      "id": "com-linstead",
+      "name": "Linstead",
+      "lat": 18.132,
+      "lon": -77.033,
+      "trigger_radius": 200,
+      "note": "Linstead Market — immortalised in the folk song 'Carry mi ackee go a Linstead Market'"
+    },
+    {
+      "id": "com-ewarton",
+      "name": "Ewarton",
+      "lat": 18.174,
+      "lon": -77.066,
+      "trigger_radius": 150,
+      "needs_owner_review": true,
+      "note": "Small community on the Linstead–Moneague Road — confirm exact location"
+    },
+    {
+      "id": "com-moneague",
+      "name": "Moneague",
+      "lat": 18.259,
+      "lon": -77.113,
+      "trigger_radius": 160,
+      "note": "Hill-country junction — routes fan north toward Ocho Rios"
+    },
+    {
+      "id": "com-walkerswood",
+      "name": "Walkerswood",
+      "lat": 18.310,
+      "lon": -77.116,
+      "trigger_radius": 150,
+      "needs_owner_review": true,
+      "note": "Home of the famous Walkerswood Scotch Bonnet Pepper Sauce — Jamaica in a bottle"
+    },
+    {
+      "id": "com-fern-gully",
+      "name": "Fern Gully",
+      "lat": 18.370,
+      "lon": -77.120,
+      "trigger_radius": 180,
+      "note": "Canopied forest road descending into Ocho Rios — bamboo and tree ferns overhead"
+    },
+    {
+      "id": "com-ocho-rios",
+      "name": "Ocho Rios",
+      "lat": 18.404,
+      "lon": -77.106,
+      "trigger_radius": 300,
+      "note": "Journey's end — Dunn's River Falls and the cool water of the Caribbean"
+    }
+  ]
+}
