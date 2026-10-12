@@ -1,21 +1,54 @@
 {
-  "comment": "Event -> possible narrator lines. Lines are picked at random per event. Audio files (assets/voice/) will map by line id later; V1 scaffold shows captions only.",
+  "comment": "Event → possible narrator lines. Lines are picked at random per event. Audio files (assets/voice/) will map by line id later; V1 scaffold shows captions only.",
   "events": {
     "game.start": [
-      "Welcome to Jamaica, brethren! Touch di road!"
+      "Welcome to Jamaica, brethren! Touch di road!",
+      "Alright! Airport to Ochi — let's ride!"
     ],
     "road.enter": [
       "Yuh deh pon {road} now!"
     ],
+    "community.enter": [
+      "Big up {community}!",
+      "Respec' to {community}!",
+      "Yuh reach {community} now — drive careful!"
+    ],
     "landmark.enter": [
-      "See {landmark} deh!"
+      "See {landmark} deh!",
+      "Dat deh a {landmark} — big ting!"
     ],
     "pothole.burst": [
       "Yuh tyre bust, brethren!",
-      "Wheeel! Mind di pothole dem!"
+      "Wheeel! Mind di pothole dem!",
+      "Lawd — another pothole ketch yuh off guard!"
     ],
     "tyre.fixed": [
-      "Tyre patch up — gwaan!"
+      "Tyre patch up — gwaan!",
+      "Good to go, brethren — di tyre fix up!"
+    ],
+    "dog.chase": [
+      "Weh di dog yah come from?! Floor it, nuh!",
+      "Dog pon yuh bumper, brethren — drive!",
+      "Lawd! Di yard dog dem nuh play!"
+    ],
+    "dog.bark": [
+      "Di dog still deh deh, yuh know!",
+      "Lawd, di dog nuh give up!",
+      "Him serious! Keep moving!"
+    ],
+    "goat.hit": [
+      "Yuh lick di goat?! Farmer nah happy bout dat!",
+      "Noooo — dat a somebody goat, yuh know!",
+      "Aye! Di goat never do yuh nothing!"
+    ],
+    "faith.pen.stop": [
+      "Jerk chicken an' festival — di real ting! Tyre good now, brethren!",
+      "Yuh stop at Faith's Pen! Respect — dat is di authentic Jamaican experience!",
+      "Aye! Jerk chicken fix everyt'ing — tyre an' soul!"
+    ],
+    "faith.pen.skip": [
+      "Yuh pass Faith's Pen without stopping?! Brethren, dat is criminal!",
+      "Nuh bother, next time pull over at Faith's Pen — best jerk on di island!"
     ]
   }
 }
