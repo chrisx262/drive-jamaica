@@ -1,0 +1,138 @@
+{
+  "comment": "Recognition layer 2: community/district signs. lat/lon are real OSM coordinates, projected at runtime via road.project(). radius is trigger distance in compressed-world meters (route is scaled to ~30% of real distance). needs_owner_review:true marks entries requiring verification against the owner's lived knowledge — map data is a start, not the final word.",
+  "communities": [
+    {
+      "id": "com-harbour-view",
+      "name": "Harbour View",
+      "lat": 17.9723,
+      "lon": -76.7509,
+      "radius": 280,
+      "note": "Eastern gateway into Kingston — where the Palisadoes strip ends"
+    },
+    {
+      "id": "com-rockfort",
+      "name": "Rockfort",
+      "lat": 17.9797,
+      "lon": -76.7533,
+      "radius": 180,
+      "needs_owner_review": true,
+      "note": "Industrial area just past Harbour View on Windward Road"
+    },
+    {
+      "id": "com-east-kingston",
+      "name": "East Kingston",
+      "lat": 17.9880,
+      "lon": -76.7703,
+      "radius": 320,
+      "needs_owner_review": true
+    },
+    {
+      "id": "com-cross-roads",
+      "name": "Cross Roads",
+      "lat": 18.0028,
+      "lon": -76.7862,
+      "radius": 220,
+      "note": "Major Kingston intersection"
+    },
+    {
+      "id": "com-new-kingston",
+      "name": "New Kingston",
+      "lat": 18.0121,
+      "lon": -76.7938,
+      "radius": 280,
+      "note": "Jamaica's commercial and financial district"
+    },
+    {
+      "id": "com-half-way-tree",
+      "name": "Half Way Tree",
+      "lat": 18.0109,
+      "lon": -76.7962,
+      "radius": 320,
+      "note": "Bustling transport and commercial hub of Kingston"
+    },
+    {
+      "id": "com-three-miles",
+      "name": "Three Miles",
+      "lat": 17.9987,
+      "lon": -76.8350,
+      "radius": 200,
+      "needs_owner_review": true,
+      "note": "West Kingston district on Spanish Town Road"
+    },
+    {
+      "id": "com-caymanas",
+      "name": "Caymanas",
+      "lat": 17.9827,
+      "lon": -76.9039,
+      "radius": 200,
+      "needs_owner_review": true,
+      "note": "Between Kingston and Spanish Town — horse racing country"
+    },
+    {
+      "id": "com-spanish-town",
+      "name": "Spanish Town",
+      "lat": 17.9908,
+      "lon": -76.9557,
+      "radius": 400,
+      "note": "Jamaica's historic former capital — founded 1534"
+    },
+    {
+      "id": "com-bog-walk",
+      "name": "Bog Walk",
+      "lat": 18.0614,
+      "lon": -76.9845,
+      "radius": 320,
+      "note": "Gateway to the Rio Cobre gorge"
+    },
+    {
+      "id": "com-linstead",
+      "name": "Linstead",
+      "lat": 18.1337,
+      "lon": -77.0281,
+      "radius": 340,
+      "note": "St. Catherine market town — take mi akee, walk through Linstead Market"
+    },
+    {
+      "id": "com-ewarton",
+      "name": "Ewarton",
+      "lat": 18.1770,
+      "lon": -77.0800,
+      "radius": 200,
+      "needs_owner_review": true,
+      "note": "Small town between Linstead and Moneague"
+    },
+    {
+      "id": "com-moneague",
+      "name": "Moneague",
+      "lat": 18.2590,
+      "lon": -77.1235,
+      "radius": 300,
+      "note": "The great junction — where you turn north for Ochi or west for Brown's Town"
+    },
+    {
+      "id": "com-faiths-pen",
+      "name": "Faith's Pen",
+      "lat": 18.2347,
+      "lon": -77.0951,
+      "radius": 250,
+      "note": "Legendary roadside cookshop village — jerk chicken, roast yam, festival"
+    },
+    {
+      "id": "com-milford",
+      "name": "Milford",
+      "lat": 18.3500,
+      "lon": -77.1350,
+      "radius": 200,
+      "needs_owner_review": true,
+      "note": "St. Ann — approaching Fern Gully"
+    },
+    {
+      "id": "com-ocho-rios",
+      "name": "Ocho Rios",
+      "lat": 18.4074,
+      "lon": -77.1052,
+      "radius": 420,
+      "note": "Jamaica's north-coast tourism capital — journey's end"
+    }
+  ]
+}
