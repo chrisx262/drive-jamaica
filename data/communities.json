@@ -1,0 +1,141 @@
+{
+  "comment": "Communities/districts along the Airport Run route (Norman Manley → Ocho Rios). Each entry triggers a community sign (recognition layer 2) when the car enters the radius. needs_owner_review:true = approximate position from map data; owner's lived knowledge is authoritative.",
+  "communities": [
+    {
+      "name": "Palisadoes",
+      "lat": 17.9420,
+      "lon": -76.7480,
+      "radius": 350,
+      "note": "Narrow strip of land — sea on both sides. Coconut trees line the road; Gun Boat Beach to the left.",
+      "needs_owner_review": false
+    },
+    {
+      "name": "Harbour View",
+      "lat": 17.9500,
+      "lon": -76.7220,
+      "radius": 220,
+      "note": "Harbour View roundabout — where the Palisadoes meets the mainland. Potholes begin just past here.",
+      "needs_owner_review": true
+    },
+    {
+      "name": "Kingston",
+      "lat": 17.9710,
+      "lon": -76.7520,
+      "radius": 400,
+      "note": "Capital city — the pulse of Jamaica.",
+      "needs_owner_review": false
+    },
+    {
+      "name": "Mountain View",
+      "lat": 17.9820,
+      "lon": -76.7600,
+      "radius": 200,
+      "note": "Mountain View community along the avenue of the same name.",
+      "needs_owner_review": true
+    },
+    {
+      "name": "Half Way Tree",
+      "lat": 18.0117,
+      "lon": -76.7995,
+      "radius": 280,
+      "note": "Uptown hub — Half Way Tree clock tower is the meeting point.",
+      "needs_owner_review": false
+    },
+    {
+      "name": "New Kingston",
+      "lat": 18.0065,
+      "lon": -76.7880,
+      "radius": 250,
+      "note": "Business district of Kingston — towers and traffic.",
+      "needs_owner_review": true
+    },
+    {
+      "name": "Constant Spring",
+      "lat": 18.0390,
+      "lon": -76.8018,
+      "radius": 220,
+      "note": "Uptown Kingston — Usain Bolt's Tracks & Records restaurant is on this road.",
+      "needs_owner_review": true
+    },
+    {
+      "name": "Spanish Town",
+      "lat": 17.9908,
+      "lon": -76.9564,
+      "radius": 350,
+      "note": "Jamaica's former colonial capital — historic square and iron bridge.",
+      "needs_owner_review": false
+    },
+    {
+      "name": "Bog Walk",
+      "lat": 18.0968,
+      "lon": -76.9877,
+      "radius": 280,
+      "note": "Village at the entrance to the Bog Walk Gorge — Rio Cobre river runs alongside.",
+      "needs_owner_review": true
+    },
+    {
+      "name": "Flat Bridge",
+      "lat": 18.1100,
+      "lon": -77.0020,
+      "radius": 180,
+      "note": "Narrow bridge over the Rio Cobre — one of Jamaica's most photographed road crossings.",
+      "needs_owner_review": true
+    },
+    {
+      "name": "Linstead",
+      "lat": 18.1348,
+      "lon": -77.0293,
+      "radius": 300,
+      "note": "Market town famous for the folk song 'Linstead Market'.",
+      "needs_owner_review": false
+    },
+    {
+      "name": "Ewarton",
+      "lat": 18.1595,
+      "lon": -77.0722,
+      "radius": 200,
+      "note": "Small town on the road to Moneague.",
+      "needs_owner_review": true
+    },
+    {
+      "name": "Moneague",
+      "lat": 18.2537,
+      "lon": -77.0903,
+      "radius": 280,
+      "note": "Mountain crossroads town — goats own these roads.",
+      "needs_owner_review": false
+    },
+    {
+      "name": "Faith's Pen",
+      "lat": 18.3010,
+      "lon": -77.1220,
+      "radius": 200,
+      "note": "Famous roadside cookshops — jerk chicken, roast yam, festival. Pull over.",
+      "needs_owner_review": true
+    },
+    {
+      "name": "Claremont",
+      "lat": 18.3600,
+      "lon": -77.1780,
+      "radius": 200,
+      "note": "Small town on the approach to Fern Gully.",
+      "needs_owner_review": true
+    },
+    {
+      "name": "Fern Gully",
+      "lat": 18.3880,
+      "lon": -77.1540,
+      "radius": 250,
+      "note": "The famous gully — a cathedral of bamboo and fern overhead.",
+      "needs_owner_review": false
+    },
+    {
+      "name": "Ocho Rios",
+      "lat": 18.4060,
+      "lon": -77.1049,
+      "radius": 400,
+      "note": "Jamaica's north coast resort town — Dunn's River Falls at the end of the road.",
+      "needs_owner_review": false
+    }
+  ]
+}
