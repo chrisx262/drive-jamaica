@@ -1,0 +1,176 @@
+{
+  "comment": "V1 billboard/ad-surface placements. Each entry has a stable id assigned at creation — the self-serve ad backend (Phase 2) will key on these ids. Never change an id once created; add new entries or mark removed ones with 'retired': true instead. Coordinates are real-world lat/lon, projected at runtime via road.project(). side: which side of the road the post stands on (relative to direction of travel). variant: which placeholder creative to show (a=advertise-here, b=big-up-jamaica, c=drive-left, d=faiths-pen).",
+  "billboards": [
+    {
+      "id": "bb-palisadoes-01",
+      "lat": 17.94162,
+      "lon": -76.76408,
+      "side": "left",
+      "label": "ADVERTISE HERE",
+      "variant": "a",
+      "notes": "Palisadoes east — first billboard leaving the airport, harbour side"
+    },
+    {
+      "id": "bb-palisadoes-02",
+      "lat": 17.94271,
+      "lon": -76.74319,
+      "side": "right",
+      "label": "DRIVE LEFT, MON",
+      "variant": "c",
+      "notes": "Palisadoes mid-strip, open-sea side — humour reminder for tourists"
+    },
+    {
+      "id": "bb-palisadoes-03",
+      "lat": 17.94624,
+      "lon": -76.72304,
+      "side": "left",
+      "label": "ADVERTISE HERE",
+      "variant": "a",
+      "notes": "Palisadoes western end approaching Harbour View roundabout"
+    },
+    {
+      "id": "bb-harbour-view-01",
+      "lat": 17.96249,
+      "lon": -76.73145,
+      "side": "right",
+      "label": "BIG UP JAMAICA",
+      "variant": "b",
+      "notes": "Sir Florizel Glaspole Blvd — first billboard after Harbour View"
+    },
+    {
+      "id": "bb-harbour-view-02",
+      "lat": 17.96812,
+      "lon": -76.74528,
+      "side": "left",
+      "label": "ADVERTISE HERE",
+      "variant": "a",
+      "notes": "Sir Florizel Glaspole Blvd heading into Kingston"
+    },
+    {
+      "id": "bb-windward-01",
+      "lat": 17.97175,
+      "lon": -76.75389,
+      "side": "right",
+      "label": "ADVERTISE HERE",
+      "variant": "a",
+      "notes": "Windward Road — Kingston approach"
+    },
+    {
+      "id": "bb-mountain-view-01",
+      "lat": 17.98675,
+      "lon": -76.76276,
+      "side": "left",
+      "label": "BIG UP JAMAICA",
+      "variant": "b",
+      "notes": "Mountain View Avenue — National Stadium corridor"
+    },
+    {
+      "id": "bb-halfwaytree-01",
+      "lat": 18.01166,
+      "lon": -76.79018,
+      "side": "right",
+      "label": "ADVERTISE HERE",
+      "variant": "a",
+      "notes": "Half Way Tree / Trafalgar Road area — busy commercial zone"
+    },
+    {
+      "id": "bb-halfwaytree-02",
+      "lat": 18.00939,
+      "lon": -76.80147,
+      "side": "left",
+      "label": "DRIVE LEFT, MON",
+      "variant": "c",
+      "notes": "Hagley Park Road heading west — second drive-left reminder"
+    },
+    {
+      "id": "bb-spanish-town-rd-01",
+      "lat": 18.02529,
+      "lon": -76.87088,
+      "side": "right",
+      "label": "ADVERTISE HERE",
+      "variant": "a",
+      "notes": "Nelson Mandela Highway outbound"
+    },
+    {
+      "id": "bb-bogwalk-01",
+      "lat": 18.04755,
+      "lon": -76.98193,
+      "side": "left",
+      "label": "BIG UP JAMAICA",
+      "variant": "b",
+      "notes": "Bog Walk Gorge entry — scenic spot"
+    },
+    {
+      "id": "bb-river-rd-01",
+      "lat": 18.08629,
+      "lon": -76.99243,
+      "side": "right",
+      "label": "ADVERTISE HERE",
+      "variant": "a",
+      "notes": "River Road after the gorge"
+    },
+    {
+      "id": "bb-linstead-01",
+      "lat": 18.12201,
+      "lon": -77.01906,
+      "side": "left",
+      "label": "ADVERTISE HERE",
+      "variant": "a",
+      "notes": "Linstead Main Road — market town centre"
+    },
+    {
+      "id": "bb-linstead-02",
+      "lat": 18.18091,
+      "lon": -77.06703,
+      "side": "right",
+      "label": "FAITH'S PEN AHEAD",
+      "variant": "d",
+      "notes": "Pleasant Farm Road — directional ad for Faith's Pen, about 4 km south of it"
+    },
+    {
+      "id": "bb-faithspen-01",
+      "lat": 18.22601,
+      "lon": -77.09711,
+      "side": "left",
+      "label": "FAITH'S PEN - BEST JERK IN JAMAICA",
+      "variant": "d",
+      "notes": "Just before Faith's Pen cookshops — in-universe ad for the stop"
+    },
+    {
+      "id": "bb-moneague-01",
+      "lat": 18.30782,
+      "lon": -77.10125,
+      "side": "right",
+      "label": "ADVERTISE HERE",
+      "variant": "a",
+      "notes": "Moneague area — Moneague-Ocho Rios Road"
+    },
+    {
+      "id": "bb-fern-gully-01",
+      "lat": 18.34985,
+      "lon": -77.08713,
+      "side": "left",
+      "label": "BIG UP JAMAICA",
+      "variant": "b",
+      "notes": "Approaching Fern Gully from the south — kept sparse in the canopy section"
+    },
+    {
+      "id": "bb-ocho-rios-01",
+      "lat": 18.39601,
+      "lon": -77.09491,
+      "side": "right",
+      "label": "ADVERTISE HERE",
+      "variant": "a",
+      "notes": "Milford Road / Fern Gully exit — first billboard re-appearing after canopy"
+    },
+    {
+      "id": "bb-ocho-rios-02",
+      "lat": 18.41652,
+      "lon": -77.13457,
+      "side": "left",
+      "label": "BIG UP JAMAICA",
+      "variant": "b",
+      "notes": "Northern Coastal Highway — arriving in Ocho Rios"
+    }
+  ]
+}
