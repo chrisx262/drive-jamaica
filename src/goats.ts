@@ -83,7 +83,7 @@ export class Goats {
     }
   }
 
-  update(car: Car): void {
+  update(car: Car, dt: number): void {
     const carPos = car.position;
 
     for (const herd of this.herds) {
@@ -107,7 +107,6 @@ export class Goats {
         if (crossDist < 18) {
           // Still crossing
           const perpDir = new THREE.Vector3(-Math.sin(firstMesh.rotation.y), 0, -Math.cos(firstMesh.rotation.y));
-          const dt = 1 / 60; // update assumes ~60 fps; real dt unavailable here
           for (const g of herd.meshes) {
             g.position.addScaledVector(perpDir, CROSS_SPEED * dt);
             // Idle bob
