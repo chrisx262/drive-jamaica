@@ -118,7 +118,7 @@ renderer.setAnimationLoop(() => {
   car.update(dt, input);
   potholes.update(car);
   dogs?.update(car, dt);
-  goats?.update(car);
+  goats?.update(car, dt);
   recognition?.update(car.position);
   debug?.update(dt);
 
