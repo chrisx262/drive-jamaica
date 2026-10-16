@@ -18,6 +18,14 @@
       "needs_owner_review": true
     },
     {
+      "name": "Wareika Hill",
+      "lat": 17.9760,
+      "lon": -76.7540,
+      "radius": 200,
+      "note": "East Kingston community along Windward Road — mentioned by name in the game spec as a recognition landmark.",
+      "needs_owner_review": true
+    },
+    {
       "name": "Kingston",
       "lat": 17.9710,
       "lon": -76.7520,
@@ -55,6 +63,14 @@
       "lon": -76.8018,
       "radius": 220,
       "note": "Uptown Kingston — Usain Bolt's Tracks & Records restaurant is on this road.",
+      "needs_owner_review": true
+    },
+    {
+      "name": "Caymanas",
+      "lat": 17.9920,
+      "lon": -76.8950,
+      "radius": 200,
+      "note": "Community between Kingston and Spanish Town on the Spanish Town Road — Caymanas Estate sugar land.",
       "needs_owner_review": true
     },
     {
