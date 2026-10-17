@@ -7,6 +7,11 @@
     "road.enter": [
       "Yuh deh pon {road} now!"
     ],
+    "community.enter": [
+      "Yuh reach {community} — big up di area!",
+      "Welcome to {community}!",
+      "{community} — good people live yasso."
+    ],
     "landmark.enter": [
       "See {landmark} deh!"
     ],
@@ -16,6 +21,31 @@
     ],
     "tyre.fixed": [
       "Tyre patch up — gwaan!"
+    ],
+    "dog.chase": [
+      "Dawg a run yuh dung! Step pon it!",
+      "Watch di dawg deh, nuh! Him serious!"
+    ],
+    "dog.bark": [
+      "Woof woof! Dawg nuh 'fraid yuh!",
+      "Him still a bark, brethren!"
+    ],
+    "goat.hit": [
+      "Lawd have mercy — yuh lick dung di goat!",
+      "Eeh? Yuh never see di goat inna di road?",
+      "Smaddy goat get lick! Dat ago cost yuh, brethren!"
+    ],
+    "faithspen.approach": [
+      "Faith's Pen coming up — nuff jerk chicken and roast yam deh wait pan yuh!",
+      "Smell dat? Faith's Pen ahead, brethren. Best jerk pon di island!"
+    ],
+    "faithspen.eat": [
+      "Ahh! Jerk chicken, roast yam, festival — Jamaican ting! Tyres fix up, spirit lift up!",
+      "Dat right deh — Faith's Pen nuh disappoint. Tyre good, belly full. Gwaan!"
+    ],
+    "faithspen.skip": [
+      "Yuh really drive past Faith's Pen widout stop? Yuh mad?",
+      "Next time, brethren. Nuh miss di jerk chicken again."
     ]
   }
 }
