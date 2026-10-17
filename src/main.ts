@@ -9,6 +9,7 @@ import { buildTrees } from './trees';
 import { Potholes } from './potholes';
 import { Dogs } from './dogs';
 import { Goats } from './goats';
+import { FaithsPen } from './faithspen';
 import { initNarrator, narrate } from './narrator';
 import { Scoring } from './scoring';
 import { TestTrack } from './testtrack';
@@ -41,6 +42,7 @@ let road: RoadLike;
 let recognition: Recognition | null = null;
 let dogs: Dogs | null = null;
 let goats: Goats | null = null;
+let faithsPen: FaithsPen | null = null;
 
 if (isTestTrack) {
   const tt = new TestTrack();
@@ -60,6 +62,9 @@ if (isTestTrack) {
 
   goats = new Goats(road);
   scene.add(goats.object);
+
+  faithsPen = new FaithsPen(r);
+  scene.add(faithsPen.object);
 }
 
 const potholes = new Potholes(road);
@@ -107,7 +112,7 @@ narrate('game.start');
 
 // Dev-only handle for automated drive tests (stripped from production builds).
 if (import.meta.env.DEV) {
-  (window as unknown as Record<string, unknown>).__dj = { car, road, potholes, dogs, goats, scoring };
+  (window as unknown as Record<string, unknown>).__dj = { car, road, potholes, dogs, goats, faithsPen, scoring };
 }
 
 const camOffset = new THREE.Vector3();
@@ -122,6 +127,7 @@ renderer.setAnimationLoop(() => {
   potholes.update(car);
   dogs?.update(car, dt);
   goats?.update(car, dt);
+  faithsPen?.update(car);
   scoring.update(car, potholes.positions);
   recognition?.update(car.position);
   debug?.update(dt);
@@ -131,9 +137,10 @@ renderer.setAnimationLoop(() => {
   camera.position.lerp(car.position.clone().add(camOffset), 1 - Math.exp(-5 * dt));
   camera.lookAt(car.position.x, car.position.y + 1.2, car.position.z);
 
-  const s = scoring.snapshot(goats);
+  const s = scoring.snapshot(goats, faithsPen);
   const goatHitStr = s.goatHits > 0 ? `  \u{1F410} ${s.goatHits}` : '';
   const nearMissStr = s.nearMisses > 0 ? `  \u{1F4A8} ${s.nearMisses}` : '';
-  hud.textContent = `${Math.round(car.speedKmh)} km/h${car.tyreBurst ? '  \u{1F6DE} TYRE BUST!' : ''}${goatHitStr}${nearMissStr}  \u{2B50} ${s.points}`;
+  const faithsStr = s.faithsPenStop ? '  \u{1F357}' : '';
+  hud.textContent = `${Math.round(car.speedKmh)} km/h${car.tyreBurst ? '  \u{1F6DE} TYRE BUST!' : ''}${goatHitStr}${nearMissStr}${faithsStr}  \u{2B50} ${s.points}`;
   renderer.render(scene, camera);
 });

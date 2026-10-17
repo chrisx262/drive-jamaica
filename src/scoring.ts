@@ -1,6 +1,7 @@
 import * as THREE from 'three';
 import type { Car } from './car';
 import type { Goats } from './goats';
+import type { FaithsPen } from './faithspen';
 import { HIT_RADIUS } from './potholes';
 
 // Near-miss: car passes within this radius of a pothole above burst speed
@@ -19,6 +20,7 @@ export interface ScoreSnapshot {
   tyreBursts: number;
   goatHits: number;
   nearMisses: number;
+  faithsPenStop: boolean;
   points: number;
 }
 
@@ -55,18 +57,21 @@ export class Scoring {
     }
   }
 
-  // Goat hits are read at snapshot time from the Goats instance (they only increase).
-  snapshot(goats: Goats | null): ScoreSnapshot {
+  // External counters read at snapshot time (they only increase / become true).
+  snapshot(goats: Goats | null, faithsPen: FaithsPen | null): ScoreSnapshot {
     const goatHits = goats?.goatHits ?? 0;
+    const faithsPenBonus = faithsPen?.bonusPoints ?? 0;
+    const faithsPenStop = faithsPenBonus > 0;
     const points = Math.max(
       0,
       Math.round(
         (this.distanceM / 100) * PTS_PER_100M +
           this.nearMisses * PTS_NEAR_MISS +
           this.tyreBursts * PTS_TYRE_BURST +
-          goatHits * PTS_GOAT_HIT,
+          goatHits * PTS_GOAT_HIT +
+          faithsPenBonus,
       ),
     );
-    return { distanceM: this.distanceM, tyreBursts: this.tyreBursts, goatHits, nearMisses: this.nearMisses, points };
+    return { distanceM: this.distanceM, tyreBursts: this.tyreBursts, goatHits, nearMisses: this.nearMisses, faithsPenStop, points };
   }
 }
