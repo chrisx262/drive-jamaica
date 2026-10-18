@@ -1,0 +1,147 @@
+{
+  "comment": "Recognition layer 2: community/district signs. lat/lon are real OSM coordinates projected into world space the same way landmarks.json works. needs_owner_review: true entries are approximate — the owner's lived knowledge is authoritative over map data.",
+  "communities": [
+    {
+      "id": "com-palisadoes",
+      "name": "Palisadoes",
+      "lat": 17.9450,
+      "lon": -76.7587,
+      "note": "The iconic Palisadoes causeway peninsula — sea on both sides",
+      "needs_owner_review": true
+    },
+    {
+      "id": "com-harbour-view",
+      "name": "Harbour View",
+      "lat": 17.9773,
+      "lon": -76.7787,
+      "note": "Roundabout community at the end of the Palisadoes strip"
+    },
+    {
+      "id": "com-rockfort",
+      "name": "Rockfort",
+      "lat": 17.9847,
+      "lon": -76.8012,
+      "note": "Along Windward Road — industrial area and community",
+      "needs_owner_review": true
+    },
+    {
+      "id": "com-mountain-view",
+      "name": "Mountain View",
+      "lat": 18.0033,
+      "lon": -76.8050,
+      "note": "Mountain View Avenue corridor — East Kingston community"
+    },
+    {
+      "id": "com-wareika-hill",
+      "name": "Wareika Hill",
+      "lat": 18.0063,
+      "lon": -76.8030,
+      "note": "East Kingston community above Mountain View, known for Rastafarian culture",
+      "needs_owner_review": true
+    },
+    {
+      "id": "com-cross-roads",
+      "name": "Cross Roads",
+      "lat": 18.0075,
+      "lon": -76.7985,
+      "note": "Major road junction in Kingston",
+      "needs_owner_review": true
+    },
+    {
+      "id": "com-new-kingston",
+      "name": "New Kingston",
+      "lat": 18.0084,
+      "lon": -76.7960,
+      "note": "Kingston's modern business district"
+    },
+    {
+      "id": "com-half-way-tree",
+      "name": "Half Way Tree",
+      "lat": 18.0109,
+      "lon": -76.7960,
+      "note": "Kingston's busiest commercial hub — the 1813 clock tower marks the crossroads"
+    },
+    {
+      "id": "com-arnett-gardens",
+      "name": "Arnett Gardens",
+      "lat": 17.9993,
+      "lon": -76.8250,
+      "note": "West Kingston community, locally known as The Jungle",
+      "needs_owner_review": true
+    },
+    {
+      "id": "com-spanish-town",
+      "name": "Spanish Town",
+      "lat": 17.9905,
+      "lon": -76.9574,
+      "note": "Former capital of Jamaica — oldest settled town on the island"
+    },
+    {
+      "id": "com-angels",
+      "name": "Angels",
+      "lat": 18.0516,
+      "lon": -76.9824,
+      "note": "Community at the southern entrance to Bog Walk gorge",
+      "needs_owner_review": true
+    },
+    {
+      "id": "com-bog-walk",
+      "name": "Bog Walk",
+      "lat": 18.0614,
+      "lon": -76.9850,
+      "note": "Town in the heart of the Rio Cobre gorge"
+    },
+    {
+      "id": "com-ewarton",
+      "name": "Ewarton",
+      "lat": 18.1003,
+      "lon": -77.0076,
+      "note": "St. Catherine community between Bog Walk and Linstead",
+      "needs_owner_review": true
+    },
+    {
+      "id": "com-linstead",
+      "name": "Linstead",
+      "lat": 18.1380,
+      "lon": -77.0213,
+      "note": "Market town of St. Catherine — immortalised in the folk song Linstead Market"
+    },
+    {
+      "id": "com-faith-s-pen",
+      "name": "Faith's Pen",
+      "lat": 18.2347,
+      "lon": -77.0951,
+      "note": "Famous stretch of roadside cookshops — jerk chicken, roast yam, festival"
+    },
+    {
+      "id": "com-moneague",
+      "name": "Moneague",
+      "lat": 18.2704,
+      "lon": -77.0962,
+      "note": "Cool hilltop village at the St. Ann/St. Catherine border — Moneague Lake nearby",
+      "needs_owner_review": true
+    },
+    {
+      "id": "com-steer-town",
+      "name": "Steer Town",
+      "lat": 18.3500,
+      "lon": -77.1050,
+      "note": "Community on the descent toward Ocho Rios",
+      "needs_owner_review": true
+    },
+    {
+      "id": "com-fern-gully",
+      "name": "Fern Gully",
+      "lat": 18.3948,
+      "lon": -77.1098,
+      "note": "Famous 3 km gorge drive through dense fern and tree canopy — unique worldwide"
+    },
+    {
+      "id": "com-ocho-rios",
+      "name": "Ocho Rios",
+      "lat": 18.4072,
+      "lon": -77.1035,
+      "note": "Parish capital of St. Ann — resort town and cruise port on the north coast"
+    }
+  ]
+}
