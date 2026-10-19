@@ -1,0 +1,137 @@
+{
+  "comment": "Recognition layer 2: community/district name signs. Coordinates are real lat/lon projected into world space the same way as landmarks. triggerRadius = compressed-world meters. needs_owner_review = true flags entries where owner's lived knowledge should confirm or correct. Route: Norman Manley Airport → Palisadoes → Harbour View → Kingston → Spanish Town → Bog Walk → Linstead → Moneague → Faith's Pen → Fern Gully → Ocho Rios.",
+  "communities": [
+    {
+      "id": "com-harbour-view",
+      "name": "Harbour View",
+      "lat": 17.9975,
+      "lon": -76.7085,
+      "triggerRadius": 180,
+      "note": "Junction where the Palisadoes strip meets Windward Road"
+    },
+    {
+      "id": "com-rockfort",
+      "name": "Rockfort",
+      "lat": 17.9959,
+      "lon": -76.7395,
+      "triggerRadius": 160,
+      "note": "Community along Windward Road east of Kingston",
+      "needs_owner_review": true
+    },
+    {
+      "id": "com-mountain-view",
+      "name": "Mountain View",
+      "lat": 18.0014,
+      "lon": -76.7726,
+      "triggerRadius": 200,
+      "note": "East Kingston residential community along Mountain View Avenue"
+    },
+    {
+      "id": "com-cross-roads",
+      "name": "Cross Roads",
+      "lat": 18.0040,
+      "lon": -76.7823,
+      "triggerRadius": 180,
+      "note": "Major Kingston intersection and community hub",
+      "needs_owner_review": true
+    },
+    {
+      "id": "com-new-kingston",
+      "name": "New Kingston",
+      "lat": 18.0103,
+      "lon": -76.7900,
+      "triggerRadius": 220,
+      "note": "Kingston's commercial and hotel district"
+    },
+    {
+      "id": "com-half-way-tree",
+      "name": "Half Way Tree",
+      "lat": 18.0109,
+      "lon": -76.7960,
+      "triggerRadius": 220,
+      "note": "Major Kingston hub — the clock tower marks the centre"
+    },
+    {
+      "id": "com-washington-gardens",
+      "name": "Washington Gardens",
+      "lat": 17.9992,
+      "lon": -76.8340,
+      "triggerRadius": 160,
+      "note": "Western Kingston residential community",
+      "needs_owner_review": true
+    },
+    {
+      "id": "com-six-miles",
+      "name": "Six Miles",
+      "lat": 17.9910,
+      "lon": -76.8510,
+      "triggerRadius": 180,
+      "note": "Kingston boundary checkpoint heading west toward Spanish Town"
+    },
+    {
+      "id": "com-spanish-town",
+      "name": "Spanish Town",
+      "lat": 17.9911,
+      "lon": -76.9590,
+      "triggerRadius": 280,
+      "note": "Former colonial capital of Jamaica, St. Catherine parish seat"
+    },
+    {
+      "id": "com-bog-walk",
+      "name": "Bog Walk",
+      "lat": 18.0823,
+      "lon": -77.0034,
+      "triggerRadius": 200,
+      "note": "Gateway to the famous gorge cut by the Rio Cobre"
+    },
+    {
+      "id": "com-ewarton",
+      "name": "Ewarton",
+      "lat": 18.1081,
+      "lon": -77.0316,
+      "triggerRadius": 160,
+      "note": "St. Catherine town near the Alcan alumina plant",
+      "needs_owner_review": true
+    },
+    {
+      "id": "com-linstead",
+      "name": "Linstead",
+      "lat": 18.1395,
+      "lon": -77.0274,
+      "triggerRadius": 240,
+      "note": "Famous for Linstead Market — 'carry me ackee go a Linstead market'"
+    },
+    {
+      "id": "com-moneague",
+      "name": "Moneague",
+      "lat": 18.2503,
+      "lon": -77.0872,
+      "triggerRadius": 200,
+      "note": "Small St. Ann town on the A1, home of Moneague College"
+    },
+    {
+      "id": "com-faiths-pen",
+      "name": "Faith's Pen",
+      "lat": 18.2347,
+      "lon": -77.0951,
+      "triggerRadius": 200,
+      "note": "Legendary roadside cookshop stop — jerk chicken, festival and roast yam"
+    },
+    {
+      "id": "com-fern-gully",
+      "name": "Fern Gully",
+      "lat": 18.3800,
+      "lon": -77.1600,
+      "triggerRadius": 200,
+      "note": "Three-kilometre canopy of tree ferns — a natural wonder on the A1"
+    },
+    {
+      "id": "com-ocho-rios",
+      "name": "Ocho Rios",
+      "lat": 18.4083,
+      "lon": -77.1036,
+      "triggerRadius": 300,
+      "note": "Ochi — St. Ann's Bay tourist capital and journey's end"
+    }
+  ]
+}
