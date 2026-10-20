@@ -7,6 +7,7 @@ import { Recognition } from './recognition';
 import { buildScenery } from './scenery';
 import { buildTrees } from './trees';
 import { Potholes } from './potholes';
+import { Scoring } from './scoring';
 import { initNarrator, narrate } from './narrator';
 import { TestTrack } from './testtrack';
 import { Debug } from './debug';
@@ -54,6 +55,8 @@ if (isTestTrack) {
 const potholes = new Potholes(road);
 scene.add(potholes.object);
 
+const scoring = new Scoring(potholes.positions);
+
 const car = new Car();
 
 // Spawn at the route start — or at ?jump=<road name match> for quick scenery
@@ -94,11 +97,12 @@ narrate('game.start');
 
 // Dev-only handle for automated drive tests (stripped from production builds).
 if (import.meta.env.DEV) {
-  (window as unknown as Record<string, unknown>).__dj = { car, road, potholes };
+  (window as unknown as Record<string, unknown>).__dj = { car, road, potholes, scoring };
 }
 
 const camOffset = new THREE.Vector3();
 let last = performance.now();
+let prevTyreBurst = false;
 
 renderer.setAnimationLoop(() => {
   const now = performance.now();
@@ -107,6 +111,9 @@ renderer.setAnimationLoop(() => {
 
   car.update(dt, input);
   potholes.update(car);
+  if (car.tyreBurst && !prevTyreBurst) scoring.onTyreBurst();
+  prevTyreBurst = car.tyreBurst;
+  scoring.update(car);
   recognition?.update(car.position);
   debug?.update(dt);
 
