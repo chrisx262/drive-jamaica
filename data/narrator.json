@@ -16,6 +16,11 @@
     ],
     "tyre.fixed": [
       "Tyre patch up — gwaan!"
+    ],
+    "near.miss": [
+      "Yuh lucky, star! Dat one nearly get yuh!",
+      "Close! Yuh just miss di pothole deh!",
+      "Nearly! Keep yuh eye pon di road!"
     ]
   }
 }
