@@ -1,0 +1,138 @@
+{
+  "comment": "Recognition layer 2: community signs. Each entry fires a sign popup + narrator line as the car crosses the trigger radius. Coordinates are real lat/lon projected into world space via the route origin+scale. Radius in compressed-world meters. Entries marked needs_owner_review require the owner's lived knowledge to confirm placement.",
+  "communities": [
+    {
+      "id": "cmty-harbour-view",
+      "name": "Harbour View",
+      "lat": 17.9912,
+      "lon": -76.7461,
+      "radius": 320,
+      "note": "Junction where the Palisadoes strip meets Windward Road — first major intersection after the airport"
+    },
+    {
+      "id": "cmty-rockfort",
+      "name": "Rockfort",
+      "lat": 17.9938,
+      "lon": -76.7596,
+      "radius": 280,
+      "note": "East Kingston area along Windward Road",
+      "needs_owner_review": true
+    },
+    {
+      "id": "cmty-mountain-view",
+      "name": "Mountain View",
+      "lat": 18.0041,
+      "lon": -76.7712,
+      "radius": 320,
+      "note": "East Kingston residential community; Mountain View Avenue is the main road through"
+    },
+    {
+      "id": "cmty-cross-roads",
+      "name": "Cross Roads",
+      "lat": 18.0004,
+      "lon": -76.7923,
+      "radius": 280,
+      "note": "Major Kingston intersection hub — multiple bus routes converge here",
+      "needs_owner_review": true
+    },
+    {
+      "id": "cmty-new-kingston",
+      "name": "New Kingston",
+      "lat": 18.0092,
+      "lon": -76.7898,
+      "radius": 350,
+      "note": "Kingston's modern commercial and hotel district"
+    },
+    {
+      "id": "cmty-half-way-tree",
+      "name": "Half Way Tree",
+      "lat": 18.0109,
+      "lon": -76.7961,
+      "radius": 300,
+      "note": "The clock tower marks the centre of this major hub — halfway between Spanish Town and the old city"
+    },
+    {
+      "id": "cmty-washington-gardens",
+      "name": "Washington Gardens",
+      "lat": 18.0006,
+      "lon": -76.8094,
+      "radius": 280,
+      "note": "West Kingston residential community",
+      "needs_owner_review": true
+    },
+    {
+      "id": "cmty-six-miles",
+      "name": "Six Miles",
+      "lat": 17.9994,
+      "lon": -76.8352,
+      "radius": 300,
+      "note": "The 6-mile marker on Spanish Town Road — the informal western boundary checkpoint out of Kingston",
+      "needs_owner_review": true
+    },
+    {
+      "id": "cmty-spanish-town",
+      "name": "Spanish Town",
+      "lat": 17.9913,
+      "lon": -76.9541,
+      "radius": 420,
+      "note": "Jamaica's former colonial capital — St. Catherine parish seat; Cathedral of St. James is a V2 landmark candidate"
+    },
+    {
+      "id": "cmty-bog-walk",
+      "name": "Bog Walk",
+      "lat": 18.0609,
+      "lon": -76.9848,
+      "radius": 350,
+      "note": "Gateway to the famous gorge — Rio Cobre canyon and Flat Bridge ahead"
+    },
+    {
+      "id": "cmty-ewarton",
+      "name": "Ewarton",
+      "lat": 18.0851,
+      "lon": -77.0706,
+      "radius": 300,
+      "note": "St. Catherine town near the Alcan/Windalco alumina plant",
+      "needs_owner_review": true
+    },
+    {
+      "id": "cmty-linstead",
+      "name": "Linstead",
+      "lat": 18.1303,
+      "lon": -77.0316,
+      "radius": 380,
+      "note": "Carry me ackee go a Linstead market — St. Catherine market town"
+    },
+    {
+      "id": "cmty-moneague",
+      "name": "Moneague",
+      "lat": 18.2630,
+      "lon": -77.0850,
+      "radius": 320,
+      "note": "Small St. Ann town at the crossroads — the climb up begins here"
+    },
+    {
+      "id": "cmty-faiths-pen",
+      "name": "Faith's Pen",
+      "lat": 18.2347,
+      "lon": -77.0951,
+      "radius": 280,
+      "note": "The legendary roadside cookshop strip — jerk chicken, roast yam, festival"
+    },
+    {
+      "id": "cmty-fern-gully",
+      "name": "Fern Gully",
+      "lat": 18.3506,
+      "lon": -77.1014,
+      "radius": 350,
+      "note": "Three-kilometre canopy of tree ferns — a natural wonder that shades the road to Ochi"
+    },
+    {
+      "id": "cmty-ocho-rios",
+      "name": "Ocho Rios",
+      "lat": 18.4087,
+      "lon": -77.1007,
+      "radius": 480,
+      "note": "Ochi — journey's end on the north coast"
+    }
+  ]
+}
