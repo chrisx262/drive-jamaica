@@ -16,6 +16,21 @@
     ],
     "tyre.fixed": [
       "Tyre patch up — gwaan!"
+    ],
+    "community.enter": [
+      "Big up {community}!",
+      "Welcome to {community}, star!",
+      "Yuh reach {community} now!"
+    ],
+    "dog.chase": [
+      "Dog deh pon yuh! Drive, nuh!",
+      "Labrador ting! Keep moving, sah!",
+      "Di dog dem nuh joke, yuh hear!"
+    ],
+    "goat.hit": [
+      "Yuh lick di goat, brethren! Dat nuh right!",
+      "Lawd! Di goat never do yuh nuttn!",
+      "Careful wid di animal dem, sah!"
     ]
   }
 }
