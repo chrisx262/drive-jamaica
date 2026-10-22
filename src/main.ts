@@ -10,6 +10,10 @@ import { Potholes } from './potholes';
 import { initNarrator, narrate } from './narrator';
 import { TestTrack } from './testtrack';
 import { Debug } from './debug';
+import { Dogs } from './dogs';
+import { Goats } from './goats';
+import { Scoring } from './scoring';
+import { FaithsPen } from './faithspen';
 
 const app = document.getElementById('app')!;
 const hud = document.getElementById('hud')!;
@@ -35,6 +39,7 @@ const isTestTrack = params.has('testtrack');
 const isDebug = isTestTrack || params.has('debug');
 
 let road: RoadLike;
+let realRoad: Road | null = null;
 let recognition: Recognition | null = null;
 
 if (isTestTrack) {
@@ -45,6 +50,7 @@ if (isTestTrack) {
 } else {
   const r = new Road();
   road = r;
+  realRoad = r;
   scene.add(r.object);
   scene.add(buildScenery(r));
   scene.add(buildTrees(r));
@@ -53,6 +59,15 @@ if (isTestTrack) {
 
 const potholes = new Potholes(road);
 scene.add(potholes.object);
+
+const dogs = new Dogs(road);
+scene.add(dogs.object);
+
+const goats = new Goats(road);
+scene.add(goats.object);
+
+const scoring = new Scoring(potholes.positions);
+const faithsPen = realRoad ? new FaithsPen(realRoad, scoring) : null;
 
 const car = new Car();
 
@@ -94,11 +109,12 @@ narrate('game.start');
 
 // Dev-only handle for automated drive tests (stripped from production builds).
 if (import.meta.env.DEV) {
-  (window as unknown as Record<string, unknown>).__dj = { car, road, potholes };
+  (window as unknown as Record<string, unknown>).__dj = { car, road, potholes, scoring };
 }
 
 const camOffset = new THREE.Vector3();
 let last = performance.now();
+let prevTyreBurst = false;
 
 renderer.setAnimationLoop(() => {
   const now = performance.now();
@@ -107,6 +123,13 @@ renderer.setAnimationLoop(() => {
 
   car.update(dt, input);
   potholes.update(car);
+  if (car.tyreBurst && !prevTyreBurst) scoring.onTyreBurst();
+  prevTyreBurst = car.tyreBurst;
+  dogs.update(car, dt);
+  const goatPenalty = goats.update(car, dt);
+  if (goatPenalty > 0) scoring.addPenalty(goatPenalty);
+  scoring.update(car);
+  faithsPen?.update(car);
   recognition?.update(car.position);
   debug?.update(dt);
 
