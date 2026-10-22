@@ -31,6 +31,16 @@
       "Yuh lick di goat, brethren! Dat nuh right!",
       "Lawd! Di goat never do yuh nuttn!",
       "Careful wid di animal dem, sah!"
+    ],
+    "near.miss": [
+      "Yuh lucky, star! Dat one nearly get yuh!",
+      "Wheeel! Nearly lick di pothole deh!",
+      "Yuh have nine life, sah!"
+    ],
+    "faithspen.stop": [
+      "Faith's Pen! Pull up, pull up! Best jerk chicken inna Jamaica right yah so!",
+      "Respek! Yuh stop at Faith's Pen. Eat up and gwaan strong!",
+      "Ah di real ting dis! Jerk chicken, festival, roast yam — di road bless yuh!"
     ]
   }
 }
