@@ -1,0 +1,139 @@
+{
+  "comment": "Communities/districts along the V1 route (Airport → Ocho Rios). Wired to recognition-layer-2 community signs per GAME_SPEC. needs_owner_review:true entries have uncertain coordinates or route placement — owner's lived knowledge is authoritative.",
+  "communities": [
+    {
+      "id": "palisadoes",
+      "name": "Palisadoes",
+      "lat": 17.942,
+      "lon": -76.766,
+      "radius": 350,
+      "note": "The sand spit — sea on both sides, iconic coconut tree road from the airport."
+    },
+    {
+      "id": "harbour_view",
+      "name": "Harbour View",
+      "lat": 17.946,
+      "lon": -76.740,
+      "radius": 300,
+      "note": "Roundabout gateway from the Palisadoes into Kingston."
+    },
+    {
+      "id": "rockfort",
+      "name": "Rockfort",
+      "lat": 17.963,
+      "lon": -76.752,
+      "radius": 280,
+      "note": "Industrial area on Windward Road just past the Harbour View roundabout.",
+      "needs_owner_review": true
+    },
+    {
+      "id": "wareika_hill",
+      "name": "Wareika Hill",
+      "lat": 17.985,
+      "lon": -76.745,
+      "radius": 280,
+      "note": "Hillside community above Rockfort / Windward Road.",
+      "needs_owner_review": true
+    },
+    {
+      "id": "kingston",
+      "name": "Kingston",
+      "lat": 17.998,
+      "lon": -76.790,
+      "radius": 500,
+      "note": "Kingston — passing through the city heading toward Half Way Tree."
+    },
+    {
+      "id": "half_way_tree",
+      "name": "Half Way Tree",
+      "lat": 18.011,
+      "lon": -76.796,
+      "radius": 320,
+      "note": "Commercial hub of St. Andrew — the famous clock tower crossroads."
+    },
+    {
+      "id": "washington_gardens",
+      "name": "Washington Gardens",
+      "lat": 17.993,
+      "lon": -76.838,
+      "radius": 280,
+      "note": "Residential area on the Spanish Town Road heading out of the city.",
+      "needs_owner_review": true
+    },
+    {
+      "id": "portmore_approach",
+      "name": "Gregory Park",
+      "lat": 17.991,
+      "lon": -76.906,
+      "radius": 300,
+      "note": "Outskirts — Spanish Town Road corridor heading toward Caymanas.",
+      "needs_owner_review": true
+    },
+    {
+      "id": "bog_walk",
+      "name": "Bog Walk",
+      "lat": 18.095,
+      "lon": -77.019,
+      "radius": 350,
+      "note": "Town in the Rio Cobre gorge — Flat Bridge is just below."
+    },
+    {
+      "id": "linstead",
+      "name": "Linstead",
+      "lat": 18.136,
+      "lon": -77.035,
+      "radius": 380,
+      "note": "St. Catherine market town — famous for the Linstead Market folk song."
+    },
+    {
+      "id": "ewarton",
+      "name": "Ewarton",
+      "lat": 18.172,
+      "lon": -77.083,
+      "radius": 280,
+      "note": "St. Catherine town — bauxite mining area on the road to Moneague.",
+      "needs_owner_review": true
+    },
+    {
+      "id": "moneague",
+      "name": "Moneague",
+      "lat": 18.268,
+      "lon": -77.102,
+      "radius": 350,
+      "note": "St. Ann junction town — crossroads between Kingston, Ocho Rios, and the interior."
+    },
+    {
+      "id": "cave_valley",
+      "name": "Cave Valley",
+      "lat": 18.285,
+      "lon": -77.098,
+      "radius": 250,
+      "note": "Small St. Ann community on the road between Moneague and Faith's Pen.",
+      "needs_owner_review": true
+    },
+    {
+      "id": "faiths_pen",
+      "name": "Faith's Pen",
+      "lat": 18.322,
+      "lon": -77.118,
+      "radius": 300,
+      "note": "Famous roadside cookshop strip — jerk chicken, roast yam, festival. A must-stop."
+    },
+    {
+      "id": "fern_gully",
+      "name": "Fern Gully",
+      "lat": 18.388,
+      "lon": -77.108,
+      "radius": 350,
+      "note": "Canopied gorge road through bamboo and tree ferns — old riverbed, totally unique."
+    },
+    {
+      "id": "ocho_rios",
+      "name": "Ocho Rios",
+      "lat": 18.408,
+      "lon": -77.109,
+      "radius": 450,
+      "note": "Tourism hub on the north coast — Dunn's River Falls is just west of town."
+    }
+  ]
+}
