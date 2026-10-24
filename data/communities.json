@@ -1,0 +1,138 @@
+{
+  "comment": "Recognition layer 2: community signs. Coordinates are real-world lat/lon, projected into world space at load. radius = trigger zone in compressed-world meters. needs_owner_review: true = uncertain entry (map data, not lived knowledge — owner's correction is authoritative).",
+  "communities": [
+    {
+      "id": "com-harbour-view",
+      "name": "Harbour View",
+      "lat": 17.9730,
+      "lon": -76.7452,
+      "radius": 420,
+      "note": "Gateway roundabout from the Palisadoes into Kingston — the city opens up here"
+    },
+    {
+      "id": "com-rockfort",
+      "name": "Rockfort",
+      "lat": 17.9811,
+      "lon": -76.7575,
+      "radius": 320,
+      "note": "Windward Road corridor; Rockfort Mineral Baths just off the road"
+    },
+    {
+      "id": "com-vineyard-town",
+      "name": "Vineyard Town",
+      "lat": 17.9876,
+      "lon": -76.7655,
+      "radius": 360,
+      "note": "East Kingston residential community along Windward Road",
+      "needs_owner_review": true
+    },
+    {
+      "id": "com-wareika-hill",
+      "name": "Wareika Hill",
+      "lat": 18.0001,
+      "lon": -76.7698,
+      "radius": 420,
+      "note": "Hilltop Rasta stronghold above Mountain View Avenue"
+    },
+    {
+      "id": "com-new-kingston",
+      "name": "New Kingston",
+      "lat": 18.0076,
+      "lon": -76.7933,
+      "radius": 620,
+      "note": "Kingston's business district — hotels, embassies, financial houses"
+    },
+    {
+      "id": "com-half-way-tree",
+      "name": "Half Way Tree",
+      "lat": 18.0127,
+      "lon": -76.7987,
+      "radius": 520,
+      "note": "Named for the cotton tree that marked the halfway point between Kingston and Spanish Town"
+    },
+    {
+      "id": "com-hagley-park",
+      "name": "Hagley Park",
+      "lat": 18.0083,
+      "lon": -76.8104,
+      "radius": 420,
+      "note": "West Kingston residential corridor on the way out of the city",
+      "needs_owner_review": true
+    },
+    {
+      "id": "com-spanish-town",
+      "name": "Spanish Town",
+      "lat": 17.9967,
+      "lon": -76.9578,
+      "radius": 650,
+      "note": "Jamaica's former capital under Spanish and British rule — historic cathedral square"
+    },
+    {
+      "id": "com-flat-bridge",
+      "name": "Flat Bridge",
+      "lat": 18.0685,
+      "lon": -77.0103,
+      "radius": 280,
+      "note": "Historic single-lane bridge over the Rio Cobre — the river runs almost level with the road"
+    },
+    {
+      "id": "com-bog-walk",
+      "name": "Bog Walk",
+      "lat": 18.0843,
+      "lon": -77.0186,
+      "radius": 520,
+      "note": "Town at the mouth of the dramatic gorge — 'bog' from Spanish 'vega' (valley)"
+    },
+    {
+      "id": "com-linstead",
+      "name": "Linstead",
+      "lat": 18.1358,
+      "lon": -77.0302,
+      "radius": 620,
+      "note": "Market town made famous by the folk song 'Linstead Market' — Saturday market tradition"
+    },
+    {
+      "id": "com-mount-rosser",
+      "name": "Mount Rosser",
+      "lat": 18.1685,
+      "lon": -77.0527,
+      "radius": 360,
+      "note": "Hill village in the climb between Linstead and Moneague",
+      "needs_owner_review": true
+    },
+    {
+      "id": "com-moneague",
+      "name": "Moneague",
+      "lat": 18.2089,
+      "lon": -77.0872,
+      "radius": 520,
+      "note": "Junction town at the crest — where the road turns north to Ocho Rios"
+    },
+    {
+      "id": "com-faiths-pen",
+      "name": "Faith's Pen",
+      "lat": 18.2213,
+      "lon": -77.1069,
+      "radius": 380,
+      "note": "The legendary cookshop strip — jerk chicken, roast yam, festival since the 1960s",
+      "needs_owner_review": true
+    },
+    {
+      "id": "com-fern-gully",
+      "name": "Fern Gully",
+      "lat": 18.3900,
+      "lon": -77.1031,
+      "radius": 450,
+      "note": "Three-kilometre ravine dense with tropical ferns — a canopy-shaded descent into Ocho Rios",
+      "needs_owner_review": true
+    },
+    {
+      "id": "com-ocho-rios",
+      "name": "Ocho Rios",
+      "lat": 18.4048,
+      "lon": -77.1015,
+      "radius": 700,
+      "note": "St. Ann's tourist capital — cruise ships, Dunn's River Falls, and the end of the run"
+    }
+  ]
+}
