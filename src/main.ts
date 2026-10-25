@@ -7,6 +7,8 @@ import { Recognition } from './recognition';
 import { buildScenery } from './scenery';
 import { buildTrees } from './trees';
 import { Potholes } from './potholes';
+import { Dogs } from './dogs';
+import { Goats } from './goats';
 import { initNarrator, narrate } from './narrator';
 import { TestTrack } from './testtrack';
 import { Debug } from './debug';
@@ -36,6 +38,8 @@ const isDebug = isTestTrack || params.has('debug');
 
 let road: RoadLike;
 let recognition: Recognition | null = null;
+let dogs: Dogs | null = null;
+let goats: Goats | null = null;
 
 if (isTestTrack) {
   const tt = new TestTrack();
@@ -49,6 +53,10 @@ if (isTestTrack) {
   scene.add(buildScenery(r));
   scene.add(buildTrees(r));
   recognition = new Recognition(r);
+  dogs = new Dogs(r);
+  goats = new Goats(r);
+  scene.add(dogs.object);
+  scene.add(goats.object);
 }
 
 const potholes = new Potholes(road);
@@ -107,6 +115,8 @@ renderer.setAnimationLoop(() => {
 
   car.update(dt, input);
   potholes.update(car);
+  dogs?.update(car, dt);
+  goats?.update(car, dt);
   recognition?.update(car.position);
   debug?.update(dt);
 
