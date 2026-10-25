@@ -1,0 +1,149 @@
+{
+  "comment": "Recognition layer 2: community/district signs. Passing into a community shows its name on a road-sign-style HUD popup. Coordinates are real-world lat/lon projected into world space at load (same pipeline as landmarks.json). radius = trigger distance in compressed-world metres. Entries marked needs_owner_review require the owner's lived knowledge to confirm name, boundary placement, or both.",
+  "communities": [
+    {
+      "id": "com-harbour-view",
+      "name": "Harbour View",
+      "lat": 17.9716,
+      "lon": -76.7518,
+      "radius": 400,
+      "note": "Eastern gateway into Kingston — Windward Road begins here at the foot of the Palisadoes",
+      "needs_owner_review": false
+    },
+    {
+      "id": "com-kingston",
+      "name": "Kingston",
+      "lat": 17.982,
+      "lon": -76.763,
+      "radius": 550,
+      "note": "Entering Kingston proper along the eastern waterfront",
+      "needs_owner_review": false
+    },
+    {
+      "id": "com-wareika-hill",
+      "name": "Wareika Hill",
+      "lat": 17.997,
+      "lon": -76.759,
+      "radius": 320,
+      "note": "Hills above eastern Kingston, between Mountain View Avenue and the harbour",
+      "needs_owner_review": true
+    },
+    {
+      "id": "com-mountain-view",
+      "name": "Mountain View",
+      "lat": 18.001,
+      "lon": -76.773,
+      "radius": 350,
+      "note": "Community along Mountain View Avenue — National Stadium area",
+      "needs_owner_review": true
+    },
+    {
+      "id": "com-new-kingston",
+      "name": "New Kingston",
+      "lat": 18.005,
+      "lon": -76.791,
+      "radius": 350,
+      "note": "Modern commercial and financial district",
+      "needs_owner_review": true
+    },
+    {
+      "id": "com-half-way-tree",
+      "name": "Half Way Tree",
+      "lat": 18.0109,
+      "lon": -76.796,
+      "radius": 380,
+      "note": "Historic crossroads of Kingston — the clock tower marks the centre",
+      "needs_owner_review": false
+    },
+    {
+      "id": "com-spanish-town",
+      "name": "Spanish Town",
+      "lat": 17.991,
+      "lon": -76.954,
+      "radius": 500,
+      "note": "Former capital of Jamaica — Cathedral of St James, Emancipation Square",
+      "needs_owner_review": false
+    },
+    {
+      "id": "com-bog-walk",
+      "name": "Bog Walk",
+      "lat": 18.053,
+      "lon": -76.963,
+      "radius": 380,
+      "note": "Town at the entrance to the Bog Walk Gorge, Rio Cobre river valley",
+      "needs_owner_review": false
+    },
+    {
+      "id": "com-flat-bridge",
+      "name": "Flat Bridge",
+      "lat": 18.0614,
+      "lon": -76.9845,
+      "radius": 200,
+      "note": "One-lane historic bridge at the narrowest point of the gorge — landmark, not a town",
+      "needs_owner_review": false
+    },
+    {
+      "id": "com-linstead",
+      "name": "Linstead",
+      "lat": 18.133,
+      "lon": -77.031,
+      "radius": 450,
+      "note": "Market town — famous for the folk song 'Linstead Market'",
+      "needs_owner_review": false
+    },
+    {
+      "id": "com-ewarton",
+      "name": "Ewarton",
+      "lat": 18.191,
+      "lon": -77.076,
+      "radius": 320,
+      "note": "Small town on the Linstead-Moneague road, bauxite industry area",
+      "needs_owner_review": true
+    },
+    {
+      "id": "com-moneague",
+      "name": "Moneague",
+      "lat": 18.257,
+      "lon": -77.094,
+      "radius": 380,
+      "note": "Crossroads town in the central highlands",
+      "needs_owner_review": false
+    },
+    {
+      "id": "com-faiths-pen",
+      "name": "Faith's Pen",
+      "lat": 18.2347,
+      "lon": -77.0951,
+      "radius": 320,
+      "note": "Iconic roadside cookshop stop — jerk chicken, roast yam, festival",
+      "needs_owner_review": false
+    },
+    {
+      "id": "com-alexandria",
+      "name": "Alexandria",
+      "lat": 18.362,
+      "lon": -77.131,
+      "radius": 300,
+      "note": "Small community between Faith's Pen and Fern Gully",
+      "needs_owner_review": true
+    },
+    {
+      "id": "com-fern-gully",
+      "name": "Fern Gully",
+      "lat": 18.389,
+      "lon": -77.121,
+      "radius": 450,
+      "note": "Spectacular natural canopy of tree ferns and bamboo through a river valley — A3 highway",
+      "needs_owner_review": false
+    },
+    {
+      "id": "com-ocho-rios",
+      "name": "Ocho Rios",
+      "lat": 18.407,
+      "lon": -77.107,
+      "radius": 550,
+      "note": "North coast resort town — journey's end, Dunn's River Falls",
+      "needs_owner_review": false
+    }
+  ]
+}
