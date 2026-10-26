@@ -19,12 +19,26 @@
         font-family: system-ui, sans-serif; font-weight: 800; font-size: 18px;
         opacity: 0; transition: opacity 0.3s; user-select: none;
       }
+      #community-sign {
+        position: fixed; top: 56px; left: 50%; transform: translateX(-50%);
+        padding: 4px 18px 6px; border-radius: 4px;
+        background: #fff; color: #007749; border: 3px solid #007749;
+        font-family: system-ui, sans-serif; font-weight: 800; font-size: 15px;
+        letter-spacing: 0.04em; text-transform: uppercase;
+        opacity: 0; transition: opacity 0.4s; user-select: none; white-space: nowrap;
+      }
+      #community-sign::before {
+        content: 'ENTERING ';
+        font-size: 10px; font-weight: 600; letter-spacing: 0.12em;
+        display: block; color: #555; text-align: center; margin-bottom: 1px;
+      }
     </style>
   </head>
   <body>
     <div id="app"></div>
     <div id="hud"></div>
     <div id="callout"></div>
+    <div id="community-sign"></div>
     <script type="module" src="/src/main.ts"></script>
   </body>
 </html>
