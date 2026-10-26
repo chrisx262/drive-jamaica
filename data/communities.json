@@ -1,0 +1,146 @@
+{
+  "comment": "Recognition layer 2: community/district signs. Coordinates are real OSM lat/lon, projected into world space via road.project() at load. radius = trigger distance in compressed-world meters. Entries marked needs_owner_review should be verified against the owner's lived knowledge — map data alone is unreliable for small communities.",
+  "communities": [
+    {
+      "id": "com-palisadoes",
+      "name": "Palisadoes",
+      "lat": 17.956,
+      "lon": -76.795,
+      "note": "Narrow spit of land linking the airport to Kingston; sea on both sides",
+      "radius": 350
+    },
+    {
+      "id": "com-harbour-view",
+      "name": "Harbour View",
+      "lat": 17.986,
+      "lon": -76.773,
+      "note": "First community on the Kingston side of the Palisadoes strip",
+      "radius": 280
+    },
+    {
+      "id": "com-rockfort",
+      "name": "Rockfort",
+      "lat": 17.990,
+      "lon": -76.784,
+      "note": "East Kingston industrial and residential area near the old fort",
+      "radius": 200,
+      "needs_owner_review": true
+    },
+    {
+      "id": "com-wareika-hill",
+      "name": "Wareika Hill",
+      "lat": 17.994,
+      "lon": -76.757,
+      "note": "Eastern Kingston hillside community",
+      "radius": 220,
+      "needs_owner_review": true
+    },
+    {
+      "id": "com-kingston",
+      "name": "Kingston",
+      "lat": 17.998,
+      "lon": -76.793,
+      "note": "Capital city and cultural heart of Jamaica",
+      "radius": 500
+    },
+    {
+      "id": "com-cross-roads",
+      "name": "Crossroads",
+      "lat": 18.003,
+      "lon": -76.793,
+      "note": "Major Kingston intersection and commercial hub",
+      "radius": 180
+    },
+    {
+      "id": "com-new-kingston",
+      "name": "New Kingston",
+      "lat": 18.011,
+      "lon": -76.789,
+      "note": "Kingston's modern business and hotel district",
+      "radius": 320
+    },
+    {
+      "id": "com-half-way-tree",
+      "name": "Half Way Tree",
+      "lat": 18.011,
+      "lon": -76.797,
+      "note": "Historic hub of Kingston — the crossroads everyone knows",
+      "radius": 250
+    },
+    {
+      "id": "com-maxfield-park",
+      "name": "Maxfield Park",
+      "lat": 18.003,
+      "lon": -76.817,
+      "note": "West Kingston community on Hagley Park Road",
+      "radius": 200,
+      "needs_owner_review": true
+    },
+    {
+      "id": "com-spanish-town",
+      "name": "Spanish Town",
+      "lat": 17.991,
+      "lon": -76.955,
+      "note": "Former Jamaican capital, founded by the Spanish in the 1530s",
+      "radius": 400,
+      "needs_owner_review": true
+    },
+    {
+      "id": "com-bog-walk",
+      "name": "Bog Walk",
+      "lat": 18.047,
+      "lon": -76.991,
+      "note": "Gateway to the Rio Cobre gorge and Flat Bridge",
+      "radius": 200
+    },
+    {
+      "id": "com-linstead",
+      "name": "Linstead",
+      "lat": 18.141,
+      "lon": -77.027,
+      "note": "Home of the famous Linstead Market — 'carry me ackee go a Linstead Market'",
+      "radius": 300
+    },
+    {
+      "id": "com-ewarton",
+      "name": "Ewarton",
+      "lat": 18.181,
+      "lon": -77.071,
+      "note": "St. Catherine town at the foot of the climb to Mount Rosser",
+      "radius": 200,
+      "needs_owner_review": true
+    },
+    {
+      "id": "com-faiths-pen",
+      "name": "Faith's Pen",
+      "lat": 18.2347,
+      "lon": -77.0951,
+      "note": "Legendary roadside cookshop stop — jerk chicken, roast yam and festival",
+      "radius": 220
+    },
+    {
+      "id": "com-moneague",
+      "name": "Moneague",
+      "lat": 18.282,
+      "lon": -77.102,
+      "note": "St. Ann hill town before the coast road drops to Ocho Rios",
+      "radius": 300
+    },
+    {
+      "id": "com-fern-gully",
+      "name": "Fern Gully",
+      "lat": 18.393,
+      "lon": -77.113,
+      "note": "3 km canopy of giant ferns and bamboo — one of Jamaica's most beautiful roads",
+      "radius": 300
+    },
+    {
+      "id": "com-ocho-rios",
+      "name": "Ocho Rios",
+      "lat": 18.407,
+      "lon": -77.105,
+      "note": "Jamaica's premier resort town on the north coast",
+      "radius": 400
+    }
+  ]
+}
