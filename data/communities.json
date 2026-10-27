@@ -1,0 +1,131 @@
+{
+  "comment": "Communities and districts along the Airport Run route (Norman Manley → Ocho Rios). Entries marked needs_owner_review need verification against the owner's lived knowledge — map data is approximate. lat/lon are real-world coordinates; the game projects them via road.project().",
+  "communities": [
+    {
+      "name": "Palisadoes",
+      "lat": 17.952,
+      "lon": -76.742,
+      "note": "Narrow spit — sea on both sides; coconut trees line the road",
+      "needs_owner_review": false
+    },
+    {
+      "name": "Harbour View",
+      "lat": 17.978,
+      "lon": -76.748,
+      "note": "Entrance to Kingston — potholes begin just past the roundabout",
+      "needs_owner_review": false
+    },
+    {
+      "name": "Rockfort",
+      "lat": 17.986,
+      "lon": -76.754,
+      "note": "Rockfort Mineral Bath is here",
+      "needs_owner_review": true
+    },
+    {
+      "name": "Windward Road",
+      "lat": 17.993,
+      "lon": -76.763,
+      "note": "Classic East Kingston thoroughfare",
+      "needs_owner_review": true
+    },
+    {
+      "name": "Mountain View",
+      "lat": 17.998,
+      "lon": -76.773,
+      "note": "East Kingston neighbourhood",
+      "needs_owner_review": true
+    },
+    {
+      "name": "Half Way Tree",
+      "lat": 18.008,
+      "lon": -76.800,
+      "note": "Kingston's busiest crossroads — clock tower and serious traffic",
+      "needs_owner_review": false
+    },
+    {
+      "name": "New Kingston",
+      "lat": 18.006,
+      "lon": -76.793,
+      "note": "Business district; Devon House is nearby",
+      "needs_owner_review": true
+    },
+    {
+      "name": "Liguanea",
+      "lat": 18.005,
+      "lon": -76.775,
+      "note": "Liguanea plain — University of the West Indies nearby",
+      "needs_owner_review": true
+    },
+    {
+      "name": "Spanish Town",
+      "lat": 17.991,
+      "lon": -76.956,
+      "note": "Jamaica's former capital; the old Georgian square still stands",
+      "needs_owner_review": false
+    },
+    {
+      "name": "Bog Walk",
+      "lat": 18.097,
+      "lon": -77.014,
+      "note": "Gateway to the Rio Cobre gorge",
+      "needs_owner_review": true
+    },
+    {
+      "name": "Flat Bridge",
+      "lat": 18.073,
+      "lon": -77.034,
+      "note": "Narrowest main-road bridge in Jamaica — one lane only",
+      "needs_owner_review": true
+    },
+    {
+      "name": "Linstead",
+      "lat": 18.138,
+      "lon": -77.033,
+      "note": "Famous for the folk song 'Linstead Market'",
+      "needs_owner_review": false
+    },
+    {
+      "name": "Ewarton",
+      "lat": 18.155,
+      "lon": -77.073,
+      "note": "Bauxite town on the way up to Moneague",
+      "needs_owner_review": true
+    },
+    {
+      "name": "Moneague",
+      "lat": 18.261,
+      "lon": -77.105,
+      "note": "Mountain crossroads between Kingston and the north coast",
+      "needs_owner_review": false
+    },
+    {
+      "name": "Faith's Pen",
+      "lat": 18.332,
+      "lon": -77.162,
+      "note": "Legendary roadside cookshops — jerk chicken, roast yam, festival",
+      "needs_owner_review": false
+    },
+    {
+      "name": "Golden Spring",
+      "lat": 18.378,
+      "lon": -77.118,
+      "note": "Hilltop community before the descent into Fern Gully",
+      "needs_owner_review": true
+    },
+    {
+      "name": "Fern Gully",
+      "lat": 18.393,
+      "lon": -77.107,
+      "note": "The famous fern canopy tunnel — 800+ fern species lining the road",
+      "needs_owner_review": false
+    },
+    {
+      "name": "Ocho Rios",
+      "lat": 18.408,
+      "lon": -77.102,
+      "note": "North coast tourist hub — Dunn's River Falls ends the run",
+      "needs_owner_review": false
+    }
+  ]
+}
