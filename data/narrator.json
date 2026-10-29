@@ -7,6 +7,10 @@
     "road.enter": [
       "Yuh deh pon {road} now!"
     ],
+    "community.enter": [
+      "Welcome to {community}!",
+      "Big up {community}!"
+    ],
     "landmark.enter": [
       "See {landmark} deh!"
     ],
@@ -16,6 +20,18 @@
     ],
     "tyre.fixed": [
       "Tyre patch up — gwaan!"
+    ],
+    "dog.chase": [
+      "Dawg a run dung yuh! Press it, press it!",
+      "Kingston dawg dem nuh fraid a no car, yuh si!",
+      "Ehh! Weh dat dog come from?! Step pon it, nuh!",
+      "Di dawg want some a yuh dinner, brethren!"
+    ],
+    "goat.hit": [
+      "YUH HIT DI GOAT?! Lawd have mercy!",
+      "Mi never see dat coming! Poor ting...",
+      "Gyal, yuh just mash up somebody goat!",
+      "Slow down nuh! Di goat dem have right of way pon dis road!"
     ]
   }
 }
