@@ -1,0 +1,237 @@
+{
+  "comment": "Communities and districts along the Airport→Kingston→Bog Walk→Fern Gully→Ocho Rios route. Each entry shows a community sign in-game (Recognition layer 2). needs_owner_review: true entries are uncertain — owner's lived knowledge is authoritative over map data.",
+  "communities": [
+    {
+      "id": "port-royal",
+      "name": "Port Royal",
+      "lat": 17.9358,
+      "lon": -76.8421,
+      "note": "Historic pirate port, now a quiet fishing village at the tip of the Palisadoes",
+      "needs_owner_review": false
+    },
+    {
+      "id": "harbour-view",
+      "name": "Harbour View",
+      "lat": 17.9764,
+      "lon": -76.7496,
+      "note": "Gateway from the Palisadoes strip into Kingston — Harbour View roundabout",
+      "needs_owner_review": false
+    },
+    {
+      "id": "rockfort",
+      "name": "Rockfort",
+      "lat": 17.9896,
+      "lon": -76.7517,
+      "note": "Industrial community just past Harbour View, home to the Rockfort Mineral Bath",
+      "needs_owner_review": false
+    },
+    {
+      "id": "bournemouth",
+      "name": "Bournemouth",
+      "lat": 17.9942,
+      "lon": -76.7600,
+      "note": "Seaside community along Windward Road",
+      "needs_owner_review": true
+    },
+    {
+      "id": "rollington-town",
+      "name": "Rollington Town",
+      "lat": 18.0020,
+      "lon": -76.7720,
+      "note": "Inner-city community in East Kingston",
+      "needs_owner_review": true
+    },
+    {
+      "id": "arnett-gardens",
+      "name": "Arnett Gardens",
+      "lat": 18.0020,
+      "lon": -76.7850,
+      "note": "Trenchtown adjacent — the heart of Kingston's music and sporting culture",
+      "needs_owner_review": true
+    },
+    {
+      "id": "cross-roads",
+      "name": "Cross Roads",
+      "lat": 18.0034,
+      "lon": -76.7898,
+      "note": "Major Kingston junction — the old crossroads of the city",
+      "needs_owner_review": false
+    },
+    {
+      "id": "new-kingston",
+      "name": "New Kingston",
+      "lat": 18.0065,
+      "lon": -76.7893,
+      "note": "Kingston's modern business district — hotels, banks, Emancipation Park",
+      "needs_owner_review": false
+    },
+    {
+      "id": "half-way-tree",
+      "name": "Half Way Tree",
+      "lat": 18.0121,
+      "lon": -76.7965,
+      "note": "The commercial heart of St. Andrew — clock tower, market, madness",
+      "needs_owner_review": false
+    },
+    {
+      "id": "liguanea",
+      "name": "Liguanea",
+      "lat": 18.0158,
+      "lon": -76.7822,
+      "note": "Uptown residential and commercial district east of Half Way Tree",
+      "needs_owner_review": false
+    },
+    {
+      "id": "constant-spring",
+      "name": "Constant Spring",
+      "lat": 18.0380,
+      "lon": -76.7960,
+      "note": "North Kingston suburb — Usain Bolt's Tracks & Records is on Constant Spring Road",
+      "needs_owner_review": false
+    },
+    {
+      "id": "whitehall",
+      "name": "Whitehall",
+      "lat": 18.0042,
+      "lon": -76.8083,
+      "note": "Community west of Half Way Tree along Hagley Park Road",
+      "needs_owner_review": true
+    },
+    {
+      "id": "waterhouse",
+      "name": "Waterhouse",
+      "lat": 18.0100,
+      "lon": -76.8233,
+      "note": "Inner-city community, sports and music heritage",
+      "needs_owner_review": true
+    },
+    {
+      "id": "march-pen",
+      "name": "March Pen",
+      "lat": 17.9960,
+      "lon": -76.8430,
+      "note": "Community along the Spanish Town Road western corridor",
+      "needs_owner_review": true
+    },
+    {
+      "id": "gregory-park",
+      "name": "Gregory Park",
+      "lat": 17.9836,
+      "lon": -76.8710,
+      "note": "Portmore-adjacent community, gateway to the west",
+      "needs_owner_review": false
+    },
+    {
+      "id": "spanish-town",
+      "name": "Spanish Town",
+      "lat": 17.9916,
+      "lon": -76.9543,
+      "note": "St. Catherine's capital and Jamaica's first capital city — iron bridge, history everywhere",
+      "needs_owner_review": false
+    },
+    {
+      "id": "central-village",
+      "name": "Central Village",
+      "lat": 18.0100,
+      "lon": -76.9600,
+      "note": "New Town northwest of Spanish Town",
+      "needs_owner_review": true
+    },
+    {
+      "id": "caymanas",
+      "name": "Caymanas",
+      "lat": 18.0250,
+      "lon": -76.9700,
+      "note": "Estate land and housing development north of Spanish Town — Caymanas racecourse nearby",
+      "needs_owner_review": true
+    },
+    {
+      "id": "flat-bridge",
+      "name": "Flat Bridge",
+      "lat": 18.0783,
+      "lon": -76.9819,
+      "note": "The famous low stone bridge over the Rio Cobre at the mouth of Bog Walk gorge",
+      "needs_owner_review": false
+    },
+    {
+      "id": "bog-walk",
+      "name": "Bog Walk",
+      "lat": 18.0855,
+      "lon": -76.9741,
+      "note": "Scenic gorge community — the Rio Cobre runs beside the road through sheer cliff walls",
+      "needs_owner_review": false
+    },
+    {
+      "id": "riversdale",
+      "name": "Riversdale",
+      "lat": 18.1100,
+      "lon": -77.0000,
+      "note": "Small community at the top end of Bog Walk gorge",
+      "needs_owner_review": true
+    },
+    {
+      "id": "ewarton",
+      "name": "Ewarton",
+      "lat": 18.1506,
+      "lon": -77.0778,
+      "note": "Where the gorge opens up — alumina plant country, St. Catherine/St. Ann border area",
+      "needs_owner_review": false
+    },
+    {
+      "id": "linstead",
+      "name": "Linstead",
+      "lat": 18.1363,
+      "lon": -77.0317,
+      "note": "Famous for Linstead Market — 'Carry mi ackee go a Linstead market…'",
+      "needs_owner_review": false
+    },
+    {
+      "id": "mount-rosser",
+      "name": "Mount Rosser",
+      "lat": 18.2100,
+      "lon": -77.0900,
+      "note": "Mountain community on the ascent from Linstead — notorious for fog and sharp bends",
+      "needs_owner_review": true
+    },
+    {
+      "id": "moneague",
+      "name": "Moneague",
+      "lat": 18.2466,
+      "lon": -77.0877,
+      "note": "Crossroads town in the St. Ann hills — the natural watershed between Kingston and the north coast",
+      "needs_owner_review": false
+    },
+    {
+      "id": "faiths-pen",
+      "name": "Faith's Pen",
+      "lat": 18.2875,
+      "lon": -77.1000,
+      "note": "Legendary roadside cookshop stop — jerk chicken, roast yam, festival. The only correct answer is to stop.",
+      "needs_owner_review": true
+    },
+    {
+      "id": "clarksonville",
+      "name": "Clarksonville",
+      "lat": 18.3200,
+      "lon": -77.0980,
+      "note": "Community descending into Fern Gully from the north-St. Ann side",
+      "needs_owner_review": true
+    },
+    {
+      "id": "fern-gully",
+      "name": "Fern Gully",
+      "lat": 18.3680,
+      "lon": -77.1020,
+      "note": "A 3km canopy road through a ravine — once a riverbed, now a cathedral of ferns and trees",
+      "needs_owner_review": false
+    },
+    {
+      "id": "ocho-rios",
+      "name": "Ocho Rios",
+      "lat": 18.4044,
+      "lon": -77.1082,
+      "note": "Jamaica's north coast resort town — Dunn's River Falls is your finish line",
+      "needs_owner_review": false
+    }
+  ]
+}
