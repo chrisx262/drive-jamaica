@@ -1,0 +1,85 @@
+{
+  "comment": "Communities/districts along the Airport Run route (Norman Manley → Ocho Rios). Entries marked needs_owner_review need verification from the owner's lived knowledge — map data alone is insufficient. Coordinates are WGS-84 lat/lon; radius is in world units (scale 0.3, so radius 250 ≈ 833 m real-world). Order follows the route.",
+  "communities": [
+    {
+      "name": "Harbour View",
+      "lat": 17.9895,
+      "lon": -76.7268,
+      "radius": 280,
+      "note": "Roundabout where the Palisadoes spit meets the mainland; gateway from the airport into Kingston"
+    },
+    {
+      "name": "Rockfort",
+      "lat": 17.9978,
+      "lon": -76.7550,
+      "radius": 220,
+      "note": "Eastern Kingston industrial area; historic fort site on the coast",
+      "needs_owner_review": true
+    },
+    {
+      "name": "Wareika Hill",
+      "lat": 18.0055,
+      "lon": -76.7498,
+      "radius": 220,
+      "note": "Eastern Kingston hillside community, strongly associated with early Rastafari culture"
+    },
+    {
+      "name": "Half Way Tree",
+      "lat": 18.0117,
+      "lon": -76.7968,
+      "radius": 350,
+      "note": "Major commercial hub in central Kingston; landmark clock tower; named for the cotton tree that once stood here"
+    },
+    {
+      "name": "Spanish Town",
+      "lat": 17.9912,
+      "lon": -76.9561,
+      "radius": 380,
+      "note": "Jamaica's former colonial capital and St. Catherine Parish capital; route uses the bypass but the sign is unmistakable",
+      "needs_owner_review": true
+    },
+    {
+      "name": "Bog Walk",
+      "lat": 18.1023,
+      "lon": -77.0101,
+      "radius": 300,
+      "note": "Entrance to the Rio Cobre gorge; Flat Bridge crossing — dramatic narrow bridge over the river"
+    },
+    {
+      "name": "Linstead",
+      "lat": 18.1311,
+      "lon": -77.0381,
+      "radius": 320,
+      "note": "St. Catherine market town; immortalised in the folk song 'Linstead Market'"
+    },
+    {
+      "name": "Moneague",
+      "lat": 18.2669,
+      "lon": -77.1006,
+      "radius": 280,
+      "note": "Quiet hill-country crossroads in St. Ann Parish; geographic centre of the island"
+    },
+    {
+      "name": "Faith's Pen",
+      "lat": 18.3253,
+      "lon": -77.1478,
+      "radius": 260,
+      "note": "Famous hilltop roadside cookshops — jerk chicken, roast yam, festival; every Jamaican knows this stop"
+    },
+    {
+      "name": "Fern Gully",
+      "lat": 18.3820,
+      "lon": -77.0940,
+      "radius": 300,
+      "note": "Three-kilometre tree-canopied gorge road on the descent into Ocho Rios; one of Jamaica's most iconic drives",
+      "needs_owner_review": true
+    },
+    {
+      "name": "Ocho Rios",
+      "lat": 18.4094,
+      "lon": -77.0971,
+      "radius": 400,
+      "note": "Resort town on Jamaica's north coast; cruise ship capital; end of the Airport Run"
+    }
+  ]
+}
