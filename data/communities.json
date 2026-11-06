@@ -1,0 +1,132 @@
+{
+  "comment": "Recognition layer 2: community/district signs. Coordinates are real lat/lon, projected via route origin+scale. radius in compressed-world meters. Entries marked needs_owner_review need confirmation against lived knowledge before shipping.",
+  "communities": [
+    {
+      "id": "com-palisadoes",
+      "name": "Palisadoes",
+      "lat": 17.9420,
+      "lon": -76.7730,
+      "note": "The narrow sand spit connecting Norman Manley Airport to the mainland — sea on both sides"
+    },
+    {
+      "id": "com-harbour-view",
+      "name": "Harbour View",
+      "lat": 17.9800,
+      "lon": -76.7440,
+      "note": "First roundabout off the Palisadoes; gateway into Kingston"
+    },
+    {
+      "id": "com-rockfort",
+      "name": "Rockfort",
+      "lat": 17.9890,
+      "lon": -76.7490,
+      "note": "Industrial and residential area along Windward Road",
+      "needs_owner_review": true
+    },
+    {
+      "id": "com-rollington-town",
+      "name": "Rollington Town",
+      "lat": 17.9960,
+      "lon": -76.7620,
+      "note": "Inner-city Kingston neighbourhood along Windward Road",
+      "needs_owner_review": true
+    },
+    {
+      "id": "com-kingston",
+      "name": "Kingston",
+      "lat": 17.9970,
+      "lon": -76.7936,
+      "note": "Capital and largest city — heart of Jamaica"
+    },
+    {
+      "id": "com-cross-roads",
+      "name": "Cross Roads",
+      "lat": 18.0040,
+      "lon": -76.7900,
+      "note": "Major junction linking uptown and downtown Kingston",
+      "needs_owner_review": true
+    },
+    {
+      "id": "com-new-kingston",
+      "name": "New Kingston",
+      "lat": 18.0098,
+      "lon": -76.7858,
+      "note": "Kingston's CBD — hotels, banks, and Emancipation Park",
+      "needs_owner_review": true
+    },
+    {
+      "id": "com-half-way-tree",
+      "name": "Half Way Tree",
+      "lat": 18.0109,
+      "lon": -76.7960,
+      "note": "Commercial hub of St. Andrew, anchored by the 1813 clock tower"
+    },
+    {
+      "id": "com-six-miles",
+      "name": "Six Miles",
+      "lat": 17.9960,
+      "lon": -76.8340,
+      "note": "Western gateway out of Kingston, named for its distance from the city centre",
+      "needs_owner_review": true
+    },
+    {
+      "id": "com-spanish-town",
+      "name": "Spanish Town",
+      "lat": 17.9959,
+      "lon": -76.9565,
+      "note": "Former colonial capital of Jamaica — the route bypasses the town centre",
+      "needs_owner_review": true
+    },
+    {
+      "id": "com-bog-walk",
+      "name": "Bog Walk",
+      "lat": 18.0618,
+      "lon": -76.9790,
+      "note": "Village at the foot of the gorge — Flat Bridge and the Rio Cobre"
+    },
+    {
+      "id": "com-ewarton",
+      "name": "Ewarton",
+      "lat": 18.0970,
+      "lon": -77.0010,
+      "note": "St. Catherine market town; home of the WINDALCO alumina plant",
+      "needs_owner_review": true
+    },
+    {
+      "id": "com-linstead",
+      "name": "Linstead",
+      "lat": 18.1332,
+      "lon": -77.0160,
+      "note": "St. Catherine market town — \"Carry mi ackee go a Linstead market\""
+    },
+    {
+      "id": "com-moneague",
+      "name": "Moneague",
+      "lat": 18.2499,
+      "lon": -77.1080,
+      "note": "St. Ann hill-country crossroads between Kingston, Ocho Rios and Spanish Town"
+    },
+    {
+      "id": "com-faiths-pen",
+      "name": "Faith's Pen",
+      "lat": 18.2347,
+      "lon": -77.0951,
+      "note": "Famous roadside cookshop strip — jerk chicken, roast yam, festival"
+    },
+    {
+      "id": "com-fern-gully",
+      "name": "Fern Gully",
+      "lat": 18.3700,
+      "lon": -77.1655,
+      "note": "Three-kilometre canopied gully road through the rainforest — St. Ann's pride",
+      "needs_owner_review": true
+    },
+    {
+      "id": "com-ocho-rios",
+      "name": "Ocho Rios",
+      "lat": 18.4049,
+      "lon": -77.0983,
+      "note": "St. Ann resort town on the north coast — journey's end"
+    }
+  ]
+}
