@@ -1,0 +1,129 @@
+{
+  "comment": "Recognition layer 2: community/district signs. lat/lon are real OSM coordinates projected the same way as landmarks.json. radius = trigger distance in compressed-world meters. needs_owner_review entries need the owner's lived knowledge to verify placement — map data is approximate for these.",
+  "communities": [
+    {
+      "id": "com-palisadoes",
+      "name": "Palisadoes",
+      "lat": 17.9530,
+      "lon": -76.7520,
+      "radius": 500
+    },
+    {
+      "id": "com-harbour-view",
+      "name": "Harbour View",
+      "lat": 17.9735,
+      "lon": -76.7530,
+      "radius": 350,
+      "note": "Where the Palisadoes road meets Kingston. Potholes begin here."
+    },
+    {
+      "id": "com-rockfort",
+      "name": "Rockfort",
+      "lat": 17.9900,
+      "lon": -76.7700,
+      "radius": 300,
+      "needs_owner_review": true
+    },
+    {
+      "id": "com-vineyard-town",
+      "name": "Vineyard Town",
+      "lat": 17.9980,
+      "lon": -76.7730,
+      "radius": 280,
+      "needs_owner_review": true
+    },
+    {
+      "id": "com-mountain-view",
+      "name": "Mountain View",
+      "lat": 18.0014,
+      "lon": -76.7726,
+      "radius": 300
+    },
+    {
+      "id": "com-cross-roads",
+      "name": "Cross Roads",
+      "lat": 18.0030,
+      "lon": -76.7840,
+      "radius": 280,
+      "needs_owner_review": true
+    },
+    {
+      "id": "com-new-kingston",
+      "name": "New Kingston",
+      "lat": 18.0100,
+      "lon": -76.7880,
+      "radius": 320,
+      "needs_owner_review": true
+    },
+    {
+      "id": "com-half-way-tree",
+      "name": "Half Way Tree",
+      "lat": 18.0109,
+      "lon": -76.7960,
+      "radius": 350
+    },
+    {
+      "id": "com-gregory-park",
+      "name": "Gregory Park",
+      "lat": 17.9880,
+      "lon": -76.9340,
+      "radius": 350,
+      "needs_owner_review": true
+    },
+    {
+      "id": "com-spanish-town",
+      "name": "Spanish Town",
+      "lat": 17.9950,
+      "lon": -76.9570,
+      "radius": 500,
+      "note": "Historic former capital of Jamaica. Founded by the Spanish in 1534."
+    },
+    {
+      "id": "com-bog-walk",
+      "name": "Bog Walk",
+      "lat": 18.0620,
+      "lon": -76.9830,
+      "radius": 400,
+      "note": "Village at the entrance to Bog Walk Gorge, through which the Rio Cobre flows."
+    },
+    {
+      "id": "com-linstead",
+      "name": "Linstead",
+      "lat": 18.1358,
+      "lon": -77.0279,
+      "radius": 500,
+      "note": "Market town in St Catherine, famous for the folk song 'Linstead Market'."
+    },
+    {
+      "id": "com-moneague",
+      "name": "Moneague",
+      "lat": 18.2600,
+      "lon": -77.1000,
+      "radius": 400,
+      "needs_owner_review": true,
+      "note": "Small St Ann town near a natural lake, gateway to Ocho Rios."
+    },
+    {
+      "id": "com-faiths-pen",
+      "name": "Faith's Pen",
+      "lat": 18.2347,
+      "lon": -77.0951,
+      "radius": 350
+    },
+    {
+      "id": "com-fern-gully",
+      "name": "Fern Gully",
+      "lat": 18.3800,
+      "lon": -77.1200,
+      "radius": 500,
+      "note": "Three-kilometre ravine road canopied by tree ferns — a natural wonder."
+    },
+    {
+      "id": "com-ocho-rios",
+      "name": "Ocho Rios",
+      "lat": 18.4080,
+      "lon": -77.1070,
+      "radius": 600
+    }
+  ]
+}
