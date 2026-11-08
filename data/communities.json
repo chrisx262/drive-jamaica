@@ -1,0 +1,158 @@
+{
+  "comment": "Communities/districts along the full Airport→Kingston→Bog Walk→Fern Gully→Ocho Rios route. Each entry triggers a community sign (recognition layer 2). Entries marked needs_owner_review need the owner's lived knowledge to confirm position and spelling — map data alone is insufficient. Radius is in compressed-world units (1 world unit ≈ 3.33 m real).",
+  "communities": [
+    {
+      "id": "palisadoes",
+      "name": "Palisadoes",
+      "lat": 17.9480,
+      "lon": -76.7490,
+      "radius": 150,
+      "note": "The narrow strip of land connecting the airport to Kingston — sea on both sides, iconic coconut trees lining the road.",
+      "needs_owner_review": false
+    },
+    {
+      "id": "harbour_view",
+      "name": "Harbour View",
+      "lat": 17.9748,
+      "lon": -76.7268,
+      "radius": 90,
+      "note": "Major roundabout at the foot of the Blue Mountains — gateway from the Palisadoes into the city.",
+      "needs_owner_review": false
+    },
+    {
+      "id": "wareika_hill",
+      "name": "Wareika Hill",
+      "lat": 17.9870,
+      "lon": -76.7395,
+      "radius": 80,
+      "note": "East Kingston hillside community — owner to confirm whether it's visible/named from Windward Road at this point.",
+      "needs_owner_review": true
+    },
+    {
+      "id": "east_kingston",
+      "name": "East Kingston",
+      "lat": 17.9820,
+      "lon": -76.7430,
+      "radius": 100,
+      "note": "Entry into Kingston proper along Windward Road.",
+      "needs_owner_review": true
+    },
+    {
+      "id": "cross_roads",
+      "name": "Cross Roads",
+      "lat": 17.9985,
+      "lon": -76.7900,
+      "radius": 85,
+      "note": "Historic Kingston crossroads — major commercial intersection at the heart of the city.",
+      "needs_owner_review": false
+    },
+    {
+      "id": "half_way_tree",
+      "name": "Half Way Tree",
+      "lat": 18.0146,
+      "lon": -76.7986,
+      "radius": 110,
+      "note": "The commercial heart of uptown Kingston — named for the cotton tree that once stood here.",
+      "needs_owner_review": false
+    },
+    {
+      "id": "twickenham_park",
+      "name": "Twickenham Park",
+      "lat": 17.9800,
+      "lon": -76.9120,
+      "radius": 80,
+      "note": "Residential community on the approach to Spanish Town.",
+      "needs_owner_review": true
+    },
+    {
+      "id": "spanish_town",
+      "name": "Spanish Town",
+      "lat": 17.9900,
+      "lon": -76.9570,
+      "radius": 110,
+      "note": "Jamaica's old colonial capital — once the most important city on the island. Route passes via bypass; owner to confirm sign placement.",
+      "needs_owner_review": true
+    },
+    {
+      "id": "angels",
+      "name": "Angels",
+      "lat": 18.0432,
+      "lon": -76.9507,
+      "radius": 80,
+      "note": "Community at the entrance to the Bog Walk Gorge — owner to confirm name spelling and exact position.",
+      "needs_owner_review": true
+    },
+    {
+      "id": "bog_walk",
+      "name": "Bog Walk",
+      "lat": 18.0550,
+      "lon": -76.9668,
+      "radius": 110,
+      "note": "Town at the heart of the Flat Bridge gorge — the Rio Cobre roars below. Named for the Bogle Walk or the boggy terrain, accounts differ.",
+      "needs_owner_review": false
+    },
+    {
+      "id": "linstead",
+      "name": "Linstead",
+      "lat": 18.1364,
+      "lon": -77.0238,
+      "radius": 130,
+      "note": "Famous for its market — the Linstead Market folk song was born here. 'Carry mi ackee go a Linstead market…'",
+      "needs_owner_review": false
+    },
+    {
+      "id": "ewarton",
+      "name": "Ewarton",
+      "lat": 18.1738,
+      "lon": -77.0686,
+      "radius": 80,
+      "note": "Alumina plant town. Owner to confirm whether the route passes through Ewarton or bypasses it on the way to Moneague.",
+      "needs_owner_review": true
+    },
+    {
+      "id": "moneague",
+      "name": "Moneague",
+      "lat": 18.2607,
+      "lon": -77.0920,
+      "radius": 110,
+      "note": "Highland crossroads town in St. Ann — Moneague College here, cool air after the climb from Linstead.",
+      "needs_owner_review": false
+    },
+    {
+      "id": "faiths_pen",
+      "name": "Faith's Pen",
+      "lat": 18.3029,
+      "lon": -77.0983,
+      "radius": 110,
+      "note": "Famous roadside cookshop strip — jerk chicken, roast yam, festival, roast corn. A mandatory stop.",
+      "needs_owner_review": false
+    },
+    {
+      "id": "claremont",
+      "name": "Claremont",
+      "lat": 18.3367,
+      "lon": -77.1427,
+      "radius": 85,
+      "note": "Agricultural community in St. Ann on the descent toward Fern Gully. Owner to confirm it is on this route.",
+      "needs_owner_review": true
+    },
+    {
+      "id": "fern_gully",
+      "name": "Fern Gully",
+      "lat": 18.3814,
+      "lon": -77.1173,
+      "radius": 130,
+      "note": "800+ species of ferns line this famous tree-covered gorge road — a natural cathedral. Bamboo canopy overhead.",
+      "needs_owner_review": false
+    },
+    {
+      "id": "ocho_rios",
+      "name": "Ocho Rios",
+      "lat": 18.4034,
+      "lon": -77.1035,
+      "radius": 160,
+      "note": "The tourist capital of Jamaica's north coast — Dunn's River Falls and journey's end.",
+      "needs_owner_review": false
+    }
+  ]
+}
