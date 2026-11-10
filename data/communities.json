@@ -1,0 +1,117 @@
+{
+  "comment": "Recognition layer 2: community/district entry signs. trigger_segment must match a route segment name exactly. min_point_index (default 0) lets a mid-segment community fire only after the car passes that route-point index. Set needs_owner_review:true for placements the owner should validate with lived knowledge.",
+  "communities": [
+    {
+      "id": "comm-palisadoes",
+      "name": "Palisadoes",
+      "trigger_segment": "Norman Manley Highway / Palisadoes Road",
+      "min_point_index": 0,
+      "note": "The narrow sand spit from Norman Manley Airport to Kingston Harbour; coconut trees line both shoulders",
+      "needs_owner_review": false
+    },
+    {
+      "id": "comm-harbour-view",
+      "name": "Harbour View",
+      "trigger_segment": "Sir Florizel Glaspole Boulevard",
+      "min_point_index": 0,
+      "note": "Eastern gateway to Kingston at the landward end of the Palisadoes",
+      "needs_owner_review": false
+    },
+    {
+      "id": "comm-rockfort",
+      "name": "Rockfort",
+      "trigger_segment": "Windward Road",
+      "min_point_index": 0,
+      "note": "East Kingston; site of the 1694 Rockfort fort and the Rockfort Mineral Bath",
+      "needs_owner_review": true
+    },
+    {
+      "id": "comm-mountain-view",
+      "name": "Mountain View",
+      "trigger_segment": "Mountain View Avenue",
+      "min_point_index": 0,
+      "note": "Eastern Kingston residential community at the foot of the Blue Mountains",
+      "needs_owner_review": false
+    },
+    {
+      "id": "comm-new-kingston",
+      "name": "New Kingston",
+      "trigger_segment": "Trafalgar Road",
+      "min_point_index": 0,
+      "note": "Kingston's modern commercial and hotel district",
+      "needs_owner_review": false
+    },
+    {
+      "id": "comm-half-way-tree",
+      "name": "Half Way Tree",
+      "trigger_segment": "Hope Road",
+      "min_point_index": 0,
+      "note": "Major commercial hub of St. Andrew; the 1813 clock tower marks the crossroads",
+      "needs_owner_review": false
+    },
+    {
+      "id": "comm-hagley-park",
+      "name": "Hagley Park",
+      "trigger_segment": "Hagley Park Road",
+      "min_point_index": 0,
+      "note": "West Kingston neighbourhood; gateway onto Spanish Town Road",
+      "needs_owner_review": true
+    },
+    {
+      "id": "comm-spanish-town",
+      "name": "Spanish Town",
+      "trigger_segment": "Wellington Street",
+      "min_point_index": 0,
+      "note": "Jamaica's former colonial capital; the 1762 Parade Square is a UNESCO World Heritage contender",
+      "needs_owner_review": false
+    },
+    {
+      "id": "comm-bog-walk-gorge",
+      "name": "Bog Walk Gorge",
+      "trigger_segment": "Bog Walk Gorge",
+      "min_point_index": 0,
+      "note": "Dramatic limestone gorge carved by the Rio Cobre; Flat Bridge marks the heart",
+      "needs_owner_review": false
+    },
+    {
+      "id": "comm-linstead",
+      "name": "Linstead",
+      "trigger_segment": "Linstead Bypass",
+      "min_point_index": 0,
+      "note": "Market town of St. Catherine; immortalised in the folk song Linstead Market",
+      "needs_owner_review": false
+    },
+    {
+      "id": "comm-ewarton",
+      "name": "Ewarton",
+      "trigger_segment": "McGrath Road",
+      "min_point_index": 0,
+      "note": "Small St. Catherine town near the Bog Walk junction; alumina works lie nearby",
+      "needs_owner_review": true
+    },
+    {
+      "id": "comm-moneague",
+      "name": "Moneague",
+      "trigger_segment": "Moneague - Golden Grove Road",
+      "min_point_index": 0,
+      "note": "St. Ann hill town sitting in a natural depression — the lake dried long ago",
+      "needs_owner_review": true
+    },
+    {
+      "id": "comm-fern-gully",
+      "name": "Fern Gully",
+      "trigger_segment": "Milford Road",
+      "min_point_index": 0,
+      "note": "3 km of road through a ravine thick with wild ferns — a beloved Jamaican landmark",
+      "needs_owner_review": false
+    },
+    {
+      "id": "comm-ocho-rios",
+      "name": "Ocho Rios",
+      "trigger_segment": "DaCosta Drive",
+      "min_point_index": 0,
+      "note": "St. Ann tourist town; Dunn's River Falls and the journey's end await",
+      "needs_owner_review": false
+    }
+  ]
+}
