@@ -1,0 +1,131 @@
+{
+  "comment": "Recognition layer 2: community signs. Coordinates are real OSM lat/lon, projected via route origin+scale at load. radius = trigger distance in compressed-world meters. needs_owner_review = true flags entries where map data alone is uncertain — owner's lived knowledge is authoritative.",
+  "communities": [
+    {
+      "id": "com-palisadoes",
+      "name": "Palisadoes",
+      "lat": 17.942,
+      "lon": -76.754,
+      "radius": 400,
+      "note": "The narrow spit connecting the airport to the mainland — coconut trees, sea on both sides",
+      "needs_owner_review": false
+    },
+    {
+      "id": "com-harbour-view",
+      "name": "Harbour View",
+      "lat": 17.952,
+      "lon": -76.722,
+      "radius": 220,
+      "note": "Community at the Harbour View roundabout — gateway from the Palisadoes into Kingston",
+      "needs_owner_review": false
+    },
+    {
+      "id": "com-mountain-view",
+      "name": "Mountain View",
+      "lat": 17.981,
+      "lon": -76.762,
+      "radius": 220,
+      "note": "Inner-city Kingston neighbourhood along Mountain View Avenue",
+      "needs_owner_review": false
+    },
+    {
+      "id": "com-wareika-hill",
+      "name": "Wareika Hill",
+      "lat": 17.985,
+      "lon": -76.757,
+      "radius": 180,
+      "note": "Hillside Rastafari community overlooking Mountain View — exact trigger position may need adjustment",
+      "needs_owner_review": true
+    },
+    {
+      "id": "com-kingston",
+      "name": "Kingston",
+      "lat": 17.997,
+      "lon": -76.787,
+      "radius": 400,
+      "note": "Capital city — route threads through Windward Road, Mountain View, Half Way Tree",
+      "needs_owner_review": false
+    },
+    {
+      "id": "com-half-way-tree",
+      "name": "Half Way Tree",
+      "lat": 18.011,
+      "lon": -76.797,
+      "radius": 240,
+      "note": "Major commercial hub and transport centre of uptown Kingston",
+      "needs_owner_review": false
+    },
+    {
+      "id": "com-new-kingston",
+      "name": "New Kingston",
+      "lat": 18.014,
+      "lon": -76.788,
+      "radius": 200,
+      "note": "Corporate/hotel district — overlaps with Half Way Tree; owner should decide if both signs are wanted",
+      "needs_owner_review": true
+    },
+    {
+      "id": "com-spanish-town",
+      "name": "Spanish Town",
+      "lat": 17.995,
+      "lon": -76.957,
+      "radius": 350,
+      "note": "St Catherine parish capital and former colonial capital of Jamaica",
+      "needs_owner_review": false
+    },
+    {
+      "id": "com-bog-walk",
+      "name": "Bog Walk",
+      "lat": 18.067,
+      "lon": -77.014,
+      "radius": 240,
+      "note": "Community at the entrance to the Bog Walk Gorge and Flat Bridge",
+      "needs_owner_review": false
+    },
+    {
+      "id": "com-linstead",
+      "name": "Linstead",
+      "lat": 18.137,
+      "lon": -77.023,
+      "radius": 280,
+      "note": "St Catherine market town — famous for ackee and the song Linstead Market",
+      "needs_owner_review": false
+    },
+    {
+      "id": "com-moneague",
+      "name": "Moneague",
+      "lat": 18.277,
+      "lon": -77.093,
+      "radius": 220,
+      "note": "St Ann plateau junction — where the route begins its descent toward Ocho Rios",
+      "needs_owner_review": false
+    },
+    {
+      "id": "com-faiths-pen",
+      "name": "Faith's Pen",
+      "lat": 18.235,
+      "lon": -77.095,
+      "radius": 200,
+      "note": "Famous roadside cookshop strip — jerk chicken, roast yam, festival; a standing institution",
+      "needs_owner_review": false
+    },
+    {
+      "id": "com-fern-gully",
+      "name": "Fern Gully",
+      "lat": 18.361,
+      "lon": -77.097,
+      "radius": 200,
+      "note": "Dense fern-canopied gully road descending into Ocho Rios — Milford Road through the gully",
+      "needs_owner_review": false
+    },
+    {
+      "id": "com-ocho-rios",
+      "name": "Ocho Rios",
+      "lat": 18.411,
+      "lon": -77.106,
+      "radius": 300,
+      "note": "St Ann Bay resort town — journey's end, Dunn's River Falls",
+      "needs_owner_review": false
+    }
+  ]
+}
