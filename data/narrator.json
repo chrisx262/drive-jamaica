@@ -16,6 +16,25 @@
     ],
     "tyre.fixed": [
       "Tyre patch up — gwaan!"
+    ],
+    "community.enter": [
+      "Welcome to {community}!",
+      "Yuh reach {community}!",
+      "{community} nice up — big up di community!"
+    ],
+    "dog.chase": [
+      "Dog dem a bark and chase — gun it, nuh!",
+      "Watch out! Dem yard dog nuh play wid yuh!",
+      "Move, pup! Di road nah fi yuh!"
+    ],
+    "goat.hit": [
+      "Lawd have mercy — yuh lick down di goat!",
+      "Yuh nyam down a goat, breddah! Dat nuh right!",
+      "Respect di road animals, man! Goat have feelings too!"
+    ],
+    "goat.near_miss": [
+      "Careful wid di goat dem — dem nuh signal before dem cross!",
+      "Nearly! Di goat dem a test yuh reflexes!"
     ]
   }
 }
