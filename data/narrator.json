@@ -16,6 +16,28 @@
     ],
     "tyre.fixed": [
       "Tyre patch up — gwaan!"
+    ],
+    "community.enter": [
+      "Welcome to {community}!",
+      "Yuh reach {community} now!",
+      "Big up {community}!"
+    ],
+    "dog.chase": [
+      "Lawd, di dawg dem a run after yuh!",
+      "Look how di dawg chase yuh! Step pon it!",
+      "Dawg! Dawg! Dawg! Drive drive drive!"
+    ],
+    "dog.bark": [
+      "Di dawg nah give up — keep movin'!"
+    ],
+    "goat.hit": [
+      "Lawd have mercy — yuh lick down di goat!",
+      "Yuh mad?! Dat was somebody goat!",
+      "Mi cyan believe yuh hit di goat, brethren!"
+    ],
+    "goat.nearMiss": [
+      "Wheeel! Yuh nearly kill di goat dem!",
+      "Close call wid di goats — drive careful!"
     ]
   }
 }

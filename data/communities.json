@@ -1,0 +1,134 @@
+{
+  "comment": "Recognition layer 2: community/district signs. Coordinates are real-world lat/lon projected via route origin+scale at load. trigger_radius is in compressed-world meters. needs_owner_review: true means exact placement on route needs owner's lived knowledge to verify.",
+  "communities": [
+    {
+      "id": "com-palisadoes",
+      "name": "Palisadoes",
+      "lat": 17.9490,
+      "lon": -76.7490,
+      "trigger_radius": 400,
+      "note": "The sand strip — coconut-tree road, sea on both sides"
+    },
+    {
+      "id": "com-harbour-view",
+      "name": "Harbour View",
+      "lat": 17.9893,
+      "lon": -76.7572,
+      "trigger_radius": 320,
+      "note": "Roundabout where Palisadoes joins Windward Road"
+    },
+    {
+      "id": "com-rockfort",
+      "name": "Rockfort",
+      "lat": 17.9800,
+      "lon": -76.7638,
+      "trigger_radius": 280,
+      "note": "Industrial waterfront area along Windward Road",
+      "needs_owner_review": true
+    },
+    {
+      "id": "com-rollington-town",
+      "name": "Rollington Town",
+      "lat": 17.9966,
+      "lon": -76.7698,
+      "trigger_radius": 280,
+      "needs_owner_review": true
+    },
+    {
+      "id": "com-vineyard-town",
+      "name": "Vineyard Town",
+      "lat": 17.9985,
+      "lon": -76.7730,
+      "trigger_radius": 280,
+      "needs_owner_review": true
+    },
+    {
+      "id": "com-new-kingston",
+      "name": "New Kingston",
+      "lat": 18.0132,
+      "lon": -76.7900,
+      "trigger_radius": 350
+    },
+    {
+      "id": "com-half-way-tree",
+      "name": "Half Way Tree",
+      "lat": 18.0109,
+      "lon": -76.7960,
+      "trigger_radius": 320,
+      "note": "The commercial crossroads — 1813 clock tower"
+    },
+    {
+      "id": "com-hagley-park",
+      "name": "Hagley Park",
+      "lat": 18.0043,
+      "lon": -76.8028,
+      "trigger_radius": 280,
+      "needs_owner_review": true
+    },
+    {
+      "id": "com-spanish-town",
+      "name": "Spanish Town",
+      "lat": 17.9909,
+      "lon": -76.9541,
+      "trigger_radius": 420,
+      "note": "Capital of St. Catherine Parish; oldest continuously inhabited European settlement in Jamaica"
+    },
+    {
+      "id": "com-sligoville",
+      "name": "Sligoville",
+      "lat": 18.0710,
+      "lon": -77.0040,
+      "trigger_radius": 280,
+      "note": "First free village in Jamaica after Emancipation",
+      "needs_owner_review": true
+    },
+    {
+      "id": "com-bog-walk",
+      "name": "Bog Walk",
+      "lat": 18.0620,
+      "lon": -76.9847,
+      "trigger_radius": 320,
+      "note": "Entry to the gorge — Rio Cobre and Flat Bridge ahead"
+    },
+    {
+      "id": "com-linstead",
+      "name": "Linstead",
+      "lat": 18.1343,
+      "lon": -77.0229,
+      "trigger_radius": 380,
+      "note": "Market town — 'Linstead Market' in the folk song"
+    },
+    {
+      "id": "com-moneague",
+      "name": "Moneague",
+      "lat": 18.2639,
+      "lon": -77.1065,
+      "trigger_radius": 340,
+      "note": "Hill-country junction — goat territory"
+    },
+    {
+      "id": "com-faiths-pen",
+      "name": "Faith's Pen",
+      "lat": 18.2347,
+      "lon": -77.0951,
+      "trigger_radius": 280,
+      "note": "Famous roadside cookshop stop — jerk chicken, roast yam, festival"
+    },
+    {
+      "id": "com-fern-gully",
+      "name": "Fern Gully",
+      "lat": 18.3534,
+      "lon": -77.1143,
+      "trigger_radius": 320,
+      "note": "Lush canopy of bamboo and tree ferns arching over the road"
+    },
+    {
+      "id": "com-ocho-rios",
+      "name": "Ocho Rios",
+      "lat": 18.4082,
+      "lon": -77.1049,
+      "trigger_radius": 450,
+      "note": "Journey's end — Dunn's River Falls awaits"
+    }
+  ]
+}
