@@ -1,0 +1,164 @@
+{
+  "comment": "Recognition layer 2: community/district name signs along the full route (Norman Manley Airport → Palisadoes → Harbour View → Kingston → Spanish Town → Bog Walk gorge → Linstead → Moneague → Faith's Pen → Fern Gully → Ocho Rios). Coordinates are real OSM lat/lon, projected into world space the same way as landmarks.json. radius = trigger distance in compressed-world meters. needs_owner_review: true means the entry was inferred from map data — the owner's lived knowledge is authoritative. Each entry has a stable id from creation (standing rule — future ad/analytics system depends on this).",
+  "communities": [
+    {
+      "id": "com-harbour-view",
+      "name": "Harbour View",
+      "lat": 17.993,
+      "lon": -76.751,
+      "radius": 480,
+      "note": "Eastern gateway to Kingston, at the end of the Palisadoes strip"
+    },
+    {
+      "id": "com-wareika-hill",
+      "name": "Wareika Hill",
+      "lat": 17.995,
+      "lon": -76.763,
+      "radius": 350,
+      "note": "East Kingston hillside community along Windward Road",
+      "needs_owner_review": true
+    },
+    {
+      "id": "com-rockfort",
+      "name": "Rockfort",
+      "lat": 17.997,
+      "lon": -76.768,
+      "radius": 350,
+      "note": "East Kingston, industrial area along the waterfront",
+      "needs_owner_review": true
+    },
+    {
+      "id": "com-rollington-town",
+      "name": "Rollington Town",
+      "lat": 18.001,
+      "lon": -76.777,
+      "radius": 350,
+      "note": "Inner-city Kingston community",
+      "needs_owner_review": true
+    },
+    {
+      "id": "com-central-kingston",
+      "name": "Kingston",
+      "lat": 17.998,
+      "lon": -76.792,
+      "radius": 700,
+      "note": "Capital city — the route threads the downtown corridor"
+    },
+    {
+      "id": "com-cross-roads",
+      "name": "Cross Roads",
+      "lat": 18.004,
+      "lon": -76.787,
+      "radius": 320,
+      "note": "Major junction area in central Kingston"
+    },
+    {
+      "id": "com-new-kingston",
+      "name": "New Kingston",
+      "lat": 18.010,
+      "lon": -76.790,
+      "radius": 400,
+      "note": "Kingston's business and hotel district"
+    },
+    {
+      "id": "com-half-way-tree",
+      "name": "Half Way Tree",
+      "lat": 18.011,
+      "lon": -76.796,
+      "radius": 420,
+      "note": "The crossroads of uptown Kingston — 1813 clock tower"
+    },
+    {
+      "id": "com-arnett-gardens",
+      "name": "Arnett Gardens",
+      "lat": 18.003,
+      "lon": -76.814,
+      "radius": 350,
+      "note": "West Kingston community, Spanish Town Road direction",
+      "needs_owner_review": true
+    },
+    {
+      "id": "com-whitfield-town",
+      "name": "Whitfield Town",
+      "lat": 18.005,
+      "lon": -76.822,
+      "radius": 350,
+      "note": "West Kingston, along Spanish Town Road",
+      "needs_owner_review": true
+    },
+    {
+      "id": "com-spanish-town",
+      "name": "Spanish Town",
+      "lat": 17.991,
+      "lon": -76.955,
+      "radius": 600,
+      "note": "St. Catherine capital, former colonial seat of government"
+    },
+    {
+      "id": "com-bog-walk",
+      "name": "Bog Walk",
+      "lat": 18.058,
+      "lon": -76.980,
+      "radius": 460,
+      "note": "Entry to the Rio Cobre gorge — Flat Bridge is just ahead"
+    },
+    {
+      "id": "com-linstead",
+      "name": "Linstead",
+      "lat": 18.133,
+      "lon": -77.028,
+      "radius": 500,
+      "note": "St. Catherine market town — famous for the Linstead Market folk song"
+    },
+    {
+      "id": "com-ewarton",
+      "name": "Ewarton",
+      "lat": 18.179,
+      "lon": -77.071,
+      "radius": 400,
+      "note": "St. Catherine town between Linstead and Moneague",
+      "needs_owner_review": true
+    },
+    {
+      "id": "com-moneague",
+      "name": "Moneague",
+      "lat": 18.233,
+      "lon": -77.097,
+      "radius": 460,
+      "note": "St. Ann town at the crossroads — Moneague Lake nearby"
+    },
+    {
+      "id": "com-faiths-pen",
+      "name": "Faith's Pen",
+      "lat": 18.235,
+      "lon": -77.096,
+      "radius": 350,
+      "note": "Legendary roadside cookshop strip — jerk chicken, roast yam, festival"
+    },
+    {
+      "id": "com-lydford",
+      "name": "Lydford",
+      "lat": 18.279,
+      "lon": -77.122,
+      "radius": 320,
+      "note": "St. Ann village on the descent toward Fern Gully",
+      "needs_owner_review": true
+    },
+    {
+      "id": "com-fern-gully",
+      "name": "Fern Gully",
+      "lat": 18.390,
+      "lon": -77.137,
+      "radius": 400,
+      "note": "Three-kilometre ravine canopied by tree ferns — most famous stretch of road in Jamaica"
+    },
+    {
+      "id": "com-ocho-rios",
+      "name": "Ocho Rios",
+      "lat": 18.407,
+      "lon": -77.100,
+      "radius": 650,
+      "note": "St. Ann tourist capital — journey's end at Dunn's River Falls"
+    }
+  ]
+}
