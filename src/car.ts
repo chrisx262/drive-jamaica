@@ -89,4 +89,9 @@ export class Car {
   repairTyre(): void {
     this.tyreBurst = false;
   }
+
+  // Brief speed reduction on animal impact — not a tyre burst, just a jolt.
+  applyImpact(speedMultiplier: number): void {
+    this.speed *= speedMultiplier;
+  }
 }

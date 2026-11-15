@@ -1,0 +1,166 @@
+{
+  "comment": "Communities/districts along the full Airport→Kingston→Bog Walk→Fern Gully→Ocho Rios route. Lat/lon are approximate community centres. 'needs_owner_review' marks entries where map data was used and owner's lived knowledge should confirm. Used by recognition layer 2 (community signs) in recognition.ts.",
+  "communities": [
+    {
+      "name": "Palisadoes",
+      "lat": 17.9372,
+      "lon": -76.7616,
+      "note": "The narrow spit connecting the airport to Kingston — sea on both sides, coconut trees lining the road."
+    },
+    {
+      "name": "Harbour View",
+      "lat": 17.9568,
+      "lon": -76.7488,
+      "note": "Eastern gateway community at the end of the Palisadoes; major roundabout where the airport road meets Windward Road."
+    },
+    {
+      "name": "Rockfort",
+      "lat": 17.9735,
+      "lon": -76.7592,
+      "note": "East Kingston industrial community. The old fort is nearby.",
+      "needs_owner_review": true
+    },
+    {
+      "name": "Wareika Hill",
+      "lat": 17.9820,
+      "lon": -76.7679,
+      "note": "Hillside Rastafarian community above east Kingston. Known for nyahbinghi drumming."
+    },
+    {
+      "name": "Rollington Town",
+      "lat": 17.9892,
+      "lon": -76.7778,
+      "note": "Inner-city Kingston community along the Windward Road corridor.",
+      "needs_owner_review": true
+    },
+    {
+      "name": "Allman Town",
+      "lat": 17.9956,
+      "lon": -76.7840,
+      "note": "Historic downtown Kingston neighbourhood.",
+      "needs_owner_review": true
+    },
+    {
+      "name": "Cross Roads",
+      "lat": 18.0049,
+      "lon": -76.7889,
+      "note": "Major commercial junction in central Kingston — where Maxfield Ave meets Slipe Road."
+    },
+    {
+      "name": "New Kingston",
+      "lat": 18.0105,
+      "lon": -76.7877,
+      "note": "Kingston's modern commercial and financial hub. Hotels, offices, Emancipation Park."
+    },
+    {
+      "name": "Half Way Tree",
+      "lat": 18.0121,
+      "lon": -76.7996,
+      "note": "The unofficial capital of Kingston — the clock tower, buses everywhere, pure vibes."
+    },
+    {
+      "name": "Constant Spring",
+      "lat": 18.0349,
+      "lon": -76.7998,
+      "note": "Uptown residential area along Constant Spring Road. Usain Bolt's Tracks & Records is here.",
+      "needs_owner_review": true
+    },
+    {
+      "name": "Trench Town",
+      "lat": 17.9942,
+      "lon": -76.8198,
+      "note": "Bob Marley's home community. The music that changed the world came from here."
+    },
+    {
+      "name": "Arnett Gardens",
+      "lat": 17.9842,
+      "lon": -76.8215,
+      "note": "Known locally as 'The Jungle'. Fierce community pride.",
+      "needs_owner_review": true
+    },
+    {
+      "name": "Twickenham Park",
+      "lat": 18.0218,
+      "lon": -76.9044,
+      "note": "Community on the outskirts of Spanish Town, along the main route west.",
+      "needs_owner_review": true
+    },
+    {
+      "name": "Bog Walk",
+      "lat": 18.0658,
+      "lon": -76.9596,
+      "note": "Market town at the entrance to the gorge. Fresh produce, bammy and festivals by the roadside."
+    },
+    {
+      "name": "Flat Bridge",
+      "lat": 18.0721,
+      "lon": -76.9712,
+      "note": "The narrows of Bog Walk gorge — this old bridge floods when the Rio Cobre rises. Legendary spot."
+    },
+    {
+      "name": "Point Hill",
+      "lat": 18.0963,
+      "lon": -77.0019,
+      "note": "Small farming community in the hills above the gorge.",
+      "needs_owner_review": true
+    },
+    {
+      "name": "Linstead",
+      "lat": 18.1368,
+      "lon": -77.0268,
+      "note": "\"Linstead Market\" — the folk song is about this town. Market town, busy and real."
+    },
+    {
+      "name": "Ewarton",
+      "lat": 18.1477,
+      "lon": -77.0758,
+      "note": "Bauxite country. The old alumina plant road forks off here.",
+      "needs_owner_review": true
+    },
+    {
+      "name": "Guy's Hill",
+      "lat": 18.1721,
+      "lon": -77.0742,
+      "note": "Agricultural community in the hills between Linstead and Moneague.",
+      "needs_owner_review": true
+    },
+    {
+      "name": "Mount Rosser",
+      "lat": 18.2261,
+      "lon": -77.1183,
+      "note": "High point before the descent to Moneague — that's where the wrong-turn off-road option lives.",
+      "needs_owner_review": true
+    },
+    {
+      "name": "Moneague",
+      "lat": 18.2161,
+      "lon": -77.1049,
+      "note": "Mountain crossroads town where St. Ann and St. Mary meet. Cool breeze up here."
+    },
+    {
+      "name": "Faith's Pen",
+      "lat": 18.2367,
+      "lon": -77.1273,
+      "note": "The famous roadside cookshop strip — jerk chicken, roast yam, festival, cold drinks. Pull over."
+    },
+    {
+      "name": "Claremont",
+      "lat": 18.3612,
+      "lon": -77.1337,
+      "note": "St. Ann community at the northern end of the descent toward Ocho Rios.",
+      "needs_owner_review": true
+    },
+    {
+      "name": "Fern Gully",
+      "lat": 18.3521,
+      "lon": -77.1267,
+      "note": "Three kilometres of canopy-covered road — bamboo and tree ferns arching overhead. No other road like it in the Caribbean."
+    },
+    {
+      "name": "Ocho Rios",
+      "lat": 18.4053,
+      "lon": -77.1024,
+      "note": "Tourism capital of the north coast. White sand, cruise ships, Dunn's River around the corner."
+    }
+  ]
+}
