@@ -16,6 +16,29 @@
     ],
     "tyre.fixed": [
       "Tyre patch up — gwaan!"
+    ],
+    "community.enter": [
+      "Welcome to {community}!",
+      "Yuh reach {community} now, brethren.",
+      "{community} — real place dis!",
+      "Big up {community}!"
+    ],
+    "dog.chase": [
+      "Dawg a run yuh dung! Step pon it!",
+      "Hush, dawg! Lef di car alone!",
+      "Every time! Di dog dem nuh business wid traffic.",
+      "Move, puppydog! Di man a drive!"
+    ],
+    "goat.hit": [
+      "Lawd have mercy — yuh lick dung di goat!",
+      "Brethren, dat was somebody goat! Respect di livestock!",
+      "Yuh fi watch out fah di goat dem, man. Now look weh happen.",
+      "Dat nuh look good. Goat nah forgive easily."
+    ],
+    "goat.nearmiss": [
+      "Jah save! Dat was close — nearly lick dung di poor goat.",
+      "Easy nuh! Di goat dem have di right of way up here.",
+      "Wheeel! Barely miss it. Keep yuh eyes open!"
     ]
   }
 }
