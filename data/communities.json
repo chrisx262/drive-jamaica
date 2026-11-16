@@ -1,0 +1,166 @@
+{
+  "comment": "Recognition layer 2: community/district entry signs. Lat/lon places the trigger in world space via road.project(). trigger_radius is in compressed-world metres. needs_owner_review: true means the coordinate or note is uncertain — the owner's lived knowledge is authoritative over map data.",
+  "communities": [
+    {
+      "id": "com-palisadoes",
+      "name": "Palisadoes",
+      "lat": 17.9420,
+      "lon": -76.7420,
+      "trigger_radius": 500,
+      "note": "The tombolo strip; sea on both sides — Gun Boat Beach / harbour on the left, open sea on the right"
+    },
+    {
+      "id": "com-harbour-view",
+      "name": "Harbour View",
+      "lat": 18.0048,
+      "lon": -76.7742,
+      "trigger_radius": 350,
+      "note": "Eastern Kingston suburb at the foot of the Palisadoes; gateway roundabout into the city"
+    },
+    {
+      "id": "com-rockfort",
+      "name": "Rockfort",
+      "lat": 17.9820,
+      "lon": -76.7612,
+      "trigger_radius": 280,
+      "note": "Industrial and residential strip along Windward Road",
+      "needs_owner_review": true
+    },
+    {
+      "id": "com-wareika-hill",
+      "name": "Wareika Hill",
+      "lat": 17.9985,
+      "lon": -76.7730,
+      "trigger_radius": 280,
+      "note": "East Kingston Rastafari community; exact road placement uncertain",
+      "needs_owner_review": true
+    },
+    {
+      "id": "com-cross-roads",
+      "name": "Cross Roads",
+      "lat": 17.9930,
+      "lon": -76.7790,
+      "trigger_radius": 300,
+      "note": "Major Kingston junction where Half Way Tree Road meets South Camp Road",
+      "needs_owner_review": true
+    },
+    {
+      "id": "com-new-kingston",
+      "name": "New Kingston",
+      "lat": 18.0090,
+      "lon": -76.7930,
+      "trigger_radius": 350,
+      "note": "Modern business and hotel district of Kingston",
+      "needs_owner_review": true
+    },
+    {
+      "id": "com-half-way-tree",
+      "name": "Half Way Tree",
+      "lat": 18.0121,
+      "lon": -76.7975,
+      "trigger_radius": 400,
+      "note": "Main commercial hub of Kingston / St. Andrew; the Half Way Tree clock tower is an unmissable landmark"
+    },
+    {
+      "id": "com-washington-gardens",
+      "name": "Washington Gardens",
+      "lat": 18.0030,
+      "lon": -76.8260,
+      "trigger_radius": 280,
+      "note": "Kingston residential suburb along Spanish Town Road",
+      "needs_owner_review": true
+    },
+    {
+      "id": "com-riverton",
+      "name": "Riverton",
+      "lat": 17.9970,
+      "lon": -76.8450,
+      "trigger_radius": 300,
+      "note": "Community in western Kingston along Spanish Town Road; Riverton City area",
+      "needs_owner_review": true
+    },
+    {
+      "id": "com-spanish-town",
+      "name": "Spanish Town",
+      "lat": 17.9906,
+      "lon": -76.9552,
+      "trigger_radius": 500,
+      "note": "Former capital of Jamaica (St. Catherine); route uses the bypass; great square and cathedral are nearby"
+    },
+    {
+      "id": "com-sligoville",
+      "name": "Sligoville",
+      "lat": 18.0620,
+      "lon": -76.9850,
+      "trigger_radius": 300,
+      "note": "First free village in Jamaica (1838); on the Sligoville Road heading north to Bog Walk",
+      "needs_owner_review": true
+    },
+    {
+      "id": "com-bog-walk",
+      "name": "Bog Walk",
+      "lat": 18.0970,
+      "lon": -76.9790,
+      "trigger_radius": 400,
+      "note": "Rio Cobre gorge community; Flat Bridge is the centrepiece of this dramatic stretch"
+    },
+    {
+      "id": "com-linstead",
+      "name": "Linstead",
+      "lat": 18.1424,
+      "lon": -77.0298,
+      "trigger_radius": 450,
+      "note": "St. Catherine market town; immortalised in the folk song Linstead Market (Carry mi ackee go a Linstead Market…)"
+    },
+    {
+      "id": "com-mount-rosser",
+      "name": "Mount Rosser",
+      "lat": 18.2000,
+      "lon": -77.0670,
+      "trigger_radius": 280,
+      "note": "Hill community between Linstead and Moneague; potential off-road moment territory",
+      "needs_owner_review": true
+    },
+    {
+      "id": "com-moneague",
+      "name": "Moneague",
+      "lat": 18.2640,
+      "lon": -77.1023,
+      "trigger_radius": 400,
+      "note": "St. Ann hill town; gateway to the north coast"
+    },
+    {
+      "id": "com-faiths-pen",
+      "name": "Faith's Pen",
+      "lat": 18.2744,
+      "lon": -77.0837,
+      "trigger_radius": 350,
+      "note": "Famous roadside cookshop village on the A1; jerk chicken, roast yam, festival, cold drinks"
+    },
+    {
+      "id": "com-claremont",
+      "name": "Claremont",
+      "lat": 18.3400,
+      "lon": -77.1050,
+      "trigger_radius": 300,
+      "note": "St. Ann community on the descent toward Fern Gully",
+      "needs_owner_review": true
+    },
+    {
+      "id": "com-fern-gully",
+      "name": "Fern Gully",
+      "lat": 18.3900,
+      "lon": -77.1120,
+      "trigger_radius": 350,
+      "note": "Canopy of tree ferns arching over the road — one of Jamaica's most iconic drives"
+    },
+    {
+      "id": "com-ocho-rios",
+      "name": "Ocho Rios",
+      "lat": 18.4082,
+      "lon": -77.1079,
+      "trigger_radius": 500,
+      "note": "North coast resort town; end of the Airport Run — Dunn's River Falls awaits"
+    }
+  ]
+}

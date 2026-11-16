@@ -16,6 +16,23 @@
     ],
     "tyre.fixed": [
       "Tyre patch up — gwaan!"
+    ],
+    "community.enter": [
+      "Welcome to {community}, star!",
+      "Yuh reach {community} now, big up!"
+    ],
+    "dog.chase": [
+      "Dawg a chase yuh! Stap di foolishness!",
+      "Heel, dawg! Leave di man alone!"
+    ],
+    "goat.hit": [
+      "Yuh lick di goat?! Owner a go vex wid yuh!",
+      "Bwoy, yuh wipe out di poor goat! Shame pon yuh!",
+      "Dat goat never do yuh nutten! Cho!"
+    ],
+    "goat.near_miss": [
+      "Nearly lick di goat deh! Drive careful, nuh!",
+      "Close call wid di goat! Dem nuh know seh road is fi car!"
     ]
   }
 }
