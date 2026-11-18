@@ -10,6 +10,11 @@
     "landmark.enter": [
       "See {landmark} deh!"
     ],
+    "community.enter": [
+      "Welcome to {community}, star!",
+      "Yuh reach {community} now — big up!",
+      "{community} — nuff memories deh yah"
+    ],
     "pothole.burst": [
       "Yuh tyre bust, brethren!",
       "Wheeel! Mind di pothole dem!"

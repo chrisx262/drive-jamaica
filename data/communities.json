@@ -1,0 +1,127 @@
+{
+  "comment": "Recognition layer 2: community/district entry signs along the Airport→Ochi route. Coordinates are real OSM lat/lon, projected into world space by road.project(). radius = trigger distance in compressed-world meters (world scale = 30% of real). Entries marked needs_owner_review need confirmation from the owner's lived knowledge — flag before shipping.",
+  "communities": [
+    {
+      "id": "com-palisadoes",
+      "name": "Palisadoes",
+      "lat": 17.9480,
+      "lon": -76.7658,
+      "radius": 500,
+      "note": "The iconic peninsula strip — sea on both sides all the way to the airport"
+    },
+    {
+      "id": "com-harbour-view",
+      "name": "Harbour View",
+      "lat": 17.9548,
+      "lon": -76.7467,
+      "radius": 350,
+      "note": "Where the Palisadoes strip meets the mainland"
+    },
+    {
+      "id": "com-rockfort",
+      "name": "Rockfort",
+      "lat": 17.9657,
+      "lon": -76.7398,
+      "radius": 350,
+      "note": "East Kingston — mineral baths and the old colonial fort"
+    },
+    {
+      "id": "com-wareika-hill",
+      "name": "Wareika Hill",
+      "lat": 18.0046,
+      "lon": -76.7355,
+      "radius": 350,
+      "note": "East Kingston hillside — birthplace of Rastafarian roots drumming",
+      "needs_owner_review": true
+    },
+    {
+      "id": "com-cross-roads",
+      "name": "Cross Roads",
+      "lat": 17.9926,
+      "lon": -76.7904,
+      "radius": 350,
+      "note": "Kingston's central junction — traffic, market, everything"
+    },
+    {
+      "id": "com-new-kingston",
+      "name": "New Kingston",
+      "lat": 18.0051,
+      "lon": -76.7854,
+      "radius": 400,
+      "note": "Modern Kingston — hotels, Emancipation Park, Devon House nearby"
+    },
+    {
+      "id": "com-half-way-tree",
+      "name": "Half Way Tree",
+      "lat": 18.0109,
+      "lon": -76.7960,
+      "radius": 400,
+      "note": "Kingston uptown hub — the 1813 clock tower never stopped watching"
+    },
+    {
+      "id": "com-spanish-town",
+      "name": "Spanish Town",
+      "lat": 17.9910,
+      "lon": -76.9573,
+      "radius": 500,
+      "note": "Jamaica's first colonial capital — the old square and iron bridge"
+    },
+    {
+      "id": "com-bog-walk",
+      "name": "Bog Walk",
+      "lat": 18.0950,
+      "lon": -77.0150,
+      "radius": 400,
+      "note": "Entry to the Rio Cobre gorge — Flat Bridge just ahead"
+    },
+    {
+      "id": "com-linstead",
+      "name": "Linstead",
+      "lat": 18.1368,
+      "lon": -77.0314,
+      "radius": 400,
+      "note": "Market town — 'Linstead Market, couldn't sell a quattie worth of ackee'"
+    },
+    {
+      "id": "com-ewarton",
+      "name": "Ewarton",
+      "lat": 18.1683,
+      "lon": -77.0620,
+      "radius": 350,
+      "note": "Hill-country town on the climb toward Moneague",
+      "needs_owner_review": true
+    },
+    {
+      "id": "com-moneague",
+      "name": "Moneague",
+      "lat": 18.2583,
+      "lon": -77.1065,
+      "radius": 400,
+      "note": "Mountain crossroads where the view opens to the north"
+    },
+    {
+      "id": "com-faiths-pen",
+      "name": "Faith's Pen",
+      "lat": 18.2347,
+      "lon": -77.0951,
+      "radius": 400,
+      "note": "The legendary strip of jerk, roast yam and festival — slow down"
+    },
+    {
+      "id": "com-fern-gully",
+      "name": "Fern Gully",
+      "lat": 18.3645,
+      "lon": -77.1109,
+      "radius": 500,
+      "note": "Three kilometres of tree-tunnel — there is nowhere else like this"
+    },
+    {
+      "id": "com-ocho-rios",
+      "name": "Ocho Rios",
+      "lat": 18.4063,
+      "lon": -77.1057,
+      "radius": 500,
+      "note": "Tourism capital of the north coast — Dunn's River Falls awaits"
+    }
+  ]
+}
