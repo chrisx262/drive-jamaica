@@ -1,0 +1,129 @@
+{
+  "comment": "Communities along the full Airport→Ocho Rios route. Each entry triggers a community sign (recognition layer 2). IDs are stable — do not renumber. Entries marked needs_owner_review need the owner's lived knowledge to confirm placement.",
+  "communities": [
+    {
+      "id": "community-001",
+      "name": "Palisadoes",
+      "lat": 17.9336,
+      "lon": -76.7777,
+      "radius": 180,
+      "note": "The long strip road from the airport — sea on both sides."
+    },
+    {
+      "id": "community-002",
+      "name": "Harbour View",
+      "lat": 17.9711,
+      "lon": -76.7437,
+      "radius": 120,
+      "note": "The roundabout where potholes begin — end of the government-maintained airport road."
+    },
+    {
+      "id": "community-003",
+      "name": "Rockfort",
+      "lat": 17.9797,
+      "lon": -76.7609,
+      "radius": 110,
+      "note": "East Kingston industrial and residential area along Windward Road.",
+      "needs_owner_review": true
+    },
+    {
+      "id": "community-004",
+      "name": "Wareika Hill",
+      "lat": 18.0046,
+      "lon": -76.7355,
+      "radius": 100,
+      "note": "East Kingston hillside community, near Mountain View Avenue.",
+      "needs_owner_review": true
+    },
+    {
+      "id": "community-005",
+      "name": "Cross Roads",
+      "lat": 17.9983,
+      "lon": -76.7872,
+      "radius": 110,
+      "note": "Major junction in Kingston — Half Way Tree Road meets Maxfield Avenue."
+    },
+    {
+      "id": "community-006",
+      "name": "New Kingston",
+      "lat": 17.9994,
+      "lon": -76.7978,
+      "radius": 130,
+      "note": "Kingston's business district — hotels, banks, Emancipation Park."
+    },
+    {
+      "id": "community-007",
+      "name": "Half Way Tree",
+      "lat": 18.0107,
+      "lon": -76.7956,
+      "radius": 140,
+      "note": "The clock tower — commercial heart of St. Andrew."
+    },
+    {
+      "id": "community-008",
+      "name": "Spanish Town",
+      "lat": 17.9900,
+      "lon": -76.9550,
+      "radius": 160,
+      "note": "Old colonial capital of Jamaica — Cathedral, old iron bridge.",
+      "needs_owner_review": true
+    },
+    {
+      "id": "community-009",
+      "name": "Bog Walk",
+      "lat": 18.0974,
+      "lon": -77.0040,
+      "radius": 140,
+      "note": "Entry to the Bog Walk gorge — Flat Bridge, Rio Cobre river."
+    },
+    {
+      "id": "community-010",
+      "name": "Linstead",
+      "lat": 18.1358,
+      "lon": -77.0295,
+      "radius": 130,
+      "note": "Market town in St. Catherine — famous for Linstead Market song."
+    },
+    {
+      "id": "community-011",
+      "name": "Ewarton",
+      "lat": 18.1683,
+      "lon": -77.0620,
+      "radius": 110,
+      "note": "Small town between Linstead and Moneague.",
+      "needs_owner_review": true
+    },
+    {
+      "id": "community-012",
+      "name": "Moneague",
+      "lat": 18.2648,
+      "lon": -77.1151,
+      "radius": 120,
+      "note": "Hill-country junction — Moneague Lake, cool climate, Mount Rosser nearby."
+    },
+    {
+      "id": "community-013",
+      "name": "Faith's Pen",
+      "lat": 18.3099,
+      "lon": -77.1364,
+      "radius": 110,
+      "note": "Famous roadside cookshop strip — jerk chicken, roast yam, festival."
+    },
+    {
+      "id": "community-014",
+      "name": "Fern Gully",
+      "lat": 18.3802,
+      "lon": -77.0984,
+      "radius": 160,
+      "note": "Natural canopy of tree ferns and bamboo — one of Jamaica's most beautiful roads."
+    },
+    {
+      "id": "community-015",
+      "name": "Ocho Rios",
+      "lat": 18.4071,
+      "lon": -77.1049,
+      "radius": 200,
+      "note": "End of the route — Dunn's River Falls, tourist hub on the north coast."
+    }
+  ]
+}
