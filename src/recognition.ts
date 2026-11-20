@@ -1,21 +1,24 @@
 import * as THREE from 'three';
 import landmarksData from '../data/landmarks.json';
+import communitiesData from '../data/communities.json';
 import type { Road } from './road';
 import { narrate } from './narrator';
 
-
-// Recognition system: layer 1 road callouts + layer 3 landmark popups.
-// Community signs (layer 2) extend this module later.
+// Recognition system: layer 1 road callouts + layer 2 community signs + layer 3 landmark popups.
 export class Recognition {
   private currentRoad: string | undefined;
   private calloutEl: HTMLElement;
   private popupEl: HTMLElement;
+  private communityEl: HTMLElement;
   private hideTimer: ReturnType<typeof setTimeout> | undefined;
   private popupTimer: ReturnType<typeof setTimeout> | undefined;
+  private communityTimer: ReturnType<typeof setTimeout> | undefined;
   private landmarks: { name: string; fact: string; pos: THREE.Vector3; radius: number; shown: boolean }[] = [];
+  private communities: { name: string; pos: THREE.Vector3; radius: number; shown: boolean }[] = [];
 
   constructor(private road: Road) {
     this.calloutEl = document.getElementById('callout')!;
+
     this.popupEl = document.createElement('div');
     Object.assign(this.popupEl.style, {
       position: 'fixed', top: '64px', left: '50%', transform: 'translateX(-50%)',
@@ -26,8 +29,24 @@ export class Recognition {
     } satisfies Partial<CSSStyleDeclaration>);
     document.body.appendChild(this.popupEl);
 
+    // Layer 2: community name signs — styled like a Jamaican road sign (yellow on green)
+    this.communityEl = document.createElement('div');
+    Object.assign(this.communityEl.style, {
+      position: 'fixed', top: '100px', left: '50%', transform: 'translateX(-50%)',
+      padding: '6px 20px', borderRadius: '4px', background: '#1a7a2e',
+      border: '3px solid #f5c518', color: '#f5c518',
+      fontFamily: 'system-ui, sans-serif', fontWeight: '800',
+      fontSize: '18px', letterSpacing: '0.05em', opacity: '0',
+      transition: 'opacity 0.4s', userSelect: 'none', textAlign: 'center',
+    } satisfies Partial<CSSStyleDeclaration>);
+    document.body.appendChild(this.communityEl);
+
     for (const l of landmarksData.landmarks) {
       this.landmarks.push({ name: l.name, fact: l.fact, pos: road.project(l.lat, l.lon), radius: l.radius, shown: false });
+    }
+
+    for (const c of communitiesData.communities) {
+      this.communities.push({ name: c.name, pos: road.project(c.lat, c.lon), radius: c.radius, shown: false });
     }
   }
 
@@ -40,6 +59,16 @@ export class Recognition {
       clearTimeout(this.hideTimer);
       this.hideTimer = setTimeout(() => { this.calloutEl.style.opacity = '0'; }, 4000);
       narrate('road.enter', { road: seg.name });
+    }
+
+    for (const c of this.communities) {
+      if (c.shown || c.pos.distanceTo(carPos) > c.radius) continue;
+      c.shown = true;
+      this.communityEl.textContent = c.name.toUpperCase();
+      this.communityEl.style.opacity = '1';
+      clearTimeout(this.communityTimer);
+      this.communityTimer = setTimeout(() => { this.communityEl.style.opacity = '0'; }, 3500);
+      narrate('community.enter', { community: c.name });
     }
 
     for (const l of this.landmarks) {
