@@ -1,0 +1,153 @@
+{
+  "comment": "Recognition layer 2: community/district signs. Each entry shows a name sign as the car enters the trigger radius. lat/lon are real OSM coordinates projected into world space. radius in compressed-world meters. 'needs_owner_review': true flags entries the owner should verify with lived knowledge — map data may be imprecise for community boundaries. Ordered roughly along the route.",
+  "communities": [
+    {
+      "id": "com-palisadoes",
+      "name": "Palisadoes",
+      "lat": 17.9490,
+      "lon": -76.7450,
+      "radius": 400,
+      "note": "The Palisadoes spit — sea on both sides heading into Kingston"
+    },
+    {
+      "id": "com-harbour-view",
+      "name": "Harbour View",
+      "lat": 17.9872,
+      "lon": -76.7444,
+      "radius": 300,
+      "note": "Roundabout into Windward Road; potholes begin here"
+    },
+    {
+      "id": "com-rockfort",
+      "name": "Rockfort",
+      "lat": 17.9893,
+      "lon": -76.7540,
+      "radius": 280,
+      "note": "East Kingston industrial and residential area",
+      "needs_owner_review": true
+    },
+    {
+      "id": "com-east-kingston",
+      "name": "East Kingston",
+      "lat": 17.9930,
+      "lon": -76.7650,
+      "radius": 350,
+      "needs_owner_review": true
+    },
+    {
+      "id": "com-mountain-view",
+      "name": "Mountain View",
+      "lat": 18.0010,
+      "lon": -76.7730,
+      "radius": 300,
+      "note": "Mountain View Avenue — National Stadium nearby"
+    },
+    {
+      "id": "com-new-kingston",
+      "name": "New Kingston",
+      "lat": 18.0085,
+      "lon": -76.7900,
+      "radius": 350,
+      "note": "Business and hotel district; Trafalgar Road / Hope Road corridor"
+    },
+    {
+      "id": "com-half-way-tree",
+      "name": "Half Way Tree",
+      "lat": 18.0152,
+      "lon": -76.7919,
+      "radius": 350,
+      "note": "Major commercial hub; the clock tower is iconic"
+    },
+    {
+      "id": "com-constant-spring",
+      "name": "Constant Spring",
+      "lat": 18.0400,
+      "lon": -76.7975,
+      "radius": 300,
+      "note": "Constant Spring Road; Usain Bolt's Tracks & Records is here",
+      "needs_owner_review": true
+    },
+    {
+      "id": "com-portmore",
+      "name": "Portmore",
+      "lat": 17.9680,
+      "lon": -76.8900,
+      "radius": 400,
+      "note": "Large dormitory city west of Kingston; route passes near its approaches",
+      "needs_owner_review": true
+    },
+    {
+      "id": "com-spanish-town",
+      "name": "Spanish Town",
+      "lat": 17.9900,
+      "lon": -76.9540,
+      "radius": 400,
+      "note": "Former colonial capital; route passes via Spanish Town Bypass"
+    },
+    {
+      "id": "com-bog-walk",
+      "name": "Bog Walk",
+      "lat": 18.0943,
+      "lon": -76.9096,
+      "radius": 350,
+      "note": "Entry to the gorge; Flat Bridge is ahead"
+    },
+    {
+      "id": "com-ewarton",
+      "name": "Ewarton",
+      "lat": 18.1753,
+      "lon": -77.1104,
+      "radius": 300,
+      "needs_owner_review": true
+    },
+    {
+      "id": "com-linstead",
+      "name": "Linstead",
+      "lat": 18.1300,
+      "lon": -77.0310,
+      "radius": 350,
+      "note": "Market town; 'Linstead Market' in the folk song"
+    },
+    {
+      "id": "com-moneague",
+      "name": "Moneague",
+      "lat": 18.2683,
+      "lon": -77.1119,
+      "radius": 350,
+      "note": "Hill-country junction; goat country begins here"
+    },
+    {
+      "id": "com-faiths-pen",
+      "name": "Faith's Pen",
+      "lat": 18.3186,
+      "lon": -77.1131,
+      "radius": 300,
+      "note": "Legendary roadside cookshops — jerk chicken, roast yam, festival"
+    },
+    {
+      "id": "com-bamboo",
+      "name": "Bamboo",
+      "lat": 18.3400,
+      "lon": -77.1500,
+      "radius": 280,
+      "note": "The bamboo avenue stretch leading into Fern Gully",
+      "needs_owner_review": true
+    },
+    {
+      "id": "com-fern-gully",
+      "name": "Fern Gully",
+      "lat": 18.3700,
+      "lon": -77.1550,
+      "radius": 300,
+      "note": "Lush canopied ravine road — ancient fern species line the walls"
+    },
+    {
+      "id": "com-ocho-rios",
+      "name": "Ocho Rios",
+      "lat": 18.4047,
+      "lon": -77.1049,
+      "radius": 400,
+      "note": "End of the run — Dunn's River Falls awaits"
+    }
+  ]
+}
