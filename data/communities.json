@@ -1,0 +1,140 @@
+{
+  "comment": "Recognition layer 2: community signs. Coordinates are real-world lat/lon projected via route origin+scale at load time. radius is trigger distance in compressed-world meters. needs_owner_review: true means the coordinate or note was derived from map data, not lived knowledge — owner should verify before ship.",
+  "communities": [
+    {
+      "id": "com-palisadoes",
+      "name": "Palisadoes",
+      "lat": 17.9550,
+      "lon": -76.7660,
+      "radius": 300,
+      "note": "The narrow sand spit stretching 10 km into Kingston Harbour"
+    },
+    {
+      "id": "com-harbour-view",
+      "name": "Harbour View",
+      "lat": 17.9897,
+      "lon": -76.7719,
+      "radius": 200,
+      "note": "Eastern gateway to Kingston, where the Palisadoes meets the city"
+    },
+    {
+      "id": "com-rockfort",
+      "name": "Rockfort",
+      "lat": 17.9958,
+      "lon": -76.7682,
+      "radius": 180,
+      "note": "Named for the 17th-century English fortification on the hillside",
+      "needs_owner_review": true
+    },
+    {
+      "id": "com-vineyard-town",
+      "name": "Vineyard Town",
+      "lat": 18.0025,
+      "lon": -76.7708,
+      "radius": 180,
+      "note": "Inner-city Kingston community along Mountain View Avenue",
+      "needs_owner_review": true
+    },
+    {
+      "id": "com-cross-roads",
+      "name": "Cross Roads",
+      "lat": 18.0040,
+      "lon": -76.7858,
+      "radius": 200,
+      "note": "Central Kingston junction where major roads converge",
+      "needs_owner_review": true
+    },
+    {
+      "id": "com-half-way-tree",
+      "name": "Half Way Tree",
+      "lat": 18.0109,
+      "lon": -76.7960,
+      "radius": 220,
+      "note": "One of Kingston's busiest transport hubs, named for a historic cotton tree"
+    },
+    {
+      "id": "com-three-miles",
+      "name": "Three Miles",
+      "lat": 17.9985,
+      "lon": -76.8276,
+      "radius": 200,
+      "note": "Named for its distance from the town centre along Spanish Town Road",
+      "needs_owner_review": true
+    },
+    {
+      "id": "com-spanish-town",
+      "name": "Spanish Town",
+      "lat": 17.9960,
+      "lon": -76.9578,
+      "radius": 300,
+      "note": "Jamaica's first capital city, founded as Villa de la Vega in 1534"
+    },
+    {
+      "id": "com-sligoville",
+      "name": "Sligoville",
+      "lat": 18.0527,
+      "lon": -76.9680,
+      "radius": 200,
+      "note": "First free village established in Jamaica after emancipation, 1835",
+      "needs_owner_review": true
+    },
+    {
+      "id": "com-bog-walk",
+      "name": "Bog Walk",
+      "lat": 18.0617,
+      "lon": -76.9826,
+      "radius": 200,
+      "note": "Gateway to the Rio Cobre gorge and Flat Bridge"
+    },
+    {
+      "id": "com-linstead",
+      "name": "Linstead",
+      "lat": 18.1341,
+      "lon": -77.0291,
+      "radius": 250,
+      "note": "Market town immortalised in the folk song 'Linstead Market'"
+    },
+    {
+      "id": "com-ewarton",
+      "name": "Ewarton",
+      "lat": 18.1668,
+      "lon": -77.0558,
+      "radius": 200,
+      "note": "Agricultural market town in the Rio Cobre valley",
+      "needs_owner_review": true
+    },
+    {
+      "id": "com-moneague",
+      "name": "Moneague",
+      "lat": 18.2577,
+      "lon": -77.0907,
+      "radius": 220,
+      "note": "St Ann crossroads at the foot of Mount Diablo"
+    },
+    {
+      "id": "com-faiths-pen",
+      "name": "Faith's Pen",
+      "lat": 18.2347,
+      "lon": -77.0951,
+      "radius": 240,
+      "note": "Jamaica's most famous roadside cookshop strip — jerk, roast yam and festival"
+    },
+    {
+      "id": "com-fern-gully",
+      "name": "Fern Gully",
+      "lat": 18.3650,
+      "lon": -77.1150,
+      "radius": 300,
+      "note": "3 km natural tunnel of tree fern and bamboo descending to Ocho Rios",
+      "needs_owner_review": true
+    },
+    {
+      "id": "com-ocho-rios",
+      "name": "Ocho Rios",
+      "lat": 18.4049,
+      "lon": -77.1065,
+      "radius": 350,
+      "note": "Jamaica's north-coast cruise hub — journey's end"
+    }
+  ]
+}
